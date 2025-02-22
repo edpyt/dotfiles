@@ -6,15 +6,26 @@
 
 // Workspaces configuration
 workspace "browser" 
+window-rule {
+    match at-startup=true app-id="zed"
+    open-on-workspace "browser"
+    open-maximized true
+}
+
+workspace "code"
+window-rule {
+    /- TODO: title="NVIM"
+    match app-id="kitty" 
+    open-maximized true
+}
+
+// TODO:
+// workspace "orgmode"
+
 
 // Monitor configuration
 output "DP-1" {
-    mode "1920x1080@165"
-}
-
-window-rule {
-    match at-startup=true app-id=r#"^zen\-browser$"#
-    open-on-workspace "browser"
+    mode "1920x1080@165.002"
 }
 
 // Input device configuration.
@@ -222,7 +233,7 @@ layout {
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
-// spawn-at-startup "alacritty" "-e" "fish"
+spawn-at-startup "kitty" "nvim"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -309,6 +320,8 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T { spawn "kitty"; }
+    Mod+Shift+T { spawn "kitty" "btop"; }
+    Mod+Backspace { spawn "kitty" "nvim"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "rofi" "-show" "drun"; }
     // Mod+D { spawn "fuzzel"; }
