@@ -3,6 +3,20 @@
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Overview
 
+
+// Workspaces configuration
+workspace "browser" 
+
+// Monitor configuration
+output "DP-1" {
+    mode "1920x1080@165"
+}
+
+window-rule {
+    match at-startup=true app-id=r#"^zen\-browser$"#
+    open-on-workspace "browser"
+}
+
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
@@ -14,7 +28,7 @@ input {
 
             // For example:
             layout "us,ru"
-            // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+            options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
         }
     }
 
@@ -299,6 +313,7 @@ binds {
     Mod+A { spawn "rofi" "-show" "drun"; }
     // Mod+D { spawn "fuzzel"; }
     Super+Alt+L { spawn "swaylock"; }
+    Mod+N { spawn "swaync-client" "-t"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
