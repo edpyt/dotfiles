@@ -8,8 +8,7 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 workspace "browser" 
 workspace "code"
-// TODO:
-// workspace "orgmode"
+workspace "orgmode"
 
 
 // Monitor configuration
@@ -258,13 +257,24 @@ animations {
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 window-rule {
-    match at-startup=true app-id="zed"
+    match at-startup=true app-id="zed" 
     open-on-workspace "browser"
+    open-maximized true
 }
 // TODO:
-// window-rule {
-//     match app-id="kitty" title="NVIM"
-// }
+/- window-rule {
+    match at-startup=true app-id="kitty" title=r#".*NVIM"#
+    open-maximized true
+}
+window-rule {
+    match app-id="kitty" title="btop"
+    open-floating true
+}
+window-rule {
+    match app-id="kitty" title=r#"orgagenda.*"#
+    open-on-workspace "orgmode"
+    open-maximized true
+}
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
