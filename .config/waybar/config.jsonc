@@ -68,7 +68,7 @@
   "custom/power": {
     "format": "󰐥",
     "tooltip": false,
-    "on-click": "sh ~/.config/rofi/powermenu.sh",
+    "on-click": "sh ~/.config/rofi/scripts/powermenu/powermenu",
     "on-click-right": "pkill rofi"
   },
   "modules-left": [

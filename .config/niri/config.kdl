@@ -3,8 +3,9 @@
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Overview
 
-
 // Workspaces configuration
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 workspace "browser" 
 window-rule {
     match at-startup=true app-id="zed"
@@ -13,19 +14,23 @@ window-rule {
 }
 
 workspace "code"
-window-rule {
-    /- TODO: title="NVIM"
-    match app-id="kitty" 
-    open-maximized true
-}
+// TODO:
+// window-rule {
+//     match app-id="kitty" title="NVIM"
+//     open-maximized true
+// }
 
 // TODO:
 // workspace "orgmode"
 
 
 // Monitor configuration
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
+output "HDMI-A-1" {
+    transform "90"
+}
 output "DP-1" {
-    mode "1920x1080@165.002"
+    mode "1920x1080@144.106"
 }
 
 // Input device configuration.
@@ -320,6 +325,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T { spawn "kitty"; }
+    Mod+Escape { spawn "~/.config/rofi/scripts/powermenu/powermenu"; }
     Mod+Shift+T { spawn "kitty" "btop"; }
     Mod+Backspace { spawn "kitty" "nvim"; }
     Mod+W { spawn "zen-browser"; }
