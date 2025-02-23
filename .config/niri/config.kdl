@@ -343,7 +343,7 @@ binds {
     // TODO: 25.02
     // Mod+Enter { toggle-column-tabbed-display; }
     Mod+B { spawn "overskride"; }
-    Super+Alt+L { spawn "swaylock"; }
+    Super+Alt+L { spawn "swaylock" "--indicator" "--clock"; }
     Mod+N { spawn "swaync-client" "-t"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
