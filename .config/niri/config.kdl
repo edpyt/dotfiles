@@ -5,7 +5,6 @@
 
 // Workspaces configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 workspace "browser" 
 workspace "code"
 workspace "orgmode"
@@ -275,6 +274,10 @@ window-rule {
     open-on-workspace "orgmode"
     open-maximized true
 }
+window-rule {
+    match app-id="anki"
+    open-maximized true
+}
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
@@ -336,8 +339,10 @@ binds {
     Mod+Backspace { spawn "kitty" "nvim"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "rofi" "-show" "drun"; }
+    Mod+E { spawn "kitty" "yazi"; }
     // TODO: 25.02
     // Mod+Enter { toggle-column-tabbed-display; }
+    Mod+B { spawn "overskride"; }
     Super+Alt+L { spawn "swaylock"; }
     Mod+N { spawn "swaync-client" "-t"; }
 
