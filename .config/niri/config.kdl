@@ -278,6 +278,10 @@ window-rule {
     match app-id="anki"
     open-maximized true
 }
+window-rule {
+    match app-id="org.keepassxc.KeePassXC"
+    open-maximized true
+}
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
