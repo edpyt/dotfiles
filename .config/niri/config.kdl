@@ -266,7 +266,7 @@ window-rule {
     open-maximized true
 }
 window-rule {
-    match app-id="kitty" title="btop"
+    match at-startup=true app-id="kitty" title="btop"
     open-floating true
 }
 window-rule {
