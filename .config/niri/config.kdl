@@ -321,12 +321,13 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T { spawn "kitty"; }
-    Mod+Escape { spawn "~/.config/rofi/scripts/powermenu/powermenu"; }
+    Mod+Escape  { spawn "~/.config/rofi/scripts/powermenu/powermenu"; } // TODO: hotkey-overlay-title="<b>Toggle</b> <span foreground='red'>Power menu</span>"
     Mod+Shift+T { spawn "kitty" "btop"; }
     Mod+Backspace { spawn "kitty" "nvim"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "rofi" "-show" "drun"; }
-    // Mod+D { spawn "fuzzel"; }
+    // TODO: 25.02
+    // Mod+Enter { toggle-column-tabbed-display; }
     Super+Alt+L { spawn "swaylock"; }
     Mod+N { spawn "swaync-client" "-t"; }
 
