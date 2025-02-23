@@ -7,19 +7,7 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 workspace "browser" 
-window-rule {
-    match at-startup=true app-id="zed"
-    open-on-workspace "browser"
-    open-maximized true
-}
-
 workspace "code"
-// TODO:
-// window-rule {
-//     match app-id="kitty" title="NVIM"
-//     open-maximized true
-// }
-
 // TODO:
 // workspace "orgmode"
 
@@ -269,6 +257,14 @@ animations {
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
+window-rule {
+    match at-startup=true app-id="zed"
+    open-on-workspace "browser"
+}
+// TODO:
+// window-rule {
+//     match app-id="kitty" title="NVIM"
+// }
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
@@ -291,7 +287,7 @@ window-rule {
 
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
-/-window-rule {
+window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
 

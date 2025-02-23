@@ -68,7 +68,7 @@
   "custom/power": {
     "format": "󰐥",
     "tooltip": false,
-    "on-click": "sh ~/.config/rofi/scripts/powermenu/powermenu",
+    "on-click": "~/.config/rofi/scripts/powermenu/powermenu",
     "on-click-right": "pkill rofi"
   },
   "modules-left": [
@@ -90,7 +90,7 @@
   "custom/launcher": {
     "format": "",
     "tooltip": false,
-    "on-click": "rofi -show drun -theme ~/.config/rofi/launcher-theme.rasi",
+    "on-click": "rofi -show drun",
     "on-click-right": "killall rofi"
   },
   "hyprland/workspaces": {
