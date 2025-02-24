@@ -96,13 +96,10 @@
     "format": "{icon}",
     "format-icons": {
       "browser": "",
-      // "discord": "",
       "code": "",
-      // "2": "Two",
       "orgmode": "<b></b>",
-      // "focused": "F",
       "default": "◦",
-      
+      // "focused": "F",
     },
     // "current-only": true,
     // "all-outputs": true,
@@ -122,8 +119,4 @@
     //   ],
     "max-length": 42
   },
-  // "hyprland/window": {
-  //   "format": "{initialTitle}",
-  //   "icon": true
-  // }
 }
