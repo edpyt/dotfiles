@@ -58,7 +58,11 @@ return {
 
       -- Aesthetics
       require("org-bullets").setup()
-      require("headlines").setup()
+      require("headlines").setup {
+        markdown = {
+          headline_highlights = false,
+        },
+      }
 
       -- Customize bindings
       require("telescope").load_extension "orgmode"
