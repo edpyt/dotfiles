@@ -6,7 +6,7 @@
 // Workspaces configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
 workspace "browser" {
-    open-on-output "DP-1"
+    open-on-output "HDMI-A-1"
 }
 workspace "code" {
     open-on-output "DP-1"
@@ -18,7 +18,8 @@ workspace "orgmode" {
 
 // Monitor configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
-output "HDMI-A-1" {
+// TODO:
+/- output "HDMI-A-1" {
     transform "90"
 }
 output "DP-1" {
