@@ -5,9 +5,15 @@
 
 // Workspaces configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
-workspace "browser" 
-workspace "code"
-workspace "orgmode"
+workspace "browser" {
+    open-on-output "DP-1"
+}
+workspace "code" {
+    open-on-output "DP-1"
+}
+workspace "orgmode" {
+    open-on-output "DP-1"
+}
 
 
 // Monitor configuration
@@ -265,8 +271,9 @@ window-rule {
     match at-startup=true app-id="kitty" title=r#".*NVIM"#
     open-maximized true
 }
-window-rule {
-    match at-startup=true app-id="kitty" title="btop"
+// TODO:
+/- window-rule {
+    match app-id="kitty" title="btop"
     open-floating true
 }
 window-rule {
@@ -360,6 +367,10 @@ binds {
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+
+    XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
+    XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
+    XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }
 
     Mod+Q { close-window; }
 
