@@ -5,20 +5,14 @@
 
 // Workspaces configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
-workspace "browser" {
-    open-on-output "DP-1"
-}
-workspace "code" {
-    open-on-output "DP-1"
-}
-workspace "orgmode" {
-    open-on-output "DP-1"
-}
+workspace "browser" 
+workspace "code" 
+workspace "orgmode" 
 
 
 // Monitor configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
-output "HDMI-A-1" {
+output "Philips Consumer Electronics Company PHL 220V8 ZV02030003859" {
     transform "90"
 }
 output "DP-1" {
@@ -232,6 +226,11 @@ layout {
 // See the binds section below for more spawn examples.
 spawn-at-startup "kitty" "nvim"
 
+spawn-at-startup "xwayland-satellite"
+environment {
+    DISPLAY ":0"
+}
+
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
 // Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
@@ -354,7 +353,7 @@ binds {
     // TODO: 25.02
     // Mod+Enter { toggle-column-tabbed-display; }
     Mod+B { spawn "overskride"; }
-    Super+Alt+L { spawn "swaylock" "--indicator" "--clock"; }
+    Super+Alt+L { spawn "swaylock"; }
     Mod+N { spawn "swaync-client" "-t"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.

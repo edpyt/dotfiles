@@ -7,7 +7,7 @@
     "modules": [
       "pulseaudio",
       "pulseaudio/slider"
-    ]
+    ],
   },
   "pulseaudio": {
     "scroll-step": 5,
@@ -18,19 +18,19 @@
         "",
         "",
         ""
-      ]
+      ],
     },
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
   },
   "pulseaudio/slider": {
     "min": 0,
     "max": 100,
-    "device": "pulseaudio"
+    "device": "pulseaudio",
   },
   "network": {
     "format-wifi": "  {signalStrength}%",
     "format-disconnected": "⚠ Disconnected",
-    "on-click": "sh ~/.config/rofi/wifimenu.sh"
+    "on-click": "kitty nmtui",
   },
   "bluetooth": {
     "format": " {status}",
@@ -39,7 +39,7 @@
     "tooltip-format": "{controller_alias}\t{controller_address}",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-    "on-click": "blueman-manager"
+    "on-click": "blueman-manager",
   },
   "group/system": {
     "orientation": "horizontal",
@@ -47,33 +47,33 @@
       "cpu",
       "memory",
       "disk"
-    ]
+    ],
   },
   "cpu": {
     "format": " {usage}%",
-    "on-click": "missioncenter"
+    "on-click": "missioncenter",
   },
   "memory": {
     "format": "󰍛 {percentage}%",
-    "on-click": "missioncenter"
+    "on-click": "missioncenter",
   },
   "disk": {
     "format": " {percentage_used}%",
-    "on-click": "missioncenter"
+    "on-click": "missioncenter",
   },
   "clock": {
     "format": "󰃭 {:%a %b %d  %I:%M%p}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
   },
   "custom/power": {
     "format": "󰐥",
     "tooltip": false,
     "on-click": "~/.config/rofi/scripts/powermenu/powermenu",
-    "on-click-right": "pkill rofi"
+    "on-click-right": "pkill rofi",
   },
   "modules-left": [
     "custom/launcher",
-    "niri/workspaces",
+    "niri/workspaces"
   ],
   "modules-center": [
     "mpris"
@@ -84,13 +84,14 @@
     "bluetooth",
     "group/system",
     "clock",
-    "custom/power"
+    "battery",
+    "custom/power",
   ],
   "custom/launcher": {
     "format": "",
     "tooltip": false,
     "on-click": "rofi -show drun",
-    "on-click-right": "killall rofi"
+    "on-click-right": "killall rofi",
   },
   "niri/workspaces": {
     "format": "{icon}",
@@ -104,6 +105,31 @@
     // "current-only": true,
     // "all-outputs": true,
   },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "interval": 5,
+    "states": {
+      "warning": 30,
+      "critical": 10,
+    },
+    "tooltip": false,
+  },
   "mpris": {
     "format": "{player_icon} {status_icon} {artist} - {title}",
     // "player-icons": {
@@ -112,11 +138,11 @@
     // },
     "status-icons": {
       "paused": "▶  ",
-      "playing": "  "
+      "playing": "  ",
     },
     //   "ignored-players": [
     //     "firefox"
     //   ],
-    "max-length": 42
+    "max-length": 42,
   },
 }

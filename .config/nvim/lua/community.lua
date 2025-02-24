@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.hyprlang" },
+  { import = "astrocommunity.pack.typescript" },
 
   -- colorscheme
   { import = "astrocommunity.colorscheme.dracula-nvim" },
