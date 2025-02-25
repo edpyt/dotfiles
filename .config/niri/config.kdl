@@ -17,9 +17,9 @@ workspace "orgmode" {
 }
 
 /// Secondary monitor
-workspace "browser-1" {
-    open-on-output "HDMI-A-1"
-}
+// workspace "browser-1" {
+//     open-on-output "HDMI-A-1"
+// }
 
 // TODO: Laptop monitor (eDP-1)
 
@@ -439,7 +439,8 @@ binds {
     // ...
 
     // And you can also move a whole workspace to another monitor:
-    // Mod+Shift+Ctrl+Left  { move-workspace-to-monitor-left; }
+    Mod+Shift+Ctrl+Comma  { move-workspace-to-monitor-left; }
+    Mod+Shift+Ctrl+Period  { move-workspace-to-monitor-right; }
     // ...
 
     Mod+Page_Down      { focus-workspace-down; }
