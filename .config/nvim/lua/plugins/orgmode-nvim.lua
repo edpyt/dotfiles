@@ -13,13 +13,24 @@ return {
     end,
   },
   {
+    "lukas-reineke/headlines.nvim",
+    dependencies = "nvim-treesitter/nvim-treesitter",
+    opts = {
+      markdown = {
+        headline_highlights = false,
+      },
+    },
+  },
+  {
+    "nvim-orgmode/org-bullets.nvim",
+    opts = {},
+  },
+  {
     "nvim-orgmode/orgmode",
     dependencies = {
       "chipsenkbeil/org-roam.nvim",
       "nvim-telescope/telescope.nvim",
       "nvim-orgmode/telescope-orgmode.nvim",
-      "nvim-orgmode/org-bullets.nvim",
-      "lukas-reineke/headlines.nvim",
     },
     event = "VeryLazy",
     ft = { "org" },
