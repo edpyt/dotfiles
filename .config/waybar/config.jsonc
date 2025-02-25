@@ -4,21 +4,14 @@
   "margin": 8,
   "group/volume": {
     "orientation": "horizontal",
-    "modules": [
-      "pulseaudio",
-      "pulseaudio/slider"
-    ],
+    "modules": ["pulseaudio", "pulseaudio/slider"],
   },
   "pulseaudio": {
     "scroll-step": 5,
     "format": "{icon} {volume}%",
     "format-muted": "",
     "format-icons": {
-      "default": [
-        "",
-        "",
-        ""
-      ],
+      "default": ["", "", ""],
     },
     "on-click": "pavucontrol",
   },
@@ -43,11 +36,7 @@
   },
   "group/system": {
     "orientation": "horizontal",
-    "modules": [
-      "cpu",
-      "memory",
-      "disk"
-    ],
+    "modules": ["cpu", "memory", "disk"],
   },
   "cpu": {
     "format": " {usage}%",
@@ -71,13 +60,8 @@
     "on-click": "~/.config/rofi/scripts/powermenu/powermenu",
     "on-click-right": "pkill rofi",
   },
-  "modules-left": [
-    "custom/launcher",
-    "niri/workspaces"
-  ],
-  "modules-center": [
-    "mpris"
-  ],
+  "modules-left": ["custom/launcher", "niri/workspaces"],
+  "modules-center": ["mpris"],
   "modules-right": [
     "pulseaudio",
     "network",
@@ -97,6 +81,7 @@
     "format": "{icon}",
     "format-icons": {
       "browser": "",
+      "browser-1": "",
       "code": "",
       "orgmode": "<b></b>",
       "default": "◦",
@@ -110,19 +95,7 @@
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
-    "format-icons": [
-      "󰂎",
-      "󰁺",
-      "󰁻",
-      "󰁼",
-      "󰁽",
-      "󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂",
-      "󰁹"
-    ],
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 5,
     "states": {
       "warning": 30,
