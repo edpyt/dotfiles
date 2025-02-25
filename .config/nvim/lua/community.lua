@@ -14,6 +14,9 @@ return {
   { import = "astrocommunity.pack.hyprlang" },
   { import = "astrocommunity.pack.typescript" },
 
+  -- media
+  { import = "astrocommunity.media.image-nvim" },
+
   -- colorscheme
   { import = "astrocommunity.colorscheme.dracula-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
