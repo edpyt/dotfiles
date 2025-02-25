@@ -5,24 +5,9 @@
 
 // Workspaces configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
-/// Main PC monitor
-workspace "browser" {
-    open-on-output "Xiaomi Corporation P27FBB-RGGL 5275600038779"
-}
-workspace "code" {
-    open-on-output "Xiaomi Corporation P27FBB-RGGL 5275600038779"
-}
-workspace "orgmode" {
-    open-on-output "Xiaomi Corporation P27FBB-RGGL 5275600038779"
-}
-
-/// Secondary monitor
-// workspace "browser-1" {
-//     open-on-output "HDMI-A-1"
-// }
-
-// TODO: Laptop monitor (eDP-1)
-
+workspace "browser" 
+workspace "code" 
+workspace "orgmode" 
 
 // Monitor configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
