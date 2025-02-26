@@ -4,6 +4,7 @@ return {
     opts = function(_, opts)
       -- FIXME: Always use opts instead of config when possible. config is almost never needed.
       require("telescope").load_extension "orgmode"
+      -- FIXME: rewrite to AstroNvim way
       vim.keymap.set("n", "<leader>r", require("telescope").extensions.orgmode.refile_heading)
       vim.keymap.set("n", "<leader>fh", require("telescope").extensions.orgmode.search_headings)
       vim.keymap.set("n", "<leader>li", require("telescope").extensions.orgmode.insert_link)

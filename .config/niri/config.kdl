@@ -263,12 +263,13 @@ window-rule {
     match app-id="anki"
     match app-id="org.keepassxc.KeePassXC"
     match app-id="zen" 
+    match app-id="org.kde.okular"
 
     open-maximized true
 }
 window-rule {
     match app-id="zen" 
-    open-on-workspace "browser"  // FIXME: second monitor
+    open-on-workspace "browser"
 }
 window-rule {
     match app-id="kitty"
@@ -279,10 +280,11 @@ window-rule {
     open-on-workspace "code"
 }
 window-rule {
-    match app-id="btop"
-    match app-id="nmtui"
+    match app-id="kitty" title="btop"
+    match app-id="kitty" title="nmtui"
     match title="overskride"
     open-floating true
+    open-focused true
 }
 
 // Work around WezTerm's initial configure bug
@@ -341,7 +343,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T { spawn "kitty"; }
     Mod+Escape hotkey-overlay-title="Spawn <span foreground='red'>rofi</span>" { spawn "~/.config/rofi/scripts/powermenu/powermenu"; } 
-    Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--app-id" "btop" "btop"; }
+    Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
     Mod+Backspace hotkey-overlay-title="Spawn <span foreground='blue'>nvim</span>" { spawn "kitty" "nvim"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "rofi" "-show" "drun"; }
