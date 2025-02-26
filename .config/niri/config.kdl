@@ -240,7 +240,7 @@ environment {
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
 // The path is formatted with strftime(3) to give you the screenshot date and time.
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 
 // You can also set this to null to disable saving screenshots to disk.
 // screenshot-path null
@@ -260,17 +260,15 @@ animations {
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 window-rule {
+    match app-id="anki"
+    match app-id="org.keepassxc.KeePassXC"
+    match app-id="zen" 
+
+    open-maximized true
+}
+window-rule {
     match app-id="zen" 
     open-on-workspace "browser"  // FIXME: second monitor
-    open-maximized true
-}
-window-rule {
-    match app-id="anki"
-    open-maximized true
-}
-window-rule {
-    match app-id="org.keepassxc.KeePassXC"
-    open-maximized true
 }
 window-rule {
     match app-id="kitty"
@@ -278,11 +276,12 @@ window-rule {
 }
 window-rule {
     match at-startup=true app-id="kitty"
-    open-on-workspace "orgmode"
+    open-on-workspace "code"
 }
-// TODO:
-/- window-rule {
-    match title=r#".*btop.*"#
+window-rule {
+    match app-id="btop"
+    match app-id="nmtui"
+    match title="overskride"
     open-floating true
 }
 
@@ -342,7 +341,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T { spawn "kitty"; }
     Mod+Escape hotkey-overlay-title="Spawn <span foreground='red'>rofi</span>" { spawn "~/.config/rofi/scripts/powermenu/powermenu"; } 
-    Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "-e" "btop"; }
+    Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--app-id" "btop" "btop"; }
     Mod+Backspace hotkey-overlay-title="Spawn <span foreground='blue'>nvim</span>" { spawn "kitty" "nvim"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "rofi" "-show" "drun"; }
