@@ -19,7 +19,7 @@ folder = [
 text = [
   { run = 'nvim "$@"', block = true, desc = "neovim", for = "linux" },
   { run = 'kitty --detach nvim "$@"', block = true, desc = "neovim (detached)", for = "linux" },
-  { run = 'codium  "$@"', orphan = true, desc = "vscodium", for = "linux" },
+  { run = 'hx  "$@"', block = true, desc = "helix", for = "linux" },
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
 ]
 
@@ -74,8 +74,9 @@ rules = [
   { mime = "application/pdf", use = "document" },
   { mime = "application/epub+zip", use = "document" },
   { mime = "application/x-mobipocket-ebook", use = "document" },
+  { mime = "application/pptx", use = "document" },
 
-  { mime = "*", use = "fallback" },
+  { mime = "*", use = "text" },
 ]
 
 [[plugin.prepend_fetchers]]

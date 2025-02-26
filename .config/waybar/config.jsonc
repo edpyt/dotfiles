@@ -63,6 +63,7 @@
   "modules-left": ["custom/launcher", "niri/workspaces"],
   "modules-center": ["mpris"],
   "modules-right": [
+    "custom/keyboard-layout",
     "pulseaudio",
     "network",
     "bluetooth",
@@ -71,6 +72,13 @@
     "battery",
     "custom/power",
   ],
+  "custom/keyboard-layout": {
+    "exec": "~/.config/waybar/scripts/niri-ipc/keyboard-layout.py",
+    "return-type": "json",
+    "exec-on-event": false,
+    "on-click": "niri msg action switch-layout next",
+    "on-click-right": "niri msg action switch-layout prev",
+  },
   "custom/launcher": {
     "format": "",
     "tooltip": false,
