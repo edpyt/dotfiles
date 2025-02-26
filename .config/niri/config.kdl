@@ -342,12 +342,13 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T { spawn "kitty"; }
-    Mod+Escape hotkey-overlay-title="Spawn <span foreground='red'>rofi</span>" { spawn "~/.config/rofi/scripts/powermenu/powermenu"; } 
-    Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
-    Mod+Backspace hotkey-overlay-title="Spawn <span foreground='blue'>nvim</span>" { spawn "kitty" "nvim"; }
+    // TODO: BEATIFYx Thiis ✨
+    Mod+Escape hotkey-overlay-title="Spawn rofi ♿️" { spawn "~/.config/rofi/scripts/powermenu/powermenu"; } 
+    Mod+Shift+T hotkey-overlay-title="Spawn btop 📟️" { spawn "kitty" "--title" "btop" "btop"; }
+    Mod+Backspace hotkey-overlay-title="Spawn nvim ✨" { spawn "kitty" "nvim"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "rofi" "-show" "drun"; }
-    Mod+E { spawn "kitty" "yazi"; }
+    Mod+E hotkey-overlay-title="Spawn yazi 🦆" { spawn "kitty" "yazi"; }
     Mod+Tab { toggle-column-tabbed-display; }
     Mod+B { spawn "overskride"; }
     Super+Alt+L { spawn "swaylock"; }
