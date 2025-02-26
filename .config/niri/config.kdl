@@ -285,6 +285,8 @@ window-rule {
     match title="overskride"
     open-floating true
     open-focused true
+    min-width 1000
+    max-width 1200
 }
 
 // Work around WezTerm's initial configure bug
