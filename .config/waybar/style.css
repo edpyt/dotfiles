@@ -132,7 +132,8 @@ window#waybar.empty #window {
   color: @green;
 }
 
-#bluetooth {
+#bluetooth,
+#custom-keyboard-layout {
   color: @blue;
 }
 
