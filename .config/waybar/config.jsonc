@@ -4,14 +4,38 @@
   "margin": 8,
   "group/volume": {
     "orientation": "horizontal",
-    "modules": ["pulseaudio", "pulseaudio/slider"],
+    "modules": [
+      "pulseaudio",
+      "pulseaudio/slider"
+    ],
   },
+  "modules-left": [
+    "custom/launcher",
+    "niri/workspaces"
+  ],
+  "modules-center": [
+    "mpris"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "bluetooth",
+    "group/system",
+    "clock",
+    "battery",
+    "custom/keyboard-layout",
+    "custom/power",
+  ],
   "pulseaudio": {
     "scroll-step": 5,
     "format": "{icon} {volume}%",
     "format-muted": "",
     "format-icons": {
-      "default": ["", "", ""],
+      "default": [
+        "",
+        "",
+        ""
+      ],
     },
     "on-click": "pavucontrol",
   },
@@ -36,7 +60,11 @@
   },
   "group/system": {
     "orientation": "horizontal",
-    "modules": ["cpu", "memory", "disk"],
+    "modules": [
+      "cpu",
+      "memory",
+      "disk"
+    ],
   },
   "cpu": {
     "format": " {usage}%",
@@ -60,17 +88,13 @@
     "on-click": "~/.config/rofi/scripts/powermenu/powermenu",
     "on-click-right": "pkill rofi",
   },
-  "modules-left": ["custom/launcher", "niri/workspaces"],
-  "modules-center": ["mpris"],
-  "modules-right": [
-    "pulseaudio",
-    "network",
-    "bluetooth",
-    "group/system",
-    "clock",
-    "battery",
-    "custom/power",
-  ],
+  "custom/keyboard-layout": {
+    "exec": "~/.config/waybar/scripts/niri-ipc/keyboard-layout.py",
+    "return-type": "json",
+    "exec-on-event": false,
+    "on-click": "niri msg action switch-layout next",
+    "on-click-right": "niri msg action switch-layout prev",
+  },
   "custom/launcher": {
     "format": "",
     "tooltip": false,
@@ -95,7 +119,19 @@
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
     "interval": 5,
     "states": {
       "warning": 30,
