@@ -31,9 +31,7 @@ def _print_layout_gen(niri_file: IO) -> Generator[None]:
     names = []
     current = None
     for line in niri_file:
-        event = json.loads(line)
-
-        match event:
+        match json.loads(line):
             case {
                 "KeyboardLayoutsChanged": {
                     "keyboard_layouts": {"names": _, "current_idx": _} as layouts

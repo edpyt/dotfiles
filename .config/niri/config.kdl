@@ -5,9 +5,15 @@
 
 // Workspaces configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
-workspace "browser" 
-workspace "code" 
-workspace "orgmode" 
+workspace "browser" {
+    open-on-output "DP-1"
+} 
+workspace "code" {
+    open-on-output "DP-1"
+}
+workspace "orgmode" {
+    open-on-output "DP-1"
+}
 
 // Monitor configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
@@ -224,7 +230,7 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 spawn-at-startup "kitty" "nvim"
-
+spawn-at-startup "~/.config/scripts/init_swww" 
 spawn-at-startup "xwayland-satellite"
 environment {
     DISPLAY ":0"
@@ -287,6 +293,8 @@ window-rule {
     open-focused true
     min-width 1000
     max-width 1200
+    // TODO:
+    default-floating-position x=400 y=20 
 }
 
 // Work around WezTerm's initial configure bug

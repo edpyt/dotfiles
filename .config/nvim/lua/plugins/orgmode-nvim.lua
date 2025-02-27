@@ -47,7 +47,7 @@ return {
         },
         d = {
           description = "Distraction",
-          template = "* TODO %?\n SCHEDULED: <%<%Y-%m-%d %a %H:%M +10m>> \n %u",
+          template = "* TODO %?\n SCHEDULED: <%<%Y-%m-%d %a %H:%M>> \n %u",
           target = "~/orgfiles/distractions.org",
         },
         w = {
