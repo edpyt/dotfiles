@@ -135,7 +135,7 @@
     "interval": 5,
     "states": {
       "warning": 30,
-      "critical": 10,
+      "critical": 15,
     },
     "tooltip": false,
   },

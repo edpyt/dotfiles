@@ -233,7 +233,7 @@ spawn-at-startup "kitty" "-T" "orgmode" "nvim"
 spawn-at-startup "~/.config/scripts/init_swww" 
 spawn-at-startup "xwayland-satellite"
 environment {
-    DISPLAY ":0"
+    DISPLAY ":1"
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.

@@ -47,12 +47,12 @@ run_cmd() {
       systemctl reboot
     elif [[ $1 == '--suspend' ]]; then
       mpc -q pause
-      hyprlock
+      swaylock
       systemctl suspend
     elif [[ $1 == '--logout' ]]; then
-      hyprctl dispatch exit
+      niri msg action quit
     elif [[ $1 == '--lock' ]]; then
-      hyprlock
+      swaylock
     fi
   else
     exit 0
