@@ -229,7 +229,7 @@ layout {
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
-spawn-at-startup "kitty" "nvim"
+spawn-at-startup "kitty" "-T" "orgmode" "nvim"
 spawn-at-startup "~/.config/scripts/init_swww" 
 spawn-at-startup "xwayland-satellite"
 environment {
@@ -280,15 +280,18 @@ window-rule {
 window-rule {
     match app-id="kitty"
     default-column-width { proportion 0.75; }
+    draw-border-with-background false
+    opacity 0.97
 }
 window-rule {
-    match at-startup=true app-id="kitty"
-    open-on-workspace "code"
+    match at-startup=true app-id="kitty" title="orgmode"
+    open-on-workspace "orgmode"
 }
 window-rule {
     match app-id="kitty" title="btop"
     match app-id="kitty" title="nmtui"
     match title="overskride"
+    opacity 1.0
     open-floating true
     open-focused true
     min-width 1000
