@@ -158,3 +158,11 @@ window#waybar.empty #window {
   font-size: 20px;
   padding: 0 16px;
 }
+
+#battery.warning {
+  color: @yellow;
+}
+
+#battery.critical {
+  color: @red;
+}

@@ -4,18 +4,10 @@
   "margin": 8,
   "group/volume": {
     "orientation": "horizontal",
-    "modules": [
-      "pulseaudio",
-      "pulseaudio/slider"
-    ],
+    "modules": ["pulseaudio", "pulseaudio/slider"],
   },
-  "modules-left": [
-    "custom/launcher",
-    "niri/workspaces"
-  ],
-  "modules-center": [
-    "mpris"
-  ],
+  "modules-left": ["custom/launcher", "niri/workspaces"],
+  "modules-center": ["mpris"],
   "modules-right": [
     "pulseaudio",
     "network",
@@ -31,11 +23,7 @@
     "format": "{icon} {volume}%",
     "format-muted": "",
     "format-icons": {
-      "default": [
-        "",
-        "",
-        ""
-      ],
+      "default": ["", "", ""],
     },
     "on-click": "pavucontrol",
   },
@@ -60,11 +48,7 @@
   },
   "group/system": {
     "orientation": "horizontal",
-    "modules": [
-      "cpu",
-      "memory",
-      "disk"
-    ],
+    "modules": ["cpu", "memory", "disk"],
   },
   "cpu": {
     "format": " {usage}%",
@@ -119,19 +103,7 @@
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
-    "format-icons": [
-      "󰂎",
-      "󰁺",
-      "󰁻",
-      "󰁼",
-      "󰁽",
-      "󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂",
-      "󰁹"
-    ],
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 5,
     "states": {
       "warning": 30,
