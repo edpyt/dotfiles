@@ -268,13 +268,13 @@ animations {
 window-rule {
     match app-id="anki"
     match app-id="org.keepassxc.KeePassXC"
-    match app-id="vivaldi" 
+    match app-id="vivaldi-bin" 
     match app-id="org.kde.okular"
 
     open-maximized true
 }
 window-rule {
-    match app-id="vivaldi" 
+    match app-id="vivaldi-bin" 
     open-on-workspace "browser"
 }
 window-rule {
