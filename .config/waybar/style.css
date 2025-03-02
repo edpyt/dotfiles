@@ -1,0 +1,42 @@
+@import "frappe.css";
+
+* {
+  font-family: "Fira Code Nerd Font";
+  color: @text;
+}
+
+window#waybar {
+  background-color: @crust;
+  border-left: 1px solid @mantle;
+}
+
+#workspaces button.active {
+  background-color: rgba(88, 91, 112, 1);
+}
+
+#clock,
+#battery,
+#cpu,
+#custom-keyboard-layout,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#language,
+#mpd,
+#custom-style {
+  padding: 4.2px 4.2px;
+}
+
+#cpu {
+  background-color: @mantle;
+  border-left: 1px solid @mantle;
+}

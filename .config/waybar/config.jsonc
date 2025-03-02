@@ -1,0 +1,102 @@
+{
+  "layer": "top",
+  "position": "left",
+  "spacing": 0,
+  "modules-left": [
+    "niri/workspaces"
+  ],
+  "modules-center": [
+    "mpris",
+    "clock"
+  ],
+  "modules-right": [
+    "custom/keyboard-layout",
+    "network",
+    "temperature",
+    "cpu",
+    "memory",
+    "battery",
+    "custom/logout",
+  ],
+  "custom/logout": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "~/.config/rofi/scripts/powermenu/powermenu",
+  },
+  "custom/keyboard-layout": {
+    "exec": "~/.config/waybar/scripts/keyboard_layout.py",
+    "return-type": "json",
+    "exec-on-event": false,
+    "on-click": "niri msg action switch-layout next",
+    "on-click-right": "niri msg action switch-layout prev",
+  },
+  "niri/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "browser": "",
+      "code": "",
+      "orgmode": "<b></b>",
+      "default": "◦",
+      // "focused": "",
+    },
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%e\n%m\n\n<b>%H\n%M</b>}",
+  },
+  "cpu": {
+    "format": "{usage}",
+    "tooltip": false,
+  },
+  "memory": {
+    "format": "{}",
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{temperatureC}°C {icon}",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
+  },
+  "battery": {
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{capacity}",
+    "format-charging": "{capacity}",
+    "format-plugged": "{capacity}",
+    "format-alt": "{time} {icon}",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+  },
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "",
+    "format-disconnected": "⚠",
+    "on-click": "kitty --title nmtui nmtui",
+  },
+  "mpris": {
+    "format": "{player_icon} {status_icon} {artist} - {title}",
+    "status-icons": {
+      "paused": "▶  ",
+      "playing": "  ",
+    },
+    "max-length": 42,
+    //   "ignored-players": [
+    //     "firefox"
+    //   ],
+  },
+}

@@ -11,7 +11,6 @@ return {
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.hyprlang" },
   { import = "astrocommunity.pack.typescript" },
 
   -- media

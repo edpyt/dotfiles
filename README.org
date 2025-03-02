@@ -1,0 +1,30 @@
+* Packages
+  + nvidia-inst
+  + neovim
+  + niri
+  + vivaldi
+  + kitty
+  + swww
+  + waybar
+  + xwayland-satellite
+  + fish
+  + unzip
+  + bat
+  + catppuccin-cursors-frappe
+  + catppuccin-gtk-theme-frappe
+  + starship
+  + nodejs
+  + npm
+  + qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look
+  + lazygit
+  + xclip
+  + swaync
+
+* Fonts
+  - ttf-fira-code
+  - ttf-nerd-fonts-symbols
+  - ttf-font-awesome
+  - noto-fonts-cjk
+  - ttf-ms-win11-auto
+
+  fc-cache -fv
