@@ -10,8 +10,8 @@
     "clock"
   ],
   "modules-right": [
-    "custom/keyboard-layout",
     "network",
+    "custom/keyboard-layout",
     "temperature",
     "cpu",
     "memory",
@@ -33,7 +33,7 @@
   "niri/workspaces": {
     "format": "{icon}",
     "format-icons": {
-      "browser": "",
+      "browser": "󰖟",
       "code": "",
       "orgmode": "<b></b>",
       "default": "◦",
@@ -62,7 +62,7 @@
   },
   "battery": {
     "states": {
-      // "good": 95,
+      "good": 95,
       "warning": 30,
       "critical": 15,
     },
@@ -70,8 +70,6 @@
     "format-charging": "{capacity}",
     "format-plugged": "{capacity}",
     "format-alt": "{time} {icon}",
-    // "format-good": "", // An empty format will hide the module
-    // "format-full": "",
     "format-icons": [
       "",
       "",

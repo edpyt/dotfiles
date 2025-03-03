@@ -8,7 +8,7 @@ configuration {
   normalize-match: true;
   show-icons: true;
   icon-theme: "Catppuccin-SE";
-  font: "JetBrainsMono Nerd Font 10";
+  font: "FiraCode Nerd Font 10";
   steal-focus: false;
   hover-select: true;
 

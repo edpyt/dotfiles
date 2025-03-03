@@ -1,5 +1,6 @@
 * Packages
   + nvidia-inst
+  +  pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
   + neovim
   + niri
   + vivaldi
@@ -17,8 +18,10 @@
   + npm
   + qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look
   + lazygit
-  + xclip
+  + wl-clipboard
   + swaync
+  + rofi-wayland
+  + yazi ffmpeg p7zip jq poppler fd ripgrep fzf zoxide imagemagick
 
 * Fonts
   - ttf-fira-code

@@ -2,16 +2,47 @@
 
 * {
   font-family: "Fira Code Nerd Font";
-  color: @text;
+  font-size: 16px;
+  font-feature-settings: "tnum";
 }
 
 window#waybar {
+  color: @text;
+  background: transparent;
   background-color: @crust;
-  border-left: 1px solid @mantle;
+  border: 1px solid @mantle;
+  border-bottom: 2px solid @surface0;
+}
+
+window#waybar > box {
+  padding: 4px 0;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+button {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  transition-property: none;
+}
+
+#workspaces button:hover {
+  background-color: rgba(49, 50, 68, 1);
 }
 
 #workspaces button.active {
   background-color: rgba(88, 91, 112, 1);
+}
+
+#workspaces button#niri-workspace-browser {
+  color: @sapphire;
+}
+
+#workspaces button#niri-workspace-orgmode {
+  color: @teal;
 }
 
 #clock,
@@ -21,22 +52,42 @@ window#waybar {
 #memory,
 #disk,
 #temperature,
-#backlight,
 #network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
 #mode,
-#idle_inhibitor,
-#scratchpad,
 #language,
-#mpd,
-#custom-style {
+#custom-style,
+#mpris,
+#custom-power {
   padding: 4.2px 4.2px;
 }
 
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
 #cpu {
-  background-color: @mantle;
-  border-left: 1px solid @mantle;
+  background-color: @overlay0;
+}
+
+#battery {
+  background-color: #313244;
+  border-left: 1px solid #6c7086;
+}
+
+#battery.critical:not(.charging) {
+  background-color: @red;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#mpris {
+  color: @green;
 }

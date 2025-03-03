@@ -3,10 +3,10 @@ configuration {
   modi:                       "games";
   show-icons:                 true;
   drun-display-format:        "{name}";
-  font:                       "JetBrainsMono Nerd Font 9";
+  font:                       "FiraCode Nerd Font 9";
 }
 
-@theme "~/.config/rofi/theme/catppuccin-macchiato.rasi"
+@theme "~/.config/rofi/theme/catppuccin-default.rasi"
 
 // Main
 window {

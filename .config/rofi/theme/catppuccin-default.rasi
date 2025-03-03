@@ -1,5 +1,7 @@
+@import "catppuccin-frappe"
+
 * {
-  background:       #24273ACC;
+  background:       @base;
   foreground:       #CAD3F5FF;
   accent:           #B7BDF869;
   background-tb:    #494D64FF;
