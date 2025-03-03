@@ -10,7 +10,9 @@
     "clock"
   ],
   "modules-right": [
+    "tray",
     "network",
+    "pulseaudio",
     "custom/keyboard-layout",
     "temperature",
     "cpu",
@@ -85,6 +87,29 @@
     "format-linked": "",
     "format-disconnected": "⚠",
     "on-click": "kitty --title nmtui nmtui",
+  },
+  "pulseaudio": {
+    "scroll-step": 5, // %, can be a float
+    // "format": "{volume}% {icon}",
+    // "format-bluetooth": "{volume}% {icon}",
+    // "format-bluetooth-muted": " {icon}",
+    "format-muted": "",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ],
+    },
+    "on-click": "pavucontrol",
   },
   "mpris": {
     "format": "{player_icon} {status_icon} {artist} - {title}",
