@@ -70,7 +70,8 @@ button {
   margin-right: 0;
 }
 
-#cpu {
+#cpu,
+#memory {
   background-color: @overlay0;
 }
 
