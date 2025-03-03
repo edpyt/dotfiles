@@ -268,13 +268,13 @@ animations {
 window-rule {
     match app-id="anki"
     match app-id="org.keepassxc.KeePassXC"
-    match app-id="vivaldi-bin" 
+    match app-id="Vivaldi-stable" 
     match app-id="org.kde.okular"
 
     open-maximized true
 }
 window-rule {
-    match app-id="vivaldi-bin" 
+    match app-id="Vivaldi-stable" 
     open-on-workspace "browser"
 }
 window-rule {
@@ -291,13 +291,12 @@ window-rule {
     match app-id="kitty" title="btop"
     match app-id="kitty" title="nmtui"
     match title="overskride"
+    match app-id="AmneziaVPN"
     opacity 1.0
     open-floating true
     open-focused true
-    min-width 1000
+    min-width 942
     max-width 1200
-    // TODO:
-    default-floating-position x=400 y=20 
 }
 
 // Work around WezTerm's initial configure bug
