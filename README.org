@@ -16,7 +16,6 @@
    + swaync
    + xwayland-satellite
    + waybar
-   + eww
 ** Tools
    + neovim
    + vivaldi
