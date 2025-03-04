@@ -2,15 +2,9 @@
   "layer": "top",
   "position": "left",
   "spacing": 0,
-  "modules-left": [
-    "niri/workspaces"
-  ],
-  "modules-center": [
-    "mpris",
-    "clock"
-  ],
+  "modules-left": ["niri/workspaces", "custom/keyboard-layout"],
+  "modules-center": ["mpris", "clock"],
   "modules-right": [
-    "custom/keyboard-layout",
     "tray",
     "network",
     "pulseaudio",
@@ -56,11 +50,7 @@
   "temperature": {
     "critical-threshold": 80,
     "format": "{temperatureC}°C {icon}",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", ""],
   },
   "battery": {
     "states": {
@@ -72,13 +62,7 @@
     "format-charging": "{capacity}",
     "format-plugged": "{capacity}",
     "format-alt": "{time} {icon}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", "", "", ""],
   },
   "network": {
     "format-wifi": "",
@@ -103,11 +87,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": [
-        "",
-        "",
-        ""
-      ],
+      "default": ["", "", ""],
     },
     "on-click": "pavucontrol",
   },
