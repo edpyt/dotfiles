@@ -295,7 +295,7 @@ window-rule {
     opacity 1.0
     open-floating true
     open-focused true
-    min-width 942
+    min-width 1000
     max-width 1200
 }
 

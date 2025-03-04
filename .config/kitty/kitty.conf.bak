@@ -1,10 +1,8 @@
 # Font
-# BEGIN_KITTY_FONTS
-font_family      family="FiraCode Nerd Font"
+font_family      family="Fira Code Nerd Font"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
-# END_KITTY_FONTS
 
 # Theme
 include themes/catppuccin-frappe.conf
@@ -14,4 +12,4 @@ shell fish
 editor nvim
 allow_hyperlinks yes
 shell_integration enabled
-confirm_os_window_close 0
+

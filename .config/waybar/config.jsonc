@@ -10,10 +10,10 @@
     "clock"
   ],
   "modules-right": [
+    "custom/keyboard-layout",
     "tray",
     "network",
     "pulseaudio",
-    "custom/keyboard-layout",
     "temperature",
     "cpu",
     "memory",

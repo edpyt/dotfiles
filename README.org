@@ -16,7 +16,7 @@
    + swaync
    + xwayland-satellite
    + waybar
-
+   + eww
 ** Tools
    + neovim
    + vivaldi
@@ -29,8 +29,9 @@
    + npm
    + lazygit
    + yazi ffmpeg p7zip jq poppler fd ripgrep fzf zoxide imagemagick
+   + emote
 ** Fonts
-   + ttf-fira-code
+   + ttf-firacode-nerd
    + ttf-nerd-fonts-symbols
    + ttf-nerd-fonts-symbols-common
    + ttf-font-awesome
