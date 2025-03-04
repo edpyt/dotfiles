@@ -1,4 +1,4 @@
 #!/bin/bash
 
 swww-daemon \
-  & swww img ~/wallpapers/castle.png
+  && swww img ~/wallpapers/city_of_the_future.jpeg
