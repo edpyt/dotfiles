@@ -30,6 +30,10 @@
    + lazygit
    + yazi ffmpeg p7zip jq poppler fd ripgrep fzf zoxide imagemagick
    + emote
+   + keepassxc
+   + gwenview
+   + okular
+   + dolphin
 ** Fonts
    + ttf-firacode-nerd
    + ttf-nerd-fonts-symbols
