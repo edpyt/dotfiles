@@ -9,7 +9,6 @@ environment {
 
 cursor {
     xcursor-theme "catppuccin-frappe-lavender-cursors" // AUR: yay -Sy catppuccin-cursors-frappe 
-    xcursor-size 32
 }
 
 // Workspaces configuration
