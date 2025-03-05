@@ -288,8 +288,12 @@ window-rule {
     open-on-workspace "orgmode"
 }
 window-rule {
+    //anki
+    match app-id="anki" title="Edit Current"
+    // kitty
     match app-id="kitty" title="btop"
     match app-id="kitty" title="nmtui"
+    // other
     match title="overskride"
     match app-id="AmneziaVPN"
     opacity 1.0
