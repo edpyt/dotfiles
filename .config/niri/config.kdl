@@ -3,6 +3,15 @@
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Overview
 
+environment {
+    DISPLAY ":1"
+}
+
+cursor {
+    xcursor-theme "catppuccin-frappe-lavender-cursors" // AUR: yay -Sy catppuccin-cursors-frappe 
+    xcursor-size 32
+}
+
 // Workspaces configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
 workspace "browser" {
@@ -232,9 +241,7 @@ layout {
 spawn-at-startup "kitty" "-T" "orgmode" "nvim"
 spawn-at-startup "~/.config/scripts/init_swww" 
 spawn-at-startup "xwayland-satellite"
-environment {
-    DISPLAY ":1"
-}
+
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.

@@ -8,8 +8,9 @@
    + catppuccin-cursors-frappe
    + catppuccin-gtk-theme-frappe
    + qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look
-** Window Manager
+** Desktop Environment
    + niri
+   + xdg-desktop-portal-gtk
    + rofi-wayland
    + swww
    + wl-clipboard
