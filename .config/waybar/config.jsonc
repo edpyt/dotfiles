@@ -3,7 +3,7 @@
   "position": "left",
   "spacing": 0,
   "modules-left": ["niri/workspaces", "custom/keyboard-layout"],
-  "modules-center": ["mpris", "clock"],
+  "modules-center": ["clock"],
   "modules-right": [
     "tray",
     "network",
@@ -38,7 +38,7 @@
   },
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%e\n%m\n\n<b>%H\n%M</b>}",
+    "format": "{:%d\n%m\n\n<b>%H\n%M</b>}",
   },
   "cpu": {
     "format": "{usage}",
@@ -90,16 +90,5 @@
       "default": ["", "", ""],
     },
     "on-click": "pavucontrol",
-  },
-  "mpris": {
-    "format": "{player_icon} {status_icon} {artist} - {title}",
-    "status-icons": {
-      "paused": "▶  ",
-      "playing": "  ",
-    },
-    "max-length": 42,
-    //   "ignored-players": [
-    //     "firefox"
-    //   ],
   },
 }

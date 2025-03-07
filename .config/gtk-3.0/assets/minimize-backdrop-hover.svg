@@ -7,38 +7,20 @@
 </defs>
 <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
 
-<g fill="#040000" fill-opacity="1" stroke="none" transform="matrix(1.61068,0,0,1.66667,-84.5259,-73.6111)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
-opacity="0" >
-<rect x="52.4786" y="44.1667" width="31.0428" height="30"/>
-</g>
-
-<g fill="#292c3c" fill-opacity="1" stroke="none" transform="matrix(2.4928,0,0,2.57946,-387.895,9.06109)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
+<g fill="#a5adce" fill-opacity="1" stroke="none" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
+font-family="FiraCode Nerd Font" font-size="10" font-weight="400" font-style="normal" 
 >
-<rect x="155.606" y="-3.48487" width="20.0577" height="19.3281"/>
+<circle cx="9" cy="9" r="9"/>
 </g>
 
-<g fill="#ef9f76" fill-opacity="1" stroke="none" transform="matrix(9.42161,0,0,9.74913,-1133.56,-828.276)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
-opacity="0.25" >
-<rect x="120.315" y="84.9664" width="5.30694" height="5.11389"/>
-</g>
-
-<g fill="#ef9f76" fill-opacity="1" stroke="none" transform="matrix(9.42161,0,0,9.74913,-1133.56,-828.276)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
+<g fill="none" stroke="#232634" stroke-opacity="1" stroke-width="1.01" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
+font-family="FiraCode Nerd Font" font-size="10" font-weight="400" font-style="normal" 
 >
-<circle cx="122.969" cy="87.5233" r="1.49908"/>
-</g>
-
-<g fill="none" stroke="#b74c15" stroke-opacity="1" stroke-width="0.264583" stroke-linecap="round" stroke-linejoin="round" transform="matrix(9.42161,0,0,9.74913,-1133.56,-828.276)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="none" fill-rule="nonzero" d="M122.307,87.5233 L123.63,87.5233"/>
+<polyline fill="none" vector-effect="none" points="4,7 9,12 14,7 " />
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
+font-family="FiraCode Nerd Font" font-size="10" font-weight="400" font-style="normal" 
 >
 </g>
 </g>
