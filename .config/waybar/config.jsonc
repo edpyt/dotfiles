@@ -2,8 +2,14 @@
   "layer": "top",
   "position": "left",
   "spacing": 0,
-  "modules-left": ["niri/workspaces", "custom/keyboard-layout"],
-  "modules-center": ["clock"],
+  "modules-left": [
+    "niri/workspaces",
+    "custom/keyboard-layout"
+  ],
+  "modules-center": [
+    "clock",
+    "custom/media"
+  ],
   "modules-right": [
     "tray",
     "network",
@@ -14,6 +20,7 @@
     "battery",
     "custom/logout",
   ],
+  // Custom
   "custom/logout": {
     "format": "⏻",
     "tooltip": false,
@@ -26,6 +33,20 @@
     "on-click": "niri msg action switch-layout next",
     "on-click-right": "niri msg action switch-layout prev",
   },
+  "custom/media": {
+    "format": "{icon} {text}",
+    "return-type": "json",
+    "format-icons": {
+      "Playing": " ",
+      "Paused": " ",
+    },
+    "max-length": 70,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+  },
+  //
   "niri/workspaces": {
     "format": "{icon}",
     "format-icons": {
@@ -50,7 +71,11 @@
   "temperature": {
     "critical-threshold": 80,
     "format": "{temperatureC}°C {icon}",
-    "format-icons": ["", "", ""],
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
   },
   "battery": {
     "states": {
@@ -62,7 +87,13 @@
     "format-charging": "{capacity}",
     "format-plugged": "{capacity}",
     "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
   },
   "network": {
     "format-wifi": "",
@@ -87,7 +118,11 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""],
+      "default": [
+        "",
+        "",
+        ""
+      ],
     },
     "on-click": "pavucontrol",
   },
