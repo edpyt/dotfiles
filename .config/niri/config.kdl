@@ -377,7 +377,7 @@ binds {
     Mod+E hotkey-overlay-title="Spawn yazi 🦆" { spawn "kitty" "yazi"; }
     Mod+Tab { toggle-column-tabbed-display; }
     Mod+B { spawn "overskride"; }
-    Super+Alt+L { spawn "gtklock"; }
+    Super+Alt+L { spawn "~/.config/gtklock/start.sh"; }
     Mod+N { spawn "swaync-client" "-t"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
