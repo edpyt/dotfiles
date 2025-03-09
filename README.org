@@ -17,6 +17,7 @@
    + swaync
    + xwayland-satellite
    + waybar
+   + swayosd-git
 ** Tools
    + neovim
    + vivaldi
