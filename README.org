@@ -18,6 +18,8 @@
    + xwayland-satellite
    + waybar
    + swayosd-git
+   + swaylock
+   + gtklock
 ** Tools
    + neovim
    + vivaldi
