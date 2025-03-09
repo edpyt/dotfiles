@@ -1,7 +1,14 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "bottom",
+  "layer": "top",
   "notification-window-width": 500,
   "keyboard-shortcuts": true,
-  "image-visibility": "always",
-  "widgets": ["title", "notifications", "mpris"]
+  "image-visibility": "when-available",
+  "widgets": [
+    "title",
+    "notifications",
+    "mpris"
+  ]
 }
