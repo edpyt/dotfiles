@@ -4,7 +4,7 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Overview
 
 environment {
-    DISPLAY ":1"
+    DISPLAY ":0"
 }
 
 cursor {
