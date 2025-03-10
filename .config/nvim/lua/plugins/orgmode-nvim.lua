@@ -45,11 +45,6 @@ return {
           template = "* TODO %?\n %u",
           target = "~/orgfiles/todos.org",
         },
-        d = {
-          description = "Distraction",
-          template = "* TODO %?\n SCHEDULED: <%<%Y-%m-%d %a %H:%M>> \n %u",
-          target = "~/orgfiles/distractions.org",
-        },
         w = {
           description = "Work",
           template = "* TODO %?\n %u",
