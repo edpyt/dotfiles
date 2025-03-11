@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.docker" },
 
   -- media
   { import = "astrocommunity.media.image-nvim" },
