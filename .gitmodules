@@ -1,5 +1,5 @@
-[submodule "/home/edpyt/.config/gtklock/modules/gtklock-playerctl-module"]
-	path = /home/edpyt/.config/gtklock/modules/gtklock-playerctl-module
+[submodule ".config/gtklock/modules/gtklock-playerctl-module"]
+	path = .config/gtklock/modules/gtklock-playerctl-module
 	url = https://github.com/jovanlanik/gtklock-playerctl-module.git
 [submodule ".config/gtklock/modules/gtklock-powerbar-module"]
 	path = .config/gtklock/modules/gtklock-powerbar-module

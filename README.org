@@ -1,3 +1,9 @@
+* Commands
+  #+begin_src bash
+  yadm clone https://github.com/edpyt/dotfiles.git 
+  yadm submodule update --init --recursive
+  #+end_src
+
 * Packages
 ** System
 
