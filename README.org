@@ -42,6 +42,7 @@
    + gwenview
    + okular
    + dolphin
+   + zellij
 ** Fonts
    + ttf-firacode-nerd
    + ttf-nerd-fonts-symbols
