@@ -58,6 +58,7 @@ fish_add_path $XDG_DATA_HOME/npm/bin
 fish_add_path $XDG_DATA_HOME/nvim/mason/bin
 fish_add_path $HOME/.yarn/bin
 fish_add_path $XDG_DATA_HOME/pnpm
+fish_add_path $HOME/.config/emacs/bin
 
 # Editor
 set -xg EDITOR nvim
@@ -85,3 +86,4 @@ if type -q vivid
     set -xg LS_COLORS (vivid generate catppuccin-frappe)
 end
 set -xg STARSHIP_LOG error
+

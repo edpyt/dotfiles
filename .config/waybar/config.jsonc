@@ -2,8 +2,14 @@
   "layer": "top",
   "position": "left",
   "spacing": 0,
-  "modules-left": ["niri/workspaces", "custom/keyboard-layout"],
-  "modules-center": ["clock", "custom/media"],
+  "modules-left": [
+    "niri/workspaces",
+    "custom/keyboard-layout"
+  ],
+  "modules-center": [
+    "clock",
+    "custom/media"
+  ],
   "modules-right": [
     "tray",
     "network",
@@ -34,7 +40,7 @@
       "Playing": " ",
       "Paused": " ",
     },
-    "max-length": 70,
+    "max-length": 2,
     "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{artist}} - {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
@@ -76,7 +82,13 @@
     "format-charging": "{capacity}",
     "format-plugged": "{capacity}",
     "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
   },
   "network": {
     "format-wifi": "",
@@ -101,7 +113,11 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""],
+      "default": [
+        "",
+        "",
+        ""
+      ],
     },
     "on-click": "pavucontrol",
   },
