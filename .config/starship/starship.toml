@@ -1,5 +1,9 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+[character]
+success_symbol = "[;- >](bold green)"
+error_symbol = "[;- <](bold red)"
+
 # Inserts a blank line between shell prompts
 add_newline = true
 
