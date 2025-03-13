@@ -23,7 +23,8 @@ return {
 
   -- completions
   -- { import = "astrocommunity.completion.codeium-nvim" },
-  { import = "astrocommunity.completion.supermaven-nvim" },
+  -- { import = "astrocommunity.completion.supermaven-nvim" },
+  { import = "astrocommunity.completion.tabby-nvim" },
 
   -- other
   { import = "astrocommunity.test.neotest" },
