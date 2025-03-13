@@ -1,0 +1,125 @@
+; NOTE: niri scroller
+(defwindow niri_scroller
+  :monitor '[0, 1]'
+  :stacking "fg"
+  :geometry (geometry :x 0 :y 0 :width "800px" :height "5px" :acnhor "bottom center")
+  :reserve (struts :distance "10px" :side "bottom")
+  :exclusive false
+  (niri-scroller))
+
+(defwidget niri-scroller []
+  (eventbox :onscroll "if [ '{}' == 'down' ]; then niri msg action focus-column-right; else niri msg action focus-column-left; fi"
+            :vexpand true
+            :valign "fill"
+            :style "background-color: #8ec07c; border-radius: 10px;"
+  )
+)
+; -----
+
+; NOTE: bar
+(defwindow bar
+  :monitor '[0, 1]'
+  :stacking "fg"
+  :geometry (geometry :x 0 :y 0 :width "52px" :height "100%" :anchor "center left")
+  :reserve (struts :distance "40px" :side "left")
+  :exclusive true
+  (bar :screen 1))
+
+(defwidget bar [screen]
+  (centerbox :orientation "v"
+    (box :class "segment-top"
+         :valign "start"
+      (top :screen screen))
+    (box :class "middle"
+         :valign "center"
+      (middle :screen screen))
+    (box :class "segment-bottom"
+         :valign "end"
+      (bottom :screen screen))
+  )
+)
+
+(defwidget metric [icon ?font-size]
+  (box :class "metric"
+       :orientation "v"
+    (label :class "metric-icon"
+           :style {font-size != "" ? "font-size: ${font-size}rem;" : ""}
+           :text icon)
+    (children)
+  )
+)
+
+(defwidget top [screen]
+  (box :orientation "v"
+    (systray :orientation "v" :icon-size 15 :spacing 10)
+  )
+)
+; TODO:
+;; (defwidget workspaces [screen]
+;;   (box :orientation "v" :class "workspaces"
+;;     (for wsp in {workspaces[screen]}
+;;       (button :class "${wsp.focused ? "active" : "inactive"}"
+;;               :onclick "swaymsg workspace ${wsp.name}"
+;;         {wsp.name}))))
+
+
+(defwidget middle []
+  (box  :orientation "v" 
+        :class "metric"
+        :space-evenly true
+        :spacing "10"
+    (date)
+    (time)
+  )
+)
+(defwidget date []
+  (box :orientation "v"
+       :halign "center"
+    day month))
+(defpoll day      :interval "10m" "date +%d")
+(defpoll month    :interval "1h"  "date +%m")
+(defwidget time []
+  (box :orientation "v"
+       :halign "center"
+       :style "font-weight: bold"
+    hour min))
+(defpoll hour :interval "1s" "date +%H")
+(defpoll min :interval "1s" "date +%M")
+
+
+
+(defwidget bottom [screen]
+  (box  :orientation "v"
+        :valign "end"
+        :space-evenly true
+        :spacing "5"
+
+    (systray)
+
+    (volume)
+
+    (metric :icon "" "${round(EWW_CPU.avg, 0)}%")
+
+    (metric :icon "" "${round(EWW_RAM.used_mem_perc, 0)}%")
+
+    (metric :icon ""
+            :font-size 0.8
+      "${round((1 - (EWW_DISK["/"].free / EWW_DISK["/"].total)) * 100, 0)}%")
+
+    (metric :icon "" "${round(EWW_BATTERY.BAT0.capacity, 0)}%")
+  ))
+(deflisten volume :initial "0" "./scripts/volume.sh")
+(defwidget volume []
+  (box :class "volume-metric"
+    :orientation "v"
+    :space-evenly false
+    :vexpand false
+    (eventbox :onscroll "if [ '{}' == 'up' ]; then swayosd-client --output-volume 5; else swayosd-client --output-volume -5; fi"
+      :vexpand true
+      (box :orientation "v"
+        :vexpand true
+        (button :onclick "pavucontrol &"
+                :onrightclick "swayosd-client --output-volume mute-toggle"
+                :onmiddleclick "swayosd-client --input-volume mute-toggle"
+          volume)))))
+; -----
