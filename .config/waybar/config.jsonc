@@ -39,7 +39,6 @@
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
   },
-  //
   "niri/workspaces": {
     "format": "{icon}",
     "format-icons": {
@@ -56,7 +55,6 @@
   },
   "cpu": {
     "format": " {usage}",
-    "tooltip": false,
   },
   "memory": {
     "format": " {}",
@@ -71,19 +69,10 @@
       "warning": 30,
       "critical": 15,
     },
-    "format": "{capacity}",
-    "format-charging": "{capacity}",
-    "format-plugged": "{capacity}",
-    "format-alt": "{icon}",
+    "format": "{icon}{capacity}",
+    "format-charging": " {capacity}",
+    // "format-plugged": "{capacity}",
     "format-icons": ["", "", "", "", ""],
-  },
-  "network": {
-    "format-wifi": "",
-    "format-ethernet": "",
-    "tooltip-format": "{ifname} via {gwaddr} ",
-    "format-linked": "",
-    "format-disconnected": "⚠",
-    "on-click": "kitty --title nmtui nmtui",
   },
   "pulseaudio": {
     "format-muted": "",
