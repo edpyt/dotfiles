@@ -26,7 +26,7 @@
    + waybar
    + swayosd-git
    + gtklock
-   + nm-applet
+   + network-manager-applet
 ** Tools
    + neovim
    + vivaldi
