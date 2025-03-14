@@ -22,9 +22,11 @@
    + wl-clipboard
    + swaync
    + xwayland-satellite
-   + eww
+   + eww (WIP)
+   + waybar
    + swayosd-git
    + gtklock
+   + nm-applet
 ** Tools
    + neovim
    + vivaldi

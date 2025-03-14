@@ -6,7 +6,6 @@
   "modules-center": ["clock", "custom/media"],
   "modules-right": [
     "tray",
-    "network",
     "pulseaudio",
     "temperature",
     "cpu",
