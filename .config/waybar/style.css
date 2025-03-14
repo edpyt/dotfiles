@@ -7,16 +7,17 @@
   min-width: 18px;
 }
 
+window#waybar,
+#workspaces,
+#battery {
+  border-right: 1px solid @lavender;
+}
+
 window#waybar {
   color: @text;
   background: transparent;
   background-color: @crust;
-  border: 1px solid @mantle;
   border-bottom: 2px solid @surface0;
-}
-
-window#waybar > box {
-  padding: 4px 0;
 }
 
 window#waybar.hidden {

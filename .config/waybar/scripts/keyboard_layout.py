@@ -50,11 +50,11 @@ def _print_layout_gen(niri_file: IO) -> Generator[None]:
 
 def print_layout(names: list[str], current: int) -> None:
     if names[current].startswith("English"):
-        text = ":)"
+        text = "en"
     elif names[current].startswith("Russian"):
-        text = ":P"
+        text = "ru"
     else:
-        text = ":?"
+        text = "?"
     tooltip = names[current]
     print(json.dumps({"text": text, "tooltip": tooltip}), flush=True)
 
