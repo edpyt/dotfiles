@@ -6,6 +6,7 @@
   "modules-center": ["clock", "custom/media"],
   "modules-right": [
     "tray",
+    "pulseaudio#source",
     "pulseaudio",
     "temperature",
     "cpu",
@@ -54,11 +55,11 @@
     "format": "{:%d\n%m\n\n<b>%H\n%M</b>}",
   },
   "cpu": {
-    "format": "{usage}",
+    "format": " {usage}",
     "tooltip": false,
   },
   "memory": {
-    "format": "{}",
+    "format": " {}",
   },
   "temperature": {
     "critical-threshold": 80,
@@ -73,7 +74,7 @@
     "format": "{capacity}",
     "format-charging": "{capacity}",
     "format-plugged": "{capacity}",
-    "format-alt": "{time} {icon}",
+    "format-alt": "{icon}",
     "format-icons": ["", "", "", "", ""],
   },
   "network": {
@@ -85,22 +86,15 @@
     "on-click": "kitty --title nmtui nmtui",
   },
   "pulseaudio": {
-    "scroll-step": 5, // %, can be a float
-    // "format": "{volume}% {icon}",
-    // "format-bluetooth": "{volume}% {icon}",
-    // "format-bluetooth-muted": " {icon}",
-    "format-muted": "",
-    "format-source": "{volume}% ",
-    "format-source-muted": "",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["", "", ""],
-    },
+    "format-muted": "",
     "on-click": "pavucontrol",
+    "on-scroll-up": "swayosd-client --output-volume 5",
+    "on-scroll-down": "swayosd-client --output-volume -5",
+  },
+  "pulseaudio#source": {
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": "󰍭",
+    "on-click": "swayosd-client --input-volume mute-toggle",
   },
 }
