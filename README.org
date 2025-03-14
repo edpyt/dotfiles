@@ -1,5 +1,5 @@
 * Commands
-  #+begin_src bash
+  #+begin_src shell
   yadm clone https://github.com/edpyt/dotfiles.git 
   yadm submodule update --init --recursive
   #+end_src
