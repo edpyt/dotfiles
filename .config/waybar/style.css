@@ -4,7 +4,7 @@
   font-family: "Fira Code Nerd Font";
   font-size: 16px;
   font-feature-settings: "tnum";
-  min-width: 32px;
+  min-width: 18px;
 }
 
 window#waybar {
