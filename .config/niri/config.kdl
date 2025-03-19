@@ -241,6 +241,7 @@ spawn-at-startup "kitty" "-T" "orgmode" "nvim"
 spawn-at-startup "~/.config/scripts/init_swww" 
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "swayosd-server"
+spawn-at-startup "eww open niri_scroller"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
