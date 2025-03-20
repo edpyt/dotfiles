@@ -1,5 +1,13 @@
 ; NOTE: niri scroller
 (defwindow niri_scroller
+  :monitor '[0]'
+  :stacking "fg"
+  :geometry (geometry :x 0 :y 0 :width "800px" :height "5px" :acnhor "bottom center")
+  :reserve (struts :distance "10px" :side "bottom")
+  :exclusive false
+  (niri-scroller))
+
+(defwindow niri_scroller_1
   :monitor '[1]'
   :stacking "fg"
   :geometry (geometry :x 0 :y 0 :width "800px" :height "5px" :acnhor "bottom center")
