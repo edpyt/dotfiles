@@ -22,7 +22,7 @@
    + wl-clipboard
    + swaync
    + xwayland-satellite
-   + eww (WIP)
+   + eww 
    + waybar
    + swayosd-git
    + gtklock
