@@ -38,7 +38,7 @@ return {
     opts = {
       org_agenda_files = "~/orgfiles/**/*",
       org_default_notes_file = "~/orgfiles/notes.org",
-      org_todo_keywords = { "TODO", "WAIT", "|", "DONE" },
+      org_todo_keywords = { "TODO(t)", "WAIT(w)", "|", "DONE(d)", "DELEGATED(g)" },
       org_capture_templates = {
         t = {
           description = "Task",
