@@ -288,6 +288,7 @@ window-rule {
 }
 window-rule {
     match app-id="kitty"
+    match app-id="neovide"
     default-column-width { proportion 0.75; }
     draw-border-with-background false
     opacity 0.97
