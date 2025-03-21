@@ -237,11 +237,11 @@ layout {
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
-spawn-at-startup "kitty" "-T" "orgmode" "nvim"
+spawn-at-startup "neovide" "--wayland_app_id" "orgmode" 
 spawn-at-startup "~/.config/scripts/init_swww" 
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "swayosd-server"
-spawn-at-startup "eww" "open" "niri_scroller"
+spawn-at-startup "~/.config/eww/startup.sh"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -294,6 +294,7 @@ window-rule {
 }
 window-rule {
     match at-startup=true app-id="kitty" title="orgmode"
+    match at-startup=true app-id="orgmode"
     open-on-workspace "orgmode"
 }
 window-rule {
@@ -379,6 +380,7 @@ binds {
     Mod+B { spawn "overskride"; }
     Super+Alt+L { spawn "~/.config/gtklock/start.sh"; }
     Mod+N { spawn "swaync-client" "-t"; }
+    Mod+Ctrl+C { spawn "neovide"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
