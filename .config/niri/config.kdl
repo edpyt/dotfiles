@@ -5,6 +5,7 @@
 
 environment {
     DISPLAY ":0"
+    NEOVIDE_FRAME "none"
 }
 
 cursor {
