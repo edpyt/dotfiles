@@ -7,6 +7,9 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
+  -- recipes
+  { import = "astrocommunity.recipes.neovide" },
+
   -- packs
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.toml" },
