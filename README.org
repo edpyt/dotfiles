@@ -24,6 +24,7 @@
    + xwayland-satellite
    + eww 
    + waybar
+     + wttrbar
    + swayosd-git
    + gtklock
    + network-manager-applet

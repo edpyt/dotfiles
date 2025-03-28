@@ -2,7 +2,11 @@
   "layer": "top",
   "position": "left",
   "spacing": 0,
-  "modules-left": ["niri/workspaces", "custom/keyboard-layout"],
+  "modules-left": [
+    "niri/workspaces",
+    "custom/weather",
+    "custom/keyboard-layout",
+  ],
   "modules-center": ["clock", "custom/media"],
   "modules-right": [
     "tray",
@@ -106,5 +110,12 @@
     "format-source": "",
     "format-source-muted": "󰍭",
     "on-click": "swayosd-client --input-volume mute-toggle",
+  },
+  "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar --location Ufa,Russia --nerd --lang ru",
+    "return-type": "json",
   },
 }
