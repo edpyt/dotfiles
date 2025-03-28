@@ -1,23 +1,5 @@
 return {
   {
-    "nvim-telescope/telescope.nvim",
-    opts = function(_, opts)
-      -- FIXME: Always use opts instead of config when possible. config is almost never needed.
-      require("telescope").load_extension "orgmode"
-      -- FIXME: rewrite to AstroNvim way
-      vim.keymap.set("n", "<leader>r", require("telescope").extensions.orgmode.refile_heading)
-      vim.keymap.set("n", "<leader>fh", require("telescope").extensions.orgmode.search_headings)
-      vim.keymap.set("n", "<leader>li", require("telescope").extensions.orgmode.insert_link)
-      -- Links are not concealed
-      vim.opt.conceallevel = 2
-      vim.opt.concealcursor = "nc"
-    end,
-  },
-  {
-    "nvim-orgmode/org-bullets.nvim",
-    opts = {},
-  },
-  {
     "nvim-orgmode/orgmode",
     dependencies = {
       "chipsenkbeil/org-roam.nvim",
@@ -45,18 +27,22 @@ return {
     },
   },
   {
+    "nvim-telescope/telescope.nvim",
+    opts = function(_, opts)
+      -- FIXME: rewrite to AstroNvim way
+      -- vim.keymap.set("n", "<leader>r", require("telescope").extensions.orgmode.refile_heading)
+      -- vim.keymap.set("n", "<leader>fh", require("telescope").extensions.orgmode.search_headings)
+      -- vim.keymap.set("n", "<leader>li", require("telescope").extensions.orgmode.insert_link)
+
+      -- Links are not concealed
+      opts.conceallevel = 2
+      opts.concealcursor = "nc"
+    end,
+  },
+  {
     "chipsenkbeil/org-roam.nvim",
     opts = {
       directory = "~/orgfiles/org_roam",
-    },
-  },
-  {
-    "lukas-reineke/headlines.nvim",
-    dependencies = "nvim-treesitter/nvim-treesitter",
-    opts = {
-      markdown = {
-        headline_highlights = false,
-      },
     },
   },
 }
