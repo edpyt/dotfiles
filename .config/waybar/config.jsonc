@@ -7,7 +7,10 @@
     "custom/weather",
     "custom/keyboard-layout",
   ],
-  "modules-center": ["clock", "custom/media"],
+  "modules-center": [
+    "clock",
+    "custom/media"
+  ],
   "modules-right": [
     "tray",
     "pulseaudio#source",
@@ -97,7 +100,13 @@
     },
     "format": "{icon} {capacity}",
     "format-charging": " {capacity}",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
   },
   "pulseaudio": {
     "format-muted": "",
@@ -115,7 +124,7 @@
     "format": "{}°",
     "tooltip": true,
     "interval": 3600,
-    "exec": "wttrbar --location Ufa,Russia --nerd --lang ru",
+    "exec": "wttrbar --location Ufa,Russia --lang ru --observation-time --hide-conditions",
     "return-type": "json",
   },
 }
