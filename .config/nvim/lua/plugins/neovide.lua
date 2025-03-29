@@ -6,6 +6,20 @@ return {
   "AstroNvim/astrocore",
   ---@type AstroCoreOpts
   opts = {
+    mappings = {
+      n = {
+        ["<C-v>"] = { '"+P', desc = "Paste normal mode" },
+      },
+      v = {
+        ["<C-v>"] = { '"+P', desc = "Paste visual mode" },
+      },
+      c = {
+        ["<C-v>"] = { "<C-R>+", desc = "Paste command mode" },
+      },
+      i = {
+        ["<C-v>"] = { '<ESC>l"+Pli', desc = "Paste insert mode" },
+      },
+    },
     options = {
       opt = { -- configure vim.opt options
       },
