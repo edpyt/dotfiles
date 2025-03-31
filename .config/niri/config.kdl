@@ -306,14 +306,11 @@ window-rule {
     match app-id="kitty" title="btop"
     match app-id="kitty" title="nmtui"
     // other
-    match title="overskride"
+    match app-id="blueman-manager"
     match app-id="AmneziaVPN"
-    match app-id="org.kde.merkuro.calendar"
     opacity 1.0
     open-floating true
     open-focused true
-    min-width 1000
-    max-width 1200
 }
 
 // Work around WezTerm's initial configure bug
@@ -379,7 +376,7 @@ binds {
     Mod+A { spawn "rofi" "-show" "drun"; }
     Mod+E hotkey-overlay-title="Spawn yazi 🦆" { spawn "kitty" "yazi"; }
     Mod+Tab { toggle-column-tabbed-display; }
-    Mod+B { spawn "overskride"; }
+    Mod+B { spawn "blueman-manager"; }
     Super+Alt+L { spawn "~/.config/gtklock/start.sh"; }
     Mod+N { spawn "swaync-client" "-t"; }
     Mod+Ctrl+C { spawn "neovide"; }
