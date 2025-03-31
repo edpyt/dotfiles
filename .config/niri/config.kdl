@@ -300,17 +300,18 @@ window-rule {
     open-on-workspace "orgmode"
 }
 window-rule {
-    //anki
     match app-id="anki" title="Edit Current"
-    // kitty
     match app-id="kitty" title="btop"
     match app-id="kitty" title="nmtui"
-    // other
     match app-id="blueman-manager"
     match app-id="AmneziaVPN"
+
     opacity 1.0
     open-floating true
     open-focused true
+    max-height 942
+    max-width 942
+    default-floating-position x=542 y=20 
 }
 
 // Work around WezTerm's initial configure bug
@@ -344,10 +345,8 @@ window-rule {
     // block-out-from "screencast"
 }
 
-// Example: enable rounded corners for all windows.
-// (This example rule is commented out with a "/-" in front.)
-/-window-rule {
-    geometry-corner-radius 12
+window-rule {
+    geometry-corner-radius 4.2
     clip-to-geometry true
 }
 
@@ -596,4 +595,6 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+
+    Mod+Alt+H { expand-column-to-available-width; }
 }
