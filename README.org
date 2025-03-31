@@ -28,7 +28,8 @@
    + swayosd-git
    + gtklock
    + network-manager-applet
-   + blueman
+   + blueman  
+
      because of /blueman-applet/ for tray
 ** Tools
    + neovim
