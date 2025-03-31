@@ -7,10 +7,7 @@
     "custom/weather",
     "custom/keyboard-layout",
   ],
-  "modules-center": [
-    "clock",
-    "custom/media"
-  ],
+  "modules-center": ["clock", "custom/media"],
   "modules-right": [
     "tray",
     "pulseaudio#source",
@@ -98,15 +95,10 @@
       "warning": 30,
       "critical": 15,
     },
-    "format": "{icon} {capacity}",
+    "format": "{capacity}",
+    "format-alt": "{icon}",
     "format-charging": " {capacity}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", "", "", ""],
   },
   "pulseaudio": {
     "format-muted": "",
@@ -121,10 +113,10 @@
     "on-click": "swayosd-client --input-volume mute-toggle",
   },
   "custom/weather": {
-    "format": "{}°",
+    "format": "{}",
     "tooltip": true,
     "interval": 3600,
-    "exec": "wttrbar --location Ufa,Russia --lang ru --observation-time --hide-conditions",
+    "exec": "wttrbar --location Ufa,Russia --lang ru --observation-time --hide-conditions --custom-indicator \"{ICON}{FeelsLikeC}°\"",
     "return-type": "json",
   },
 }
