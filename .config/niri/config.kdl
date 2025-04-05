@@ -315,9 +315,11 @@ window-rule {
     opacity 1.0
     open-floating true
     open-focused true
+}
+window-rule {
+    match app-id="blueman-manager"
     max-height 942
     max-width 942
-    default-floating-position x=542 y=20 
 }
 
 // Work around WezTerm's initial configure bug
