@@ -29,8 +29,6 @@
    + gtklock
    + network-manager-applet
    + blueman  
-
-     because of /blueman-applet/ for tray
 ** Tools
    + neovim
    + vivaldi
