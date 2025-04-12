@@ -1,3 +1,5 @@
+#+html: <img src="https://github.com/user-attachments/assets/53947138-eb26-4e5a-b0f1-843d8a8ad4d1"/>
+
 * Commands
   #+begin_src shell
   yadm clone https://github.com/edpyt/dotfiles.git 
