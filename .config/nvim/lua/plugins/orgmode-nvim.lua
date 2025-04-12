@@ -5,6 +5,7 @@ return {
       "chipsenkbeil/org-roam.nvim",
       "nvim-telescope/telescope.nvim",
       "nvim-orgmode/telescope-orgmode.nvim",
+      "nvim-orgmode/org-bullets.nvim",
     },
     event = "VeryLazy",
     ft = { "org" },
@@ -44,5 +45,9 @@ return {
     opts = {
       directory = "~/orgfiles/org_roam",
     },
+  },
+  {
+    "nvim-orgmode/org-bullets.nvim",
+    opts = {},
   },
 }
