@@ -247,6 +247,7 @@ layout {
 spawn-at-startup "~/.config/scripts/init_swww" 
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "swayosd-server"
+spawn-at-startup "kitty --title orgmode nvim"
 spawn-at-startup "~/.config/eww/startup.sh"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -297,7 +298,7 @@ window-rule {
     match app-id="neovide"
     default-column-width { proportion 0.75; }
     draw-border-with-background false
-    opacity 0.97
+    opacity 1.0
 }
 window-rule {
     match at-startup=true app-id="kitty" title="orgmode"
@@ -377,7 +378,6 @@ binds {
     // TODO: BEATIFYx Thiis ✨
     Mod+Escape hotkey-overlay-title="Spawn rofi ♿️" { spawn "~/.config/rofi/scripts/powermenu/powermenu"; } 
     Mod+Shift+T hotkey-overlay-title="Spawn btop 📟️" { spawn "kitty" "--title" "btop" "btop"; }
-    Mod+Backspace hotkey-overlay-title="Spawn nvim ✨" { spawn "kitty" "nvim"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "rofi" "-show" "drun"; }
     Mod+E hotkey-overlay-title="Spawn yazi 🦆" { spawn "kitty" "yazi"; }

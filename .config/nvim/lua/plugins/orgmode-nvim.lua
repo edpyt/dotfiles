@@ -36,8 +36,8 @@ return {
       -- vim.keymap.set("n", "<leader>li", require("telescope").extensions.orgmode.insert_link)
 
       -- Links are not concealed
-      opts.conceallevel = 2
-      opts.concealcursor = "nc"
+      vim.opt.conceallevel = 2
+      vim.opt.concealcursor = "nc"
     end,
   },
   {

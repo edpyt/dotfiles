@@ -13,11 +13,16 @@ return {
   -- colorscheme
   { import = "astrocommunity.colorscheme.catppuccin" },
 
-  -- other
-  { import = "astrocommunity.recipes.neovide" },
-  { import = "astrocommunity.test.neotest" },
+  -- media
   { import = "astrocommunity.media.vim-wakatime" },
-  { import = "astrocommunity.media.image-nvim" },
+
+  -- recipes
+  { import = "astrocommunity.recipes.neovide" },
+
+  -- test
+  { import = "astrocommunity.test.neotest" },
+
+  -- other
   { import = "astrocommunity.markdown-and-latex.markview-nvim" },
   { import = "astrocommunity.code-runner.sniprun" },
 }
