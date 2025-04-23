@@ -6,6 +6,14 @@ return {
       "nvim-telescope/telescope.nvim",
       "nvim-orgmode/telescope-orgmode.nvim",
       "nvim-orgmode/org-bullets.nvim",
+      {
+        "folke/snacks.nvim",
+        opts = {
+          image = {
+            doc = { enabled = true },
+          },
+        },
+      },
     },
     event = "VeryLazy",
     ft = { "org" },
