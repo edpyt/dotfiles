@@ -4,7 +4,7 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Overview
 
 environment {
-    DISPLAY ":0"
+    DISPLAY ":42"
     NEOVIDE_FRAME "none"
 }
 
@@ -250,7 +250,7 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 spawn-at-startup "~/.config/scripts/init_swww" 
-spawn-at-startup "xwayland-satellite"
+spawn-at-startup "xwayland-satellite :42"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "kitty --title orgmode nvim"
 spawn-at-startup "~/.config/eww/startup.sh"
