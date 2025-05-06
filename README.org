@@ -13,7 +13,7 @@
    + pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
 
 ** Theme 
-   + catppuccin-cursors-frappe
+   - catppuccin-cursors-frappe
    + rose-pine-cursor
    + rose-pine-gtk-theme-full
    + qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look

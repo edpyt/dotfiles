@@ -10,7 +10,7 @@
   "modules-center": ["clock", "custom/media"],
   "modules-right": [
     "tray",
-    "pulseaudio#source",
+    // "pulseaudio#source",
     "pulseaudio",
     "temperature",
     "cpu",

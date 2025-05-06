@@ -9,11 +9,11 @@ environment {
 }
 
 overview {
-    backdrop-color "#c4a7e7"
+    backdrop-color "#ea9a97"
 }
 
 cursor {
-    xcursor-theme "catppuccin-frappe-lavender-cursors" // AUR: yay -Sy catppuccin-cursors-frappe 
+    xcursor-theme "BreezeX-RosePine-Linux"
 }
 
 // Workspaces configuration
