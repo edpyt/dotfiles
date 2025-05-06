@@ -18,7 +18,6 @@ window#waybar {
   color: @text;
   background: transparent;
   background-color: @highlightLow;
-  border-bottom: 2px solid @highlightMed;
 }
 
 window#waybar.hidden {

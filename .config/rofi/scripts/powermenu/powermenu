@@ -50,7 +50,7 @@ run_cmd() {
       swaylock
       systemctl suspend
     elif [[ $1 == '--logout' ]]; then
-      niri msg action quit
+      niri msg action quit -s
     elif [[ $1 == '--lock' ]]; then
       swaylock
     fi

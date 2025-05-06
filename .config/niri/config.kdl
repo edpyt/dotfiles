@@ -8,6 +8,10 @@ environment {
     NEOVIDE_FRAME "none"
 }
 
+overview {
+    backdrop-color "#c4a7e7"
+}
+
 cursor {
     xcursor-theme "catppuccin-frappe-lavender-cursors" // AUR: yay -Sy catppuccin-cursors-frappe 
 }
@@ -27,6 +31,7 @@ workspace "orgmode" {
 // Monitor configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 output "Philips Consumer Electronics Company PHL 220V8 ZV02030003859" {
+    // off
     transform "90"
 }
 output "Xiaomi Corporation P27FBB-RGGL 5275600038779" {
@@ -186,7 +191,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#babbf1"
+        active-color "#c4a7e7"
 
         // Color of the ring on inactive monitors.
         inactive-color "#505050"
@@ -321,6 +326,10 @@ window-rule {
     max-height 942
     max-width 942
 }
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+}
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
@@ -375,12 +384,11 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T { spawn "kitty"; }
-    // TODO: BEATIFYx Thiis ✨
-    Mod+Escape hotkey-overlay-title="Spawn rofi ♿️" { spawn "~/.config/rofi/scripts/powermenu/powermenu"; } 
-    Mod+Shift+T hotkey-overlay-title="Spawn btop 📟️" { spawn "kitty" "--title" "btop" "btop"; }
+    Mod+Escape hotkey-overlay-title="Spawn rofi" { spawn "~/.config/rofi/scripts/powermenu/powermenu"; } 
+    Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "rofi" "-show" "drun"; }
-    Mod+E hotkey-overlay-title="Spawn yazi 🦆" { spawn "kitty" "yazi"; }
+    Mod+E hotkey-overlay-title="Spawn yazi" { spawn "kitty" "yazi"; }
     Mod+Tab { toggle-column-tabbed-display; }
     Mod+B { spawn "blueman-manager"; }
     Super+Alt+L { spawn "gtklock"; }
@@ -603,4 +611,6 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 
     Mod+Alt+H { expand-column-to-available-width; }
+
+    Mod+Ctrl+V { toggle-overview; }
 }
