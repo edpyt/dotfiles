@@ -5,7 +5,7 @@ configuration {
   me-accept-entry:            [ MousePrimary, MouseSecondary, MouseDPrimary ];
 }
 
-@theme "~/.config/rofi/theme/catppuccin-default.rasi"
+@theme "~/.config/rofi/theme/default.rasi"
 
 // Main Window
 window {

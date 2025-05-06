@@ -1,4 +1,4 @@
 #!/bin/bash
 
 swww-daemon \
-  && swww img ~/wallpapers/keira-santoso-014.jpg
+  && swww img ~/wallpapers/steve-wang-ae86.jpg
