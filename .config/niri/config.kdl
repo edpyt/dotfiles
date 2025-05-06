@@ -303,7 +303,7 @@ window-rule {
     match app-id="neovide"
     default-column-width { proportion 0.75; }
     draw-border-with-background false
-    opacity 1.0
+    opacity 0.95
 }
 window-rule {
     match at-startup=true app-id="kitty" title="orgmode"

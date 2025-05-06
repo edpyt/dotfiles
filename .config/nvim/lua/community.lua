@@ -11,7 +11,8 @@ return {
   { import = "astrocommunity.pack.docker" },
 
   -- colorscheme
-  { import = "astrocommunity.colorscheme.rose-pine" },
+  -- NOTE: ./plugins/rose-pine.lua
+  -- { import = "astrocommunity.colorscheme.rose-pine" },
 
   -- media
   { import = "astrocommunity.media.vim-wakatime" },
