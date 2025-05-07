@@ -7,7 +7,10 @@
     "custom/weather",
     "custom/keyboard-layout",
   ],
-  "modules-center": ["clock", "custom/media"],
+  "modules-center": [
+    "clock",
+    "custom/media"
+  ],
   "modules-right": [
     "tray",
     // "pulseaudio#source",
@@ -80,10 +83,10 @@
     },
   },
   "cpu": {
-    "format": " {usage}",
+    "format": "{usage}",
   },
   "memory": {
-    "format": " {}",
+    "format": "{}",
   },
   "temperature": {
     "critical-threshold": 80,
@@ -98,7 +101,13 @@
     "format": "{capacity}",
     "format-alt": "{icon}",
     "format-charging": " {capacity}",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
   },
   "pulseaudio": {
     "format-muted": "",

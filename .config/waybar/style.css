@@ -1,5 +1,4 @@
 @import "./rose-pine-moon.css";
-@import "./frappe.css";
 
 * {
   font-family: "Fira Code Nerd Font";
@@ -61,6 +60,12 @@ button {
 #mpris,
 #custom-power {
   padding: 4.2px 4.2px;
+}
+
+#memory,
+#cpu {
+  background-color: @highlightHigh;
+  border-right: 1px solid @iris;
 }
 
 .modules-left > widget:first-child > #workspaces {
