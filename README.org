@@ -1,9 +1,8 @@
 #+html: <img src="https://github.com/user-attachments/assets/a0d54358-db0e-4b3e-ac45-2e6ef7354080"/>
 
-* Commands
+* Command
   #+begin_src shell
-  yadm clone https://github.com/edpyt/dotfiles.git 
-  yadm submodule update --init --recursive
+  yadm clone https://github.com/edpyt/dotfiles.git
   #+end_src
 
 * Packages
