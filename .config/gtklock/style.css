@@ -1,15 +1,7 @@
-@import "frappe.css";
-
 window {
-  background-image: url("keira-santoso-014.jpg");
+  background-image: url("steve-wang-ae86.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: @base;
-}
-
-#previous-button,
-#play-pause-button,
-#next-button {
-  background-color: @lavender;
+  color: #3e8fb0;
 }
