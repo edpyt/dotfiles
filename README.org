@@ -2,7 +2,7 @@
 
 * Command
   #+begin_src shell
-  yadm clone https://github.com/edpyt/dotfiles.git
+  yadm clone git@github.com:edpyt/dotfiles.git
   #+end_src
 
 * Packages
