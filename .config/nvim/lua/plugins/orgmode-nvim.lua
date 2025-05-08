@@ -25,12 +25,12 @@ return {
         t = {
           description = "Task",
           template = "* TODO %?\n %u",
-          target = "~/orgfiles/todos.org",
+          target = "~/Documents/orgfiles/todos.org",
         },
         w = {
           description = "Work",
           template = "* TODO %?\n %u",
-          target = "~/orgfiles/work.org",
+          target = "~/Documents/orgfiles/work.org",
         },
       },
     },
