@@ -6,7 +6,7 @@ environment {
 }
 
 overview {
-    backdrop-color "#ea9a97"
+    backdrop-color "#957fb8"
 }
 
 cursor {
@@ -66,7 +66,7 @@ layout {
     focus-ring {
         width 4
         // Color of the ring on the active monitor.
-        active-color "#c4a7e7"
+        active-color "#957fb8"
         // Color of the ring on inactive monitors.
         inactive-color "#505050"
     }

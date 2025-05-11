@@ -8,8 +8,7 @@
     "custom/keyboard-layout",
   ],
   "modules-center": [
-    "clock",
-    "custom/media"
+    "clock"
   ],
   "modules-right": [
     "tray",
@@ -33,18 +32,6 @@
     "exec-on-event": false,
     "on-click": "niri msg action switch-layout next",
     "on-click-right": "niri msg action switch-layout prev",
-  },
-  "custom/media": {
-    "format": "{icon}",
-    "return-type": "json",
-    "format-icons": {
-      "Playing": " ",
-      "Paused": " ",
-    },
-    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{artist}} - {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous",
   },
   "niri/workspaces": {
     "format": "{icon}",
