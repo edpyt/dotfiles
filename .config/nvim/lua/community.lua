@@ -13,6 +13,7 @@ return {
   -- colorscheme
   -- NOTE: ./plugins/rose-pine.lua
   -- { import = "astrocommunity.colorscheme.rose-pine" },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim" },
 
   -- media
   { import = "astrocommunity.media.vim-wakatime" },

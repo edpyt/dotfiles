@@ -5,7 +5,6 @@ return {
   opts = function()
     return {
       highlight_groups = {
-        -- NOTE: for orgmode scheduled items
         DiffAdd = { bg = "foam", fg = "foam", blend = 90 },
       },
     }

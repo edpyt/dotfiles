@@ -16,9 +16,6 @@ return {
                 },
               },
             },
-            rustfmt = {
-              overrideCommand = { "leptosfmt", "--stdin", "--rustfmt" },
-            },
           },
         },
       },
