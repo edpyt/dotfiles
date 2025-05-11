@@ -1,7 +1,4 @@
-@import "./rose-pine-moon.css";
-
 * {
-  font-family: "Fira Code Nerd Font";
   font-size: 16px;
   font-feature-settings: "tnum";
   min-width: 18px;
@@ -9,14 +6,10 @@
 
 window#waybar,
 #workspaces,
-#battery {
-  border-right: 1px solid @iris;
-}
-
-window#waybar {
-  color: @text;
-  background: transparent;
-  background-color: @highlightLow;
+#battery,
+#memory,
+#cpu {
+  border-right: 1px solid;
 }
 
 window#waybar.hidden {
@@ -30,20 +23,20 @@ button {
   transition-property: none;
 }
 
-#workspaces button:hover {
-  background-color: rgba(49, 50, 68, 1);
-}
-
+/* #workspaces button:hover { */
+/*   background-color: rgba(49, 50, 68, 1); */
+/* } */
+/**/
 #workspaces button.active {
-  background-color: rgba(88, 91, 112, 1);
+  background-color: @text_view_bg;
 }
 
 #workspaces button#niri-workspace-browser {
-  color: @foam;
+  color: @BLUEBERRY_100;
 }
 
 #workspaces button#niri-workspace-orgmode {
-  color: @pine;
+  color: @LIME_500;
 }
 
 #clock,
@@ -64,8 +57,7 @@ button {
 
 #memory,
 #cpu {
-  background-color: @highlightHigh;
-  border-right: 1px solid @iris;
+  background-color: @theme_base_color;
 }
 
 .modules-left > widget:first-child > #workspaces {
@@ -76,14 +68,8 @@ button {
   margin-right: 0;
 }
 
-#battery {
-  background-color: #313244;
-  border-left: 1px solid #6c7086;
-}
-
 #battery.critical:not(.charging) {
-  background-color: @love;
-  color: #ffffff;
+  background-color: @error_color;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
