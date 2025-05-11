@@ -53,6 +53,7 @@
    + zellij
 ** Fonts
    + ttf-firacode-nerd
+   + otf-monaspace-nerd
    + ttf-nerd-fonts-symbols
    + ttf-nerd-fonts-symbols-common
    + ttf-font-awesome
