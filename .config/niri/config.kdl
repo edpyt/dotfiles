@@ -5,8 +5,12 @@ environment {
     NEOVIDE_FRAME "none"
 }
 
+debug {
+    wait-for-frame-completion-in-pipewire
+}
+
 overview {
-    backdrop-color "#957fb8"
+    backdrop-color "#75686b"
 }
 
 cursor {
@@ -66,7 +70,7 @@ layout {
     focus-ring {
         width 4
         // Color of the ring on the active monitor.
-        active-color "#957fb8"
+        active-color "#ffa066"
         // Color of the ring on inactive monitors.
         inactive-color "#505050"
     }
