@@ -25,8 +25,6 @@
    + swaync
    + xwayland-satellite
    + eww 
-   + waybar
-     + wttrbar
    + ironbar (WIP)
    + swayosd-git
    + gtklock

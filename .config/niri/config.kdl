@@ -86,6 +86,8 @@ spawn-at-startup "xwayland-satellite" ":42"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "kitty --title orgmode nvim"
 spawn-at-startup "~/.config/eww/startup.sh"
+spawn-at-startup "ironbar"
+
 
 screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 

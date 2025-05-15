@@ -1,0 +1,13 @@
+.workspaces {
+  border: 1px solid @borders;
+}
+
+.workspaces .item {
+  background: none;
+  border-radius: 0;
+}
+
+.workspaces .item.focused {
+  background-color: @theme_selected_bg_color;
+  color: @wm_button_focused_bg;
+}
