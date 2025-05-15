@@ -1,4 +1,4 @@
-#+html: <img src="https://github.com/user-attachments/assets/c632747d-7244-4488-bfe0-1d31c05d5d2f"/>
+#+html: <img src="https://github.com/user-attachments/assets/f6a6cccd-0b94-44b3-b72d-3cdcf1c96af1"/>
 
 * Command
   #+begin_src shell
