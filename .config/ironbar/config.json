@@ -27,6 +27,11 @@
             "type": "tray"
           },
           {
+            "type": "script",
+            "cmd": "~/.config/waybar/scripts/keyboard_layout.py",
+            "mode": "watch"
+          },
+          {
             "type": "volume",
             "format": "{icon} {percentage}%",
             "max_volume": 100,
@@ -38,6 +43,7 @@
       {
         "position": "right",
         "exclusive_zone": false,
+        "height": 50,
         "margin": {
           "bottom": 9999
         },

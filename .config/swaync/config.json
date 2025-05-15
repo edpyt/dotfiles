@@ -16,7 +16,13 @@
   "hide-on-clear": false,
   "hide-on-action": false,
   "script-fail-notify": true,
-  "widgets": ["label", "buttons-grid", "mpris", "title", "notifications"],
+  "widgets": [
+    "label",
+    "buttons-grid",
+    "mpris",
+    "title",
+    "notifications"
+  ],
   "widget-config": {
     "title": {
       "text": "Notifications",
@@ -47,14 +53,6 @@
         {
           "label": "",
           "command": "amixer set Capture toggle"
-        },
-        {
-          "label": " ",
-          "command": "nm-connection-editor"
-        },
-        {
-          "label": "󰂯",
-          "command": "blueman-manager"
         }
       ]
     }

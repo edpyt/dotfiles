@@ -56,7 +56,8 @@ def print_layout(names: list[str], current: int) -> None:
     else:
         text = "?"
     tooltip = names[current]
-    print(json.dumps({"text": text, "tooltip": tooltip}), flush=True)
+    _result = json.dumps({"text": text, "tooltip": tooltip})
+    print(text, flush=True)
 
 
 if __name__ == "__main__":
