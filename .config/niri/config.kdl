@@ -35,7 +35,7 @@ output "Philips Consumer Electronics Company PHL 220V8 ZV02030003859" {
     transform "90"
 }
 output "Xiaomi Corporation P27FBB-RGGL 5275600038779" {
-    mode "1920x1080@120.001"
+    mode "1920x1080@165.002"
 }
 
 // Input device configuration.
@@ -156,7 +156,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+T { spawn "kitty"; }
-    Mod+Escape hotkey-overlay-title="Spawn rofi" { spawn "~/.config/rofi/scripts/powermenu/powermenu"; } 
+    Mod+Escape hotkey-overlay-title="Logout menu" { spawn "wlogout"; } 
     Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "rofi" "-show" "drun"; }

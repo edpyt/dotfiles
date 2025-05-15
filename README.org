@@ -19,6 +19,7 @@
    + niri
    + xdg-desktop-portal-gtk
    + rofi-wayland
+   + wlogout
    + swww
    + wl-clipboard
    + swaync
