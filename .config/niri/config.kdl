@@ -159,7 +159,7 @@ binds {
     Mod+Escape hotkey-overlay-title="Logout menu" { spawn "wlogout"; } 
     Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
     Mod+W { spawn "zen-browser"; }
-    Mod+A { spawn "rofi" "-show" "drun"; }
+    Mod+A { spawn "fuzzel"; }
     Mod+E hotkey-overlay-title="Spawn yazi" { spawn "kitty" "yazi"; }
     Mod+Tab { toggle-column-tabbed-display; }
     Mod+B { spawn "blueman-manager"; }

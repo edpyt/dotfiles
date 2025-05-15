@@ -18,8 +18,8 @@
 ** Desktop Environment
    + niri
    + xdg-desktop-portal-gtk
-   + rofi-wayland
    + wlogout
+   + fuzzel
    + swww
    + wl-clipboard
    + swaync
@@ -27,6 +27,7 @@
    + eww 
    + waybar
      + wttrbar
+   + ironbar (WIP)
    + swayosd-git
    + gtklock
      + gtklock-powerbar-module
