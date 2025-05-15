@@ -1,18 +1,16 @@
 @import "default"
 
 * {
-	bg: #232136;
+	bg: #1F1F28;
 	cur: #2a273f;
 	fgd: #e0def4;
-	cmt: #6e6a86;
-	cya: #9ccfd8;
-	grn: #3e8fb0;
-	ora: #ea9a97;
-	pur: #c4a7e7;
-	red: #eb6f92;
-	yel: #f6c177;
-
-	font: "Cartograph CF 12";
+	cmt: #727169;
+	cya: #A3D4D5;
+	grn: #76946A;
+	ora: #FFA066;
+	pur: #957FB8;
+	red: #C34043;
+	yel: #DCA561;
 
 	foreground: @fgd;
 	background: @bg;
