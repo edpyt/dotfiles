@@ -2,8 +2,11 @@
   background: none;
 }
 
-.workspaces {
+#bar {
   border: 1px solid @borders;
+}
+.workspaces {
+  border-top: 1px solid @borders;
 }
 
 .workspaces .item {
@@ -14,4 +17,30 @@
 .workspaces .item.focused {
   background-color: @wm_highlight;
   color: @budgie_tasklist_indicator_color_active;
+}
+
+.popup-weather #header {
+  font-size: 1.8em;
+  padding-bottom: 0.4em;
+  margin-bottom: 0.6em;
+  border-bottom: 1px solid @color-border;
+}
+
+.popup-weather .weather-date {
+  font-size: 1.5em;
+  padding-right: 1em;
+}
+
+.popup-weather .weather-avg {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* 
+ this is a hack to align the different font sizes on left/right 
+ you may need to adjust for different fonts
+*/
+.popup-weather #temps label {
+  padding-top: 0.2em;
+  margin-bottom: 0.7em;
 }

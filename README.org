@@ -27,6 +27,7 @@
    + xwayland-satellite
    + eww 
    + ironbar
+     + zx
    + swayosd-git
    + gtklock
      + gtklock-powerbar-module
