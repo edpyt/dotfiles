@@ -10,7 +10,22 @@
               "mode": "middle",
               "max_length": 30
             }
+          }
+        ],
+        "center": [
+          {
+            "type": "clock",
+            "format": "%d.%m.%Y %H:%M"
           },
+          {
+            "type": "music",
+            "truncate": {
+              "mode": "middle",
+              "max_length": 30
+            }
+          }
+        ],
+        "end": [
           {
             "type": "custom",
             "class": "weather",
@@ -128,22 +143,7 @@
                 ]
               }
             ]
-          }
-        ],
-        "center": [
-          {
-            "type": "clock",
-            "format": "%d.%m.%Y %H:%M"
           },
-          {
-            "type": "music",
-            "truncate": {
-              "mode": "middle",
-              "max_length": 30
-            }
-          }
-        ],
-        "end": [
           {
             "type": "tray"
           },
