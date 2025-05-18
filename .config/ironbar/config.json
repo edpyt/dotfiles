@@ -149,7 +149,7 @@
           },
           {
             "type": "script",
-            "cmd": "~/.config/waybar/scripts/keyboard_layout.py",
+            "cmd": "~/.config/scripts/keyboard_layout.py",
             "mode": "watch"
           },
           {
@@ -214,9 +214,7 @@
       "end": [
         {
           "type": "sys_info",
-          "format": [
-            "󰥔 {uptime}"
-          ],
+          "format": ["󰥔 {uptime}"],
           "interval": {
             "cpu": 1,
             "disks": 300,

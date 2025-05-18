@@ -1,4 +1,0 @@
-#!/bin/bash
-
-swww-daemon \
-  && swww img ~/wallpapers/steve-wang-ae86.jpg

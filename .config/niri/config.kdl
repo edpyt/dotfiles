@@ -80,7 +80,8 @@ layout {
     }
 }
 
-spawn-at-startup "~/.config/scripts/init_swww" 
+spawn-at-startup "swww-daemon"
+spawn-at-startup "swww" "img" "~/wallpapers/max-suleimanov-pf1.jpg"  
 spawn-at-startup "xwayland-satellite" ":42"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "kitty --title orgmode nvim"
