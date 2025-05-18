@@ -27,7 +27,6 @@
 
 /* ── Base Reset ───────────────────────────────────────────────────── */
 * {
-  font-family: "MonaspiceRn Nerd Font";
   font-size: 16px;
   color: @theme_fg;
   border: none;

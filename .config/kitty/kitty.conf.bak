@@ -1,13 +1,10 @@
 # Font
 # BEGIN_KITTY_FONTS
-font_family      family="MonaspiceKr Nerd Font"
+font_family      family="MonaspiceAr Nerd Font"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
-
-# Theme
-include themes/catppuccin-frappe.conf
 
 # Window decorations
 hide_window_decorations yes
@@ -24,6 +21,6 @@ cursor_trail 3
 
 
 # BEGIN_KITTY_THEME
-# Rosé Pine Moon
+# Catppuccin-Mocha
 include current-theme.conf
 # END_KITTY_THEME

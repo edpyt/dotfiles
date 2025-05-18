@@ -1,3 +1,7 @@
+* button {
+  background: none;
+}
+
 .workspaces {
   border: 1px solid @borders;
 }
@@ -8,6 +12,6 @@
 }
 
 .workspaces .item.focused {
-  background-color: @theme_selected_bg_color;
-  color: @wm_button_focused_bg;
+  background-color: @wm_highlight;
+  color: @budgie_tasklist_indicator_color_active;
 }

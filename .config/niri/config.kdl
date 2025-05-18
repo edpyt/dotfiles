@@ -9,11 +9,11 @@ debug {
 }
 
 overview {
-    backdrop-color "#75686b"
+    backdrop-color "#292c3c"
 }
 
 cursor {
-    xcursor-theme "BreezeX-RosePine-Linux"
+    xcursor-theme "catppuccin-frappe-red-cursors"
 }
 
 // Workspaces configuration
@@ -31,7 +31,7 @@ workspace "orgmode" {
 // Monitor configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 output "Philips Consumer Electronics Company PHL 220V8 ZV02030003859" {
-    // off
+    // off // NOTE: gamemode 🥴
     transform "90"
 }
 output "Xiaomi Corporation P27FBB-RGGL 5275600038779" {
@@ -59,19 +59,18 @@ layout {
     center-focused-column "never"
 
     preset-column-widths {
-        proportion 0.33333
+        proportion 0.3
         proportion 0.5
-        proportion 0.66667
+        proportion 0.7
     }
 
     default-column-width { proportion 0.5; }
 
     focus-ring {
         width 4
-        // Color of the ring on the active monitor.
-        active-color "#ffa066"
-        // Color of the ring on inactive monitors.
-        inactive-color "#505050"
+        active-color "#e5c890"
+        inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view" in="srgb-linear"
+        urgent-color "#e78284"
     }
 
     tab-indicator {
@@ -113,7 +112,7 @@ window-rule {
     match app-id="neovide"
     default-column-width { proportion 0.75; }
     draw-border-with-background false
-    opacity 0.95
+    opacity 0.942
 }
 window-rule {
     match at-startup=true app-id="kitty" title="orgmode"
@@ -162,7 +161,10 @@ binds {
     Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "fuzzel"; }
-    Mod+E hotkey-overlay-title="Spawn yazi" { spawn "kitty" "yazi"; }
+
+    Mod+E { spawn "nautilus"; }
+    Mod+Ctrl+E { spawn "kitty" "yazi"; }
+
     Mod+Tab { toggle-column-tabbed-display; }
     Mod+B { spawn "blueman-manager"; }
     Super+Alt+L { spawn "gtklock"; }

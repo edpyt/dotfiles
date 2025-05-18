@@ -1,4 +1,4 @@
-#+html: <img src="https://github.com/user-attachments/assets/f6a6cccd-0b94-44b3-b72d-3cdcf1c96af1"/>
+#+html: <img src="https://github.com/user-attachments/assets/c7cb61e9-a1e5-419b-9ecb-2a9d7d920128"/>
 
 * Command
   #+begin_src shell
@@ -12,8 +12,9 @@
    + pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
 
 ** Theme 
-   + rose-pine-cursor
-   + kanagawa-gtk-theme-git
+   + [[https://github.com/catppuccin/gtk/blob/main/docs/USAGE.md][catppuccin-gtk]]
+   + catppuccin-cursors-mocha 
+   + cosmic-icon-theme
    + qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look
 ** Desktop Environment
    + niri
@@ -34,7 +35,9 @@
    + blueman  
 ** Tools
    + neovim
-   + vivaldi
+   + zen-browser-bin
+     + https://github.com/catppuccin/zen-browser
+     + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
    + kitty
    + fish
    + unzip
@@ -48,7 +51,7 @@
    + keepassxc
    + gwenview
    + okular
-   + dolphin
+   + nautilus
    + zellij
 ** Fonts
    + ttf-firacode-nerd
@@ -57,13 +60,9 @@
    + ttf-nerd-fonts-symbols-common
    + ttf-font-awesome
    + noto-fonts-cjk
-   + ttf-ms-win11-auto
    + noto-fonts-emoji
 
    Don't forget to:
    #+begin_src bash
    fc-cache -fv
    #+end_src
-
-
-

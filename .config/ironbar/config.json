@@ -14,12 +14,12 @@
         ],
         "center": [
           {
-            "type": "music",
-            "truncate": "end"
-          },
-          {
             "type": "clock",
             "format": "%d.%m.%Y %H:%M"
+          },
+          {
+            "type": "music",
+            "truncate": "end"
           }
         ],
         "end": [
@@ -43,11 +43,23 @@
       {
         "position": "right",
         "exclusive_zone": false,
-        "height": 50,
+        "height": 7,
         "margin": {
           "bottom": 9999
         },
         "start": [
+          {
+            "type": "notifications",
+            "show_count": true,
+            "icons": {
+              "closed_none": "󰍥",
+              "closed_some": "󱥂",
+              "closed_dnd": "󱅯",
+              "open_none": "󰍡",
+              "open_some": "󱥁",
+              "open_dnd": "󱅮"
+            }
+          },
           {
             "type": "workspaces",
             "name_map": {
@@ -66,8 +78,9 @@
         {
           "type": "sys_info",
           "format": [
-            " {memory_used} / {memory_total} GB",
-            " {cpu_percent}% | {cpu_frequency} GHz | {temp_c@CPUTIN}°C"
+            " {memory_percent}%",
+            " {cpu_percent}%",
+            "󰋊 {disk_percent@/}%"
           ]
         }
       ],
@@ -81,7 +94,6 @@
         {
           "type": "sys_info",
           "format": [
-            "󰋊 ({disk_percent@/}%)",
             "󰥔 {uptime}"
           ],
           "interval": {
