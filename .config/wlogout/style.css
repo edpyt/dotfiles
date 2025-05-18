@@ -3,17 +3,9 @@
   box-shadow: none;
 }
 
-window {
-  color: @foreground;
-  background-color: rgba(24, 27, 32, 0.2);
-}
-
 button {
   border-radius: 0;
-  border-color: black;
-  text-decoration-color: @theme_text_color;
-  color: #ffffff;
-  background-color: #1e1e1e;
+
   border-style: solid;
   border-width: 1px;
   background-repeat: no-repeat;
@@ -24,7 +16,7 @@ button {
 button:focus,
 button:active,
 button:hover {
-  background-color: @theme_selected_bg_color;
+  background-color: @wm_highlight;
   outline-style: none;
 }
 
