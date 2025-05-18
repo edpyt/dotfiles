@@ -1,6 +1,0 @@
-[submodule ".config/gtklock/modules/gtklock-playerctl-module"]
-	path = .config/gtklock/modules/gtklock-playerctl-module
-	url = https://github.com/jovanlanik/gtklock-playerctl-module.git
-[submodule ".config/gtklock/modules/gtklock-powerbar-module"]
-	path = .config/gtklock/modules/gtklock-powerbar-module
-	url = git@github.com:jovanlanik/gtklock-powerbar-module.git
