@@ -1,10 +1,13 @@
 button {
   background: none;
+  margin: 0;
+  padding: 0;
 }
 
 #bar {
   border: 1px solid @borders;
 }
+
 .workspaces {
   border-top: 1px solid @borders;
 }
