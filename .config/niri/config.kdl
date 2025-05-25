@@ -8,8 +8,15 @@ debug {
     wait-for-frame-completion-in-pipewire
 }
 
+layer-rule {
+    match namespace="^swww-daemon$"
+    place-within-backdrop true
+}
+
 overview {
-    backdrop-color "#292c3c"
+    workspace-shadow {
+        off
+    }
 }
 
 cursor {
@@ -48,6 +55,10 @@ input {
             options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
         }
     }
+
+    touchpad {
+        tap
+    }
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -55,6 +66,8 @@ input {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     gaps 16
+
+    background-color "transparent"
 
     center-focused-column "never"
 
@@ -85,7 +98,6 @@ spawn-at-startup "swww" "img" "~/wallpapers/max-suleimanov-pf1.jpg"
 spawn-at-startup "xwayland-satellite" ":42"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "kitty --title orgmode nvim"
-spawn-at-startup "~/.config/eww/startup.sh"
 spawn-at-startup "ironbar"
 
 

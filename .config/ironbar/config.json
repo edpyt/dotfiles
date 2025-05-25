@@ -1,5 +1,49 @@
 {
   "monitors": {
+    "eDP-1": {
+      "position": "right",
+      "start": [
+        {
+          "type": "notifications",
+          "show_count": true,
+          "icons": {
+            "closed_none": "󰍥",
+            "closed_some": "󱥂",
+            "closed_dnd": "󱅯",
+            "open_none": "󰍡",
+            "open_some": "󱥁",
+            "open_dnd": "󱅮"
+          }
+        },
+        {
+          "type": "workspaces",
+          "name_map": {
+            "browser": "󰖟",
+            "code": "",
+            "orgmode": ""
+          }
+        }
+      ],
+      "center": [
+        {
+          "type": "clock"
+        }
+      ],
+      "end": [
+        {
+          "type": "tray"
+        },
+        {
+          "type": "script",
+          "cmd": "~/.config/scripts/keyboard_layout.py",
+          "mode": "watch"
+        },
+        {
+          "type": "upower",
+          "format": "{percentage}%"
+        }
+      ]
+    },
     "DP-3": [
       {
         "position": "bottom",
@@ -214,7 +258,9 @@
       "end": [
         {
           "type": "sys_info",
-          "format": ["󰥔 {uptime}"],
+          "format": [
+            "󰥔 {uptime}"
+          ],
           "interval": {
             "cpu": 1,
             "disks": 300,
