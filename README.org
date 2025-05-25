@@ -25,7 +25,6 @@
    + wl-clipboard
    + swaync
    + xwayland-satellite
-   + eww 
    + ironbar
      + zx
    + swayosd-git
