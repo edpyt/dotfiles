@@ -1,49 +1,76 @@
 {
   "monitors": {
-    "eDP-1": {
-      "position": "right",
-      "start": [
-        {
-          "type": "notifications",
-          "show_count": true,
-          "icons": {
-            "closed_none": "󰍥",
-            "closed_some": "󱥂",
-            "closed_dnd": "󱅯",
-            "open_none": "󰍡",
-            "open_some": "󱥁",
-            "open_dnd": "󱅮"
+    "eDP-1": [
+      {
+        "position": "right",
+        "start": [
+          {
+            "type": "notifications",
+            "show_count": true,
+            "icons": {
+              "closed_none": "󰍥",
+              "closed_some": "󱥂",
+              "closed_dnd": "󱅯",
+              "open_none": "󰍡",
+              "open_some": "󱥁",
+              "open_dnd": "󱅮"
+            }
+          },
+          {
+            "type": "workspaces",
+            "name_map": {
+              "browser": "󰖟",
+              "code": "",
+              "orgmode": ""
+            }
           }
-        },
-        {
-          "type": "workspaces",
-          "name_map": {
-            "browser": "󰖟",
-            "code": "",
-            "orgmode": ""
+        ],
+        "center": [
+          {
+            "type": "clock"
           }
-        }
-      ],
-      "center": [
-        {
-          "type": "clock"
-        }
-      ],
-      "end": [
-        {
-          "type": "tray"
-        },
-        {
-          "type": "script",
-          "cmd": "~/.config/scripts/keyboard_layout.py",
-          "mode": "watch"
-        },
-        {
-          "type": "upower",
-          "format": "{percentage}%"
-        }
-      ]
-    },
+        ],
+        "end": [
+          {
+            "type": "tray"
+          },
+          {
+            "type": "script",
+            "cmd": "~/.config/scripts/keyboard_layout.py",
+            "mode": "watch"
+          },
+          {
+            "type": "upower",
+            "format": "{percentage}%"
+          }
+        ]
+      },
+      {
+        "position": "bottom",
+        "exclusive_zone": false,
+        "autohide": 420,
+        "center": [
+          {
+            "format": [
+              " {cpu_percent}% | {cpu_frequency} GHz | {temp_c@CPUTIN}°C",
+              " {memory_used} / {memory_total} GB ({memory_available} | {memory_percent}%) | {swap_used} / {swap_total} GB ({swap_free} | {swap_percent}%)",
+              "󰋊 {disk_used#T@/:.1} / {disk_total#T@/:.1} TB ({disk_percent@/}%) | {disk_read} / {disk_write} MB/s",
+              "󰓢 {net_down@wlan0} / {net_up@wlan0} Mbps",
+              "󰖡 {load_average_1} | {load_average_5} | {load_average_15}",
+              "󰥔 {uptime}"
+            ],
+            "interval": {
+              "cpu": 1,
+              "disks": 300,
+              "memory": 30,
+              "networks": 3,
+              "temps": 5
+            },
+            "type": "sys_info"
+          }
+        ]
+      }
+    ],
     "DP-3": [
       {
         "position": "bottom",
