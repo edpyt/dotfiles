@@ -1,7 +1,5 @@
 button {
   background: none;
-  margin: 0;
-  padding: 0;
 }
 
 #bar {
@@ -20,6 +18,12 @@ button {
 .workspaces .item.focused {
   background-color: @wm_highlight;
   color: @budgie_tasklist_indicator_color_active;
+}
+
+.workspaces button,
+.notifications button {
+  margin: 0;
+  padding: 3px;
 }
 
 .popup-weather #header {

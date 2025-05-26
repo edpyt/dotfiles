@@ -274,6 +274,9 @@
             " {cpu_percent}%",
             "󰋊 {disk_percent@/}%"
           ]
+        },
+        {
+          "type": "workspaces"
         }
       ],
       "center": [
