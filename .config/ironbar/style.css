@@ -23,7 +23,7 @@ button {
 .workspaces button,
 .notifications button {
   margin: 0;
-  padding: 3px;
+  padding: 0;
 }
 
 .popup-weather #header {

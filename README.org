@@ -21,7 +21,7 @@
    + niri
    + xdg-desktop-portal-gtk
    + wlogout
-   + fuzzel
+   + walker-bin
    + swww
    + wl-clipboard
    + swaync
@@ -54,6 +54,7 @@
    + okular
    + nautilus
    + zellij
+   + [[https://github.com/ashish0kumar/tint][tint]]
 ** Fonts
    + ttf-firacode-nerd
    + otf-monaspace-nerd
