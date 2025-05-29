@@ -55,6 +55,9 @@
    + nautilus
    + zellij
    + [[https://github.com/ashish0kumar/tint][tint]]
+   + python
+     + ruff
+     + basedpyright
 ** Fonts
    + ttf-firacode-nerd
    + otf-monaspace-nerd
