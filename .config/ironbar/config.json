@@ -270,8 +270,8 @@
         {
           "type": "sys_info",
           "format": [
-            " {memory_percent}%",
             " {cpu_percent}%",
+            " {memory_used:.2}/{memory_total:.2}GB",
             "󰋊 {disk_percent@/}%"
           ]
         },
