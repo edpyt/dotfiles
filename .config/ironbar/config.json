@@ -228,7 +228,8 @@
             "format": "{icon} {percentage}%",
             "max_volume": 100,
             "on_scroll_up": "swayosd-client --output-volume 5",
-            "on_scroll_down": "swayosd-client --output-volume -5"
+            "on_scroll_down": "swayosd-client --output-volume -5",
+            "on_click_right": "pavucontrol"
           }
         ]
       },
@@ -288,9 +289,7 @@
       "end": [
         {
           "type": "sys_info",
-          "format": [
-            "󰥔 {uptime}"
-          ],
+          "format": ["󰥔 {uptime}"],
           "interval": {
             "cpu": 1,
             "disks": 300,
