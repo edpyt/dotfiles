@@ -58,6 +58,7 @@
    + python
      + ruff
      + basedpyright
+   + texlive-latexrecommended
 ** Fonts
    + ttf-firacode-nerd
    + otf-monaspace-nerd
