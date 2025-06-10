@@ -1,9 +1,5 @@
 // NOTE: default config file: https://github.com/YaLTeR/niri/blob/main/resources/default-config.kdl
 
-environment {
-    DISPLAY ":42"
-}
-
 debug {
     wait-for-frame-completion-in-pipewire
 }
@@ -81,7 +77,7 @@ layout {
 
     focus-ring {
         width 4
-        active-color "#e5c890"
+        active-color "#ef9f76"
         inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view" in="srgb-linear"
         urgent-color "#e78284"
     }
@@ -95,7 +91,6 @@ layout {
 
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww" "img" "~/wallpapers/max-suleimanov-pf1.jpg"  
-spawn-at-startup "xwayland-satellite" ":42"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "kitty --title orgmode nvim"
 spawn-at-startup "ironbar"
@@ -174,6 +169,7 @@ binds {
     Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "walker"; }
+    Mod+Ctrl+C { spawn "hyprpicker" "-a"; }
 
     Mod+E { spawn "nautilus"; }
     Mod+Ctrl+E { spawn "kitty" "yazi"; }

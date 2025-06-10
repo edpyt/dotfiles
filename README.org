@@ -59,6 +59,7 @@
      + ruff
      + basedpyright
    + texlive-latexrecommended
+   + hyprpicker
 ** Fonts
    + ttf-firacode-nerd
    + otf-monaspace-nerd
