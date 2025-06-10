@@ -1,4 +1,3 @@
-[[https://github.com/edpyt/dotfiles/blob/main/assets/Screenshot_from_2025-06-04_12-16-41.png]]
 
 * Command
   #+begin_src shell
