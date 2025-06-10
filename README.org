@@ -34,6 +34,7 @@
      + gtklock-playerctl-module
    + network-manager-applet
    + blueman  
+   + fuzzel
 ** Tools
    + neovim
    + zen-browser-bin
@@ -58,8 +59,11 @@
    + python
      + ruff
      + basedpyright
+     + uv
+       + [[git+https://github.com/kassick/niri-wselector.git]]
    + texlive-latexrecommended
    + hyprpicker
+
 ** Fonts
    + ttf-firacode-nerd
    + otf-monaspace-nerd

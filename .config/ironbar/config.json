@@ -99,21 +99,11 @@
         "center": [
           {
             "type": "focused",
-            "truncate": {
-              "mode": "middle",
-              "max_length": 1
-            }
+            "show_title": false
           },
           {
             "type": "clock",
             "format": "%d.%m.%Y %H:%M"
-          },
-          {
-            "type": "music",
-            "truncate": {
-              "mode": "middle",
-              "max_length": 30
-            }
           }
         ],
         "end": [

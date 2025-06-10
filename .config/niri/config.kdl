@@ -170,6 +170,7 @@ binds {
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "walker"; }
     Mod+Ctrl+C { spawn "hyprpicker" "-a"; }
+    Mod+Ctrl+F hotkey-overlay-title="Windows in active workspaces" { spawn "niri-wselector" "--windows" "--workspace" "@active" "-w" "100" ; }
 
     Mod+E { spawn "nautilus"; }
     Mod+Ctrl+E { spawn "kitty" "yazi"; }

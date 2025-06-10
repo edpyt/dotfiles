@@ -3,7 +3,7 @@ button {
 }
 
 #bar {
-  border-top: 1px solid @borders;
+  border-right: 1px solid @borders;
 }
 
 .workspaces {
