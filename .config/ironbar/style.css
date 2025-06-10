@@ -3,7 +3,7 @@ button {
 }
 
 #bar {
-  border: 1px solid @borders;
+  border-top: 1px solid @borders;
 }
 
 .workspaces {
@@ -26,32 +26,6 @@ button {
   padding: 0;
 }
 
-.popup-weather #header {
-  font-size: 1.8em;
-  padding-bottom: 0.4em;
-  margin-bottom: 0.6em;
-  border-bottom: 1px solid @color-border;
-}
-
-.popup-weather .weather-date {
-  font-size: 1.5em;
-  padding-right: 1em;
-}
-
-.popup-weather .weather-avg {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
-
-/* 
- this is a hack to align the different font sizes on left/right 
- you may need to adjust for different fonts
-*/
-.popup-weather #temps label {
-  padding-top: 0.2em;
-  margin-bottom: 0.7em;
-}
-
 .upower {
   margin-top: 10px;
   margin-left: 5px;
@@ -59,4 +33,8 @@ button {
   margin-bottom: 2px;
   padding: 3px;
   background-color: @wm_highlight;
+}
+
+.tray {
+  padding-bottom: 20px;
 }

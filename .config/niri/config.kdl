@@ -120,7 +120,7 @@ window-rule {
     match app-id="neovide"
     default-column-width { proportion 0.75; }
     draw-border-with-background false
-    opacity 0.942
+    // opacity 0.942 NOTE: zaebalo
 }
 window-rule {
     match at-startup=true app-id="kitty" title="orgmode"
