@@ -76,7 +76,7 @@ layout {
     default-column-width { proportion 0.5; }
 
     focus-ring {
-        width 4
+        width 6
         active-color "#C399E0"
         inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view" in="srgb-linear"
         urgent-color "#e78284"
@@ -91,8 +91,9 @@ layout {
 
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww" "img" "~/wallpapers/toyota-trueno-ae86-pixel-moewalls-com.gif"  
+spawn-at-startup "swww" "img" "-o" "HDMI-A-1" "~/wallpapers/toyota-trueno-ae86-pixel-moewalls-com.jpg"  
+
 spawn-at-startup "swayosd-server"
-spawn-at-startup "kitty --title orgmode nvim"
 spawn-at-startup "ironbar"
 
 
@@ -157,7 +158,7 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 4.2
+    geometry-corner-radius 8
     clip-to-geometry true
 }
 

@@ -52,6 +52,18 @@ return {
     "chipsenkbeil/org-roam.nvim",
     opts = {
       directory = "~/Documents/orgfiles/org_roam",
+      templates = {
+        d = {
+          description = "default",
+          template = [[
+#+OPTIONS: \n:t
+#+HTML_HEAD: <link rel="stylesheet" href="http://dakrone.github.io/org.css" type="text/css" />
+
+%?
+]],
+          target = "%<%Y%m%d%H%M%S>-%[slug].org",
+        },
+      },
     },
   },
   {
