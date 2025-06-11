@@ -12,11 +12,14 @@
    + pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
 
 ** Theme 
+   #+begin_src bash
+   paru -S \
+      catppuccin-cursors-mocha \
+      cosmic-icon-theme \
+      qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look
+   #+end_src
    + [[https://github.com/catppuccin/gtk/blob/main/docs/USAGE.md][catppuccin-gtk]]
-   + catppuccin-cursors-mocha 
-   + cosmic-icon-theme
    + [[https://github.com/Keyitdev/sddm-astronaut-theme][sddm-astronaut-theme]]
-   + qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look
 ** Desktop Environment
    + niri
    + xdg-desktop-portal-gtk
