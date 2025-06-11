@@ -1,5 +1,7 @@
 button {
   background: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 #bar {
@@ -12,18 +14,22 @@ button {
 
 .workspaces .item {
   background: none;
-  border-radius: 0;
 }
 
 .workspaces .item.focused {
   background-color: @wm_highlight;
   color: @budgie_tasklist_indicator_color_active;
+  box-shadow: inset 1 1 6 1;
 }
 
 .workspaces button,
 .notifications button {
   margin: 0;
   padding: 0;
+}
+
+.workspaces .item:hover {
+  box-shadow: inset 1 1 4 1;
 }
 
 .upower {
@@ -37,4 +43,8 @@ button {
 
 .tray {
   padding-bottom: 20px;
+}
+
+.clock {
+  font-weight: bold;
 }

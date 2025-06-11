@@ -103,7 +103,9 @@
           },
           {
             "type": "clock",
-            "format": "%d.%m.%Y %H:%M"
+            "format": "%d\n%m\n\n%H\n%M",
+            "orientation": "horizontal",
+            "justify": "center"
           }
         ],
         "end": [
