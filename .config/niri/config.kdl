@@ -90,7 +90,7 @@ layout {
 }
 
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swww" "img" "~/wallpapers/max-suleimanov-pf1.jpg"  
+spawn-at-startup "swww" "img" "~/wallpapers/toyota-trueno-ae86-pixel-moewalls-com.gif"  
 spawn-at-startup "swayosd-server"
 spawn-at-startup "kitty --title orgmode nvim"
 spawn-at-startup "ironbar"
