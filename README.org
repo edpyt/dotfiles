@@ -32,6 +32,7 @@
    + gtklock
      + gtklock-powerbar-module
      + gtklock-playerctl-module
+     + gtklock-userinfo-module
    + network-manager-applet
    + blueman  
    + fuzzel
