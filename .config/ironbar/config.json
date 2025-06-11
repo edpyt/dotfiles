@@ -93,7 +93,9 @@
               "browser": "󰖟",
               "code": "",
               "orgmode": ""
-            }
+            },
+            "on_scroll_up": "niri msg action focus-workspace-up",
+            "on_scroll_down": "niri msg action focus-workspace-down"
           }
         ],
         "center": [
@@ -153,7 +155,9 @@
       "end": [
         {
           "type": "sys_info",
-          "format": ["󰥔 {uptime}"],
+          "format": [
+            "󰥔 {uptime}"
+          ],
           "interval": {
             "cpu": 1,
             "disks": 300,

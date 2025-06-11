@@ -19,7 +19,6 @@ button {
 .workspaces .item.focused {
   background-color: @wm_highlight;
   color: @budgie_tasklist_indicator_color_active;
-  box-shadow: inset 1 1 6 1;
 }
 
 .workspaces button,
@@ -29,7 +28,7 @@ button {
 }
 
 .workspaces .item:hover {
-  box-shadow: inset 1 1 4 1;
+  background-color: @wm_highlight;
 }
 
 .upower {
