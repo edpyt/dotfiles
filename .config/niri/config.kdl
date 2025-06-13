@@ -64,7 +64,6 @@ layout {
     gaps 16
 
     background-color "transparent"
-
     center-focused-column "never"
 
     preset-column-widths {
@@ -76,8 +75,8 @@ layout {
     default-column-width { proportion 0.5; }
 
     focus-ring {
-        width 6
-        active-color "#C399E0"
+        width 4
+        active-color "#babbf1"
         inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view" in="srgb-linear"
         urgent-color "#e78284"
     }
@@ -169,7 +168,7 @@ binds {
     Mod+Escape hotkey-overlay-title="Logout menu" { spawn "wlogout"; } 
     Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
     Mod+W { spawn "zen-browser"; }
-    Mod+A { spawn "walker"; }
+    Mod+A { spawn "fuzzel"; }
     Mod+Ctrl+C { spawn "hyprpicker" "-a"; }
     Mod+Ctrl+A hotkey-overlay-title="Windows in current output" { spawn "niri-wselector" "--windows" "--workspace" "@output" "-w" "100" ; }
 

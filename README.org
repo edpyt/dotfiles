@@ -12,7 +12,7 @@
    + pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
 
 ** Theme 
-   #+begin_src bash
+   #+begin_src fish
    paru -S \
       catppuccin-cursors-mocha \
       cosmic-icon-theme \
@@ -24,7 +24,6 @@
    + niri
    + xdg-desktop-portal-gtk
    + wlogout
-   + walker-bin
    + swww
    + wl-clipboard
    + swaync
@@ -78,6 +77,6 @@
    + noto-fonts-emoji
 
    Don't forget to:
-   #+begin_src bash
+   #+begin_src fish
    fc-cache -fv
    #+end_src
