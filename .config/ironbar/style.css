@@ -5,7 +5,7 @@ button {
 }
 
 #bar {
-  border-right: 1px solid #ee9e76;
+  border-right: 1px solid @borders;
 }
 
 .workspaces {
