@@ -100,6 +100,7 @@ spawn-at-startup "swww" "img" "-o" "HDMI-A-1" "~/wallpapers/toyota-trueno-ae86-p
 
 spawn-at-startup "swayosd-server"
 spawn-at-startup "ironbar"
+spawn-at-startup "niriswitcher"
 
 
 screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
@@ -176,8 +177,14 @@ binds {
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "fuzzel"; }
     Mod+Ctrl+C { spawn "hyprpicker" "-a"; }
+    Mod+Shift+W { spawn "waypaper"; }
     Mod+Ctrl+A hotkey-overlay-title="Windows in current output" { spawn "niri-wselector" "--windows" "--workspace" "@output" "-w" "100" ; }
     Mod+Ctrl+Shift+A hotkey-overlay-title="Windows in all outputs" { spawn "niri-wselector" "--windows" "-w" "100" ; }
+
+    Alt+Tab repeat=false { spawn "niriswitcherctl" "show" "--window"; }
+    Alt+Shift+Tab repeat=false { spawn "niriswitcherctl" "show" "--window"; }
+    Alt+Grave repeat=false { spawn "niriswitcherctl" "show" "--workspace"; }
+    Alt+Shift+Grave repeat=false { spawn "niriswitcherctl" "show" "--workspace"; }
 
     Mod+E { spawn "nautilus"; }
     Mod+Ctrl+E { spawn "kitty" "yazi"; }

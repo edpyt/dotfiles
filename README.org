@@ -63,9 +63,10 @@
      + ruff
      + basedpyright
      + uv
-       + [[git+https://github.com/kassick/niri-wselector.git]]
+       + waypaper
    + texlive-latexrecommended
    + hyprpicker
+   + niriswitcher
 
 ** Fonts
    + ttf-firacode-nerd
