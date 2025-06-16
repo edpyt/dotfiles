@@ -12,7 +12,7 @@
    + pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
 
 ** Theme 
-   #+begin_src fish
+   #+begin_src shell
    paru -S \
       catppuccin-cursors-mocha \
       cosmic-icon-theme \
@@ -20,64 +20,68 @@
    #+end_src
    + [[https://github.com/catppuccin/gtk/blob/main/docs/USAGE.md][catppuccin-gtk]]
    + [[https://github.com/Keyitdev/sddm-astronaut-theme][sddm-astronaut-theme]]
+
 ** Desktop Environment
-   + niri
-   + xdg-desktop-portal-gtk
-   + wlogout
-   + swww
-   + wl-clipboard
-   + swaync
-   + xwayland-satellite
-   + ironbar
-     + zx
-   + swayosd-git
-   + gtklock
-     + gtklock-powerbar-module
-     + gtklock-playerctl-module
-     + gtklock-userinfo-module
-   + network-manager-applet
-   + blueman  
-   + fuzzel
+
+   #+begin_src shell
+   paru -S \
+      niri \
+      xdg-desktop-portal-gtk \
+      wlogout \
+      swww \
+      wl-clipboard \
+      swaync \
+      xwayland-satellite \
+      ironbar zx \
+      swayosd-git \
+      gtklock gtklock-powerbar-module gtklock-playerctl-module gtklock-userinfo-module \
+      network-manager-applet \
+      blueman  \
+      fuzzel
+   #+end_src
 ** Tools
-   + neovim
-   + zen-browser-bin
-     + https://github.com/catppuccin/zen-browser
-     + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
-   + kitty
-   + fish
-   + unzip
-   + bat
-   + starship
-   + nodejs
-   + npm
-   + lazygit
-   + yazi ffmpeg p7zip jq poppler fd ripgrep fzf zoxide imagemagick
-   + emote
-   + keepassxc
-   + gwenview
-   + okular
-   + nautilus
-   + zellij
-   + [[https://github.com/ashish0kumar/tint][tint]]
-   + python
-     + ruff
-     + basedpyright
-     + uv
-       + waypaper
-   + texlive-latexrecommended
-   + hyprpicker
-   + niriswitcher
+   #+begin_src shell
+   paru -S \
+     neovim \
+     zen-browser-bin \
+     kitty \
+     fish \
+     unzip \
+     bat \
+     starship \
+     nodejs \
+     npm \
+     lazygit \
+     yazi ffmpeg p7zip jq poppler fd ripgrep fzf zoxide imagemagick \
+     emote \
+     keepassxc \
+     gwenview \
+     okular \
+     nautilus \
+     zellij \
+     python ruff basedpyright uv \
+     waypaper \
+     texlive-latexrecommended \
+     hyprpicker \
+     niriswitcher
+   #+end_src
+   + https://github.com/catppuccin/zen-browser
+   + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
 
 ** Fonts
-   + ttf-firacode-nerd
-   + otf-monaspace-nerd
-   + ttf-nerd-fonts-symbols
-   + ttf-nerd-fonts-symbols-common
-   + ttf-font-awesome
-   + noto-fonts-cjk
-   + noto-fonts-emoji
+
+   #+begin_src shell
+   paru -S \
+     ttf-firacode-nerd \
+     otf-monaspace-nerd \
+     ttf-nerd-fonts-symbols \
+     ttf-nerd-fonts-symbols-common \
+     ttf-font-awesome \
+     noto-fonts-cjk \
+     noto-fonts-emoji
+   #+end_src
 
    Don't forget to:
-   #+begin_src fish
+   #+begin_src shell
    fc-cache -fv
    #+end_src
