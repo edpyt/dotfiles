@@ -73,6 +73,19 @@
     ],
     "DP-3": [
       {
+        "position": "bottom",
+        "exclusive_zone": false,
+        "margin": {
+          "left": 1642
+        },
+        "autohide": 142,
+        "start": [
+          {
+            "type": "music"
+          }
+        ]
+      },
+      {
         "position": "left",
         "start": [
           {
