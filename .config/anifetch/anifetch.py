@@ -12,7 +12,8 @@ def print_verbose(*msg):
     if args.verbose:
         print(*msg)
 
-def get_ext_from_codec(codec:str):
+
+def get_ext_from_codec(codec: str):
     codec_extension_map = {
         "aac": "m4a",
         "mp3": "mp3",
@@ -20,20 +21,45 @@ def get_ext_from_codec(codec:str):
         "vorbis": "ogg",
         "pcm_s16le": "wav",
         "flac": "flac",
-        "alac": "m4a"
+        "alac": "m4a",
     }
-    return codec_extension_map.get(codec,"bin")
+    return codec_extension_map.get(codec, "bin")
 
-def check_codec_of_file(file:str):
-    ffprobe_cmd = ["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=codec_name", "-of", "default=nokey=1:noprint_wrappers=1", file]
+
+def check_codec_of_file(file: str):
+    ffprobe_cmd = [
+        "ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "a:0",
+        "-show_entries",
+        "stream=codec_name",
+        "-of",
+        "default=nokey=1:noprint_wrappers=1",
+        file,
+    ]
     codec = str(subprocess.check_output(ffprobe_cmd, text=True).strip())
     return codec
 
-def extract_audio_from_file(file:str, extension):
+
+def extract_audio_from_file(file: str, extension):
     audio_file = BASE_PATH / f"output_audio.{extension}"
-    extract_cmd = ["ffmpeg", "-i", file, "-y", "-vn", "-c:a", "copy", "-loglevel","quiet", audio_file]
+    extract_cmd = [
+        "ffmpeg",
+        "-i",
+        file,
+        "-y",
+        "-vn",
+        "-c:a",
+        "copy",
+        "-loglevel",
+        "quiet",
+        audio_file,
+    ]
     subprocess.call(extract_cmd)
     return audio_file
+
 
 def get_data_path():
     xdg_data_home = os.environ.get(
@@ -49,11 +75,11 @@ def check_sound_flag():
         return True
     return False
 
+
 def check_chroma_flag():
     if "--chroma" in sys.argv:
         return True
     return False
-
 
 
 st = time.time()
@@ -127,7 +153,7 @@ parser.add_argument(
     help="Add this argument if you want to use fastfetch instead. Note than fastfetch will be run with '--logo none'.",
     action="store_true",
 )
-parser.add_argument( 
+parser.add_argument(
     "--chroma",
     required=False,
     nargs="?",
@@ -164,8 +190,6 @@ if args.chroma_flag_given:
         sys.exit("Color for hex code starts with an '0x'! Not a '#'")
 
 
-
-
 # check cache
 old_filename = ""
 should_update = False
@@ -188,7 +212,7 @@ try:
                     "verbose",
                     "fast_fetch",
                     "benchmark",
-                    "force_render"
+                    "force_render",
                 ):  # These arguments don't invalidate the cache.
                     print_verbose(
                         f"{key} INVALID! Will cache again. Value:{value} Cache:{cached_value}",
@@ -199,7 +223,6 @@ except FileNotFoundError:
 
 if should_update:
     print("Caching...")
-
 
 
 WIDTH = args.width
@@ -251,13 +274,15 @@ if should_update:
 
     if args.sound_flag_given:
         if args.sound:  # sound file given
-            print_verbose("Sound file to use:",args.sound)
+            print_verbose("Sound file to use:", args.sound)
             source = pathlib.Path(args.sound)
             dest = BASE_PATH / source.with_name(f"output_audio{source.suffix}")
             shutil.copy(source, dest)
             args.sound_saved_path = str(dest)
         else:
-            print_verbose("No sound file specified, will attempt to extract it from video.")
+            print_verbose(
+                "No sound file specified, will attempt to extract it from video."
+            )
             codec = check_codec_of_file(args.filename)
             ext = get_ext_from_codec(codec)
             audio_file = extract_audio_from_file(args.filename, ext)
@@ -266,7 +291,6 @@ if should_update:
             args.sound_saved_path = str(audio_file)
 
         print_verbose(args.sound_saved_path)
-
 
     # If the new anim frames is shorter than the old one, then in /output there will be both new and old frames. Empty the directory to fix this.
     shutil.rmtree(BASE_PATH / "output")
@@ -279,11 +303,13 @@ if should_update:
     animation_files.sort()
     for i, f in enumerate(animation_files):
         # TODO: REMOVE THIS
-        #print_verbose(f"- Frame: {f}")
+        # print_verbose(f"- Frame: {f}")
 
         # f = 00001.png
         chafa_args = args.chafa_arguments.strip()
-        chafa_args += " --format symbols"  # Fixes https://github.com/Notenlish/anifetch/issues/1
+        chafa_args += (
+            " --format symbols"  # Fixes https://github.com/Notenlish/anifetch/issues/1
+        )
 
         path = BASE_PATH / "video" / f
         chafa_cmd = [
@@ -305,7 +331,9 @@ if should_update:
         # AKA: even if I specify 40x20, chafa might give me 40x11 or something like that.
         if i == 0:
             HEIGHT = len(frame.splitlines())
-            frames.append(frame) # dont question this, I need frames to have at least a single item
+            frames.append(
+                frame
+            )  # dont question this, I need frames to have at least a single item
 else:
     # just use cached
     for filename in os.listdir(BASE_PATH / "output"):
@@ -333,7 +361,6 @@ print_verbose("-----------")
 with open(BASE_PATH / "cache.json", "w") as f:
     args_dict = {key: value for key, value in args._get_kwargs()}
     json.dump(args_dict, f, indent=2)
-
 
 
 # Get the fetch output(neofetch/fastfetch)
@@ -371,7 +398,9 @@ for y, fetch_line in enumerate(fetch_output):
     # Removing the dust that may appear with a padding
     output = f"{(PAD_LEFT + (GAP * 2)) * ' '}{' ' * width_to_offset}{fetch_line}\n"
     max_width = shutil.get_terminal_size().columns
-    cleaned_line = (output.rstrip() + ' ' * (max_width - len(output.rstrip())))[:max_width] + '\n'
+    cleaned_line = (output.rstrip() + " " * (max_width - len(output.rstrip())))[
+        :max_width
+    ] + "\n"
     template.append(cleaned_line)
 
 # writing the tempate to a file.
@@ -400,10 +429,11 @@ BOTTOM = HEIGHT  # + TOP
 
 if not args.benchmark:
     try:
-
         framerate_to_use = args.playback_rate
         if args.sound_flag_given:
-            framerate_to_use = args.framerate  # ignore wanted playback rate so that desync doesn't happen
+            framerate_to_use = (
+                args.framerate
+            )  # ignore wanted playback rate so that desync doesn't happen
 
         script_args = [
             "bash",
@@ -418,7 +448,7 @@ if not args.benchmark:
             script_args.append(str(args.sound_saved_path))
 
         print(script_args)
-        #raise SystemExit
+        # raise SystemExit
         subprocess.call(
             script_args,
             text=True,
