@@ -95,8 +95,6 @@ layout {
 spawn-at-startup "xwayland-satellite" ":42"
 
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swww" "img" "~/wallpapers/toyota-trueno-ae86-pixel-moewalls-com.gif"  
-spawn-at-startup "swww" "img" "-o" "HDMI-A-1" "~/wallpapers/toyota-trueno-ae86-pixel-moewalls-com.jpg"  
 
 spawn-at-startup "swayosd-server"
 spawn-at-startup "ironbar"

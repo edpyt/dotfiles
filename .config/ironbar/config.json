@@ -86,7 +86,7 @@
         ]
       },
       {
-        "position": "left",
+        "position": "right",
         "start": [
           {
             "type": "notifications",
@@ -168,9 +168,7 @@
       "end": [
         {
           "type": "sys_info",
-          "format": [
-            "󰥔 {uptime}"
-          ],
+          "format": ["󰥔 {uptime}"],
           "interval": {
             "cpu": 1,
             "disks": 300,
