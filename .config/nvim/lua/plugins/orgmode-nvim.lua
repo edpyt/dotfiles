@@ -56,8 +56,7 @@ return {
         d = {
           description = "default",
           template = [[
-#+OPTIONS: \n:t
-#+HTML_HEAD: <link rel="stylesheet" href="http://dakrone.github.io/org.css" type="text/css" />
+#+HTML_HEAD: <link rel="stylesheet" href="../../../assets/org.css" type="text/css" />
 
 %?
 ]],

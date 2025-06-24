@@ -48,10 +48,4 @@ button {
 
 .clock {
   font-weight: bold;
-  border-bottom: 1px solid @borders;
-}
-
-.focused {
-  border-top: 1px solid @borders;
-  padding-top: 5px;
 }
