@@ -18,7 +18,7 @@ return {
     event = "VeryLazy",
     ft = { "org" },
     opts = {
-      org_agenda_files = "~/Documents/orgfiles/**/*",
+      org_agenda_files = "~/Documents/orgfiles/*.org",
       org_default_notes_file = "~/Documents/orgfiles/notes.org",
       org_todo_keywords = { "TODO(t)", "WAIT(w)", "|", "DONE(d)", "DELEGATED(g)" },
       org_capture_templates = {
