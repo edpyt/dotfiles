@@ -20,7 +20,7 @@ overview {
 }
 
 cursor {
-    xcursor-theme "catppuccin-mocha-red-cursors"
+    xcursor-theme "catppuccin-mocha-blue-cursors"
 }
 
 // Workspaces configuration
