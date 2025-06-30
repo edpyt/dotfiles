@@ -73,19 +73,6 @@
     ],
     "DP-3": [
       {
-        "position": "bottom",
-        "exclusive_zone": false,
-        "margin": {
-          "left": 1642
-        },
-        "autohide": 142,
-        "start": [
-          {
-            "type": "music"
-          }
-        ]
-      },
-      {
         "position": "right",
         "start": [
           {
@@ -168,7 +155,9 @@
       "end": [
         {
           "type": "sys_info",
-          "format": ["󰥔 {uptime}"],
+          "format": [
+            "󰥔 {uptime}"
+          ],
           "interval": {
             "cpu": 1,
             "disks": 300,
