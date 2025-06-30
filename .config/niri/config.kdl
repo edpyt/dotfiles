@@ -170,7 +170,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+T { spawn "kitty"; }
-    Mod+Escape hotkey-overlay-title="Logout menu" { spawn "wlogout"; } 
+    Mod+Escape hotkey-overlay-title="Logout menu" repeat=false { spawn "wlogout"; } 
     Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
     Mod+W { spawn "zen-browser"; }
     Mod+A { spawn "fuzzel"; }

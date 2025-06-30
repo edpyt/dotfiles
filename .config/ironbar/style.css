@@ -8,10 +8,6 @@ button {
   border-left: 1px solid @borders;
 }
 
-.workspaces {
-  border-top: 1px solid @borders;
-}
-
 .workspaces .item {
   background: none;
 }
@@ -43,7 +39,6 @@ button {
 .tray {
   padding-bottom: 20px;
   padding-top: 12px;
-  border-top: 1px solid @borders;
 }
 
 .clock {
