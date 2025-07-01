@@ -68,7 +68,7 @@ layout {
     gaps 16
 
     background-color "transparent"
-    center-focused-column "always"
+    center-focused-column "never"
     always-center-single-column
 
     preset-column-widths {
@@ -139,6 +139,7 @@ window-rule {
     match app-id="kitty" title="nmtui"
     match app-id="blueman-manager"
     match app-id="AmneziaVPN"
+    match app-id="waypaper"
 
     opacity 1.0
     open-floating true

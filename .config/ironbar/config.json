@@ -117,6 +117,7 @@
           {
             "type": "script",
             "cmd": "~/.config/scripts/keyboard_layout.py",
+            "orientation": "horizontal",
             "mode": "watch"
           },
           {
