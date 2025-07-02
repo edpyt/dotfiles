@@ -1,5 +1,11 @@
 #+html: <img src="https://github.com/user-attachments/assets/afe41a8c-0c1c-4bdf-917d-defe0e62b647"/>
 
+- Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty]]
+- WM: [[https://github.com/YaLTeR/niri][niri]]
+- Code Editor: [[https://astronvim.com][astronvim]]
+- Browser: [[https://zen-browser.app/][zen]]
+- OS: [[https://cachyos.org/][CachyOS]]
+
 * Command
   #+begin_src shell
   yadm clone git@github.com:edpyt/dotfiles.git
