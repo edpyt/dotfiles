@@ -1,10 +1,10 @@
-#+html: <img src="https://github.com/user-attachments/assets/afe41a8c-0c1c-4bdf-917d-defe0e62b647"/>
-
 - Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty]]
 - WM: [[https://github.com/YaLTeR/niri][niri]]
 - Code Editor: [[https://astronvim.com][astronvim]]
 - Browser: [[https://zen-browser.app/][zen]]
 - OS: [[https://cachyos.org/][CachyOS]]
+
+#+html: <img src="https://github.com/user-attachments/assets/afe41a8c-0c1c-4bdf-917d-defe0e62b647"/>
 
 * Command
   #+begin_src shell
@@ -25,7 +25,7 @@
       qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look
    #+end_src
    + [[https://github.com/catppuccin/gtk/blob/main/docs/USAGE.md][catppuccin-gtk]]
-   + [[https://github.com/Keyitdev/sddm-astronaut-theme][sddm-astronaut-theme]]
+   + [[https://github.com/uiriansan/SilentSDDM][SilentSDDM]]
 
 ** Desktop Environment
 
