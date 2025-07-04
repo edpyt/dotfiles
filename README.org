@@ -71,8 +71,10 @@
      hyprpicker \
      niriswitcher
    #+end_src
-   + https://github.com/catppuccin/zen-browser
-   + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
+   - zen-browser
+      + https://github.com/catppuccin/zen-browser
+      + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
+   - [[https://www.digitalzen.app/][DigitalZen]]
 
 ** Fonts
 

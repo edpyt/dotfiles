@@ -101,6 +101,8 @@ spawn-at-startup "swayosd-server"
 spawn-at-startup "ironbar"
 spawn-at-startup "niriswitcher"
 
+spawn-at-startup "DigitalZen.AppImage"
+
 
 screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 
