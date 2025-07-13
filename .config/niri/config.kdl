@@ -20,7 +20,7 @@ overview {
 }
 
 cursor {
-    xcursor-theme "catppuccin-mocha-blue-cursors"
+    xcursor-theme "catppuccin-mocha-red-cursors"
 }
 
 // Workspaces configuration
@@ -81,7 +81,7 @@ layout {
 
     focus-ring {
         width 3
-        active-color "#ef9f76"
+        active-color "#BABBF1"
         inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view" in="srgb-linear"
         urgent-color "#e78284"
     }
