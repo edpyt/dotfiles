@@ -1,78 +1,60 @@
-/* GTK Vars */
-@define-color bg-color #313244;
-@define-color fg-color #cdd6f4;
-@define-color primary-color #ef9f76;
-@define-color secondary-color #cba6f7;
-@define-color border-color @primary-color;
-@define-color selected-bg-color @primary-color;
-@define-color selected-fg-color @bg-color;
+/* config: https://github.com/ryan4yin/nix-config/blob/90f36202a916b3e6f893edf8a5a89862d83983bc/home/linux/gui/hyprland/values/anyrun.nix */
+
+@define-color bg-col rgba(30, 30, 46, 0.7);
+@define-color bg-col-light rgba(150, 220, 235, 0.7);
+@define-color border-col rgba(30, 30, 46, 0.7);
+@define-color selected-col rgba(150, 205, 251, 0.7);
+@define-color fg-col #D9E0EE;
+@define-color fg-col2 #F28FAD;
 
 * {
-  all: unset;
-  font-family: JetBrainsMono Nerd Font;
+  transition: 200ms ease;
+  font-family: "Maple Mono NF CN";
+  font-size: 1.3rem;
 }
 
 #window {
   background: transparent;
 }
 
-box#main {
-  border-radius: 16px;
-  background-color: alpha(@bg-color, 0.6);
-  border: 0.5px solid alpha(@fg-color, 0.25);
+#plugin,
+#main {
+  border: 3px solid @border-col;
+  color: @fg-col;
+  background-color: @bg-col;
 }
 
-entry#entry {
-  font-size: 1.25rem;
-  background: transparent;
-  box-shadow: none;
-  border: none;
-  border-radius: 16px;
-  padding: 16px 24px;
-  min-height: 40px;
-  caret-color: @primary-color;
+/* anyrun's input window - Text */
+#entry {
+  color: @fg-col;
+  background-color: @bg-col;
 }
 
-list#main {
-  background-color: transparent;
+/* anyrun's output matches entries - Base */
+#match {
+  color: @fg-col;
+  background: @bg-col;
 }
 
-#plugin {
-  background-color: transparent;
-  padding-bottom: 4px;
+/* anyrun's selected entry - Red */
+#match:selected {
+  color: @fg-col2;
+  background: @selected-col;
 }
 
 #match {
-  font-size: 1.1rem;
-  padding: 2px 4px;
+  padding: 3px;
+  border-radius: 16px;
 }
 
-#match:selected,
-#match:hover {
-  background-color: @selected-bg-color;
-  color: @selected-fg-color;
+#entry,
+#plugin:hover {
+  border-radius: 16px;
 }
 
-#match:selected label#info,
-#match:hover label#info {
-  color: @selected-fg-color;
-}
-
-#match:selected label#match-desc,
-#match:hover label#match-desc {
-  color: alpha(@selected-fg-color, 0.9);
-}
-
-#match label#info {
-  color: transparent;
-  color: @fg-color;
-}
-
-label#match-desc {
-  font-size: 1rem;
-  color: @fg-color;
-}
-
-label#plugin {
-  font-size: 16px;
+box#main {
+  background: rgba(30, 30, 46, 0.7);
+  border: 1px solid @border-col;
+  border-radius: 15px;
+  padding: 5px;
 }
