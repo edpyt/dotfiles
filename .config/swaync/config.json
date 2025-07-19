@@ -47,12 +47,20 @@
     "buttons-grid": {
       "actions": [
         {
-          "label": " ",
-          "command": "amixer set Master toggle"
+          "label": "󰂛",
+          "command": "swaync-client -d",
+          "type": "toggle",
+          "tooltip": "DND"
         },
         {
           "label": "",
-          "command": "amixer set Capture toggle"
+          "command": "amixer set Capture toggle",
+          "tooltip": "Mute mic"
+        },
+        {
+          "label": "",
+          "command": "gtklock",
+          "tooltip": "Lock"
         }
       ]
     }
