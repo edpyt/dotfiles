@@ -43,7 +43,7 @@
       gtklock gtklock-powerbar-module gtklock-playerctl-module gtklock-userinfo-module \
       network-manager-applet \
       blueman  \
-      fuzzel
+      anyrun-git
    #+end_src
 ** Tools
    #+begin_src shell

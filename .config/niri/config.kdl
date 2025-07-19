@@ -175,7 +175,7 @@ binds {
     Mod+Escape hotkey-overlay-title="Logout menu" repeat=false { spawn "wlogout"; } 
     Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
     Mod+W { spawn "zen-browser"; }
-    Mod+A { spawn "fuzzel"; }
+    Mod+A { spawn "anyrun"; }
     Mod+Ctrl+C { spawn "hyprpicker" "-a"; }
     Mod+Shift+W { spawn "waypaper"; }
 
