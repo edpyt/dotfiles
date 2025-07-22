@@ -5,8 +5,13 @@
     "position": "right",
     "output": "DP-3",
     "spacing": 0, // Gaps between modules
-    "modules-left": ["custom/swaync", "niri/workspaces"],
-    "modules-center": ["clock"],
+    "modules-left": [
+      "custom/swaync",
+      "niri/workspaces"
+    ],
+    "modules-center": [
+      "clock"
+    ],
     "modules-right": [
       "niri/language",
       "cpu",
@@ -83,11 +88,36 @@
       "format-charging": "{capacity}",
       "format-plugged": "{capacity}",
       "format-alt": "{time} {icon}",
-      "format-icons": ["", "", "", "", ""],
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
     },
     "pulseaudio": {
       "format": "{volume}",
       "scroll-step": 5,
+    },
+  },
+  {
+    "layer": "top",
+    "output": "HDMI-A-1",
+    "modules-left": [
+      "niri/workspaces"
+    ],
+    "modules-center": [
+      "clock"
+    ],
+    "niri/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "browser": "",
+        "code": "",
+        "orgmode": "",
+        "default": "◦",
+      },
     },
   },
 ]
