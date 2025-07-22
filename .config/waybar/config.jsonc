@@ -1,0 +1,87 @@
+// SPIZHENO: https://github.com/YaLTeR/dotfiles/blob/13fe4ae12857d28183c80ae5f7cd5c41cc38bbc7/dot_config/waybar/config.jsonc.tmpl
+[
+  {
+    "layer": "top",
+    "position": "right",
+    "output": "DP-3",
+    "spacing": 0, // Gaps between modules
+    "modules-left": [
+      "niri/workspaces"
+    ],
+    "modules-center": [
+      "clock"
+    ],
+    "modules-right": [
+      "niri/language",
+      "cpu",
+      "memory",
+      "battery",
+      "tray",
+      "pulseaudio",
+    ],
+    "custom/style": {
+      "format": "S",
+      "tooltip": false,
+      "on-click": "set-theme",
+    },
+    "custom/logout": {
+      "format": "⏻",
+      "tooltip": false,
+      "on-click": "niri msg action quit",
+    },
+    "niri/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "browser": "",
+        "code": "",
+        "orgmode": "",
+        "default": "◦",
+      },
+    },
+    "niri/window": {
+      "separate-outputs": true,
+      "icon": true,
+      "icon-size": 16,
+    },
+    "niri/language": {
+      "format": "{shortDescription}",
+    },
+    "tray": {
+      // "icon-size": 21,
+      "spacing": 10,
+    },
+    "clock": {
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      // "format": "{:%e %B %H:%M}"
+      "format": "{:%e\n%m\n\n<b>%H\n%M</b>}",
+    },
+    "cpu": {
+      "format": "{usage}",
+      "tooltip": false,
+    },
+    "memory": {
+      "format": "{}",
+    },
+    "battery": {
+      "states": {
+        "warning": 30,
+        "critical": 15,
+      },
+      "format": "{capacity}",
+      "format-charging": "{capacity}",
+      "format-plugged": "{capacity}",
+      "format-alt": "{time} {icon}",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+    },
+    "pulseaudio": {
+      "format": "{volume}",
+      "scroll-step": 5,
+    },
+  },
+]

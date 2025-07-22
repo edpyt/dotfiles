@@ -21,7 +21,6 @@
    #+begin_src shell
    paru -S \
       catppuccin-cursors-mocha \
-      cosmic-icon-theme \
       qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look
    #+end_src
    + [[https://github.com/catppuccin/gtk/blob/main/docs/USAGE.md][catppuccin-gtk]]
@@ -38,7 +37,7 @@
       wl-clipboard \
       swaync \
       xwayland-satellite \
-      ironbar zx \
+      waybar \
       swayosd-git \
       gtklock gtklock-powerbar-module gtklock-playerctl-module gtklock-userinfo-module \
       network-manager-applet \
