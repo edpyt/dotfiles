@@ -5,12 +5,8 @@
     "position": "right",
     "output": "DP-3",
     "spacing": 0, // Gaps between modules
-    "modules-left": [
-      "niri/workspaces"
-    ],
-    "modules-center": [
-      "clock"
-    ],
+    "modules-left": ["custom/swaync", "niri/workspaces"],
+    "modules-center": ["clock"],
     "modules-right": [
       "niri/language",
       "cpu",
@@ -19,15 +15,31 @@
       "tray",
       "pulseaudio",
     ],
-    "custom/style": {
-      "format": "S",
-      "tooltip": false,
-      "on-click": "set-theme",
-    },
     "custom/logout": {
       "format": "⏻",
       "tooltip": false,
       "on-click": "niri msg action quit",
+    },
+    "custom/swaync": {
+      "tooltip": true,
+      "tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
+      "format": "{icon}",
+      "format-icons": {
+        "notification": "<span foreground='red'><sup></sup></span>",
+        "none": "",
+        "dnd-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-none": "",
+        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": "",
+      },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "sleep 0.1 && swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "escape": true,
     },
     "niri/workspaces": {
       "format": "{icon}",
@@ -71,13 +83,7 @@
       "format-charging": "{capacity}",
       "format-plugged": "{capacity}",
       "format-alt": "{time} {icon}",
-      "format-icons": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
+      "format-icons": ["", "", "", "", ""],
     },
     "pulseaudio": {
       "format": "{volume}",
