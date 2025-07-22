@@ -65,7 +65,7 @@
 .widget-volume,
 .widget-backlight,
 .widget-buttons-grid,
-.control-center-list > box > *:not(.widget-title) {
+.control-center-list>box>*:not(.widget-title) {
   background-color: @module_bg;
   border-radius: 18px;
   padding: 18px;
@@ -82,7 +82,7 @@
   padding: 12px;
 }
 
-.control-center > box > *:last-child {
+.control-center>box>*:last-child {
   margin-bottom: 0;
 }
 
@@ -129,10 +129,17 @@
 }
 
 .widget-mpris .widget-mpris-player {
-  background-color: @mpris_player_bg;
   border-radius: 12px;
   border: 1px solid @border_medium;
+}
+
+.widget-mpris .widget-mpris-player .mpris-background {
+  filter: blur(2px);
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay {
   padding: 16px;
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .widget-mpris .widget-mpris-album-art {
@@ -222,17 +229,17 @@ scale slider {
 }
 
 /* ── 6. Button Grid ─────────────────────────────────────────────── */
-.widget-buttons-grid > flowbox {
+.widget-buttons-grid>flowbox {
   padding: 0;
   background: none;
 }
 
-.widget-buttons-grid > flowbox > flowboxchild {
+.widget-buttons-grid>flowbox>flowboxchild {
   padding: 3px;
   background: none;
 }
 
-.widget-buttons-grid > flowbox > flowboxchild > button {
+.widget-buttons-grid>flowbox>flowboxchild>button {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 66px;
   padding: 14px;
@@ -244,17 +251,17 @@ scale slider {
     color 0.15s ease;
 }
 
-.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
   background-color: rgba(20, 20, 20, 0.45);
   color: @icon_primary;
 }
 
-.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+.widget-buttons-grid>flowbox>flowboxchild>button.toggle:checked {
   background-color: @accent_color;
   color: white;
 }
 
-.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked:hover {
+.widget-buttons-grid>flowbox>flowboxchild>button.toggle:checked:hover {
   background-color: @accent_color_hover;
 }
 
