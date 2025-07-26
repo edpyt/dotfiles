@@ -47,12 +47,6 @@
     "buttons-grid": {
       "actions": [
         {
-          "label": "󰂛",
-          "command": "swaync-client -d",
-          "type": "toggle",
-          "tooltip": "DND"
-        },
-        {
           "label": "",
           "command": "amixer set Capture toggle",
           "tooltip": "Mute mic"

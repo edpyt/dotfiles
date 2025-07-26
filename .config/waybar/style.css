@@ -126,4 +126,5 @@ label:focus {
 
 #pulseaudio {
   background-color: @insensitive_base_color;
+  border-left: 1px solid @borders;
 }
