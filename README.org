@@ -4,7 +4,7 @@
 - Browser: [[https://zen-browser.app/][zen]]
 - OS: [[https://cachyos.org/][CachyOS]]
 
-  #+html: <img src="https://github.com/user-attachments/assets/e82353df-a429-4985-b378-4fc66ccd8677"/>
+  #+html: <img src="https://github.com/user-attachments/assets/9d2b9db2-07b3-4b53-b5ba-8b29cba35265"/>
 
 * Command
   #+begin_src shell
