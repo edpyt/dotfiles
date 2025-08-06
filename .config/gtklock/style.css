@@ -4,5 +4,6 @@ window {
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
+
   color: @theme_selected_fg_color;
 }

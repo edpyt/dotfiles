@@ -81,8 +81,8 @@ button:hover {
   padding: 8px 8px;
 }
 
-#custom-notification {
-  min-height: 32px;
+#custom-swaync {
+  border-bottom: 1px solid @borders;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
