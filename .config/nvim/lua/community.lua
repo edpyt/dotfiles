@@ -11,7 +11,8 @@ return {
   { import = "astrocommunity.pack.docker" },
 
   -- colorscheme
-  { import = "astrocommunity.colorscheme.catppuccin" },
+  -- { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim" },
 
   -- media
   { import = "astrocommunity.media.vim-wakatime" },

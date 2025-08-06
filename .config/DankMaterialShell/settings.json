@@ -2,7 +2,7 @@
   "themeIndex": 2,
   "themeIsDynamic": false,
   "isLightMode": false,
-  "topBarTransparency": 0.7,
+  "topBarTransparency": 0.9,
   "topBarWidgetTransparency": 0.83,
   "popupTransparency": 0.92,
   "dockTransparency": 1,
@@ -12,13 +12,21 @@
       "exec": "yandex-music --no-sandbox %U",
       "icon": "yandex-music",
       "comment": "Yandex Music — we collect music for you",
-      "usageCount": 3,
-      "lastUsed": 1754471964433
+      "usageCount": 5,
+      "lastUsed": 1754473814212
+    },
+    "anki": {
+      "name": "Anki",
+      "exec": "anki %f",
+      "icon": "anki",
+      "comment": "An intelligent spaced-repetition memory training program",
+      "usageCount": 5,
+      "lastUsed": 1754473822028
     }
   },
   "use24HourClock": true,
   "useFahrenheit": false,
-  "nightModeEnabled": true,
+  "nightModeEnabled": false,
   "weatherLocation": "Уфа, 450000",
   "weatherCoordinates": "54.7261409,55.9474990",
   "useAutoLocation": false,
