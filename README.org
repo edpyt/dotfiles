@@ -38,11 +38,11 @@
       swaync \
       xwayland-satellite \
       waybar \
-      swayosd-git \
+      swayosd \
       gtklock gtklock-powerbar-module gtklock-playerctl-module gtklock-userinfo-module \
       network-manager-applet \
       blueman  \
-      anyrun-git
+      fuzzel
    #+end_src
 ** Tools
    #+begin_src shell
@@ -73,7 +73,8 @@
    - zen-browser
       + https://github.com/catppuccin/zen-browser
       + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
-   - [[https://www.digitalzen.app/][DigitalZen]]
+   - [[https://one-sec.app/browser-extension/][one sec]]
+
 
 ** Fonts
 
