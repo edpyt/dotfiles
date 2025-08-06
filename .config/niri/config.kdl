@@ -80,7 +80,7 @@ layout {
     default-column-width { proportion 0.5; }
 
     focus-ring {
-        width 3
+        width 1.5
         active-color "#BABBF1"
         inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view" in="srgb-linear"
         urgent-color "#e78284"
@@ -164,7 +164,7 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 8
+    // geometry-corner-radius 8
     clip-to-geometry true
 }
 

@@ -4,7 +4,7 @@
 - Browser: [[https://zen-browser.app/][zen]]
 - OS: [[https://cachyos.org/][CachyOS]]
 
-#+html: <img src="https://github.com/user-attachments/assets/e82353df-a429-4985-b378-4fc66ccd8677"/>
+  #+html: <img src="https://github.com/user-attachments/assets/e82353df-a429-4985-b378-4fc66ccd8677"/>
 
 * Command
   #+begin_src shell
@@ -21,10 +21,13 @@
    #+begin_src shell
    paru -S \
       catppuccin-cursors-mocha \
+      papirus-icon-theme \
+      papirus-folders-catppuccin-git \
       qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look
    #+end_src
    + [[https://github.com/catppuccin/gtk/blob/main/docs/USAGE.md][catppuccin-gtk]]
    + [[https://github.com/uiriansan/SilentSDDM][SilentSDDM]]
+   + [[https://github.com/catppuccin/papirus-folders][catppuccin papirus folders]]
 
 ** Desktop Environment
 
@@ -71,8 +74,8 @@
      niriswitcher
    #+end_src
    - zen-browser
-      + https://github.com/catppuccin/zen-browser
-      + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
+     + https://github.com/catppuccin/zen-browser
+     + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
    - [[https://one-sec.app/browser-extension/][one sec]]
 
 
