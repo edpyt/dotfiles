@@ -6,7 +6,6 @@
 window#waybar {
   background: transparent;
   background-color: @theme_bg_color;
-  border-left: 1px solid @borders;
   color: @theme_text_color;
 }
 
@@ -107,12 +106,10 @@ label:focus {
 
 #cpu {
   background-color: @insensitive_base_color;
-  border-left: 1px solid #6c7086;
 }
 
 #memory {
   background-color: @insensitive_base_color;
-  border-left: 1px solid #6c7086;
 }
 
 #tray>.passive {
@@ -126,5 +123,4 @@ label:focus {
 
 #pulseaudio {
   background-color: @insensitive_base_color;
-  border-left: 1px solid @borders;
 }
