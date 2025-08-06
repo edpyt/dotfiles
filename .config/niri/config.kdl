@@ -10,6 +10,7 @@ debug {
 
 layer-rule {
     match namespace="^swww-daemon$"
+    match namespace="^quickshell$"
     place-within-backdrop true
 }
 
@@ -94,12 +95,9 @@ layout {
 }
 
 spawn-at-startup "xwayland-satellite" ":42"
-
-spawn-at-startup "swww-daemon"
-
 spawn-at-startup "swayosd-server"
-spawn-at-startup "ironbar"
 spawn-at-startup "niriswitcher"
+spawn-at-startup "qs" "-c" "DankMaterialShell"
 
 
 screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
@@ -175,10 +173,37 @@ binds {
     Mod+Escape hotkey-overlay-title="Logout menu" repeat=false { spawn "wlogout"; } 
     Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
     Mod+W { spawn "zen-browser"; }
-    Mod+A { spawn "anyrun"; }
     Mod+Ctrl+C { spawn "hyprpicker" "-a"; }
-    Mod+Shift+W { spawn "waypaper"; }
+    Mod+Shift+W hotkey-overlay-title="Select wallpaper" { spawn "waypaper"; }
 
+    // NOTE: DankMaterialShell
+    Mod+Ctrl+Comma hotkey-overlay-title="Settings" {
+        spawn "qs" "-c" "DankMaterialShell" "ipc" "call" "settings" "toggle";
+    }
+    Mod+A hotkey-overlay-title="Application Launcher" {
+        spawn "qs" "-c" "DankMaterialShell" "ipc" "call" "spotlight" "toggle";
+    }
+    // FIXME:
+    // Mod+Ctrl+Shift+V hotkey-overlay-title="Clipboard Manager" {
+    //     spawn "qs" "-c" "DankMaterialShell" "ipc" "call" "clipboard" "toggle";
+    // }
+    Super+Alt+L hotkey-overlay-title="Lock Screen" {
+        spawn "qs" "-c" "DankMaterialShell" "ipc" "call" "lock" "lock";
+    }
+    XF86AudioRaiseVolume allow-when-locked=true {   
+        spawn "qs" "-c" "DankMaterialShell" "ipc" "call" "audio" "increment" "5";
+    }
+    XF86AudioLowerVolume allow-when-locked=true { 
+        spawn "qs" "-c" "DankMaterialShell" "ipc" "call" "audio" "decrement" "5";
+    }
+    XF86AudioMute        allow-when-locked=true {
+        spawn "qs" "-c" "DankMaterialShell" "ipc" "call" "audio" "mute";
+    }
+    XF86AudioMicMute     allow-when-locked=true { 
+        spawn "qs" "-c" "DankMaterialShell" "ipc" "call" "audio" "micmute";
+    }
+
+    // NOTE: niriswitcher
     Alt+Tab repeat=false { spawn "niriswitcherctl" "show" "--window"; }
     Alt+Shift+Tab repeat=false { spawn "niriswitcherctl" "show" "--window"; }
     Alt+Grave repeat=false { spawn "niriswitcherctl" "show" "--workspace"; }
@@ -189,13 +214,6 @@ binds {
 
     Mod+Tab { toggle-column-tabbed-display; }
     Mod+B { spawn "blueman-manager"; }
-    Super+Alt+L { spawn "gtklock"; }
-    Mod+N { spawn "swaync-client" "-t"; }
-
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "swayosd-client" "--output-volume" "5"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "swayosd-client" "--output-volume" "-5"; }
-    XF86AudioMute        allow-when-locked=true { spawn "swayosd-client" "--output-volume" "mute-toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn "swayosd-client" "--input-volume" "mute-toggle"; }
 
     XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
     XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }

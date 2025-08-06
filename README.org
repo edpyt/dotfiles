@@ -31,18 +31,14 @@
    #+begin_src shell
    paru -S \
       niri \
+      quickshell-git ttf-material-symbols-variable-git inter-font ttf-fira-code dankmaterialshell-git \
       xdg-desktop-portal-gtk \
       wlogout \
-      swww \
       wl-clipboard \
-      swaync \
       xwayland-satellite \
-      waybar \
-      swayosd-git \
       gtklock gtklock-powerbar-module gtklock-playerctl-module gtklock-userinfo-module \
       network-manager-applet \
       blueman  \
-      anyrun-git
    #+end_src
 ** Tools
    #+begin_src shell
@@ -71,9 +67,9 @@
      niriswitcher
    #+end_src
    - zen-browser
-      + https://github.com/catppuccin/zen-browser
-      + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
-   - [[https://www.digitalzen.app/][DigitalZen]]
+     + https://github.com/catppuccin/zen-browser
+     + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
+     + [[https://one-sec.app/browser-extension/][one sec]]
 
 ** Fonts
 
