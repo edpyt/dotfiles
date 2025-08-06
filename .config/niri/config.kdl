@@ -137,7 +137,6 @@ window-rule {
     match app-id="kitty" title="nmtui"
     match app-id="blueman-manager"
     match app-id="AmneziaVPN"
-    match app-id="waypaper"
 
     opacity 1.0
     open-floating true
@@ -170,8 +169,9 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+T { spawn "kitty"; }
-    Mod+Escape hotkey-overlay-title="Logout menu" repeat=false { spawn "wlogout"; } 
-    Mod+Shift+T hotkey-overlay-title="Spawn btop" { spawn "kitty" "--title" "btop" "btop"; }
+    Mod+Shift+T hotkey-overlay-title="Task Manager" {
+        spawn "qs" "-c" "DankMaterialShell" "ipc" "call" "processlist" "toggle";
+    }
     Mod+W { spawn "zen-browser"; }
     Mod+Ctrl+C { spawn "hyprpicker" "-a"; }
     Mod+Shift+W hotkey-overlay-title="Select wallpaper" { spawn "waypaper"; }

@@ -32,9 +32,8 @@
    paru -S \
       niri \
       quickshell-git ttf-material-symbols-variable-git inter-font ttf-fira-code dankmaterialshell-git \
+      cava wl-clipboard cliphist ddcutil brightnessctl qt5ct qt6ct \
       xdg-desktop-portal-gtk \
-      wlogout \
-      wl-clipboard \
       xwayland-satellite \
       gtklock gtklock-powerbar-module gtklock-playerctl-module gtklock-userinfo-module \
       network-manager-applet \
@@ -61,7 +60,6 @@
      nautilus \
      zellij \
      python ruff basedpyright uv \
-     waypaper \
      texlive-latexrecommended \
      hyprpicker \
      niriswitcher

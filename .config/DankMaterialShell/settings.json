@@ -2,8 +2,8 @@
   "themeIndex": 2,
   "themeIsDynamic": false,
   "isLightMode": false,
-  "topBarTransparency": 0.75,
-  "topBarWidgetTransparency": 0.85,
+  "topBarTransparency": 0.7,
+  "topBarWidgetTransparency": 0.83,
   "popupTransparency": 0.92,
   "dockTransparency": 1,
   "appUsageRanking": {
@@ -12,16 +12,8 @@
       "exec": "yandex-music --no-sandbox %U",
       "icon": "yandex-music",
       "comment": "Yandex Music — we collect music for you",
-      "usageCount": 1,
-      "lastUsed": 1754470569884
-    },
-    "org.pulseaudio.pavucontrol": {
-      "name": "Volume Control",
-      "exec": "pavucontrol",
-      "icon": "multimedia-volume-control",
-      "comment": "Adjust the volume level",
-      "usageCount": 1,
-      "lastUsed": 1754470667731
+      "usageCount": 3,
+      "lastUsed": 1754471964433
     }
   },
   "use24HourClock": true,
@@ -59,17 +51,15 @@
   ],
   "topBarRightWidgets": [
     "systemTray",
-    "clipboard",
     "systemResources",
     "notificationButton",
-    "battery",
     "controlCenterButton"
   ],
   "appLauncherViewMode": "list",
   "spotlightModalViewMode": "list",
   "networkPreference": "auto",
-  "iconTheme": "System Default",
-  "useOSLogo": true,
+  "iconTheme": "breeze",
+  "useOSLogo": false,
   "osLogoColorOverride": "",
   "osLogoBrightness": 0.5,
   "osLogoContrast": 1,
@@ -78,12 +68,12 @@
   "wallpaperLastPath": "/home/ed/wallpapers",
   "profileLastPath": "",
   "doNotDisturb": false,
-  "fontFamily": "Maple Mono",
-  "monoFontFamily": "Maple Mono",
+  "fontFamily": "Maple Mono NF",
+  "monoFontFamily": "Maple Mono NF",
   "fontWeight": 400,
-  "gtkThemingEnabled": false,
+  "gtkThemingEnabled": true,
   "qtThemingEnabled": false,
-  "showDock": false,
+  "showDock": true,
   "pinnedApps": [],
-  "dockAutoHide": false
+  "dockAutoHide": true
 }
