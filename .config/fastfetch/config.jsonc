@@ -1,99 +1,49 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "height": 18,
+    "type": "small",
+    "padding": {
+      "top": 1,
+    },
   },
   "display": {
-    "separator": " ➜ ",
-    "color": "white",
+    "separator": "  ",
   },
   "modules": [
-    {
-      "type": "custom",
-      "format": "┌──────────── Hardware Information ────────────┐",
-    },
-    {
-      "type": "cpu",
-      "key": "   CPU",
-      "keyColor": "blue",
-    },
-    {
-      "type": "board",
-      "key": "   Board",
-      "keyColor": "magenta",
-    },
-    {
-      "type": "gpu",
-      "format": "{2} {3}",
-      "key": "  󰛇 GPU",
-      "keyColor": "yellow",
-    },
-    {
-      "type": "memory",
-      "key": "   Memory",
-      "keyColor": "green",
-    },
-    {
-      "type": "disk",
-      "key": "  󰋊 Disk",
-      "keyColor": "yellow",
-      "format": "{10} ({20}) - {1} / {2} ({3}) - {9}",
-    },
-    {
-      "type": "display",
-      "key": "  󰍹 Display",
-      "keyColor": "cyan",
-      "compactType": "original",
-    },
     "break",
-    {
-      "type": "custom",
-      "format": "├──────────── Software Information ────────────┤",
-    },
+    "title",
     {
       "type": "os",
-      "key": "   OS",
-      "keyColor": "blue",
-    },
-    {
-      "type": "kernel",
-      "key": "   Kernel",
+      "key": "os    ",
       "keyColor": "red",
     },
     {
-      "type": "shell",
-      "key": "   Shell",
-      "keyColor": "magenta",
+      "type": "kernel",
+      "key": "kernel",
+      "keyColor": "green",
     },
     {
-      "type": "wm",
-      "key": "   WM",
-      "keyColor": "cyan",
-    },
-    {
-      "type": "terminal",
-      "key": "   Terminal",
+      "type": "host",
+      "format": "{vendor} {family}",
+      "key": "host  ",
       "keyColor": "yellow",
     },
     {
       "type": "packages",
-      "key": "   Packages",
-      "keyColor": "green",
+      "key": "pkgs  ",
+      "keyColor": "blue",
     },
     {
       "type": "uptime",
-      "key": "  󱫐 Uptime",
-      "keyColor": "white",
+      "format": "{?days}{days}d {?}{hours}h {minutes}m",
+      "key": "uptime",
+      "keyColor": "magenta",
     },
     {
-      "type": "custom",
-      "format": "└──────────────────────────────────────────────┘",
+      "type": "memory",
+      "key": "memory",
+      "keyColor": "cyan",
     },
     "break",
-    {
-      "type": "colors",
-      "symbol": "block",
-      "paddingLeft": 12,
-    },
   ],
 }
