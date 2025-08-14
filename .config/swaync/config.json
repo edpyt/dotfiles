@@ -55,6 +55,11 @@
           "label": "",
           "command": "gtklock",
           "tooltip": "Lock"
+        },
+        {
+          "label": "⏻",
+          "command": "wlogout",
+          "tooltip": "Logout"
         }
       ]
     }

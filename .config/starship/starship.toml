@@ -3,22 +3,6 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
-# Theme
-[palettes.rose-pine-moon]
-overlay = '#393552'
-love = '#eb6f92'
-gold = '#f6c177'
-rose = '#ea9a97'
-pine = '#3e8fb0'
-foam = '#9ccfd8'
-iris = '#c4a7e7'
-
-palette = "rose-pine-moon"
-
-[character]
-success_symbol = "[](bold green)"
-error_symbol = "[](bold red)"
-
 # Duration entry
 [cmd_duration]
 min_time = 10000
