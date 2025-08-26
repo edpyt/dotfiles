@@ -1,10 +1,10 @@
+#+html: <img src="https://github.com/user-attachments/assets/f52bbda0-c2d5-4fe9-aa6a-a6c9e7d0781e"/>
+
 - Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty]]
 - WM: [[https://github.com/YaLTeR/niri][niri]]
 - Code Editor: [[https://astronvim.com][astronvim]]
 - Browser: [[https://zen-browser.app/][zen]]
 - OS: [[https://cachyos.org/][CachyOS]]
-
-  #+html: <img src="https://github.com/user-attachments/assets/d068ef58-148e-4307-84e8-7dc9e36f322e"/>
 
 * Command
   #+begin_src shell
