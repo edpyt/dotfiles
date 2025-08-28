@@ -3,7 +3,7 @@
   {
     "layer": "top",
     "position": "right",
-    "output": ["DP-3", "eDP-1"],
+    "output": ["DP-1", "eDP-1"],
     "spacing": 0, // Gaps between modules
     "modules-left": ["custom/swaync", "niri/workspaces"],
     "modules-center": ["clock"],
