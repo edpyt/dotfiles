@@ -7,6 +7,7 @@ window#waybar {
   background: transparent;
   background-color: @theme_bg_color;
   color: @theme_text_color;
+  border-left: 1px solid #3b3f51;
 }
 
 window#waybar.hidden {
@@ -79,10 +80,12 @@ button:hover {
 #custom-style {
   color: @theme_text_color;
   padding: 8px 8px;
+  border-left: 1px solid #3b3f51;
 }
 
 #custom-swaync {
-  border-bottom: 1px solid @borders;
+  border-bottom: 1px solid #3b3f51;
+  border-left: 1px solid #3b3f51;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
