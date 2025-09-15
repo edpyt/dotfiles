@@ -81,9 +81,9 @@
 
 ** Fonts
 
-   [[https://github.com/subframe7536/maple-font#arch-linux]]
    #+begin_src shell
    paru -S \
+     ttf-firacode-nerd \
      ttf-font-awesome \
      noto-fonts-cjk \
      noto-fonts-emoji
