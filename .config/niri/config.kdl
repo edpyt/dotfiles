@@ -4,10 +4,6 @@ environment {
     DISPLAY ":42"
 }
 
-debug {
-    wait-for-frame-completion-in-pipewire
-}
-
 layer-rule {
     match namespace="^swww-daemon$"
     place-within-backdrop true
@@ -94,6 +90,7 @@ layout {
 }
 
 spawn-at-startup "xwayland-satellite" ":42"
+spawn-at-startup "niri-switch-daemon"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swayosd-server"
 
@@ -174,10 +171,7 @@ binds {
     Mod+Ctrl+C { spawn "hyprpicker" "-a"; }
     Mod+Shift+W { spawn "waypaper"; }
 
-    Alt+Tab repeat=false { spawn "niriswitcherctl" "show" "--window"; }
-    Alt+Shift+Tab repeat=false { spawn "niriswitcherctl" "show" "--window"; }
-    Alt+Grave repeat=false { spawn "niriswitcherctl" "show" "--workspace"; }
-    Alt+Shift+Grave repeat=false { spawn "niriswitcherctl" "show" "--workspace"; }
+    Alt+Tab { spawn "niri-switch"; }
 
     Mod+E { spawn "nautilus"; }
     Mod+Ctrl+E { spawn "kitty" "yazi"; }

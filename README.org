@@ -70,13 +70,13 @@
      python ruff basedpyright uv \
      waypaper \
      texlive-latexrecommended \
-     hyprpicker \
-     niriswitcher
+     hyprpicker
    #+end_src
    - zen-browser
      + https://github.com/catppuccin/zen-browser
      + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
    - [[https://one-sec.app/browser-extension/][one sec]]
+   - [[https://github.com/Kiki-Bouba-Team/niri-switch][niri-switch]]
 
 
 ** Fonts
