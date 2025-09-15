@@ -35,7 +35,7 @@
    paru -S \
       niri \
       xdg-desktop-portal-gtk \
-      wlogout \
+      wleave-git \
       swww \
       wl-clipboard \
       swaync \
