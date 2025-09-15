@@ -94,13 +94,8 @@ layout {
 }
 
 spawn-at-startup "xwayland-satellite" ":42"
-
 spawn-at-startup "swww-daemon"
-
 spawn-at-startup "swayosd-server"
-spawn-at-startup "ironbar"
-spawn-at-startup "niriswitcher"
-
 
 screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 

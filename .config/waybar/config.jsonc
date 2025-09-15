@@ -116,6 +116,7 @@
     "output": "HDMI-A-1",
     "modules-left": ["niri/workspaces"],
     "modules-center": ["clock"],
+    "modules-right": ["custom/uptime"],
     "niri/workspaces": {
       "format": "{icon}",
       "format-icons": {
@@ -124,6 +125,13 @@
         "orgmode": "",
         "default": "◦",
       },
+    },
+    "custom/uptime": {
+      "exec": "uptime -p | sed 's/up //' | sed 's/ days/d/g' | sed 's/ day/d/g' | sed 's/ hours/h/g' | sed 's/ hour/h/g' | sed 's/ minutes/m/g' | sed 's/ minute/m/g' | sed 's/,//g'",
+      "interval": 60,
+      "format": "{}",
+      "tooltip": false,
+      "on-click": "notify-send 'System Uptime' \"$(uptime -p)\"",
     },
   },
 ]
