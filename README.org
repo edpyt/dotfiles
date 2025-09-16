@@ -47,6 +47,7 @@
       blueman  \
       fuzzel
    #+end_src
+   - [[https://github.com/Kiki-Bouba-Team/niri-switch][niri-switch]]
 ** Tools
    #+begin_src shell
    paru -S \
@@ -76,7 +77,6 @@
      + https://github.com/catppuccin/zen-browser
      + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
    - [[https://one-sec.app/browser-extension/][one sec]]
-   - [[https://github.com/Kiki-Bouba-Team/niri-switch][niri-switch]]
 
 
 ** Fonts
