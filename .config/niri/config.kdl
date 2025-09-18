@@ -73,7 +73,7 @@ layout {
         proportion 0.7
     }
 
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 1.0; }
 
     focus-ring {
         width 1.5
@@ -115,7 +115,7 @@ window-rule {
 }
 window-rule {
     match app-id="kitty"
-    default-column-width { proportion 0.75; }
+    // default-column-width { proportion 0.80; }
     draw-border-with-background false
     opacity 0.95 
 }
