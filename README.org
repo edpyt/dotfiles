@@ -1,4 +1,4 @@
-#+html: <img src="https://github.com/user-attachments/assets/025478ba-70d9-4f59-b44c-5d3b3ca82a31"/>
+#+html: <img src="https://github.com/user-attachments/assets/0b123f15-6f0e-4ecb-afc6-8a45b44a4d4b"/>
 
 - Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty]]
 - WM: [[https://github.com/YaLTeR/niri][niri]]
