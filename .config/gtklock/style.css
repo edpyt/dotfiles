@@ -1,9 +1,9 @@
 window {
-  background-image: url("../../wallpapers/deers_and_trees.png");
+  background-image: url("../../wallpapers/Green Lush.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
 
-  color: @theme_selected_fg_color;
+  color: #c6d0f5;
 }
