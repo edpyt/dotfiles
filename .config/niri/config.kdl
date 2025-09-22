@@ -31,10 +31,10 @@ workspace "orgmode" {
     open-on-output "Xiaomi Corporation P27FBB-RGGL 5275600038779"
 }
 
+
 // Monitor configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 output "Philips Consumer Electronics Company PHL 220V8 ZV02030003859" {
-    // off // NOTE: gamemode 🥴
     transform "90"
 }
 output "Xiaomi Corporation P27FBB-RGGL 5275600038779" {
@@ -73,7 +73,7 @@ layout {
         proportion 0.7
     }
 
-    default-column-width { proportion 1.0; }
+    default-column-width { proportion 0.5; }
 
     focus-ring {
         width 1.5
@@ -115,7 +115,7 @@ window-rule {
 }
 window-rule {
     match app-id="kitty"
-    // default-column-width { proportion 0.80; }
+    default-column-width { proportion 0.90; }
     draw-border-with-background false
     opacity 0.95 
 }
