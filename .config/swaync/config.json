@@ -16,13 +16,7 @@
   "hide-on-clear": false,
   "hide-on-action": false,
   "script-fail-notify": true,
-  "widgets": [
-    "label",
-    "buttons-grid",
-    "mpris",
-    "title",
-    "notifications"
-  ],
+  "widgets": ["label", "buttons-grid", "mpris", "title", "notifications"],
   "widget-config": {
     "title": {
       "text": "Notifications",
@@ -58,7 +52,7 @@
         },
         {
           "label": "⏻",
-          "command": "wlogout",
+          "command": "wleave",
           "tooltip": "Logout"
         }
       ]
