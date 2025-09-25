@@ -83,7 +83,7 @@
 
    #+begin_src shell
    paru -S \
-     ttf-firacode-nerd \
+     ttf-0xproto-nerd \
      ttf-font-awesome \
      noto-fonts-cjk \
      noto-fonts-emoji
