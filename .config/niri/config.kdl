@@ -85,7 +85,7 @@ layout {
     tab-indicator {
         width 5
         length total-proportion=0.42
-        active-color "#ef9f76"
+        active-color "#babbf1"
     }
 }
 

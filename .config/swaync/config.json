@@ -16,7 +16,7 @@
   "hide-on-clear": false,
   "hide-on-action": false,
   "script-fail-notify": true,
-  "widgets": ["label", "buttons-grid", "mpris", "title", "notifications"],
+  "widgets": ["label", "mpris", "title", "notifications"],
   "widget-config": {
     "title": {
       "text": "Notifications",
