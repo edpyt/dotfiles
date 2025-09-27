@@ -84,10 +84,11 @@
    #+begin_src shell
    paru -S \
      ttf-0xproto-nerd \
-     ttf-font-awesome \
      noto-fonts-cjk \
      noto-fonts-emoji
    #+end_src
+
+   - [[https://github.com/subframe7536/Maple-font#arch-linux][Maple Mono NF]]
 
    Don't forget to:
    #+begin_src shell

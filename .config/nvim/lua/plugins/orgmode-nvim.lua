@@ -37,12 +37,7 @@ return {
   },
   {
     "nvim-telescope/telescope.nvim",
-    opts = function(_, opts)
-      -- FIXME:
-      -- vim.keymap.set("n", "<leader>r", require("telescope").extensions.orgmode.refile_heading)
-      -- vim.keymap.set("n", "<leader>fh", require("telescope").extensions.orgmode.search_headings)
-      -- vim.keymap.set("n", "<leader>li", require("telescope").extensions.orgmode.insert_link)
-
+    opts = function()
       -- Links are not concealed
       vim.opt.conceallevel = 2
       vim.opt.concealcursor = "nc"
