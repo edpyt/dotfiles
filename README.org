@@ -18,16 +18,7 @@
    + pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
 
 ** Theme 
-   #+begin_src shell
-   paru -S \
-      catppuccin-cursors-mocha \
-      papirus-icon-theme \
-      papirus-folders-catppuccin-git \
-      qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look
-   #+end_src
-   + [[https://github.com/catppuccin/gtk/blob/main/docs/USAGE.md][catppuccin-gtk]]
    + [[https://github.com/uiriansan/SilentSDDM][SilentSDDM]]
-   + [[https://github.com/catppuccin/papirus-folders][catppuccin papirus folders]]
 
 ** Desktop Environment
 
