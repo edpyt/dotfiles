@@ -35,19 +35,11 @@
    paru -S \
       niri \
       xdg-desktop-portal-gtk \
-      wleave-git \
       swww \
       wl-clipboard \
-      swaync \
-      xwayland-satellite \
-      waybar \
-      swayosd \
-      gtklock gtklock-powerbar-module gtklock-playerctl-module gtklock-userinfo-module \
-      network-manager-applet \
-      blueman  \
-      fuzzel
+      xwayland-satellite
    #+end_src
-   - [[https://github.com/Kiki-Bouba-Team/niri-switch][niri-switch]]
+   - [[https://github.com/AvengeMedia/DankMaterialShell][DankMaterialShell]] 
 ** Tools
    #+begin_src shell
    paru -S \
