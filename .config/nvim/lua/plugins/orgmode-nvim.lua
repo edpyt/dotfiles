@@ -14,6 +14,7 @@ return {
           },
         },
       },
+      "michaelb/sniprun",
     },
     event = "VeryLazy",
     ft = { "org" },

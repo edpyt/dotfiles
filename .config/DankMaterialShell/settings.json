@@ -11,7 +11,7 @@
   "nightModeEnabled": false,
   "weatherLocation": "Уфа, Приволжский федеральный округ",
   "weatherCoordinates": "56.1418453,57.7718040",
-  "useAutoLocation": false,
+  "useAutoLocation": true,
   "weatherEnabled": true,
   "showLauncherButton": true,
   "showWorkspaceSwitcher": true,
@@ -65,20 +65,22 @@
       "width": 50
     },
     {
-      "id": "nightMode",
+      "id": "darkMode",
       "enabled": true,
       "width": 50
     },
     {
-      "id": "darkMode",
+      "id": "diskUsage",
       "enabled": true,
-      "width": 50
+      "width": 50,
+      "instanceId": "mg4xjnxk5empya9vzrf",
+      "mountPath": "/"
     }
   ],
   "showWorkspaceIndex": false,
   "showWorkspacePadding": false,
   "showWorkspaceApps": true,
-  "maxWorkspaceIcons": 2,
+  "maxWorkspaceIcons": 3,
   "workspacesPerMonitor": true,
   "workspaceNameIcons": {
     "code": {
@@ -131,13 +133,13 @@
   "osLogoBrightness": 1,
   "osLogoContrast": 2,
   "fontFamily": "Inter Variable",
-  "monoFontFamily": "Fira Code",
+  "monoFontFamily": "Maple Mono NF",
   "fontWeight": 400,
   "fontScale": 1,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
   "notepadFontSize": 14,
-  "notepadShowLineNumbers": false,
+  "notepadShowLineNumbers": true,
   "notepadTransparencyOverride": -1,
   "notepadLastCustomTransparency": 0.7,
   "gtkThemingEnabled": false,

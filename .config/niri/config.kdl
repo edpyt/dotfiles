@@ -5,11 +5,17 @@
 config-notification {
     disable-failed
 }
+
+cursor {
+    xcursor-theme "catppuccin-mocha-red-cursors"
+}
+
 // Outputs from existing configuration
 output "Philips Consumer Electronics Company PHL 220V8 ZV02030003859" {
     transform "90"
 }
 output "Xiaomi Corporation P27FBB-RGGL 5275600038779" {
+    focus-at-startup
     mode "1920x1080@144.106"
 }
 
@@ -80,13 +86,14 @@ layout {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
+        proportion 0.8
         // Fixed sets the width in logical pixels exactly.
         // fixed 1920
     }
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 0.8; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
     // By default focus ring and border are rendered as a solid background rectangle
@@ -192,7 +199,7 @@ window-rule {
     // since this is the default config, and we want no false positives.
     // You can get away with just app-id="wezterm" if you want.
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
+    match app-id="kitty"
 }
 window-rule {
     match app-id=r#"^org\.gnome\."#
@@ -225,8 +232,8 @@ window-rule {
     draw-border-with-background false
 }
 window-rule { 
-    match is-active=false
-    opacity 0.9
+    // match is-active=false
+    opacity 0.95
 }
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
@@ -291,6 +298,9 @@ binds {
     XF86AudioMicMute allow-when-locked=true {
         spawn "dms" "ipc" "call" "audio" "micmute";
     }
+    XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
+    XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
+    XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }
 
     XF86KbdBrightnessUp allow-when-locked=true {
         spawn "kbdbrite.sh" "up";
