@@ -111,7 +111,6 @@
     }
   ],
   "dankBarCenterWidgets": [
-    "music",
     "clock",
     "weather"
   ],
@@ -121,7 +120,6 @@
     "cpuUsage",
     "memUsage",
     "notificationButton",
-    "battery",
     "controlCenterButton"
   ],
   "appLauncherViewMode": "list",

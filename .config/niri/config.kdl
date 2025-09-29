@@ -1,4 +1,4 @@
-// This config is in the KDL format: https://kdl.dev
+// This config is in the KDL format: https://blueman-manager
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
@@ -22,9 +22,15 @@ gestures {
 
 // Workspaces configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
-workspace "browser" 
-workspace "code"
-workspace "orgmode"
+workspace "browser" {
+    open-on-output "Xiaomi Corporation P27FBB-RGGL 5275600038779"
+}
+workspace "code" {
+    open-on-output "Xiaomi Corporation P27FBB-RGGL 5275600038779"
+}
+workspace "orgmode" {
+    open-on-output "Xiaomi Corporation P27FBB-RGGL 5275600038779"
+}
 
 // Input device configuration.
 // Find the full list of options on the wiki:
@@ -243,6 +249,7 @@ binds {
     // === Application Launchers ===
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+W hotkey-overlay-title="Open Browser" { spawn "zen-browser"; }
+    Mod+B hotkey-overlay-title="Open Bluetooth Manager" { spawn "blueman-manager"; }
     Mod+A hotkey-overlay-title="Application Launcher" { 
         spawn "dms" "ipc" "call" "spotlight" "toggle"; 
     }
@@ -257,6 +264,9 @@ binds {
     }
     Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
+    Mod+Escape hotkey-overlay-title="Power Menu" {
+        spawn "dms" "ipc" "call" "powermenu" "toggle";
+    }
 
     // === Security ===
     Mod+Alt+L hotkey-overlay-title="Lock Screen" { 
@@ -430,6 +440,5 @@ binds {
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
     // === System Controls ===
-    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+P { power-off-monitors; }
 }
