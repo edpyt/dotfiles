@@ -1,0 +1,178 @@
+{
+  "currentThemeName": "cat-lavender",
+  "customThemeFile": "",
+  "matugenScheme": "scheme-tonal-spot",
+  "dankBarTransparency": 1,
+  "dankBarWidgetTransparency": 1,
+  "popupTransparency": 1,
+  "dockTransparency": 1,
+  "use24HourClock": true,
+  "useFahrenheit": false,
+  "nightModeEnabled": false,
+  "weatherLocation": "Давлеканово, Приволжский федеральный округ",
+  "weatherCoordinates": "54.2129656,55.0307219",
+  "useAutoLocation": false,
+  "weatherEnabled": true,
+  "showLauncherButton": true,
+  "showWorkspaceSwitcher": true,
+  "showFocusedWindow": true,
+  "showWeather": true,
+  "showMusic": true,
+  "showClipboard": true,
+  "showCpuUsage": true,
+  "showMemUsage": true,
+  "showCpuTemp": true,
+  "showGpuTemp": true,
+  "selectedGpuIndex": 0,
+  "enabledGpuPciIds": [],
+  "showSystemTray": true,
+  "showClock": true,
+  "showNotificationButton": true,
+  "showBattery": true,
+  "showControlCenterButton": true,
+  "controlCenterShowNetworkIcon": true,
+  "controlCenterShowBluetoothIcon": true,
+  "controlCenterShowAudioIcon": true,
+  "controlCenterWidgets": [
+    {
+      "id": "volumeSlider",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "brightnessSlider",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "wifi",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "bluetooth",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "audioOutput",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "audioInput",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "nightMode",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "darkMode",
+      "enabled": true,
+      "width": 50
+    }
+  ],
+  "showWorkspaceIndex": false,
+  "showWorkspacePadding": false,
+  "showWorkspaceApps": true,
+  "maxWorkspaceIcons": 2,
+  "workspacesPerMonitor": true,
+  "workspaceNameIcons": {
+    "code": {
+      "type": "icon",
+      "value": "terminal"
+    },
+    "orgmode": {
+      "type": "icon",
+      "value": "integration_instructions"
+    },
+    "browser": {
+      "type": "icon",
+      "value": "laptop"
+    }
+  },
+  "waveProgressEnabled": false,
+  "clockCompactMode": false,
+  "focusedWindowCompactMode": true,
+  "runningAppsCompactMode": true,
+  "runningAppsCurrentWorkspace": true,
+  "clockDateFormat": "",
+  "lockDateFormat": "",
+  "mediaSize": 0,
+  "dankBarLeftWidgets": [
+    "launcherButton",
+    "workspaceSwitcher",
+    {
+      "id": "focusedWindow",
+      "enabled": true
+    }
+  ],
+  "dankBarCenterWidgets": [
+    "music",
+    "clock",
+    "weather"
+  ],
+  "dankBarRightWidgets": [
+    "systemTray",
+    "clipboard",
+    "cpuUsage",
+    "memUsage",
+    "notificationButton",
+    "battery",
+    "controlCenterButton"
+  ],
+  "appLauncherViewMode": "list",
+  "spotlightModalViewMode": "list",
+  "networkPreference": "auto",
+  "iconTheme": "System Default",
+  "useOSLogo": false,
+  "osLogoColorOverride": "",
+  "osLogoBrightness": 1,
+  "osLogoContrast": 2,
+  "fontFamily": "Inter Variable",
+  "monoFontFamily": "Fira Code",
+  "fontWeight": 400,
+  "fontScale": 1,
+  "notepadUseMonospace": true,
+  "notepadFontFamily": "",
+  "notepadFontSize": 14,
+  "notepadShowLineNumbers": false,
+  "notepadTransparencyOverride": -1,
+  "notepadLastCustomTransparency": 0.7,
+  "gtkThemingEnabled": false,
+  "qtThemingEnabled": false,
+  "showDock": false,
+  "dockAutoHide": false,
+  "dockGroupByApp": false,
+  "dockOpenOnOverview": false,
+  "dockPosition": 1,
+  "dockSpacing": 4,
+  "dockBottomGap": 0,
+  "cornerRadius": 12,
+  "notificationOverlayEnabled": false,
+  "dankBarAutoHide": false,
+  "dankBarOpenOnOverview": false,
+  "dankBarVisible": true,
+  "dankBarSpacing": 4,
+  "dankBarBottomGap": 0,
+  "dankBarInnerPadding": 4,
+  "dankBarSquareCorners": false,
+  "dankBarNoBackground": true,
+  "dankBarGothCornersEnabled": false,
+  "dankBarAtBottom": false,
+  "lockScreenShowPowerActions": true,
+  "hideBrightnessSlider": false,
+  "widgetBackgroundColor": "sch",
+  "surfaceBase": "s",
+  "notificationTimeoutLow": 5000,
+  "notificationTimeoutNormal": 5000,
+  "notificationTimeoutCritical": 0,
+  "screenPreferences": {
+    "dankBar": [
+      "all"
+    ]
+  }
+}

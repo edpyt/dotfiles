@@ -20,12 +20,20 @@ gestures {
     }
 }
 
+// Workspaces configuration
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
+workspace "browser" 
+workspace "code"
+workspace "orgmode"
+
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 input {
     keyboard {
         xkb {
+            layout "us,ru"
+            options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
         }
         numlock
     }
@@ -123,12 +131,12 @@ spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 spawn-at-startup "dms" "run"
 spawn-at-startup "/usr/lib/mate-polkit/polkit-mate-authentication-agent-1"
 environment {
-  XDG_CURRENT_DESKTOP "niri"
-  QT_QPA_PLATFORM "wayland"
-  ELECTRON_OZONE_PLATFORM_HINT "auto"
-  QT_QPA_PLATFORMTHEME "gtk3"
-  QT_QPA_PLATFORMTHEME_QT6 "gtk3"
-  TERMINAL "kitty"
+    XDG_CURRENT_DESKTOP "niri"
+    QT_QPA_PLATFORM "wayland"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    QT_QPA_PLATFORMTHEME "gtk3"
+    QT_QPA_PLATFORMTHEME_QT6 "gtk3"
+    TERMINAL "kitty"
 }
 hotkey-overlay {
     skip-at-startup
@@ -222,14 +230,19 @@ window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
+window-rule {
+    match app-id="zen" 
+    open-on-workspace "browser"
+}
 binds {
     // === System & Overview ===
     Mod+D { spawn "niri" "msg" "action" "toggle-overview"; }
     Mod+O repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
-    
+
     // === Application Launchers ===
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
+    Mod+W hotkey-overlay-title="Open Browser" { spawn "zen-browser"; }
     Mod+A hotkey-overlay-title="Application Launcher" { 
         spawn "dms" "ipc" "call" "spotlight" "toggle"; 
     }
@@ -244,7 +257,7 @@ binds {
     }
     Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
-    
+
     // === Security ===
     Mod+Alt+L hotkey-overlay-title="Lock Screen" { 
         spawn "dms" "ipc" "call" "lock" "lock"; 
@@ -253,7 +266,7 @@ binds {
     Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" { 
         spawn "dms" "ipc" "call" "processlist" "toggle"; 
     }
-    
+
     // === Audio Controls ===
     XF86AudioRaiseVolume allow-when-locked=true {
         spawn "dms" "ipc" "call" "audio" "increment" "3";
@@ -267,7 +280,7 @@ binds {
     XF86AudioMicMute allow-when-locked=true {
         spawn "dms" "ipc" "call" "audio" "micmute";
     }
-    
+
     XF86KbdBrightnessUp allow-when-locked=true {
         spawn "kbdbrite.sh" "up";
     }
@@ -276,20 +289,20 @@ binds {
     }
     // === Brightness Controls ===
     XF86MonBrightnessUp allow-when-locked=true {
-       spawn "dms" "ipc" "call" "brightness" "increment" "5" "";
+        spawn "dms" "ipc" "call" "brightness" "increment" "5" "";
     }
     XF86MonBrightnessDown allow-when-locked=true {
-       spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
+        spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
     }  
-    
+
     // === Window Management ===
     Mod+Q repeat=false { close-window; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
     Mod+Shift+T { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
-    Mod+W { toggle-column-tabbed-display; }
-    
+    Mod+Tab { toggle-column-tabbed-display; }
+
     // === Focus Navigation ===
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
@@ -299,7 +312,7 @@ binds {
     Mod+J     { focus-window-down; }
     Mod+K     { focus-window-up; }
     Mod+L     { focus-column-right; }
-    
+
     // === Window Movement ===
     Mod+Shift+Left  { move-column-left; }
     Mod+Shift+Down  { move-window-down; }
@@ -309,13 +322,13 @@ binds {
     Mod+Shift+J     { move-window-down; }
     Mod+Shift+K     { move-window-up; }
     Mod+Shift+L     { move-column-right; }
-    
+
     // === Column Navigation ===
     Mod+Home { focus-column-first; }
     Mod+End  { focus-column-last; }
     Mod+Ctrl+Home { move-column-to-first; }
     Mod+Ctrl+End  { move-column-to-last; }
-    
+
     // === Monitor Navigation ===
     Mod+Ctrl+Left  { focus-monitor-left; }
     //Mod+Ctrl+Down  { focus-monitor-down; }
@@ -325,7 +338,7 @@ binds {
     Mod+Ctrl+J     { focus-monitor-down; }
     Mod+Ctrl+K     { focus-monitor-up; }
     Mod+Ctrl+L     { focus-monitor-right; }
-    
+
     // === Move to Monitor ===
     Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
     Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
@@ -335,7 +348,7 @@ binds {
     Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
     Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
     Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
-    
+
     // === Workspace Navigation ===
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
@@ -345,29 +358,29 @@ binds {
     Mod+Ctrl+Up   { move-column-to-workspace-up; }
     Mod+Ctrl+U         { move-column-to-workspace-down; }
     Mod+Ctrl+I         { move-column-to-workspace-up; }
-    
+
     // === Move Workspaces ===
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up   { move-workspace-up; }
     Mod+Shift+U         { move-workspace-down; }
     Mod+Shift+I         { move-workspace-up; }
-    
+
     // === Mouse Wheel Navigation ===
     Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
     Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
     Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
     Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
-    
+
     Mod+WheelScrollRight      { focus-column-right; }
     Mod+WheelScrollLeft       { focus-column-left; }
     Mod+Ctrl+WheelScrollRight { move-column-right; }
     Mod+Ctrl+WheelScrollLeft  { move-column-left; }
-    
+
     Mod+Shift+WheelScrollDown      { focus-column-right; }
     Mod+Shift+WheelScrollUp        { focus-column-left; }
     Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
     Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
-    
+
     // === Numbered Workspaces ===
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }
@@ -378,7 +391,7 @@ binds {
     Mod+7 { focus-workspace 7; }
     Mod+8 { focus-workspace 8; }
     Mod+9 { focus-workspace 9; }
-    
+
     // === Move to Numbered Workspaces ===
     Mod+Shift+1 { move-column-to-workspace 1; }
     Mod+Shift+2 { move-column-to-workspace 2; }
@@ -389,12 +402,12 @@ binds {
     Mod+Shift+7 { move-column-to-workspace 7; }
     Mod+Shift+8 { move-column-to-workspace 8; }
     Mod+Shift+9 { move-column-to-workspace 9; }
-    
+
     // === Column Management ===
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
     Mod+Period { expel-window-from-column; }
-    
+
     // === Sizing & Layout ===
     Mod+R { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
@@ -402,13 +415,13 @@ binds {
     Mod+Ctrl+F { expand-column-to-available-width; }
     Mod+C { center-column; }
     Mod+Ctrl+C { center-visible-columns; }
-    
+
     // === Manual Sizing ===
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
-    
+
     // === Screenshots ===
     XF86Launch1 { screenshot; }
     Ctrl+XF86Launch1 { screenshot-screen; }
