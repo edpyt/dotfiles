@@ -1,6 +1,6 @@
 {
   "currentThemeName": "cat-lavender",
-  "customThemeFile": "",
+  "customThemeFile": "./themes/hotline_miami.json",
   "matugenScheme": "scheme-tonal-spot",
   "dankBarTransparency": 1,
   "dankBarWidgetTransparency": 1,
@@ -176,6 +176,9 @@
     ],
     "dock": [
       "HDMI-A-1"
+    ],
+    "notifications": [
+      "DP-1"
     ]
   }
 }
