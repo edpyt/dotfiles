@@ -110,6 +110,10 @@
       "enabled": true
     },
     {
+      "id": "separator",
+      "enabled": true
+    },
+    {
       "id": "workspaceSwitcher",
       "enabled": true
     },

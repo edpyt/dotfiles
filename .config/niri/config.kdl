@@ -233,7 +233,7 @@ window-rule {
 }
 window-rule { 
     // match is-active=false
-    opacity 0.95
+    opacity 0.9
 }
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
@@ -248,6 +248,7 @@ window-rule {
     match app-id="zen" 
     open-on-workspace "browser"
     default-column-width { proportion 1.0; }
+    opacity 1.0
 }
 binds {
     // === System & Overview ===
@@ -271,6 +272,9 @@ binds {
     Mod+Comma hotkey-overlay-title="Settings" { 
         spawn "dms" "ipc" "call" "settings" "toggle"; 
     }
+    Mod+Shift+W hotkey-overlay-title="Select wallpaper" { 
+        spawn "dms" "ipc" "call" "file" "browse" "wallpaper"; 
+    }
     Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
     Mod+Escape hotkey-overlay-title="Power Menu" {
@@ -281,7 +285,7 @@ binds {
     }
 
     // === Security ===
-    Mod+Alt+L hotkey-overlay-title="Lock Screen" { 
+    Mod+Alt+L hotkey-overlay-title="Lock Screen" allow-when-locked=true { 
         spawn "dms" "ipc" "call" "lock" "lock"; 
     }
     Mod+Shift+E { quit; }
