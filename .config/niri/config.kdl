@@ -15,8 +15,7 @@ output "Philips Consumer Electronics Company PHL 220V8 ZV02030003859" {
     transform "90"
 }
 output "Xiaomi Corporation P27FBB-RGGL 5275600038779" {
-    focus-at-startup
-    mode "1920x1080@144.106"
+    mode "1920x1080@120"
 }
 
 

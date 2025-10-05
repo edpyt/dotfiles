@@ -64,7 +64,6 @@
 
    #+begin_src shell
    paru -S \
-     ttf-0xproto-nerd \
      noto-fonts-cjk \
      noto-fonts-emoji
    #+end_src

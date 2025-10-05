@@ -38,10 +38,16 @@ shell_integration enabled
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="0xProto Nerd Font Mono"
+font_family      family="Maple Mono NF"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
 
-confirm_os_window_close -1
+confirm_os_window_close 0
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Frappe
+include current-theme.conf
+# END_KITTY_THEME

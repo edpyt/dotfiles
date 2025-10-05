@@ -199,6 +199,7 @@
   "notificationTimeoutNormal": 8000,
   "notificationTimeoutCritical": 0,
   "notificationPopupPosition": 0,
+  "osdAlwaysShowValue": false,
   "screenPreferences": {
     "dankBar": [
       "DP-1"
@@ -208,7 +209,14 @@
     ],
     "notifications": [
       "DP-1"
+    ],
+    "systemTray": [
+      "all"
+    ],
+    "osd": [
+      "all"
     ]
   },
+  "pluginSettings": {},
   "animationSpeed": 2
 }
