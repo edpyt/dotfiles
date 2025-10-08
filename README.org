@@ -24,7 +24,7 @@
 
    #+begin_src shell
    paru -S \
-      niri \
+      niri-git \
       xdg-desktop-portal-gtk \
       swww \
       wl-clipboard \

@@ -1,7 +1,9 @@
-// This config is in the KDL format: https://blueman-manager
+// This config is in the KDL format
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
+
+
 config-notification {
     disable-failed
 }
@@ -15,7 +17,8 @@ output "Philips Consumer Electronics Company PHL 220V8 ZV02030003859" {
     transform "90"
 }
 output "Xiaomi Corporation P27FBB-RGGL 5275600038779" {
-    mode "1920x1080@120"
+    mode "1920x1080@144.106"
+    focus-at-startup
 }
 
 
@@ -155,7 +158,7 @@ hotkey-overlay {
     skip-at-startup
 }
 prefer-no-csd
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 animations {
     workspace-switch {
         spring damping-ratio=0.80 stiffness=523 epsilon=0.0001
@@ -259,69 +262,17 @@ binds {
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+W hotkey-overlay-title="Open Browser" { spawn "zen-browser"; }
     Mod+B hotkey-overlay-title="Open Bluetooth Manager" { spawn "blueman-manager"; }
-    Mod+A hotkey-overlay-title="Application Launcher" { 
-        spawn "dms" "ipc" "call" "spotlight" "toggle"; 
-    }
-    Mod+V hotkey-overlay-title="Clipboard Manager" { 
-        spawn "dms" "ipc" "call" "clipboard" "toggle"; 
-    }
-    Mod+M hotkey-overlay-title="Task Manager" { 
-        spawn "dms" "ipc" "call" "processlist" "toggle"; 
-    }
-    Mod+Comma hotkey-overlay-title="Settings" { 
-        spawn "dms" "ipc" "call" "settings" "toggle"; 
-    }
-    Mod+Shift+W hotkey-overlay-title="Select wallpaper" { 
-        spawn "dms" "ipc" "call" "file" "browse" "wallpaper"; 
-    }
-    Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
-    Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
-    Mod+Escape hotkey-overlay-title="Power Menu" {
-        spawn "dms" "ipc" "call" "powermenu" "toggle";
-    }
-    Mod+Ctrl+M hotkey-overlay-title="Media dashboard popup" { 
-        spawn "dms" "ipc" "call" "dash" "toggle" "media"; 
+    Mod+E hotkey-overlay-title="Open file manager" { 
+        spawn "kitty" "yazi"; 
     }
 
     // === Security ===
-    Mod+Alt+L hotkey-overlay-title="Lock Screen" allow-when-locked=true { 
-        spawn "dms" "ipc" "call" "lock" "lock"; 
-    }
     Mod+Shift+E { quit; }
-    Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" { 
-        spawn "dms" "ipc" "call" "processlist" "toggle"; 
-    }
 
     // === Audio Controls ===
-    XF86AudioRaiseVolume allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "increment" "3";
-    }
-    XF86AudioLowerVolume allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "decrement" "3";
-    }
-    XF86AudioMute allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "mute";
-    }
-    XF86AudioMicMute allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "micmute";
-    }
     XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
     XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
     XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }
-
-    XF86KbdBrightnessUp allow-when-locked=true {
-        spawn "kbdbrite.sh" "up";
-    }
-    XF86KbdBrightnessDown allow-when-locked=true {
-        spawn "kbdbrite.sh" "down";
-    }
-    // === Brightness Controls ===
-    XF86MonBrightnessUp allow-when-locked=true {
-        spawn "dms" "ipc" "call" "brightness" "increment" "5" "";
-    }
-    XF86MonBrightnessDown allow-when-locked=true {
-        spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
-    }  
 
     // === Window Management ===
     Mod+Q repeat=false { close-window; }
@@ -460,3 +411,8 @@ binds {
     // === System Controls ===
     Mod+Shift+P { power-off-monitors; }
 }
+
+
+include "dms/binds.kdl"
+include "dms/colors.kdl"
+include "dms/layout.kdl"
