@@ -2,7 +2,9 @@
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
-
+include "dms/layout.kdl"
+include "dms/binds.kdl"
+include "dms/colors.kdl"
 
 config-notification {
     disable-failed
@@ -70,7 +72,7 @@ input {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 5
+    gaps 12
     background-color "transparent"
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -111,20 +113,14 @@ layout {
     border {
         off
         width 4
-        active-color   "#707070"      // Neutral gray
-        inactive-color "#d0d0d0"      // Light gray
-        urgent-color   "#cc4444"      // Softer red
     }
     focus-ring {
         width 2
-        active-color   "#808080"      // Medium gray
-        inactive-color "#505050"      // Dark gray
     }
     shadow {
         softness 30
         spread 5
         offset x=0 y=5
-        color "#0007"
     }
     struts {
     }  
@@ -413,6 +409,3 @@ binds {
 }
 
 
-include "dms/binds.kdl"
-include "dms/colors.kdl"
-include "dms/layout.kdl"
