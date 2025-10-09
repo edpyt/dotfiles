@@ -3,7 +3,7 @@
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
 include "dms/layout.kdl"
-include "dms/binds.kdl"
+// include "dms/binds.kdl"
 include "dms/colors.kdl"
 
 config-notification {
@@ -261,11 +261,78 @@ binds {
     Mod+E hotkey-overlay-title="Open file manager" { 
         spawn "kitty" "yazi"; 
     }
+    
+        Mod+A hotkey-overlay-title="Application Launcher" { 
+        spawn "dms" "ipc" "call" "spotlight" "toggle"; 
+    }
+
+    Mod+V hotkey-overlay-title="Clipboard Manager" { 
+        spawn "dms" "ipc" "call" "clipboard" "toggle"; 
+    }
+
+    Mod+M hotkey-overlay-title="Task Manager" { 
+        spawn "dms" "ipc" "call" "processlist" "toggle"; 
+    }
+
+    Mod+Comma hotkey-overlay-title="Settings" { 
+        spawn "dms" "ipc" "call" "settings" "toggle"; 
+    }
+
+    Mod+N hotkey-overlay-title="Notification Center" {
+        spawn "dms" "ipc" "call" "notifications" "toggle"; 
+    }
+
+    Mod+Shift+N hotkey-overlay-title="Notepad" {
+        spawn "dms" "ipc" "call" "notepad" "toggle";  
+    }
+
+    Mod+Alt+L hotkey-overlay-title="Lock Screen" { 
+        spawn "dms" "ipc" "call" "lock" "lock"; 
+    }
+
+    Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" { 
+        spawn "dms" "ipc" "call" "processlist" "toggle"; 
+    }    
+
+    // Preferences
+    Mod+Shift+W hotkey-overlay-title="Select wallpaper" { 
+        spawn "dms" "ipc" "call" "file" "browse" "wallpaper"; 
+    }
+    Mod+Escape hotkey-overlay-title="Power Menu" {
+        spawn "dms" "ipc" "call" "powermenu" "toggle";
+    }
+    Mod+Ctrl+M hotkey-overlay-title="Media dashboard popup" { 
+        spawn "dms" "ipc" "call" "dash" "toggle" "media"; 
+    }
+    Mod+Ctrl+O hotkey-overlay-title="Overview dashboard popup" { 
+        spawn "dms" "ipc" "call" "dash" "toggle" "dash"; 
+    }
+
 
     // === Security ===
     Mod+Shift+E { quit; }
 
     // === Audio Controls ===
+    XF86AudioRaiseVolume allow-when-locked=true {
+        spawn "dms" "ipc" "call" "audio" "increment" "3";
+    }
+    XF86AudioLowerVolume allow-when-locked=true {
+        spawn "dms" "ipc" "call" "audio" "decrement" "3";
+    }
+    XF86AudioMute allow-when-locked=true {
+        spawn "dms" "ipc" "call" "audio" "mute";
+    }
+    XF86AudioMicMute allow-when-locked=true {
+        spawn "dms" "ipc" "call" "audio" "micmute";
+    }
+
+    // BL
+    XF86MonBrightnessUp allow-when-locked=true {
+        spawn "dms" "ipc" "call" "brightness" "increment" "5" "";
+    }
+    XF86MonBrightnessDown allow-when-locked=true {
+        spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
+    }  
     XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
     XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
     XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }

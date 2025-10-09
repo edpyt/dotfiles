@@ -1,5 +1,5 @@
 binds {
-    Mod+A hotkey-overlay-title="Application Launcher" { 
+    Mod+Space hotkey-overlay-title="Application Launcher" { 
         spawn "dms" "ipc" "call" "spotlight" "toggle"; 
     }
 
@@ -20,9 +20,9 @@ binds {
     }
 
     Mod+Shift+N hotkey-overlay-title="Notepad" {
-        spawn "dms" "ipc" "call" "notepad" "toggle";  
+      spawn "dms" "ipc" "call" "notepad" "toggle";  
     }
-
+    
     Mod+Alt+L hotkey-overlay-title="Lock Screen" { 
         spawn "dms" "ipc" "call" "lock" "lock"; 
     }
@@ -44,26 +44,12 @@ binds {
     XF86AudioMicMute allow-when-locked=true {
         spawn "dms" "ipc" "call" "audio" "micmute";
     }
-
+    
     // BL
     XF86MonBrightnessUp allow-when-locked=true {
-        spawn "dms" "ipc" "call" "brightness" "increment" "5" "";
+       spawn "dms" "ipc" "call" "brightness" "increment" "5" "";
     }
     XF86MonBrightnessDown allow-when-locked=true {
-        spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
+       spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
     }  
-
-    // Preferences
-    Mod+Shift+W hotkey-overlay-title="Select wallpaper" { 
-        spawn "dms" "ipc" "call" "file" "browse" "wallpaper"; 
-    }
-    Mod+Escape hotkey-overlay-title="Power Menu" {
-        spawn "dms" "ipc" "call" "powermenu" "toggle";
-    }
-    Mod+Ctrl+M hotkey-overlay-title="Media dashboard popup" { 
-        spawn "dms" "ipc" "call" "dash" "toggle" "media"; 
-    }
-    Mod+Ctrl+O hotkey-overlay-title="Overview dashboard popup" { 
-        spawn "dms" "ipc" "call" "dash" "toggle" "dash"; 
-    }
 }
