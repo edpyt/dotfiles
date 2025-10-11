@@ -98,7 +98,7 @@
   },
   "waveProgressEnabled": false,
   "clockCompactMode": false,
-  "focusedWindowCompactMode": true,
+  "focusedWindowCompactMode": false,
   "runningAppsCompactMode": true,
   "runningAppsCurrentWorkspace": true,
   "clockDateFormat": "",
@@ -116,15 +116,21 @@
     {
       "id": "workspaceSwitcher",
       "enabled": true
-    },
-    {
-      "id": "focusedWindow",
-      "enabled": true
     }
   ],
   "dankBarCenterWidgets": [
-    "clock",
-    "weather"
+    {
+      "id": "focusedWindow",
+      "enabled": true
+    },
+    {
+      "id": "clock",
+      "enabled": true
+    },
+    {
+      "id": "weather",
+      "enabled": true
+    }
   ],
   "dankBarRightWidgets": [
     {
@@ -141,10 +147,6 @@
     },
     {
       "id": "memUsage",
-      "enabled": true
-    },
-    {
-      "id": "network_speed_monitor",
       "enabled": true
     },
     {
@@ -199,7 +201,7 @@
   "notificationTimeoutNormal": 8000,
   "notificationTimeoutCritical": 0,
   "notificationPopupPosition": 0,
-  "osdAlwaysShowValue": false,
+  "osdAlwaysShowValue": true,
   "screenPreferences": {
     "dankBar": [
       "DP-1"
