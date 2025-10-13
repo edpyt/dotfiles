@@ -17,9 +17,6 @@
    + nvidia-inst
    + pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
 
-** Theme 
-   + [[https://github.com/uiriansan/SilentSDDM][SilentSDDM]]
-
 ** Desktop Environment
 
    #+begin_src shell
@@ -31,6 +28,7 @@
       xwayland-satellite
    #+end_src
    - [[https://github.com/AvengeMedia/DankMaterialShell][DankMaterialShell]] 
+   - [[https://github.com/AvengeMedia/DankMaterialShell/blob/master/Modules/Greetd/README.md][DMS greetd]]
 ** Tools
    #+begin_src shell
    paru -S \

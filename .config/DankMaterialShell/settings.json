@@ -131,14 +131,6 @@
     {
       "id": "weather",
       "enabled": true
-    },
-    {
-      "id": "separator",
-      "enabled": true
-    },
-    {
-      "id": "music",
-      "enabled": true
     }
   ],
   "dankBarRightWidgets": [
