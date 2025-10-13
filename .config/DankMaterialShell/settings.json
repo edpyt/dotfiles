@@ -2,6 +2,7 @@
   "currentThemeName": "cat-lavender",
   "customThemeFile": "./themes/hotline_miami.json",
   "matugenScheme": "scheme-tonal-spot",
+  "runUserMatugenTemplates": true,
   "dankBarTransparency": 1,
   "dankBarWidgetTransparency": 1,
   "popupTransparency": 1,
@@ -79,21 +80,21 @@
   ],
   "showWorkspaceIndex": false,
   "showWorkspacePadding": false,
-  "showWorkspaceApps": true,
+  "showWorkspaceApps": false,
   "maxWorkspaceIcons": 3,
   "workspacesPerMonitor": true,
   "workspaceNameIcons": {
+    "browser": {
+      "type": "icon",
+      "value": "laptop"
+    },
     "code": {
       "type": "icon",
       "value": "terminal"
     },
     "orgmode": {
       "type": "icon",
-      "value": "integration_instructions"
-    },
-    "browser": {
-      "type": "icon",
-      "value": "laptop"
+      "value": "schedule"
     }
   },
   "waveProgressEnabled": false,
@@ -116,13 +117,13 @@
     {
       "id": "workspaceSwitcher",
       "enabled": true
-    }
-  ],
-  "dankBarCenterWidgets": [
+    },
     {
       "id": "focusedWindow",
       "enabled": true
-    },
+    }
+  ],
+  "dankBarCenterWidgets": [
     {
       "id": "clock",
       "enabled": true
@@ -130,15 +131,19 @@
     {
       "id": "weather",
       "enabled": true
+    },
+    {
+      "id": "separator",
+      "enabled": true
+    },
+    {
+      "id": "music",
+      "enabled": true
     }
   ],
   "dankBarRightWidgets": [
     {
       "id": "systemTray",
-      "enabled": true
-    },
-    {
-      "id": "keyboard_layout_name",
       "enabled": true
     },
     {
@@ -150,6 +155,10 @@
       "enabled": true
     },
     {
+      "id": "keyboard_layout_name",
+      "enabled": true
+    },
+    {
       "id": "controlCenterButton",
       "enabled": true
     }
@@ -158,14 +167,18 @@
   "spotlightModalViewMode": "list",
   "networkPreference": "auto",
   "iconTheme": "Papirus-Dark",
-  "useOSLogo": false,
-  "osLogoColorOverride": "",
-  "osLogoBrightness": 1,
-  "osLogoContrast": 2,
+  "launcherLogoMode": "compositor",
+  "launcherLogoCustomPath": "",
+  "launcherLogoColorOverride": "",
+  "launcherLogoColorInvertOnMode": false,
+  "launcherLogoBrightness": 1,
+  "launcherLogoContrast": 2,
+  "launcherLogoSizeOffset": 0,
   "fontFamily": "Inter Variable",
   "monoFontFamily": "Maple Mono NF",
   "fontWeight": 400,
   "fontScale": 1,
+  "dankBarFontScale": 1,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
   "notepadFontSize": 14,
@@ -188,10 +201,14 @@
   "dankBarVisible": true,
   "dankBarSpacing": 0,
   "dankBarBottomGap": 0,
-  "dankBarInnerPadding": 2,
+  "dankBarInnerPadding": 0,
   "dankBarSquareCorners": true,
   "dankBarNoBackground": true,
   "dankBarGothCornersEnabled": false,
+  "dankBarBorderEnabled": false,
+  "dankBarBorderColor": "primary",
+  "dankBarBorderOpacity": 1,
+  "dankBarBorderThickness": 1,
   "dankBarPosition": 3,
   "lockScreenShowPowerActions": true,
   "hideBrightnessSlider": false,
@@ -219,6 +236,5 @@
       "all"
     ]
   },
-  "pluginSettings": {},
   "animationSpeed": 2
 }
