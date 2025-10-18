@@ -257,8 +257,8 @@ binds {
     Mod+E hotkey-overlay-title="Open file manager" { 
         spawn "kitty" "yazi"; 
     }
-    
-        Mod+A hotkey-overlay-title="Application Launcher" { 
+
+    Mod+A hotkey-overlay-title="Application Launcher" { 
         spawn "dms" "ipc" "call" "spotlight" "toggle"; 
     }
 
@@ -302,6 +302,9 @@ binds {
     }
     Mod+Ctrl+O hotkey-overlay-title="Overview dashboard popup" { 
         spawn "dms" "ipc" "call" "dash" "toggle" "dash"; 
+    }
+    Alt+Tab hotkey-overlay-title="Switch Windows" {
+        spawn "dms" "ipc" "call" "spotlight" "openQuery" "!";
     }
 
 
