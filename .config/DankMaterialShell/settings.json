@@ -10,8 +10,8 @@
   "use24HourClock": true,
   "useFahrenheit": false,
   "nightModeEnabled": false,
-  "weatherLocation": "Уфа, 450000",
-  "weatherCoordinates": "54.7261409,55.9474990",
+  "weatherLocation": "Уфа, Приволжский федеральный округ",
+  "weatherCoordinates": "56.1418453,57.7718040",
   "useAutoLocation": true,
   "weatherEnabled": true,
   "showLauncherButton": true,
@@ -117,13 +117,13 @@
     {
       "id": "workspaceSwitcher",
       "enabled": true
-    },
-    {
-      "id": "focusedWindow",
-      "enabled": true
     }
   ],
   "dankBarCenterWidgets": [
+    {
+      "id": "focusedWindow",
+      "enabled": true
+    },
     {
       "id": "clock",
       "enabled": true
@@ -157,7 +157,7 @@
   ],
   "appLauncherViewMode": "list",
   "spotlightModalViewMode": "list",
-  "networkPreference": "auto",
+  "networkPreference": "ethernet",
   "iconTheme": "Papirus-Dark",
   "launcherLogoMode": "compositor",
   "launcherLogoCustomPath": "",
@@ -228,5 +228,5 @@
       "all"
     ]
   },
-  "animationSpeed": 2
+  "animationSpeed": 0
 }
