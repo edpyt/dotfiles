@@ -200,7 +200,7 @@
   "cornerRadius": 12,
   "notificationOverlayEnabled": true,
   "dankBarAutoHide": false,
-  "dankBarOpenOnOverview": false,
+  "dankBarOpenOnOverview": true,
   "dankBarVisible": true,
   "dankBarSpacing": 0,
   "dankBarBottomGap": 0,
