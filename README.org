@@ -23,7 +23,6 @@
    paru -S \
       niri-git \
       xdg-desktop-portal-gtk \
-      swww \
       wl-clipboard \
       xwayland-satellite
    #+end_src
