@@ -194,10 +194,11 @@ animations {
 // by setting an empty default-column-width.
 window-rule { 
     // match is-active=false
-    opacity 0.9
+    opacity 0.97
 }
 window-rule {
     match app-id="zen"
+    match app-id="Element"
     opacity 1.0
 }
 window-rule {
@@ -359,10 +360,10 @@ binds {
     Mod+Shift+Down  { move-window-down; }
     Mod+Shift+Up    { move-window-up; }
     Mod+Shift+Right { move-column-right; }
-    Mod+Shift+H     { move-column-left; }
-    Mod+Shift+J     { move-window-down; }
-    Mod+Shift+K     { move-window-up; }
-    Mod+Shift+L     { move-column-right; }
+    Mod+Ctrl+H     { move-column-left; }
+    Mod+Ctrl+J     { move-window-down; }
+    Mod+Ctrl+K     { move-window-up; }
+    Mod+Ctrl+L     { move-column-right; }
 
     // === Column Navigation ===
     Mod+Home { focus-column-first; }
@@ -375,10 +376,6 @@ binds {
     //Mod+Ctrl+Down  { focus-monitor-down; }
     //Mod+Ctrl+Up    { focus-monitor-up; }
     Mod+Ctrl+Right { focus-monitor-right; }
-    Mod+Ctrl+H     { focus-monitor-left; }
-    Mod+Ctrl+J     { focus-monitor-down; }
-    Mod+Ctrl+K     { focus-monitor-up; }
-    Mod+Ctrl+L     { focus-monitor-right; }
 
     // === Move to Monitor ===
     Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
