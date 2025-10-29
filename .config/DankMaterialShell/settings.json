@@ -191,7 +191,7 @@
   "gtkThemingEnabled": false,
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
-  "showDock": true,
+  "showDock": false,
   "dockAutoHide": false,
   "dockGroupByApp": false,
   "dockOpenOnOverview": true,
