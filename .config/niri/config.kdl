@@ -126,7 +126,7 @@ layout {
     }  
 }
 layer-rule {
-    match namespace="^quickshell$"
+    match namespace="dms:blurwallpaper"
     place-within-backdrop true
 }
 overview {
