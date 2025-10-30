@@ -153,6 +153,10 @@
       "enabled": true
     },
     {
+      "id": "clipboard",
+      "enabled": true
+    },
+    {
       "id": "keyboard_layout_name",
       "enabled": true
     },

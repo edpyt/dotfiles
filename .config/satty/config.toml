@@ -1,0 +1,5 @@
+[general]
+brush-smooth-history-size = 5
+disable-notifications = true
+actions-on-enter = ["save-to-clipboard", "save-to-file", "exit"]
+output-filename = "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"

@@ -25,7 +25,8 @@
       mangowc-git \
       xdg-desktop-portal-gtk \
       wl-clipboard \
-      xwayland-satellite
+      xwayland-satellite \
+      satty
    #+end_src
    - [[https://github.com/AvengeMedia/DankMaterialShell][DankMaterialShell]] 
    - [[https://github.com/AvengeMedia/DankMaterialShell/blob/master/Modules/Greetd/README.md][DMS greetd]]
