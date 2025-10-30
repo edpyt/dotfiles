@@ -1,4 +1,4 @@
-#+html: <img src="https://github.com/user-attachments/assets/f51b0834-5209-44d7-9349-4c628a2fe67e"/>
+#+html: <img src="https://github.com/user-attachments/assets/206b6a15-e381-4d72-8d9e-26edc8cc7c3d"/>
 
 - Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty]]
 - WM: [[https://github.com/DreamMaoMao/mangowc/][mangowc]]
