@@ -86,6 +86,7 @@
   "showWorkspaceApps": false,
   "maxWorkspaceIcons": 3,
   "workspacesPerMonitor": true,
+  "dwlShowAllTags": true,
   "workspaceNameIcons": {
     "browser": {
       "type": "icon",
@@ -164,6 +165,7 @@
   "spotlightModalViewMode": "list",
   "sortAppsAlphabetically": false,
   "networkPreference": "ethernet",
+  "vpnLastConnected": "",
   "iconTheme": "Papirus-Dark",
   "launcherLogoMode": "compositor",
   "launcherLogoCustomPath": "",
@@ -205,7 +207,7 @@
   "dankBarAutoHide": false,
   "dankBarOpenOnOverview": true,
   "dankBarVisible": true,
-  "dankBarSpacing": 9,
+  "dankBarSpacing": 10,
   "dankBarBottomGap": 0,
   "dankBarInnerPadding": 0,
   "dankBarSquareCorners": false,
@@ -259,7 +261,9 @@
       "all"
     ]
   },
-  "showOnLastDisplay": {},
+  "showOnLastDisplay": {
+    "dankBar": false
+  },
   "animationSpeed": 2,
   "customAnimationDuration": 500,
   "acMonitorTimeout": 0,

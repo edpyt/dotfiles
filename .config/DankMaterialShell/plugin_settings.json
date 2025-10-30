@@ -3,6 +3,6 @@
     "enabled": true
   },
   "niriWindows": {
-    "enabled": true
+    "enabled": false
   }
 }
