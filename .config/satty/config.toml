@@ -1,5 +1,5 @@
 [general]
-brush-smooth-history-size = 5
+early-exit = true
+copy-command = "wl-copy -t image/png"
 disable-notifications = true
-actions-on-enter = ["save-to-clipboard", "save-to-file", "exit"]
 output-filename = "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
