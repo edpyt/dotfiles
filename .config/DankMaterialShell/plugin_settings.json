@@ -4,5 +4,8 @@
   },
   "niriWindows": {
     "enabled": false
+  },
+  "emojiLauncher": {
+    "enabled": true
   }
 }
