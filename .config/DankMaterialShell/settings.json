@@ -3,7 +3,7 @@
   "customThemeFile": "./themes/hotline_miami.json",
   "matugenScheme": "scheme-tonal-spot",
   "runUserMatugenTemplates": true,
-  "matugenTargetMonitor": "",
+  "matugenTargetMonitor": "DP-1",
   "dankBarTransparency": 1,
   "dankBarWidgetTransparency": 1,
   "popupTransparency": 1,
@@ -101,7 +101,7 @@
       "value": "schedule"
     }
   },
-  "waveProgressEnabled": false,
+  "waveProgressEnabled": true,
   "clockCompactMode": false,
   "focusedWindowCompactMode": false,
   "runningAppsCompactMode": true,
@@ -178,7 +178,7 @@
   "launcherLogoBrightness": 1,
   "launcherLogoContrast": 2,
   "launcherLogoSizeOffset": 0,
-  "fontFamily": "Maple Mono NF",
+  "fontFamily": "Inter Variable",
   "monoFontFamily": "Maple Mono NF",
   "fontWeight": 400,
   "fontScale": 1,
