@@ -1,9 +1,5 @@
 // NOTE: default config: https://github.com/YaLTeR/niri/blob/main/resources/default-config.kdl
 
-environment {
-    DISPLAY ":42"
-}
-
 animations {
     workspace-switch {
         off
@@ -16,21 +12,11 @@ overview {
 }
 
 cursor {
-    xcursor-theme "catppuccin-mocha-red-cursors"
+    xcursor-theme "catppuccin-frappe-lavender-cursors"
 }
 
 // Workspaces configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
-workspace "browser" {
-    open-on-output "Xiaomi Corporation P27FBB-RGGL 5275600038779"
-} 
-workspace "code" {
-    open-on-output "Xiaomi Corporation P27FBB-RGGL 5275600038779"
-}
-workspace "orgmode" {
-    open-on-output "Xiaomi Corporation P27FBB-RGGL 5275600038779"
-}
-
 
 // Monitor configuration
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
