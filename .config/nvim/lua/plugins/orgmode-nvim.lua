@@ -2,10 +2,10 @@ return {
   {
     "nvim-orgmode/orgmode",
     dependencies = {
+      "nvim-orgmode/org-bullets.nvim",
       "chipsenkbeil/org-roam.nvim",
       "nvim-telescope/telescope.nvim",
       "nvim-orgmode/telescope-orgmode.nvim",
-      "nvim-orgmode/org-bullets.nvim",
       {
         "folke/snacks.nvim",
         opts = {
@@ -60,20 +60,5 @@ return {
         },
       },
     },
-  },
-  {
-    "hamidi-dev/org-super-agenda.nvim",
-    dependencies = {
-      "nvim-orgmode/orgmode", -- required
-      { "lukas-reineke/headlines.nvim", config = true }, -- optional nicety
-    },
-    opts = function()
-      vim.keymap.set("n", "<leader>oA", "<cmd>OrgSuperAgenda!<cr>") -- fullscreen
-    end,
-    config = function()
-      require("org-super-agenda").setup {
-        org_files = { "~/Documents/orgfiles/todos.org" },
-      }
-    end,
   },
 }

@@ -1,7 +1,7 @@
 #+html: <img src="https://github.com/user-attachments/assets/206b6a15-e381-4d72-8d9e-26edc8cc7c3d"/>
 
 - Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty]]
-- WM: [[https://github.com/DreamMaoMao/mangowc/][mangowc]]
+- DE: [[https://yalter.github.io/niri/][niri]]
 - Code Editor: [[https://astronvim.com][astronvim]]
 - Browser: [[https://zen-browser.app/][zen]]
 - OS: [[https://cachyos.org/][CachyOS]]
@@ -12,64 +12,50 @@
   #+end_src
 
 * Packages
-** System
-
-   + nvidia-inst
-   + pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
-
 ** Desktop Environment
 
    #+begin_src shell
    paru -S \
       niri-git \
-      mangowc-git \
+      xdg-desktop-portal-gnome \
       xdg-desktop-portal-gtk \
       wl-clipboard \
       xwayland-satellite \
-      satty
+      dms-shell-bin matugen
    #+end_src
    - [[https://github.com/AvengeMedia/DankMaterialShell][DankMaterialShell]] 
-   - [[https://github.com/AvengeMedia/DankMaterialShell/blob/master/Modules/Greetd/README.md][DMS greetd]]
+   - [[https://danklinux.com/docs/dankgreeter/installation?_highlight=greet#enabling-greeter-all-distros][DMS greetd]]
+
 ** Tools
    #+begin_src shell
    paru -S \
      neovim \
-     zen-browser-bin \
      kitty \
      fish \
-     unzip \
      bat \
      starship \
      nodejs \
      npm \
      lazygit \
-     yazi ffmpeg p7zip jq poppler fd ripgrep fzf zoxide imagemagick \
-     emote \
-     keepassxc \
-     gwenview \
-     okular \
-     nautilus \
      zellij \
-     python ruff basedpyright uv \
-     texlive-latexrecommended
+     ffmpeg p7zip jq poppler fd ripgrep fzf zoxide imagemagick \
+     python ruff basedpyright uv
    #+end_src
-   - zen-browser
-     + https://github.com/catppuccin/zen-browser
-     + https://github.com/catppuccin/userstyles/blob/main/docs/USAGE.md
-   - [[https://one-sec.app/browser-extension/][one sec]]
-
-
-** Fonts
-
+** Applications
    #+begin_src shell
    paru -S \
-     noto-fonts-cjk \
-     noto-fonts-emoji
+     zen-browser-bin \
+     keepassxc \
+     okular \
+     yazi \
+     nautilus
    #+end_src
 
+** Miscelanneous
+   Setup browser with:
+   - [[https://one-sec.app/browser-extension/][one sec]]
+   - [[https://userstyles.catppuccin.com/]]   \\
+     + theme: Frappe
+     + accent: Blue
+** Fonts
    - [[https://github.com/subframe7536/Maple-font#arch-linux][Maple Mono NF]]
-
-   Don't forget to:
-   #+begin_src shell
-   fc-cache -fv
-   #+end_src

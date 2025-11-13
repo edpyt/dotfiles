@@ -1,10 +1,9 @@
 # Font Configuration
 # font_family Fira Code
-font_size 12.0
+font_size 11.0
 
 # Window Configuration
 window_padding_width 12
-background_opacity 0.90
 background_blur 32
 hide_window_decorations yes
 
@@ -38,7 +37,7 @@ shell_integration enabled
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="Maple Mono NF"
+font_family      family='Maple Mono NF' postscript_name=MapleMono-NF-Regular
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
@@ -47,7 +46,8 @@ bold_italic_font auto
 confirm_os_window_close 0
 
 
+
 # BEGIN_KITTY_THEME
-# Catppuccin-Frappe
+# Nord
 include current-theme.conf
 # END_KITTY_THEME
