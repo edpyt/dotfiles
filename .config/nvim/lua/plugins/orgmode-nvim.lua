@@ -2,10 +2,13 @@ return {
   {
     "nvim-orgmode/orgmode",
     dependencies = {
-      "nvim-orgmode/org-bullets.nvim",
-      "chipsenkbeil/org-roam.nvim",
       "nvim-telescope/telescope.nvim",
       "nvim-orgmode/telescope-orgmode.nvim",
+      {
+        "nvim-orgmode/org-bullets.nvim",
+        opts = {},
+      },
+      "michaelb/sniprun",
       {
         "folke/snacks.nvim",
         opts = {
@@ -14,14 +17,14 @@ return {
           },
         },
       },
-      "michaelb/sniprun",
+      "Saghen/blink.cmp",
     },
     event = "VeryLazy",
     ft = { "org" },
     opts = {
       org_agenda_files = "~/Documents/orgfiles/*.org",
-      org_default_notes_file = "~/Documents/orgfiles/notes.org",
       org_todo_keywords = { "TODO(t)", "WAIT(w)", "|", "DONE(d)", "DELEGATED(g)" },
+      org_hide_emphasis_markers = true,
       org_capture_templates = {
         t = {
           description = "Task",
