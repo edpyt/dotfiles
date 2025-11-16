@@ -1,0 +1,36 @@
+layer-rule {
+  match namespace="^quickshell$"
+  place-within-backdrop true
+}
+
+// ────────────── Window Rules ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
+
+window-rule {
+	geometry-corner-radius 20 // Set every window radius to 20
+	clip-to-geometry true
+}
+
+window-rule {
+	match app-id="kitty"
+	opacity 0.98
+	default-column-width {}
+}
+
+window-rule {
+	match app-id=r#"zen$"# title="^Picture-in-Picture$"
+	match app-id="AmneziaVPN"
+	open-floating true
+}
+
+window-rule {
+  match app-id="zen" 
+  open-on-workspace "browser"
+}
+
+window-rule {
+  match app-id="zen" 
+  match app-id="YandexMusic" 
+  default-column-width { proportion 1.0; }
+
+}
