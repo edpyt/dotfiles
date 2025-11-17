@@ -244,7 +244,7 @@
   "dankBarBorderEnabled": true,
   "dankBarBorderColor": "primary",
   "dankBarBorderOpacity": 1,
-  "dankBarBorderThickness": 1,
+  "dankBarBorderThickness": 2,
   "popupGapsAuto": true,
   "popupGapsManual": 4,
   "modalDarkenBackground": true,
