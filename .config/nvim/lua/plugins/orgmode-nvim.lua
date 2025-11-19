@@ -25,6 +25,7 @@ return {
       org_agenda_files = "~/Documents/orgfiles/*.org",
       org_todo_keywords = { "TODO(t)", "WAIT(w)", "|", "DONE(d)", "DELEGATED(g)" },
       org_hide_emphasis_markers = true,
+      org_agenda_show_future_repeats = "next",
       org_capture_templates = {
         t = {
           description = "Task",
