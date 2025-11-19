@@ -55,6 +55,9 @@ binds {
 	Mod+Shift+Ctrl+L                { move-column-to-monitor-right; }
 
 	// ─── Workspace Switching ───
+  Mod+Shift+U         { move-workspace-down; }
+  Mod+Shift+I         { move-workspace-up; }
+
 	Mod+WHEELSCROLLDOWN                 cooldown-ms=150 { focus-workspace-down; }
 	Mod+WHEELSCROLLUP                   cooldown-ms=150 { focus-workspace-up; }
   Mod+U              { focus-workspace-down; }

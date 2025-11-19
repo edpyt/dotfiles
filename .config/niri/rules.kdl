@@ -13,7 +13,7 @@ window-rule {
 
 window-rule {
 	match app-id="kitty"
-	opacity 0.98
+	// opacity 0.98
 	default-column-width {}
 }
 
@@ -32,5 +32,4 @@ window-rule {
   match app-id="zen" 
   match app-id="YandexMusic" 
   default-column-width { proportion 1.0; }
-
 }

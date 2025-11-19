@@ -54,7 +54,7 @@ output "DP-1" {
 	focus-at-startup
 
   layout {
-    default-column-width { proportion 0.3333333333333333; }
+    default-column-width { proportion 0.8; }
   }
 }
 
@@ -70,6 +70,9 @@ output "HDMI-A-1" {
 // ────────────── Workspace Configuration ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
 workspace "browser" {
+  open-on-output "DP-1"
+}
+workspace "editor" {
   open-on-output "DP-1"
 }
 
