@@ -36,8 +36,8 @@
   "showNotificationButton": true,
   "showBattery": true,
   "showControlCenterButton": true,
-  "controlCenterShowNetworkIcon": false,
-  "controlCenterShowBluetoothIcon": false,
+  "controlCenterShowNetworkIcon": true,
+  "controlCenterShowBluetoothIcon": true,
   "controlCenterShowAudioIcon": true,
   "controlCenterWidgets": [
     {
@@ -153,7 +153,8 @@
     },
     {
       "id": "memUsage",
-      "enabled": true
+      "enabled": true,
+      "showSwap": false
     },
     {
       "id": "clipboard",
