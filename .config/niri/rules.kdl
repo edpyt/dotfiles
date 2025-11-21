@@ -1,3 +1,15 @@
+layout {
+    gaps 4
+
+    border {
+        width 2
+    }
+
+    focus-ring {
+        width 2
+    }
+}
+
 layer-rule {
   match namespace="^quickshell$"
   place-within-backdrop true
@@ -7,7 +19,7 @@ layer-rule {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 
 window-rule {
-	geometry-corner-radius 20 // Set every window radius to 20
+	// geometry-corner-radius 20 // Set every window radius to 20
 	clip-to-geometry true
 }
 
