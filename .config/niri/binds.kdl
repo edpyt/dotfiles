@@ -103,6 +103,7 @@ binds {
 
 	// ─── Modes ───
 	Mod+V                               { toggle-window-floating; }
+	// TODO: Mod+Shift+V  							{ switch-bettwen-floating; }
   Mod+F { maximize-column; }
   Mod+Shift+F { fullscreen-window; }
 	Mod+Tab                               { toggle-column-tabbed-display; }
