@@ -300,7 +300,10 @@
   "displayNameMode": "system",
   "screenPreferences": {
     "dankBar": [
-      "DP-1"
+      {
+        "name": "DP-1",
+        "model": "P27FBB-RGGL"
+      }
     ],
     "dock": [
       "HDMI-A-1"
