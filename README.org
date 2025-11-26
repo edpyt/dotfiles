@@ -1,4 +1,4 @@
-#+html: <img src="https://github.com/user-attachments/assets/9e961dce-88b0-4c71-86c1-81017ff7ffc0"/>
+#+html: <img src="https://github.com/user-attachments/assets/7698fafb-f17b-456c-b7fc-845a60138997"/>
 
 - Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty]]
 - DE: [[https://yalter.github.io/niri/][niri]]
