@@ -87,7 +87,7 @@ screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 // ────────────── Layout Settings ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
-	gaps 16 // Gap between windows
+	gaps 8 // Gap between windows
 
 	always-center-single-column
 	center-focused-column "never"
@@ -106,6 +106,14 @@ layout {
 	}
 
 	struts {}
+
+  border {
+    width 2
+  }
+
+  focus-ring {
+    width 2
+  }
 }
 
 overview {

@@ -1,15 +1,3 @@
-layout {
-    gaps 4
-
-    border {
-        width 2
-    }
-
-    focus-ring {
-        width 2
-    }
-}
-
 layer-rule {
   match namespace="^quickshell$"
   place-within-backdrop true
