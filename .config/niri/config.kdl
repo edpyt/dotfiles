@@ -49,7 +49,7 @@ input {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 
 output "DP-1" {
-	mode "1920x1080@144.106" // Set resolution and refresh rate
+	mode "1920x1080@165.002" // Set resolution and refresh rate
 	focus-at-startup
 
   layout {

@@ -37,6 +37,11 @@ return {
           template = "* TODO %?\n %u",
           target = "~/Documents/orgfiles/work.org",
         },
+        u = {
+          description = "University",
+          template = "* TODO %?\n %u",
+          target = "~/Documents/orgfiles/uni.org",
+        },
       },
     },
   },
