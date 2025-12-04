@@ -28,6 +28,9 @@ binds {
 	Mod+DOWN                            { focus-window-down; }
 	Mod+J                               { focus-window-down; }
 
+  Mod+BracketLeft  { consume-or-expel-window-left; }
+  Mod+BracketRight { consume-or-expel-window-right; }
+
 	Mod+Ctrl+Left                       { move-column-left; }
 	Mod+Ctrl+H                          { move-column-left; }
 	Mod+Ctrl+Right                      { move-column-right; }
@@ -44,8 +47,8 @@ binds {
 
 	Mod+Shift+Left                      { focus-monitor-left; }
 	Mod+Shift+H                      { focus-monitor-left; }
-	Mod+BracketLeft                      { focus-monitor-left; } 		// [
-	Mod+BracketRight                      { focus-monitor-right; }  // ]
+	Mod+Shift+BracketLeft                      { focus-monitor-left; } 		// [
+	Mod+Shift+BracketRight                      { focus-monitor-right; }  // ]
 	Mod+Shift+Right                     { focus-monitor-right; }
 	Mod+Shift+L                     { focus-monitor-right; }
 
@@ -115,4 +118,5 @@ binds {
 
 	// ─── Exit / Power ───
 	Mod+Ctrl+V                               repeat=false { toggle-overview; }
+	Mod+Ctrl+Shift+E { quit; }
 }
