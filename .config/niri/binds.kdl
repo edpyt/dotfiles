@@ -47,8 +47,8 @@ binds {
 
 	Mod+Shift+Left                      { focus-monitor-left; }
 	Mod+Shift+H                      { focus-monitor-left; }
-	Mod+Shift+BracketLeft                      { focus-monitor-left; } 		// [
-	Mod+Shift+BracketRight                      { focus-monitor-right; }  // ]
+	Mod+Ctrl+BracketLeft                      { focus-monitor-left; } 		// [
+	Mod+Ctrl+BracketRight                      { focus-monitor-right; }  // ]
 	Mod+Shift+Right                     { focus-monitor-right; }
 	Mod+Shift+L                     { focus-monitor-right; }
 
