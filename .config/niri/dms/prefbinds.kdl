@@ -1,4 +1,8 @@
 binds {
+    Mod+Ctrl+C hotkey-overlay-title="Color Picker" {
+        spawn "dms" "color" "pick" "-a"
+    }
+
     Mod+Escape hotkey-overlay-title="Power Menu" {
         spawn "dms" "ipc" "call" "powermenu" "toggle";
     }
