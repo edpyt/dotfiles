@@ -56,6 +56,6 @@
    - [[https://one-sec.app/browser-extension/][one sec]]
    - [[https://userstyles.catppuccin.com/]]   \\
      + theme: Frappe
-     + accent: Blue
+     + accent: Lavender
 ** Fonts
    - [[https://github.com/subframe7536/Maple-font#arch-linux][Maple Mono NF]]
