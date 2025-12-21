@@ -7,8 +7,9 @@ return {
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.typescript" },
+  -- { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.sql" },
 
   -- colorscheme
   { import = "astrocommunity.colorscheme.catppuccin" },
