@@ -15,7 +15,7 @@ window-rule {
 
 window-rule {
 	match app-id="kitty"
-	opacity 0.95
+	// opacity 0.95
 	default-column-width {}
 }
 
