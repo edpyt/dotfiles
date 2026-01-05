@@ -4,8 +4,8 @@
 include "binds.kdl"
 include "envs.kdl"
 include "rules.kdl"
-include "mru.kdl"
 
+include "dms/alttab.kdl"
 include "dms/prefbinds.kdl"
 include "dms/colors.kdl"
 
