@@ -13,6 +13,7 @@ return {
 
   -- colorscheme
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
 
   -- media
   { import = "astrocommunity.media.vim-wakatime" },
