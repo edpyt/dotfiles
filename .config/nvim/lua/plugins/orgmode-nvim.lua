@@ -2,13 +2,14 @@ return {
   {
     "nvim-orgmode/orgmode",
     dependencies = {
+      "Saghen/blink.cmp",
       "nvim-telescope/telescope.nvim",
       "nvim-orgmode/telescope-orgmode.nvim",
+      "michaelb/sniprun",
       {
         "nvim-orgmode/org-bullets.nvim",
         opts = {},
       },
-      "michaelb/sniprun",
       {
         "folke/snacks.nvim",
         opts = {
@@ -17,7 +18,10 @@ return {
           },
         },
       },
-      "Saghen/blink.cmp",
+      {
+        "lukas-reineke/headlines.nvim",
+        opts = {},
+      },
     },
     event = "VeryLazy",
     ft = { "org" },

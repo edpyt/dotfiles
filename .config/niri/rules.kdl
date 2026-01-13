@@ -7,7 +7,7 @@ layer-rule {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 
 window-rule {
-	// geometry-corner-radius 20 // Set every window radius to 20
+	// geometry-corner-radius 10 // Set every window radius to 20
 	clip-to-geometry true
     tiled-state true
     draw-border-with-background false
@@ -15,7 +15,7 @@ window-rule {
 
 window-rule {
 	match app-id="kitty"
-	opacity 0.98
+	opacity 0.93
 	default-column-width {}
 }
 
