@@ -282,7 +282,7 @@
           "model": "P27FBB-RGGL"
         }
       ],
-      "showOnLastDisplay": true,
+      "showOnLastDisplay": false,
       "leftWidgets": [
         {
           "id": "notificationButton",
@@ -349,7 +349,7 @@
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
       "borderEnabled": true,
-      "borderColor": "primary",
+      "borderColor": "secondary",
       "borderOpacity": 1,
       "borderThickness": 1,
       "fontScale": 1,
@@ -359,7 +359,9 @@
       "visible": true,
       "popupGapsAuto": true,
       "popupGapsManual": 4,
-      "widgetOutlineEnabled": false
+      "widgetOutlineEnabled": false,
+      "widgetOutlineColor": "secondary",
+      "widgetOutlineThickness": 10
     }
   ],
   "configVersion": 2
