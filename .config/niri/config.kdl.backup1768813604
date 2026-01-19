@@ -158,5 +158,3 @@ animations {
 		spring damping-ratio=1.0 stiffness=900 epsilon=0.0001
 	}
 }
-
-include "dms/cursor.kdl"

@@ -1,5 +1,4 @@
 # Font Configuration
-# font_family Fira Code
 font_size 11.0
 
 # Window Configuration
@@ -45,9 +44,5 @@ bold_italic_font auto
 
 confirm_os_window_close 0
 
-
-
-# BEGIN_KITTY_THEME
-# Catppuccin-Mocha
-include current-theme.conf
-# END_KITTY_THEME
+include dank-tabs.conf
+include dank-theme.conf

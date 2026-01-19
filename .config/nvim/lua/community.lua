@@ -12,7 +12,6 @@ return {
   { import = "astrocommunity.pack.sql" },
 
   -- colorscheme
-  { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
 
   -- media
