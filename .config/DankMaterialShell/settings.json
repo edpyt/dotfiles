@@ -149,7 +149,7 @@
       "value": "terminal"
     }
   },
-  "waveProgressEnabled": true,
+  "waveProgressEnabled": false,
   "scrollTitleEnabled": true,
   "audioVisualizerEnabled": true,
   "audioScrollMode": "volume",
@@ -569,10 +569,10 @@
         "showNetwork": true,
         "showNetworkGraph": false,
         "showDisk": false,
-        "showTopProcesses": false,
+        "showTopProcesses": true,
         "topProcessCount": 3,
         "topProcessSortBy": "cpu",
-        "layoutMode": "auto",
+        "layoutMode": "list",
         "graphInterval": 60,
         "displayPreferences": [
           {
@@ -596,41 +596,6 @@
           "height": 409.26171875,
           "x": 1530.375,
           "y": 12.1328125
-        }
-      }
-    },
-    {
-      "id": "dw_1768813834689_wid4g7cqg",
-      "widgetType": "desktopClock",
-      "name": "Desktop Clock",
-      "enabled": true,
-      "config": {
-        "style": "digital",
-        "transparency": 0.8,
-        "colorMode": "primary",
-        "customColor": "#ffffff",
-        "showDate": true,
-        "showAnalogNumbers": false,
-        "showAnalogSeconds": true,
-        "displayPreferences": [
-          {
-            "name": "HDMI-A-1",
-            "model": "PHL 220V8"
-          }
-        ]
-      },
-      "positions": {
-        "HDMI-A-1": {
-          "width": 288.8515625,
-          "height": 251.21875,
-          "x": 372.23828125,
-          "y": 824.9453125
-        },
-        "DP-1": {
-          "width": 200,
-          "height": 200,
-          "x": 871.89453125,
-          "y": 449.41796875
         }
       }
     }
