@@ -1,6 +1,7 @@
 {
   "currentThemeName": "custom",
   "currentThemeCategory": "registry",
+  "customThemeFile": "/home/edpyt/.config/DankMaterialShell/themes/catppuccin/theme.json",
   "registryThemeVariants": {
     "everforest": "hard",
     "catppuccin": {
@@ -199,7 +200,7 @@
   "weatherEnabled": true,
   "networkPreference": "ethernet",
   "vpnLastConnected": "",
-  "iconTheme": "breeze-dark",
+  "iconTheme": "Adwaita",
   "cursorSettings": {
     "theme": "capitaine-cursors",
     "size": 24,
