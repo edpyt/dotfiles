@@ -4,7 +4,7 @@
 (
     address: "/tmp/mpd_socket",
     password: None,
-    theme: Some("theme"),
+    theme: Some("default.ron"),
     cache_dir: "~/Music/",
     on_song_change: None,
     volume_step: 5,
