@@ -147,6 +147,10 @@
     "editor": {
       "type": "icon",
       "value": "terminal"
+    },
+    "music": {
+      "type": "icon",
+      "value": "music_note"
     }
   },
   "waveProgressEnabled": false,
@@ -547,7 +551,12 @@
   ],
   "systemMonitorVariants": [],
   "desktopWidgetPositions": {},
-  "desktopWidgetGridSettings": {},
+  "desktopWidgetGridSettings": {
+    "DP-1": {
+      "enabled": true,
+      "size": 20
+    }
+  },
   "desktopWidgetInstances": [
     {
       "id": "dw_1768813672598_d5fwcelbk",
@@ -596,6 +605,34 @@
           "height": 409.26171875,
           "x": 1530.375,
           "y": 12.1328125
+        }
+      }
+    },
+    {
+      "id": "dw_1768835029331_8pjnqkzui",
+      "widgetType": "mediaPlayer",
+      "name": "Media Player",
+      "enabled": true,
+      "config": {
+        "displayPreferences": [
+          {
+            "name": "DP-1",
+            "model": "P27FBB-RGGL"
+          }
+        ]
+      },
+      "positions": {
+        "HDMI-A-1": {
+          "width": 320,
+          "height": 200,
+          "x": 380,
+          "y": 860
+        },
+        "DP-1": {
+          "width": 579.81640625,
+          "height": 179.3671875,
+          "x": 640,
+          "y": 860
         }
       }
     }

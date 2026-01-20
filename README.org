@@ -29,6 +29,8 @@
 ** Tools
    #+begin_src shell
    paru -S \
+     rmpc \
+     mpd \
      neovim \
      kitty \
      fish \

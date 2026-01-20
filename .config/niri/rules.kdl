@@ -30,6 +30,7 @@ window-rule {
   open-on-workspace "browser"
 }
 
+
 window-rule {
   match app-id="zen" 
   match app-id="YandexMusic" 
