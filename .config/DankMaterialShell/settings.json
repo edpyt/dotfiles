@@ -118,7 +118,7 @@
   "showWorkspaceName": false,
   "showWorkspacePadding": false,
   "workspaceScrolling": false,
-  "showWorkspaceApps": true,
+  "showWorkspaceApps": false,
   "maxWorkspaceIcons": 3,
   "groupWorkspaceApps": true,
   "workspaceFollowFocus": false,
@@ -432,25 +432,17 @@
       ],
       "rightWidgets": [
         {
-          "id": "systemTray",
-          "enabled": true
-        },
-        {
-          "id": "cpuUsage",
-          "enabled": true
-        },
-        {
-          "id": "memUsage",
-          "enabled": true,
-          "showSwap": false
-        },
-        {
           "id": "clipboard",
           "enabled": true
         },
         {
-          "id": "keyboard_layout_name",
+          "id": "systemTray",
           "enabled": true
+        },
+        {
+          "id": "keyboard_layout_name",
+          "enabled": true,
+          "keyboardLayoutNameCompactMode": true
         },
         {
           "id": "controlCenterButton",
@@ -458,7 +450,7 @@
         }
       ],
       "spacing": 0,
-      "innerPadding": -2,
+      "innerPadding": -8,
       "bottomGap": 0,
       "transparency": 1,
       "widgetTransparency": 1,
