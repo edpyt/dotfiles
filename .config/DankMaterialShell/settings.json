@@ -118,7 +118,7 @@
   "showWorkspaceName": false,
   "showWorkspacePadding": false,
   "workspaceScrolling": false,
-  "showWorkspaceApps": false,
+  "showWorkspaceApps": true,
   "maxWorkspaceIcons": 3,
   "groupWorkspaceApps": true,
   "workspaceFollowFocus": false,
@@ -460,7 +460,7 @@
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
       "borderEnabled": true,
-      "borderColor": "secondary",
+      "borderColor": "primary",
       "borderOpacity": 1,
       "borderThickness": 1,
       "fontScale": 1,
@@ -545,8 +545,8 @@
   "desktopWidgetPositions": {},
   "desktopWidgetGridSettings": {
     "DP-1": {
-      "enabled": true,
-      "size": 20
+      "enabled": false,
+      "size": 10
     }
   },
   "desktopWidgetInstances": [
@@ -597,34 +597,6 @@
           "height": 409.26171875,
           "x": 1530.375,
           "y": 12.1328125
-        }
-      }
-    },
-    {
-      "id": "dw_1768835029331_8pjnqkzui",
-      "widgetType": "mediaPlayer",
-      "name": "Media Player",
-      "enabled": true,
-      "config": {
-        "displayPreferences": [
-          {
-            "name": "DP-1",
-            "model": "P27FBB-RGGL"
-          }
-        ]
-      },
-      "positions": {
-        "HDMI-A-1": {
-          "width": 320,
-          "height": 200,
-          "x": 380,
-          "y": 860
-        },
-        "DP-1": {
-          "width": 579.81640625,
-          "height": 179.3671875,
-          "x": 640,
-          "y": 860
         }
       }
     }
