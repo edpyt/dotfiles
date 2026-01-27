@@ -19,7 +19,6 @@
       niri-git \
       xdg-desktop-portal-gnome \
       xdg-desktop-portal-gtk \
-      wl-clipboard \
       xwayland-satellite \
       dms-shell-bin matugen
    #+end_src
@@ -29,8 +28,11 @@
 ** Tools
    #+begin_src shell
    paru -S \
+     syncthing \
      rmpc \
      mpd \
+     mpd-mpris \
+     mpdscribble \
      neovim \
      kitty \
      fish \
@@ -61,3 +63,9 @@
      + accent: Lavender
 ** Fonts
    - [[https://github.com/subframe7536/Maple-font#arch-linux][Maple Mono NF]]
+
+* systemd
+  #+begin_src sh
+  systemctl --user enable --now syncthing.service
+  systemctl --user enable --now mpd.service mpd-mpris.service mpdscribble.service
+  #+end_src
