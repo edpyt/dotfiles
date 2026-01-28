@@ -6,6 +6,7 @@
     password: None,
     theme: Some("mierak-macchiato.ron"),
     cache_dir: "~/Music/",
+    lyrics_dir: "~/Music/",
     on_song_change: None,
     volume_step: 5,
     max_fps: 30,
@@ -60,6 +61,8 @@
             "5":       SwitchToTab("Albums"),
             "6":       SwitchToTab("Playlists"),
             "7":       SwitchToTab("Search"),
+            "8":       SwitchToTab("Lyrics"),
+            "9":       SwitchToTab("Lyrics"),
             "q":       Quit,
             ">":       NextTrack,
             "p":       TogglePause,
@@ -182,6 +185,10 @@
             name: "Search",
             pane: Pane(Search),
         ),
+    (
+            name: "Lyrics",
+            pane: Pane(Lyrics)
+        )
     ],
 )
 
