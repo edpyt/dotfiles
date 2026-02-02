@@ -39,7 +39,7 @@ binds {
         spawn "dms" "ipc" "call" "dankdash" "wallpaper";
     }
 
-    Mod+Shift+N hotkey-overlay-title="Notepad" {
+    /-Mod+Shift+N hotkey-overlay-title="Notepad" {
       spawn "dms" "ipc" "call" "notepad" "toggle";  
     }
     
