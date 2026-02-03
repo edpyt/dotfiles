@@ -7,10 +7,10 @@ layer-rule {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 
 window-rule {
-	// geometry-corner-radius 10 // Set every window radius to 20
+	geometry-corner-radius 6
 	clip-to-geometry true
-    tiled-state true
-    draw-border-with-background false
+  tiled-state true
+  draw-border-with-background false
 }
 
 window-rule {
@@ -38,13 +38,13 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"org.quickshell$"#
-    open-floating true
+  match app-id=r#"org.quickshell$"#
+  open-floating true
 }
 
 window-rule {
-    match app-id="Zoom Workplace" title=".*menu.*"
-    open-floating true
-    min-width 250
-    open-focused true
+  match app-id="Zoom Workplace" title=".*menu.*"
+  open-floating true
+  min-width 250
+  open-focused true
 }

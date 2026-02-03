@@ -104,14 +104,18 @@ layout {
 		offset x=0 y=5
 	}
 
-	struts {}
-
   border {
     width 1
   }
 
   focus-ring {
     width 1
+  }
+
+  tab-indicator {
+    width 4
+    gap 4
+  	place-within-column
   }
 }
 
