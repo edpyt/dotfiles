@@ -66,7 +66,6 @@ return {
           description = "default",
           template = [[
 #+HTML_HEAD: <link rel="stylesheet" href="../../../assets/org.css" type="text/css" />
-
 %?
 ]],
           target = "%<%Y%m%d%H%M%S>-%[slug].org",

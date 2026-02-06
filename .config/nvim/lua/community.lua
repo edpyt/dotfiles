@@ -16,9 +16,6 @@ return {
   -- media
   { import = "astrocommunity.media.vim-wakatime" },
 
-  -- recipes
-  { import = "astrocommunity.recipes.neovide" },
-
   -- test
   { import = "astrocommunity.test.neotest" },
 
