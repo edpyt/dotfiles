@@ -5,9 +5,12 @@ include "binds.kdl"
 include "envs.kdl"
 include "rules.kdl"
 
-include "dms/alttab.kdl"
-include "dms/prefbinds.kdl"
-include "dms/colors.kdl"
+include "noctalia/main.kdl"
+
+// include "dms/alttab.kdl"
+// include "dms/prefbinds.kdl"
+// include "dms/colors.kdl"
+// include "dms/cursor.kdl"
 
 config-notification {
   disable-failed
@@ -162,4 +165,6 @@ animations {
 	}
 }
 
-include "dms/cursor.kdl"
+
+include "./noctalia.kdl"
+

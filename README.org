@@ -20,10 +20,8 @@
       xdg-desktop-portal-gnome \
       xdg-desktop-portal-gtk \
       xwayland-satellite \
-      dms-shell-bin matugen
+      noctalia-shell
    #+end_src
-   - [[https://github.com/AvengeMedia/DankMaterialShell][DankMaterialShell]] 
-   - [[https://danklinux.com/docs/dankgreeter/installation?_highlight=greet#enabling-greeter-all-distros][DMS greetd]]
 
 ** Tools
    #+begin_src shell

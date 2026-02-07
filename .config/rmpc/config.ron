@@ -4,7 +4,7 @@
 (
     address: "/tmp/mpd_socket",
     password: None,
-    theme: Some("mierak-macchiato.ron"),
+    theme: Some("mierak.ron"),
     cache_dir: "~/Music/",
     lyrics_dir: "~/Music/",
     on_song_change: None,

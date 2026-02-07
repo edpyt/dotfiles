@@ -1,0 +1,38 @@
+binds {
+  // Core Noctalia binds
+  Mod+Comma { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle"; }
+  Mod+A { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+  Mod+Ctrl+O hotkey-overlay-title="Control center popup"{
+    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; 
+  }
+  Mod+Ctrl+M hotkey-overlay-title="Media popup" {
+    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "media" "toggle"; 
+  }
+  Mod+Shift+W hotkey-overlay-title="Browse Wallpapers" {
+    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle"; 
+  }
+  Mod+Alt+L hotkey-overlay-title="Lock Screen" { 
+    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; 
+  }
+  Mod+Ctrl+S hotkey-overlay-title="System Monitor panel" { 
+    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "systemMonitor" "toggle"; 
+  }
+  Mod+Escape hotkey-overlay-title="Power Menu" {
+    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; 
+  }
+
+  // Audio & Brightness
+  XF86AudioRaiseVolume { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "increase"; }
+  XF86AudioLowerVolume { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "decrease"; }
+  XF86AudioMute { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
+  XF86MonBrightnessUp { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "increase"; }
+  XF86MonBrightnessDown { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
+
+  // Notifications
+  Mod+N hotkey-overlay-title="Notification Center" {
+    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "toggleHistory"; 
+  }
+  Mod+Shift+N hotkey-overlay-title="Clear Notifications" {
+    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "clear"; 
+  }
+}
