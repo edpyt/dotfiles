@@ -40,7 +40,6 @@
      npm \
      lazygit \
      zellij \
-     ffmpeg p7zip jq poppler fd ripgrep fzf zoxide imagemagick \
      python ruff basedpyright uv
    #+end_src
 ** Applications
@@ -49,7 +48,7 @@
      zen-browser-bin \
      keepassxc \
      okular \
-     yazi \
+     felix zoxide chafa \
      nautilus
    #+end_src
 

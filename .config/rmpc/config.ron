@@ -29,23 +29,6 @@
         vertical_align: Center,
         horizontal_align: Center,
     ),
-    cava: (
-        framerate: 60,
-        autosens: true,
-        sensitivity: 80,
-        input: (
-            method: Fifo,
-            source: "/tmp/mpd.fifo",
-            sample_rate: 44100,
-            channels: 2,
-            samble_bits: 16,
-        ),
-        smoothing: (
-            noise_reduction: 25,
-            monstercat: false,
-            waves: false,
-        ),
-    ),
     keybinds: (
         global: {
             ":":       CommandMode,
@@ -155,8 +138,7 @@
                 (size: "60%", pane: Split(
                         direction: Vertical,
                         panes: [
-                        (size: "50%", pane: Pane(Queue)),
-                        (size: "50%", pane: Pane(Cava)),
+                        (size: "100%", pane: Pane(Queue)),
                         ],
                     )), (size: "40%", pane: Pane(AlbumArt))],
             ),

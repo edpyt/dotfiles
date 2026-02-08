@@ -7,9 +7,9 @@ binds {
 	// ─── Applications ───
 	Mod+T                          hotkey-overlay-title="Open Terminal: kitty" { spawn-sh "kitty"; }
 	Mod+W                          hotkey-overlay-title="Open Browser: zen-browser" { spawn-sh "zen-browser"; }
-	Mod+E                             hotkey-overlay-title="File Manager: Nautilus" { spawn-sh "nautilus"; }
-	Mod+Shift+E  					hotkey-overlay-title="File Manager: yazi" { spawn-sh "kitty yazi"; }
-	Mod+Shift+M  					hotkey-overlay-title="Music Player: rmpc" { spawn-sh "kitty rmpc"; }
+	Mod+E  												 hotkey-overlay-title="File Manager: felix" { spawn-sh "kitty -e felix"; }
+	Mod+Shift+E                    hotkey-overlay-title="File Manager: Nautilus" { spawn-sh "nautilus"; }
+	Mod+Shift+M  									 hotkey-overlay-title="Music Player: rmpc" { spawn-sh "kitty rmpc"; }
 
 	// ─── Audio Controls ───
 	XF86AudioNext                       allow-when-locked=true { spawn-sh "playerctl next"; }

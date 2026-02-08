@@ -16,10 +16,10 @@
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
-        "showCategories": true,
-        "showIconBackground": false,
+        "showCategories": false,
+        "showIconBackground": true,
         "sortByMostUsed": true,
-        "terminalCommand": "alacritty -e",
+        "terminalCommand": "kitty -e",
         "useApp2Unit": false,
         "viewMode": "list"
     },
@@ -39,7 +39,7 @@
         "backgroundOpacity": 1,
         "barType": "simple",
         "capsuleColorKey": "none",
-        "capsuleOpacity": 1,
+        "capsuleOpacity": 0.42,
         "density": "compact",
         "displayMode": "always_visible",
         "floating": false,
@@ -151,15 +151,6 @@
         "widgets": {
             "center": [
                 {
-                    "colorizeDistroLogo": false,
-                    "colorizeSystemIcon": "none",
-                    "customIconPath": "",
-                    "enableColorization": false,
-                    "icon": "noctalia",
-                    "id": "ControlCenter",
-                    "useDistroLogo": false
-                },
-                {
                     "clockColor": "none",
                     "customFont": "",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
@@ -208,7 +199,7 @@
                     "hideUnoccupied": false,
                     "iconScale": 0.58,
                     "id": "Workspace",
-                    "labelMode": "index",
+                    "labelMode": "none",
                     "occupiedColor": "secondary",
                     "pillSize": 0.6,
                     "reverseScroll": false,
@@ -433,7 +424,7 @@
         "name": "Ufa",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
-        "showWeekNumberInCalendar": false,
+        "showWeekNumberInCalendar": true,
         "use12hourFormat": false,
         "useFahrenheit": false,
         "weatherEnabled": true,
@@ -458,22 +449,22 @@
     },
     "notifications": {
         "backgroundOpacity": 1,
-        "criticalUrgencyDuration": 15,
+        "criticalUrgencyDuration": 6,
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": false,
         "enableMediaToast": false,
         "enabled": true,
-        "location": "top_right",
-        "lowUrgencyDuration": 3,
+        "location": "bottom_right",
+        "lowUrgencyDuration": 1,
         "monitors": [
             "DP-1"
         ],
-        "normalUrgencyDuration": 8,
+        "normalUrgencyDuration": 4,
         "overlayLayer": true,
         "respectExpireTimeout": false,
         "saveToHistory": {
             "critical": true,
-            "low": true,
+            "low": false,
             "normal": true
         },
         "sounds": {
@@ -614,11 +605,11 @@
             },
             {
                 "enabled": true,
-                "id": "zenBrowser"
+                "id": "qt"
             },
             {
                 "enabled": true,
-                "id": "qt"
+                "id": "zenBrowser"
             }
         ],
         "enableUserTheming": false
@@ -641,17 +632,22 @@
     "wallpaper": {
         "automationEnabled": false,
         "directory": "/home/edpyt/wallpapers",
-        "enableMultiMonitorDirectories": false,
+        "enableMultiMonitorDirectories": true,
         "enabled": true,
         "fillColor": "#000000",
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
         "monitorDirectories": [
+            {
+                "directory": "/home/edpyt/wallpapers",
+                "name": "HDMI-A-1",
+                "wallpaper": ""
+            }
         ],
         "overviewEnabled": false,
         "panelPosition": "follow_bar",
         "randomIntervalSec": 300,
-        "setWallpaperOnAllMonitors": true,
+        "setWallpaperOnAllMonitors": false,
         "showHiddenFiles": false,
         "solidColor": "#1a1a2e",
         "sortOrder": "name",
@@ -664,8 +660,8 @@
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
-        "wallhavenPurity": "100",
-        "wallhavenQuery": "",
+        "wallhavenPurity": "000",
+        "wallhavenQuery": "moon",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
