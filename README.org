@@ -27,10 +27,7 @@
    #+begin_src shell
    paru -S \
      syncthing \
-     rmpc \
-     mpd \
-     mpd-mpris \
-     mpdscribble \
+     rmpc mpd mpd-mpris mpdscribble \
      neovim \
      kitty \
      fish \
@@ -40,6 +37,7 @@
      npm \
      lazygit \
      zellij \
+     felix zoxide chafa \
      python ruff basedpyright uv
    #+end_src
 ** Applications
@@ -48,16 +46,16 @@
      zen-browser-bin \
      keepassxc \
      okular \
-     felix zoxide chafa \
-     nautilus
+     nautilus  \
+     mpv
    #+end_src
 
 ** Miscelanneous
    Setup browser with:
-   - [[https://one-sec.app/browser-extension/][one sec]]
    - [[https://userstyles.catppuccin.com/]]   \\
-     + theme: Frappe
-     + accent: Lavender
+     + theme: Macchiato
+     + accent: Blue
+   - [[https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/]]
 ** Fonts
    - [[https://github.com/subframe7536/Maple-font#arch-linux][Maple Mono NF]]
 

@@ -1,1 +1,5 @@
 default: nvim
+
+exec:
+  mpv:
+    [mp4, webm]
