@@ -146,7 +146,7 @@
         ),
     (
             prop: (kind: Property(Duration),default: (kind: Text("-"))),
-            width: "6",
+            width: "7",
             alignment: Right,
             label_prop: (kind: Group([
             (kind: Text(" "), style: (fg: "blue")),

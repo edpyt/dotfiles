@@ -7,7 +7,7 @@ layer-rule {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 
 window-rule {
-	geometry-corner-radius 6
+	geometry-corner-radius 20
 	clip-to-geometry true
   tiled-state true
   draw-border-with-background false
@@ -15,13 +15,14 @@ window-rule {
 
 window-rule {
 	match app-id="kitty"
-	// opacity 0.98
 	default-column-width {}
 }
 
 window-rule {
 	match app-id=r#"zen$"# title="^Picture-in-Picture$"
 	match app-id="AmneziaVPN"
+	match app-id="Pinentry-gtk"
+  match app-id=r#"org.quickshell$"#
 	open-floating true
 }
 
@@ -30,16 +31,9 @@ window-rule {
   open-on-workspace "browser"
 }
 
-
 window-rule {
   match app-id="zen" 
-  match app-id="YandexMusic" 
   default-column-width { proportion 1.0; }
-}
-
-window-rule {
-  match app-id=r#"org.quickshell$"#
-  open-floating true
 }
 
 window-rule {
