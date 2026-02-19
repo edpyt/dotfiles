@@ -86,9 +86,6 @@
             ]))),
             width: "2",
             alignment: Left,
-            label_prop: (kind: Group([
-            (kind: Text(""), style: (fg: "blue")),
-            ])),
         ),
     (
             prop:(kind: Text("│"), style: (fg: "blue")),

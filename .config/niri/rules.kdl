@@ -1,5 +1,5 @@
 layer-rule {
-  match namespace="^quickshell$"
+  match namespace="^mpvpaper$"  // namespace="^quickshell$"
   place-within-backdrop true
 }
 
@@ -11,10 +11,12 @@ window-rule {
 	clip-to-geometry true
   tiled-state true
   draw-border-with-background false
+  opacity 0.95
 }
 
 window-rule {
-	match app-id="kitty"
+	match app-id="kitty" is-focused=true
+	opacity 0.98
 	default-column-width {}
 }
 

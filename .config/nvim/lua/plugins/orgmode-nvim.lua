@@ -20,7 +20,11 @@ return {
       },
       {
         "lukas-reineke/headlines.nvim",
-        opts = {},
+        opts = {
+          markdown = {
+            headline_highlights = false,
+          },
+        },
       },
     },
     event = "VeryLazy",

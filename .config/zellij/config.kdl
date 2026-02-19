@@ -20,6 +20,7 @@ keybinds clear-defaults=true {
         bind "k" { MoveFocus "up"; }
         bind "l" { MoveFocus "right"; }
         bind "n" { NewPane; SwitchToMode "locked"; }
+        bind "s" { NewPane "stacked"; SwitchToMode "Normal"; }
         bind "p" { SwitchToMode "normal"; }
         bind "r" { NewPane "right"; SwitchToMode "locked"; }
         bind "w" { ToggleFloatingPanes; SwitchToMode "locked"; }
@@ -130,6 +131,13 @@ keybinds clear-defaults=true {
                 move_to_focused_tab true
             }
             SwitchToMode "locked"
+        }
+        bind "s" {
+            LaunchOrFocusPlugin "zellij:share" {
+                floating true
+                move_to_focused_tab true
+            };
+            SwitchToMode "Normal"
         }
     }
     shared_among "normal" "locked" {
@@ -246,7 +254,7 @@ simplified_ui true
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "catppuccin-macchiato"
+theme "tokyo-night-dark"
 
 // Choose the base input mode of zellij.
 // Default: normal
