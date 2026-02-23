@@ -20,6 +20,7 @@ binds {
 
 	// ─── Window Movement and Focus ───
 	Mod+Q                               { close-window; }
+	Mod+O  															{ toggle-window-rule-opacity; }
 
 	Mod+LEFT                            { focus-column-left; }
 	Mod+H                               { focus-column-left; }

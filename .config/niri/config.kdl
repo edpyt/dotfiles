@@ -12,6 +12,14 @@ include "noctalia/main.kdl"
 // include "dms/colors.kdl"
 // include "dms/cursor.kdl"
 
+blur {
+    // off
+    passes 3
+    offset 3
+    noise 0.02
+    saturation 2.5
+}
+
 config-notification {
   disable-failed
 }

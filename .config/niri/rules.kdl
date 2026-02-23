@@ -2,21 +2,23 @@ layer-rule {
   match namespace="^mpvpaper$"  // namespace="^quickshell$"
   place-within-backdrop true
 }
-
 // ────────────── Window Rules ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 
 window-rule {
-	geometry-corner-radius 20
+	geometry-corner-radius 12
 	clip-to-geometry true
   tiled-state true
   draw-border-with-background false
-  opacity 0.95
+  opacity 0.9
+
+  background-effect {
+    blur true
+  }
 }
 
 window-rule {
-	match app-id="kitty" is-focused=true
-	opacity 0.98
+	match app-id="kitty"
 	default-column-width {}
 }
 

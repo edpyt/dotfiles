@@ -6,7 +6,7 @@
         "clipboardWrapText": true,
         "customLaunchPrefix": "",
         "customLaunchPrefixEnabled": false,
-        "density": "default",
+        "density": "comfortable",
         "enableClipPreview": true,
         "enableClipboardHistory": false,
         "enableSessionSearch": true,
@@ -14,13 +14,13 @@
         "enableWindowsSearch": true,
         "iconMode": "tabler",
         "ignoreMouseInput": false,
-        "overviewLayer": false,
+        "overviewLayer": true,
         "pinnedApps": [
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
-        "showCategories": false,
-        "showIconBackground": true,
+        "showCategories": true,
+        "showIconBackground": false,
         "sortByMostUsed": true,
         "terminalCommand": "kitty -e",
         "useApp2Unit": false,
@@ -33,7 +33,7 @@
         "preferredPlayer": "",
         "visualizerType": "linear",
         "volumeFeedback": false,
-        "volumeOverdrive": false,
+        "volumeOverdrive": true,
         "volumeStep": 5
     },
     "bar": {
@@ -42,7 +42,7 @@
         "backgroundOpacity": 1,
         "barType": "framed",
         "capsuleColorKey": "none",
-        "capsuleOpacity": 0.42,
+        "capsuleOpacity": 1,
         "density": "compact",
         "displayMode": "always_visible",
         "floating": false,
@@ -55,7 +55,7 @@
             "DP-1",
             "HDMI-A-1"
         ],
-        "outerCorners": true,
+        "outerCorners": false,
         "position": "right",
         "screenOverrides": [
             {
@@ -154,7 +154,7 @@
                     "reverseScroll": false,
                     "showApplications": false,
                     "showBadge": false,
-                    "showLabelsOnlyWhenOccupied": true,
+                    "showLabelsOnlyWhenOccupied": false,
                     "unfocusedIconsOpacity": 1
                 }
             ],
@@ -235,7 +235,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Tokyo Night Moon",
+        "predefinedScheme": "Tokyo Night",
         "schedulingMode": "off",
         "useWallpaperColors": false
     },
@@ -300,9 +300,27 @@
         }
     },
     "desktopWidgets": {
-        "enabled": false,
-        "gridSnap": false,
+        "enabled": true,
+        "gridSnap": true,
         "monitorWidgets": [
+            {
+                "name": "DP-1",
+                "widgets": [
+                    {
+                        "hideMode": "visible",
+                        "id": "MediaPlayer",
+                        "roundedCorners": true,
+                        "scale": 0.9231223858881377,
+                        "showAlbumArt": true,
+                        "showBackground": false,
+                        "showButtons": false,
+                        "showVisualizer": false,
+                        "visualizerType": "linear",
+                        "x": 20,
+                        "y": 20
+                    }
+                ]
+            }
         ]
     },
     "dock": {
@@ -311,17 +329,18 @@
         "colorizeIcons": false,
         "deadOpacity": 0.6,
         "displayMode": "auto_hide",
-        "enabled": false,
+        "enabled": true,
         "floatingRatio": 1,
         "inactiveIndicators": false,
         "monitors": [
         ],
         "onlySameOutput": true,
         "pinnedApps": [
+            "kitty"
         ],
         "pinnedStatic": false,
         "position": "bottom",
-        "size": 1
+        "size": 0.7000000000000001
     },
     "general": {
         "allowPanelsOnScreenWithoutBar": true,
@@ -329,7 +348,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/edpyt/Downloads/ea43c2c71b05aa00269831359f4b94a0.jpg",
+        "avatarImage": "/home/edpyt/Pictures/Screenshots/Screenshot_from_2026-02-23_12-18-22.png",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "digital",
@@ -589,7 +608,7 @@
                 "id": "discord"
             }
         ],
-        "enableUserTheming": false
+        "enableUserTheming": true
     },
     "ui": {
         "bluetoothDetailsViewMode": "grid",
@@ -600,9 +619,9 @@
         "fontFixed": "Maple Mono NF",
         "fontFixedScale": 1,
         "networkPanelView": "ethernet",
-        "panelBackgroundOpacity": 0.93,
+        "panelBackgroundOpacity": 0.9,
         "panelsAttachedToBar": true,
-        "settingsPanelMode": "attached",
+        "settingsPanelMode": "centered",
         "tooltipsEnabled": true,
         "wifiDetailsViewMode": "list"
     },
