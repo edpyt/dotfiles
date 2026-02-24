@@ -306,19 +306,6 @@
             {
                 "name": "DP-1",
                 "widgets": [
-                    {
-                        "hideMode": "visible",
-                        "id": "MediaPlayer",
-                        "roundedCorners": true,
-                        "scale": 0.9231223858881377,
-                        "showAlbumArt": true,
-                        "showBackground": false,
-                        "showButtons": false,
-                        "showVisualizer": false,
-                        "visualizerType": "linear",
-                        "x": 20,
-                        "y": 20
-                    }
                 ]
             }
         ]
