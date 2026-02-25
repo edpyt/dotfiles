@@ -204,6 +204,19 @@
                     "id": "Volume",
                     "middleClickCommand": "pwvucontrol || pavucontrol",
                     "textColor": "none"
+                },
+                {
+                    "defaultSettings": {
+                        "activeBackend": "qt6-multimedia",
+                        "automationMode": "random",
+                        "automationTime": 300,
+                        "fillMode": "fit",
+                        "mpvSocket": "/tmp/mpv-socket",
+                        "profile": "default",
+                        "volume": 1,
+                        "wallpapersFolder": "~/Pictures/Wallpapers"
+                    },
+                    "id": "plugin:video-wallpaper"
                 }
             ]
         }
