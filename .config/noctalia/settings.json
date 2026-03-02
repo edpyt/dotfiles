@@ -100,11 +100,6 @@
         "widgets": {
             "center": [
                 {
-                    "defaultSettings": {
-                    },
-                    "id": "plugin:kde-connect"
-                },
-                {
                     "clockColor": "none",
                     "customFont": "",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
@@ -321,7 +316,7 @@
         "colorizeIcons": false,
         "deadOpacity": 0.6,
         "displayMode": "auto_hide",
-        "enabled": true,
+        "enabled": false,
         "floatingRatio": 1,
         "inactiveIndicators": false,
         "monitors": [
