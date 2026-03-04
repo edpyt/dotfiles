@@ -161,7 +161,7 @@
                                     pane: Pane(AlbumArt)
                                 ),
                                 (
-                                    size: "7",
+                                    size: "100%",
                                     borders: "ALL",
                                     border_symbols: Inherited(parent: Rounded, top_left: "├", top_right: "┤",),
                                     // border_title: [(kind: Text(" Lyrics "))],
