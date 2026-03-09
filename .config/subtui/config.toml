@@ -1,0 +1,93 @@
+[app]
+replaygain = 'track'          # Options: 'track', 'album', 'no'
+desktop_notifications = false
+discord_rich_presence = true
+mouse_support = true
+
+[theme]
+display_album_art = true
+# Format: ['Light Color', 'Dark Color']
+subtle = ['#D9DCCF', '#6B6B6BFF']
+highlight = ['#874BFD', '#7D56F4']
+special = ['#43BF6D', '#73F59F']
+filtered = ['#A9A9A9', '#555555']
+
+[filters]
+titles = []               # Exclude songs with titles containing these strings
+artists = []              # Exclude songs by these artists
+album_artists = []        # Exclude songs by these album artists
+min_duration = 0          # Exclude songs with a duration shorter than or equal to this length (in seconds), 0 to disable
+genres = []               # Exclude songs belonging to these genres
+notes = []                # Exclude songs with comments/notes containing these strings
+paths = []                # Exclude songs whose file path contains these strings
+max_play_count = 0        # Exclude songs with a play count less than or equal to this number. 0 to disable
+exclude_favorites = false # Set to true to exclude songs that are marked as a favorite/starred
+max_rating = 0            # Exclude songs with a rating less than or equal to this number (1-5). 0 to disable
+
+[columns]
+track_number = false
+title = true
+artist = true
+album = true
+year = false
+genre = false
+rating = false
+play_count = false
+duration = true
+
+[keybinds]
+[keybinds.global]
+cycle_focus_next = ['tab']
+cycle_focus_prev = ['shift+tab']
+back = ['backspace', 'esc']
+help = ['?']
+quit = ['q']
+hard_quit = ['ctrl+c']
+
+[keybinds.navigation]
+up = ['k', 'up']
+down = ['j', 'down']
+top = ['gg']
+bottom = ['G']
+select = ['enter']
+play_shuffeled = ['alt+enter']
+
+[keybinds.search]
+focus_search = ['/']
+filter_next = ['ctrl+n']
+filter_prev = ['ctrl+b']
+
+[keybinds.library]
+add_to_playlist = ['A']
+add_rating = ['R']
+go_to_album = ['ga']
+go_to_artist = ['gr']
+
+[keybinds.media]
+play_pause = ['p', 'P']
+next = ['n']
+prev = ['b']
+shuffle = ['S']
+loop = ['L']
+restart = ['w']
+rewind = [',']
+forward = [';']
+volume_up = ['v']
+volume_down = ['V']
+
+[keybinds.queue]
+toggle_queue_view = ['Q']
+queue_next = ['N']
+queue_last = ['a']
+remove_from_queue = ['d']
+clear_queue = ['D']
+move_up = ['K']
+move_down = ['J']
+
+[keybinds.favorites]
+toggle_favorite = ['f']
+view_favorites = ['F']
+
+[keybinds.other]
+toggle_notifications = ['s']
+create_share_link = ['ctrl+s']
