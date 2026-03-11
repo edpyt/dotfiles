@@ -6,6 +6,7 @@ binds {
 
 	// ─── Applications ───
 	Mod+T                          hotkey-overlay-title="Open Terminal: kitty" { spawn-sh "kitty"; }
+	Mod+Ctrl+T                     hotkey-overlay-title="Open Code Editor: neovim" { spawn-sh "kitty -e nvim"; }
 	Mod+W                          hotkey-overlay-title="Open Browser: zen-browser" { spawn-sh "zen-browser"; }
 	Mod+E  												 hotkey-overlay-title="File Manager: felix" { spawn-sh "kitty -e felix"; }
 	Mod+Shift+E                    hotkey-overlay-title="File Manager: Nautilus" { spawn-sh "nautilus"; }

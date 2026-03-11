@@ -1,7 +1,7 @@
 #+html: <img src="https://github.com/user-attachments/assets/d4a41d3a-cb90-4534-be8e-71a1866d4af5"/>
 
 - Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty]]
-- DE: [[https://yalter.github.io/niri/][niri]]
+- Wayland Compositor: [[https://yalter.github.io/niri/][niri]]
 - Code Editor: [[https://astronvim.com][astronvim]]
 - Browser: [[https://zen-browser.app/][zen]]
 - OS: [[https://cachyos.org/][CachyOS]]
