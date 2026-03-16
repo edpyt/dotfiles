@@ -1,39 +1,39 @@
 [app]
-replaygain = 'track'          # Options: 'track', 'album', 'no'
+# Type of replaygain: 'track', 'album', 'no'
+replaygain = 'track'
 desktop_notifications = false
 discord_rich_presence = true
 mouse_support = true
 
+# Format: ['Light color', 'Dark color']
 [theme]
 display_album_art = true
-# Format: ['Light Color', 'Dark Color']
 subtle = ['#D9DCCF', '#6B6B6BFF']
 highlight = ['#874BFD', '#7D56F4']
 special = ['#43BF6D', '#73F59F']
 filtered = ['#A9A9A9', '#555555']
 
 [filters]
-titles = []               # Exclude songs with titles containing these strings
-artists = []              # Exclude songs by these artists
-album_artists = []        # Exclude songs by these album artists
-min_duration = 0          # Exclude songs with a duration shorter than or equal to this length (in seconds), 0 to disable
-genres = []               # Exclude songs belonging to these genres
-notes = []                # Exclude songs with comments/notes containing these strings
-paths = []                # Exclude songs whose file path contains these strings
-max_play_count = 0        # Exclude songs with a play count less than or equal to this number. 0 to disable
-exclude_favorites = false # Set to true to exclude songs that are marked as a favorite/starred
-max_rating = 0            # Exclude songs with a rating less than or equal to this number (1-5). 0 to disable
-
-[columns]
-track_number = false
-title = true
-artist = true
-album = true
-year = false
-genre = false
-rating = false
-play_count = false
-duration = true
+# Exclude songs with titles containing these strings
+titles = []
+# Exclude songs by these artists
+artists = []
+# Exclude songs by these album artists
+album_artists = []
+# Exclude songs with a duration shorter than or equal to this length (in seconds), 0 to disable
+min_duration = 0
+# Exclude songs belonging to these genres
+genres = []
+# Exclude songs with comments/notes containing these strings
+notes = []
+# Exclude songs whose file path contains these strings
+paths = []
+# Exclude songs with a play count less than or equal to this number, 0 to disable
+max_play_count = 0
+# Set to true to exclude songs that are marked as a favorite/starred
+exclude_favorites = false
+# Exclude songs with a rating less than or equal to this number (1-5), 0 to disable
+max_rating = 0
 
 [keybinds]
 [keybinds.global]
@@ -91,3 +91,29 @@ view_favorites = ['F']
 [keybinds.other]
 toggle_notifications = ['s']
 create_share_link = ['ctrl+s']
+
+[columns]
+[columns.songs]
+track_number = false
+title = true
+artist = true
+album = true
+year = false
+genre = false
+rating = false
+play_count = false
+duration = true
+
+[columns.albums]
+name = true
+artist = true
+song_count = false
+year = false
+genre = false
+rating = true
+duration = true
+
+[columns.artists]
+name = true
+album_count = true
+rating = true
