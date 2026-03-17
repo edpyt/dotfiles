@@ -50,6 +50,11 @@ return {
           template = "* TODO %?\n %u",
           target = "~/Documents/orgfiles/uni.org",
         },
+        h = {
+          description = "Habits",
+          template = "* TODO %?\n %u",
+          target = "~/Documents/orgfiles/habits.org",
+        },
       },
     },
   },

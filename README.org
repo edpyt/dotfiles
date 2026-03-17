@@ -28,6 +28,7 @@
    paru -S \
      syncthing \
      rmpc mpd mpd-mpris mpdscribble \
+     subtui-git \
      neovim \
      kitty \
      fish \
@@ -38,7 +39,8 @@
      lazygit \
      zellij \
      felix zoxide chafa \
-     python ruff basedpyright uv
+     python ruff basedpyright uv \
+     slowfetch
    #+end_src
 ** Applications
    #+begin_src shell
@@ -52,9 +54,7 @@
 
 ** Miscelanneous
    Setup browser with:
-   - [[https://userstyles.catppuccin.com/]]   \\
-     + theme: Macchiato
-     + accent: Blue
+   - [[https://darkreader.org/]]
    - [[https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/]]
 ** Fonts
    - [[https://github.com/subframe7536/Maple-font#arch-linux][Maple Mono NF]]

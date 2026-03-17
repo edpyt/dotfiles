@@ -109,7 +109,7 @@
         "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
-        "useSeparateOpacity": true,
+        "useSeparateOpacity": false,
         "widgetSpacing": 6,
         "widgets": {
             "center": [
@@ -246,11 +246,11 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "tonal-spot",
+        "generationMethod": "faithful",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Eldritch",
+        "predefinedScheme": "Catppuccin",
         "schedulingMode": "off",
         "useWallpaperColors": false
     },
@@ -336,7 +336,7 @@
                         "y": 20
                     },
                     {
-                        "colorName": "tertiary",
+                        "colorName": "primary",
                         "height": 30,
                         "hideWhenIdle": true,
                         "id": "AudioVisualizer",
@@ -698,7 +698,7 @@
     "wallpaper": {
         "automationEnabled": false,
         "directory": "/home/edpyt/wallpapers",
-        "enableMultiMonitorDirectories": true,
+        "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
         ],
@@ -719,7 +719,7 @@
         "randomIntervalSec": 300,
         "setWallpaperOnAllMonitors": true,
         "showHiddenFiles": false,
-        "skipStartupTransition": false,
+        "skipStartupTransition": true,
         "solidColor": "#1a1a2e",
         "sortOrder": "name",
         "transitionDuration": 1500,
