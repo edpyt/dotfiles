@@ -1,0 +1,83 @@
+## Slowfetch Configuration
+
+[display]
+## Show OS-specific art instead of default Slowfetch logo
+## Set to true to auto-detect OS, or specify OS name to force that logo
+os_art = true
+
+## Custom ASCII art file path. (overrides default and OS art)
+## The file can use {0} through {7} for color placeholders.
+# custom_art = "~/.config/slowfetch/my_art.txt"
+
+## Display image instead of ASCII art (uses Kitty graphics protocol)
+## Set to true to always show an image (uses default Slowfetch image if no path set)
+# image = false
+## Optionally set a custom image path (supports ~ for home directory)
+# image_path = "~/.config/slowfetch/image.png"
+
+## Nerd Font icons - auto-detect, force on, or force off
+# nerd_fonts = true
+
+## Box corner style: "rounded" (default) or "square"
+# box_style = "rounded"
+
+## Border line style: "solid" (default), "dotted", or "double"
+# border_line_style = "solid"
+
+[colors]
+## Theme preset - sets border, title, key, and value colors.
+## Available: "default" or "tty", "dracula", "catppuccin", "nord", "gruvbox", "eldritch", "kanagawa"
+## Default uses your terminal's color scheme.
+# theme = "default"
+
+## Individual theme colors - override the presets above (use web hex format)
+# border = "#FF79C6"  # Box borders
+# title = "#FF79C6"   # Section titles
+# key = "#BD93F9"     # Info keys
+# value = "#8BE9FD"   # Info values
+
+## ASCII art colors - maps to {0} through {7} in art files.
+## Default: rainbow spectrum.
+
+# art_1 = "#FF0000"   # {0} - Red
+# art_2 = "#FF8000"   # {1} - Orange
+# art_3 = "#FFFF00"   # {2} - Yellow
+# art_4 = "#00FF00"   # {3} - Green
+# art_5 = "#00FFFF"   # {4} - Cyan
+# art_6 = "#00BFFF"   # {5} - Light Blue
+# art_7 = "#5555FF"   # {6} - Blue
+# art_8 = "#AA55FF"   # {7} - Violet
+
+[core]
+## Toggle which items to show in Core.
+# os = true
+# kernel = true
+# uptime = true
+# init = true
+# os_age = true
+
+[hardware]
+## Toggle which items to show in Hardware.
+## Note: battery can be set to true on a desktop, will only display if your device is portable.
+# cpu = true
+# gpu = true
+## GPU display mode: "auto" (default), "igpu", "dgpu", or "both"
+## - auto: Shows discrete GPU if present, otherwise integrated GPU
+## - igpu/integrated: Shows only integrated GPU
+## - dgpu/discrete: Shows only discrete GPU
+## - both: Shows both GPUs in tree-style format
+# gpu_display = "auto"
+# memory = true
+# storage = true
+# battery = true
+# screen = true
+
+[userspace]
+## Toggle which items to show in Userspace.
+# packages = true
+# terminal = true
+# shell = true
+# wm = true
+# ui = true
+# editor = true
+# terminal_font = true

@@ -27,7 +27,6 @@
    #+begin_src shell
    paru -S \
      syncthing \
-     rmpc mpd mpd-mpris mpdscribble \
      subtui-git \
      neovim \
      kitty \
@@ -62,5 +61,4 @@
 * systemd
   #+begin_src sh
   systemctl --user enable --now syncthing.service
-  systemctl --user enable --now mpd.service mpd-mpris.service mpdscribble.service
   #+end_src
