@@ -225,7 +225,7 @@
         "backlightDeviceMappings": [
         ],
         "brightnessStep": 5,
-        "enableDdcSupport": false,
+        "enableDdcSupport": true,
         "enforceMinimum": true
     },
     "calendar": {
@@ -246,11 +246,11 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "faithful",
+        "generationMethod": "content",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Catppuccin",
+        "predefinedScheme": "Kanagawa",
         "schedulingMode": "off",
         "useWallpaperColors": false
     },
@@ -323,19 +323,6 @@
                 "name": "DP-1",
                 "widgets": [
                     {
-                        "defaultSettings": {
-                        },
-                        "id": "plugin:custom-sticker",
-                        "image": "/home/edpyt/Downloads/Tekengebied1-1947923231.png",
-                        "mirror": false,
-                        "opacity": 1,
-                        "roundedCorners": true,
-                        "showBackground": false,
-                        "verticalMirror": false,
-                        "x": 20,
-                        "y": 20
-                    },
-                    {
                         "colorName": "primary",
                         "height": 30,
                         "hideWhenIdle": true,
@@ -345,8 +332,8 @@
                         "showBackground": false,
                         "visualizerType": "linear",
                         "width": 100,
-                        "x": 20,
-                        "y": 960
+                        "x": 840,
+                        "y": 1000
                     }
                 ]
             }
@@ -498,7 +485,7 @@
         "disableDiscoverability": false,
         "networkPanelView": "wifi",
         "wifiDetailsViewMode": "grid",
-        "wifiEnabled": false
+        "wifiEnabled": true
     },
     "nightLight": {
         "autoSchedule": true,
