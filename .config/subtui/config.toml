@@ -10,10 +10,10 @@ mouse_support = true
 # Format: ['Light color', 'Dark color']
 [theme]
 display_album_art = true
-subtle = ['#DCD7BA', '#1F1F28']
-highlight = ['#E46876', '#C0A36E']
-special = ['#98BB6C', '#7E9CD8']
-filtered = ['#7A6F4B', '#54546D']
+subtle = ['#D9DCCF', '#6B6B6BFF']
+highlight = ['#874BFD', '#7D56F4']
+special = ['#43BF6D', '#73F59F']
+filtered = ['#A9A9A9', '#555555']
 
 [filters]
 # Exclude songs with titles containing these strings

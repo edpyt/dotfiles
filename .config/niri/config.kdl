@@ -13,11 +13,7 @@ include "noctalia/main.kdl"
 // include "dms/cursor.kdl"
 
 blur {
-    // off
     passes 4
-    offset 3
-    noise 0.02
-    saturation 2
 }
 
 recent-windows {
