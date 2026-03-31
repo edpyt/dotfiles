@@ -1,6 +1,8 @@
 [app]
-# Type of replaygain: 'track', 'album', 'no'
+# Type of replaygain: 'track', 'album', 'no' https://mpv.io/manual/stable/#options-replaygain
 replaygain = 'track'
+# Type of gapless playback: 'yes', 'no', 'weak' https://mpv.io/manual/stable/#options-gapless-audio
+gapless_playback = 'yes'
 desktop_notifications = false
 discord_rich_presence = true
 mouse_support = true
@@ -51,6 +53,8 @@ top = ['gg']
 bottom = ['G']
 select = ['enter']
 play_shuffled = ['alt+enter']
+go_half_page_up = ['ctrl+u']
+go_half_page_down = ['ctrl+d']
 
 [keybinds.search]
 focus_search = ['/']

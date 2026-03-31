@@ -136,7 +136,7 @@
                     "showVisualizer": false,
                     "textColor": "none",
                     "useFixedWidth": false,
-                    "visualizerType": "linear"
+                    "visualizerType": "wave"
                 }
             ],
             "left": [
@@ -208,7 +208,7 @@
                     "displayMode": "forceOpen",
                     "iconColor": "none",
                     "id": "KeyboardLayout",
-                    "showIcon": false,
+                    "showIcon": true,
                     "textColor": "none"
                 },
                 {
@@ -246,11 +246,11 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "content",
+        "generationMethod": "faithful",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Kanagawa",
+        "predefinedScheme": "Kanagawa Paper",
         "schedulingMode": "off",
         "useWallpaperColors": false
     },
