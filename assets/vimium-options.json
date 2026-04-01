@@ -1,4 +1,17 @@
 {
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https?://dos.zone/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://music.youtube.com/*"
+    }
+  ],
+  "ignoreKeyboardLayout": true,
+  "newTabDestination": "browserNewTabPage",
   "scrollStepSize": 120,
-  "settingsVersion": "2.4.0"
+  "settingsVersion": "2.4.2",
+  "userDefinedLinkHintCss": ""
 }

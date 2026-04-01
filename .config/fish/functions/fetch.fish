@@ -1,7 +1,7 @@
-function fetch --wraps=slowfetch --description 'alias fetch=slowfetch'
-    if type -f slowfetch &>/dev/null
-        slowfetch $argv
+function fetch --wraps=fastfetch --description 'alias fetch=fastfetch'
+    if type -f fastfetch &>/dev/null
+        fastfetch $argv
     else
-        missing_package slowfetch
+        missing_package fastfetch
     end
 end

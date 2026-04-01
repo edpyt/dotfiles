@@ -10,7 +10,7 @@ window-rule {
 	clip-to-geometry true
   tiled-state true
   draw-border-with-background false
-  opacity 0.94
+  opacity 0.9
 
   background-effect {
     blur true
@@ -19,7 +19,7 @@ window-rule {
 
 window-rule {
 	match app-id="kitty" is-focused=true
-	opacity 0.96
+	opacity 0.95
 }
 
 window-rule {
