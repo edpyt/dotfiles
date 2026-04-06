@@ -35,4 +35,9 @@ binds {
   Mod+Shift+N hotkey-overlay-title="Clear Notifications" {
     spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "clear"; 
   }
+
+  // Plugins: screen-recorder
+  Mod+Shift+S hotkey-overlay-title="Screen Recorder" {
+    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:screen-recorder" "toggle"; 
+  }
 }
