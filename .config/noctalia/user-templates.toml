@@ -19,3 +19,8 @@
 input_path = "~/.config/nvim/lua/functions/matugen-template.lua"
 output_path = "~/.config/nvim/lua/functions/matugen.lua"
 post_hook = 'pkill -SIGUSR1 nvim'
+
+[templates.subtui]
+input_path = "~/.config/subtui/matugen-template.toml"
+output_path = "~/.config/subtui/config.toml"
+post_hook = 'pkill -SIGUSR1 subtui'

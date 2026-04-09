@@ -8,10 +8,10 @@ mouse_support         = false
 [theme]
 display_album_art  = true
 # Format: ['Light Color', 'Dark Color']
-subtle             = ['#9e8e8b', '#6d6890']
-highlight          = ['#d7827e', '#ea9a97']
-special            = ['#286983', '#3e8fb0']
-filtered           = ['#ffffff', '#383456']
+subtle             = ['{{colors.outline.light.hex}}', '{{colors.outline.dark.hex}}']
+highlight          = ['{{colors.primary.light.hex}}', '{{colors.primary.dark.hex}}']
+special            = ['{{colors.tertiary.light.hex}}', '{{colors.tertiary.dark.hex}}']
+filtered           = ['{{colors.surface.light.hex | lighten 10 | set_alpha 0.9}}', '{{colors.surface.dark.hex | lighten 10 | set_alpha 0.9}}']
 
 [filters]
 titles = [] # Exclude songs with titles containing these strings
