@@ -26,6 +26,10 @@ return {
           },
         },
       },
+      {
+        "chipsenkbeil/org-mouse.nvim",
+        config = function() require("org-mouse").setup() end,
+      },
     },
     event = "VeryLazy",
     ft = { "org" },
