@@ -8,11 +8,6 @@ include "rules.kdl"
 
 include "noctalia/main.kdl"
 
-// include "dms/alttab.kdl"
-// include "dms/prefbinds.kdl"
-// include "dms/colors.kdl"
-// include "dms/cursor.kdl"
-
 blur {
     passes 4
 }
