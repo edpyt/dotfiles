@@ -6,8 +6,13 @@ debug {
 }
 
 // Set the regular wallpaper on the backdrop.
-layer-rule {
+/-layer-rule {
   match namespace="^noctalia-wallpaper*"
+  place-within-backdrop true
+}
+// Set the overview wallpaper on the backdrop.
+layer-rule {
+  match namespace="^noctalia-overview*"
   place-within-backdrop true
 }
 

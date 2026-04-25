@@ -1,42 +1,44 @@
 // ────────────── Animation Settings ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Animations
 animations {
-	off
+	// off
 
-	workspace-switch {
+	/-workspace-switch {
+		// off
 		spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
 	}
-	window-open {
+	/-window-open {
 		off
 		duration-ms 200
 		curve "ease-out-quad"
 	}
-	window-close {
+	/-window-close {
 		off
 		duration-ms 200
 		curve "ease-out-cubic"
 	}
-	horizontal-view-movement {
+	/-horizontal-view-movement {
+		off
 		spring damping-ratio=1.0 stiffness=900 epsilon=0.0001
 	}
-	window-movement {
+	/-window-movement {
 		off
 		spring damping-ratio=1.0 stiffness=800 epsilon=0.0001
 	}
-	window-resize {
+	/-window-resize {
 		off
 		spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
 	}
-	config-notification-open-close {
+	/-config-notification-open-close {
 		off
 		spring damping-ratio=0.6 stiffness=1200 epsilon=0.001
 	}
-	screenshot-ui-open {
+	/-screenshot-ui-open {
 		off
 		duration-ms 300
 		curve "ease-out-quad"
 	}
-	overview-open-close {
+	/-overview-open-close {
 		off
 		spring damping-ratio=1.0 stiffness=900 epsilon=0.0001
 	}

@@ -44,7 +44,7 @@
     "bar": {
         "autoHideDelay": 1000,
         "autoShowDelay": 150,
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.55,
         "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
@@ -714,7 +714,7 @@
         "fontDefaultScale": 1,
         "fontFixed": "Maple Mono NF",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.9,
+        "panelBackgroundOpacity": 0.8,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "centered",
@@ -741,7 +741,7 @@
             }
         ],
         "overviewBlur": 0.4,
-        "overviewEnabled": false,
+        "overviewEnabled": true,
         "overviewTint": 0.6,
         "panelPosition": "center",
         "randomIntervalSec": 300,

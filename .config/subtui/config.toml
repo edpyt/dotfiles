@@ -1,4 +1,5 @@
 [app]
+default_volume = 20 
 replaygain = 'track' # Options: 'track', 'album', 'no' https://mpv.io/manual/stable/#options-replaygain
 gapless_playback = 'yes' # Options:  'yes', 'no', 'weak' https://mpv.io/manual/stable/#options-gapless-audio
 desktop_notifications = false
@@ -34,7 +35,7 @@ album = true
 year = false
 genre = false
 rating = false
-play_count = false
+play_count = true
 duration = true
 
   [columns.albums]
@@ -69,6 +70,7 @@ select         = ['enter']
 play_shuffled  = ['alt+enter']
 go_half_page_up = ['ctrl+u']
 go_half_page_down = ['ctrl+d']
+toggle_selection  = ['x']
 
   [keybinds.search]
 focus_search = ['/']
