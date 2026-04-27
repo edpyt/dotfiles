@@ -1,12 +1,10 @@
 // Niri configuration
 // For documentation and full reference, see: https://github.com/YaLTeR/niri/wiki
 
-include "animations.kdl"
+include "./animations/glide.kdl"
 include "binds.kdl"
 include "envs.kdl"
 include "rules.kdl"
-
-include "noctalia/main.kdl"
 
 blur {
     passes 4
@@ -134,3 +132,4 @@ overview {
 }
 
 include "./noctalia.kdl"
+include "noctalia/main.kdl"

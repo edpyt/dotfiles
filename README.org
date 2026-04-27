@@ -16,6 +16,7 @@
 
    #+begin_src shell
    paru -S \
+      lemurs \
       niri-git \
       xdg-desktop-portal-gnome \
       xdg-desktop-portal-gtk \
@@ -60,5 +61,8 @@
 
 * systemd
   #+begin_src sh
+  sudo systemctl disable display-manager.service
+  sudo systemctl enable lemurs.service
+
   systemctl --user enable --now syncthing.service
   #+end_src
