@@ -19,7 +19,7 @@
         "overviewLayer": true,
         "pinnedApps": [
             "zen",
-            "AmneziaVPN"
+            "Happ"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -162,7 +162,7 @@
                     "panelShowAlbumArt": true,
                     "scrollingMode": "hover",
                     "showAlbumArt": true,
-                    "showArtistFirst": true,
+                    "showArtistFirst": false,
                     "showProgressRing": true,
                     "showVisualizer": false,
                     "textColor": "none",
@@ -212,7 +212,8 @@
                     "id": "Tray",
                     "pinned": [
                         "AmneziaVPN",
-                        "Vesktop"
+                        "Vesktop",
+                        "Happ"
                     ]
                 },
                 {
