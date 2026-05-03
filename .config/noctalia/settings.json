@@ -108,6 +108,9 @@
                         },
                         {
                             "id": "plugin:screen-recorder"
+                        },
+                        {
+                            "id": "plugin:wallcards"
                         }
                     ]
                 }

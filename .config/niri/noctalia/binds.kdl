@@ -9,7 +9,7 @@ binds {
     spawn "qs" "-c" "noctalia-shell" "ipc" "call" "media" "toggle"; 
   }
   Mod+Shift+W hotkey-overlay-title="Browse Wallpapers" {
-    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle"; 
+    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:wallcards" "toggle"; 
   }
   Mod+Alt+L hotkey-overlay-title="Lock Screen" { 
     spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; 
