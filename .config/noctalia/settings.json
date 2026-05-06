@@ -360,6 +360,18 @@
             {
                 "name": "DP-1",
                 "widgets": [
+                    {
+                        "hideMode": "hidden",
+                        "id": "MediaPlayer",
+                        "roundedCorners": true,
+                        "showAlbumArt": true,
+                        "showBackground": true,
+                        "showButtons": true,
+                        "showVisualizer": true,
+                        "visualizerType": "linear",
+                        "x": 740,
+                        "y": 940
+                    }
                 ]
             }
         ],
@@ -718,7 +730,7 @@
         "fontDefaultScale": 1,
         "fontFixed": "Maple Mono NF",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.8,
+        "panelBackgroundOpacity": 0.9,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "centered",

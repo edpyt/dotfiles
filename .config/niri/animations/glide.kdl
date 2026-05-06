@@ -109,7 +109,7 @@ animations {
 	// these are not required
 
 
-  workspace-switch {
+  /-workspace-switch {
     // Smooth, composed, no bounce.
     spring damping-ratio=1.0 stiffness=760 epsilon=0.0001
   }
