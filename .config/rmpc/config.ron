@@ -4,7 +4,7 @@
 (
     address: "/tmp/mpd_socket",
     password: None,
-    theme: Some("themes/default.ron"),
+    theme: Some("./themes/rose-pine-moon.ron"),
     cache_dir: "~/Music/",
     lyrics_dir: "~/Music/",
     on_song_change: None,
@@ -164,7 +164,7 @@
                                     size: "100%",
                                     borders: "ALL",
                                     border_symbols: Inherited(parent: Rounded, top_left: "├", top_right: "┤",),
-                                    // border_title: [(kind: Text(" Lyrics "))],
+                                    border_title: [(kind: Text(" Lyrics "))],
                                     border_title_alignment: Right,
                                     pane: Pane(Lyrics)
                                 ),
