@@ -1,43 +1,38 @@
 binds {
-  // Core Noctalia binds
-  Mod+Comma { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle"; }
-  Mod+A { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
-  Mod+Ctrl+O hotkey-overlay-title="Control center popup"{
-    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; 
+  Mod+Alt+L hotkey-overlay-title="Lock Screen" { 
+    spawn-sh "noctalia msg screen-lock"; 
   }
-  Mod+Ctrl+M hotkey-overlay-title="Media popup" {
-    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "media" "toggle"; 
+  Mod+Comma hotkey-overlay-title="Open settings" {
+    spawn-sh "noctalia msg settings-toggle";
+  }
+  Mod+A hotkey-overlay-title="Launcher" {
+    spawn-sh "noctalia msg panel-toggle launcher";
   }
   Mod+Shift+W hotkey-overlay-title="Browse Wallpapers" {
-    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:wallcards" "toggle"; 
-  }
-  Mod+Alt+L hotkey-overlay-title="Lock Screen" { 
-    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; 
-  }
-  Mod+Ctrl+S hotkey-overlay-title="System Monitor panel" { 
-    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "systemMonitor" "toggle"; 
+    spawn-sh "noctalia msg panel-toggle wallpaper"; 
   }
   Mod+Escape hotkey-overlay-title="Power Menu" {
-    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; 
+    spawn-sh "noctalia msg panel-toggle session"; 
   }
-
-  // Audio & Brightness
-  XF86AudioRaiseVolume allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "increase"; }
-  XF86AudioLowerVolume allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "decrease"; }
-  XF86AudioMute allow-when-locked=true { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
-  XF86MonBrightnessUp { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "increase"; }
-  XF86MonBrightnessDown { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
-
-  // Notifications
-  Mod+N hotkey-overlay-title="Notification Center" {
-    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "toggleHistory"; 
+  Mod+Ctrl+O hotkey-overlay-title="Control center popup"{
+    spawn-sh "noctalia msg panel-toggle control-center"; 
+  }
+  Mod+Ctrl+M hotkey-overlay-title="Media popup" {
+    spawn-sh "noctalia msg panel-toggle control-center media"; 
+  }
+  Mod+Ctrl+W hotkey-overlay-title="Weather popup" {
+    spawn-sh "noctalia msg panel-toggle control-center weather"; 
+  }
+  Mod+N hotkey-overlay-title="Notifications popup" {
+    spawn-sh "noctalia msg panel-toggle control-center notifications"; 
   }
   Mod+Shift+N hotkey-overlay-title="Clear Notifications" {
-    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "notifications" "clear"; 
+    spawn-sh "noctalia msg notification-clear-history"; 
   }
 
-  // Plugins: screen-recorder
-  Mod+Shift+S hotkey-overlay-title="Screen Recorder" {
-    spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:screen-recorder" "toggle"; 
-  }
+  XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
+  XF86AudioLowerVolume allow-when-locked=true { spawn-sh "noctalia msg volume-down"; }
+  XF86AudioMute allow-when-locked=true { spawn "noctalia msg volume-mute"; }
+  XF86MonBrightnessUp { spawn-sh "noctalia msg brightness-up"; }
+  XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
 }

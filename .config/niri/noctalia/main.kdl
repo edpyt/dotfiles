@@ -5,16 +5,14 @@ debug {
   honor-xdg-activation-with-invalid-serial
 }
 
-// Set the regular wallpaper on the backdrop.
-/-layer-rule {
-  match namespace="^noctalia-wallpaper*"
-  place-within-backdrop true
+// Floating Noctalia settings window.
+window-rule {
+  match app-id="dev.noctalia.Noctalia.Settings"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
 }
-// Set the overview wallpaper on the backdrop.
-layer-rule {
-  match namespace="^noctalia-overview*"
-  place-within-backdrop true
-}
+
 
 // Set transparent workspace background color so you see the backdrop at all times.
 layout {
@@ -26,4 +24,9 @@ overview {
   workspace-shadow {
     off
   }
+}
+
+layer-rule {
+  match namespace="^noctalia-backdrop"
+  place-within-backdrop true
 }

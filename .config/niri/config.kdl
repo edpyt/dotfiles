@@ -87,7 +87,7 @@ workspace "editor" {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
 spawn-at-startup "{{POLKIT_AGENT_PATH}}"
-spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "noctalia"
 prefer-no-csd // Disable program decorations
 screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
 
@@ -131,5 +131,6 @@ overview {
   }
 }
 
-include "./noctalia.kdl"
-include "noctalia/main.kdl"
+include "./noctalia/main.kdl"
+
+include "noctalia.kdl"
