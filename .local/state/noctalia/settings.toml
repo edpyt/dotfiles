@@ -1,0 +1,134 @@
+[backdrop]
+enabled = true
+
+[bar]
+order = [ "vertical", "horizontal" ]
+
+    [bar.horizontal]
+    center = [ "clock", "media" ]
+    enabled = false
+    end = [ "clipboard", "network", "bluetooth", "brightness", "battery", "session" ]
+    margin_edge = 0
+    margin_ends = 0
+    radius = 0
+    start = [ "launcher", "workspaces" ]
+
+        [bar.horizontal.monitor.HDMI-A-1]
+        enabled = true
+
+    [bar.vertical]
+    center = [ "weather", "spacer", "clock", "media" ]
+    enabled = false
+    end = [ "tray", "clipboard", "brightness", "battery", "keyboard_layout", "volume" ]
+    margin_ends = 230
+    position = "left"
+    start = [ "notifications", "workspaces" ]
+
+        [bar.vertical.monitor.DP-1]
+        enabled = true
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[[control_center.shortcuts]]
+type = "power_profile"
+
+[[control_center.shortcuts]]
+type = "mic_mute"
+
+[desktop_widgets]
+schema_version = 1
+widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    cx = 198.39999389648438
+    cy = 105.46246337890625
+    output = "DP-1"
+    rotation = 0.0
+    scale = 1.3788429498672485
+    type = "weather"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = true
+        shadow = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    cx = 944.0
+    cy = 972.0
+    output = "DP-1"
+    rotation = 0.0
+    scale = 0.91117846965789795
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = true
+        layout = "horizontal"
+        shadow = true
+
+[osd]
+position = "bottom_center"
+
+[shell]
+avatar_path = "/home/edpyt/Downloads/mbid-22f2360c-b2ac-47da-8c9e-3d710c6b6fb3-37011165458_thumb250.jpg"
+niri_overview_type_to_launch_enabled = true
+polkit_agent = true
+telemetry_enabled = false
+
+[theme]
+builtin = "Rosé Pine"
+community_palette = "Tokyo Night Moon"
+source = "community"
+wallpaper_scheme = "vibrant"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "gtk3", "gtk4", "kitty", "niri", "qt", "kcolorscheme" ]
+    community_ids = [ "zen-browser", "discord" ]
+
+[wallpaper]
+directory = "/home/edpyt/wallpapers"
+
+    [wallpaper.default]
+    path = "/home/edpyt/wallpapers/wallhaven-6l2rgq.jpg"
+
+    [wallpaper.last]
+    path = "/home/edpyt/wallpapers/wallhaven-6l2rgq.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/edpyt/wallpapers/wallhaven-6l2rgq.jpg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/edpyt/wallpapers/wallhaven-6l2rgq.jpg"
+
+[weather]
+auto_locate = true
+
+[widget.clock]
+format = "{:%H:%M:-:%d:%m}"
+
+[widget.keyboard_layout]
+display = "short"
+hide_label = false
+
+[widget.media]
+capsule = false
+
+[widget.spacer]
+capsule = false
+
+[widget.volume]
+capsule = false
+device = "output"
+show_label = true
+
+[widget.workspaces]
+capsule = false
+display = "none"
+hide_when_empty = false
