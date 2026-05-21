@@ -19,7 +19,7 @@ order = [ "vertical", "horizontal" ]
     [bar.vertical]
     center = [ "weather", "spacer", "clock", "media" ]
     enabled = false
-    end = [ "tray", "clipboard", "brightness", "battery", "keyboard_layout", "volume" ]
+    end = [ "tray", "brightness", "battery", "keyboard_layout", "volume" ]
     margin_ends = 230
     position = "left"
     start = [ "notifications", "workspaces" ]
