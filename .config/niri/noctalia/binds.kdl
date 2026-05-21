@@ -14,6 +14,7 @@ binds {
   Mod+Escape hotkey-overlay-title="Power Menu" {
     spawn-sh "noctalia msg panel-toggle session"; 
   }
+
   Mod+Ctrl+O hotkey-overlay-title="Control center popup"{
     spawn-sh "noctalia msg panel-toggle control-center"; 
   }
@@ -26,6 +27,10 @@ binds {
   Mod+N hotkey-overlay-title="Notifications popup" {
     spawn-sh "noctalia msg panel-toggle control-center notifications"; 
   }
+  Mod+Ctrl+S hotkey-overlay-title="System popup" {
+    spawn-sh "noctalia msg panel-toggle control-center system"; 
+  }
+
   Mod+Shift+N hotkey-overlay-title="Clear Notifications" {
     spawn-sh "noctalia msg notification-clear-history"; 
   }

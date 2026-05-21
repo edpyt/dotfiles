@@ -1,6 +1,6 @@
 [app]
 default_volume = -1 
-replaygain = 'no' # Options: 'track', 'album', 'no' https://mpv.io/manual/stable/#options-replaygain
+replaygain = 'track' # Options: 'track', 'album', 'no' https://mpv.io/manual/stable/#options-replaygain
 gapless_playback = 'yes' # Options:  'yes', 'no', 'weak' https://mpv.io/manual/stable/#options-gapless-audio
 desktop_notifications = false
 discord_rich_presence = true

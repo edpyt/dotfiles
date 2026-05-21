@@ -1,6 +1,6 @@
 [app]
 default_volume = -1 
-replaygain = 'no' # Options: 'track', 'album', 'no' https://mpv.io/manual/stable/#options-replaygain
+replaygain = 'track' # Options: 'track', 'album', 'no' https://mpv.io/manual/stable/#options-replaygain
 gapless_playback = 'yes' # Options:  'yes', 'no', 'weak' https://mpv.io/manual/stable/#options-gapless-audio
 desktop_notifications = false
 discord_rich_presence = true
@@ -9,10 +9,10 @@ mouse_support         = false
 [theme]
 display_album_art  = true
 # Format: ['Light Color', 'Dark Color']
-subtle             = ['#9e8e8b', '#6d6890']
-highlight          = ['#d7827e', '#ea9a97']
-special            = ['#286983', '#3e8fb0']
-filtered           = ['#ffffff', '#383456']
+subtle             = ['#828ba7', '#626a9e']
+highlight          = ['#4e70c2', '#7a88cf']
+special            = ['#4c663b', '#9cd58a']
+filtered           = ['#ffffff', '#323855']
 
 [filters]
 titles = [] # Exclude songs with titles containing these strings

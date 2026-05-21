@@ -1,27 +1,27 @@
 local M = {}
 
 function M.setup()
-  require("base16-colorscheme").setup {
+  require("base16-colorscheme").setup({
     -- Background tones
-    base00 = "#232136", -- Default Background
-    base01 = "#393552", -- Lighter Background (status bars)
-    base02 = "#423d5e", -- Selection Background
-    base03 = "#6d6890", -- Comments, Invisibles
+    base00 = "#1f2335",              -- Default Background
+    base01 = "#2c314a",    -- Lighter Background (status bars)
+    base02 = "#343957", -- Selection Background
+    base03 = "#626a9e",              -- Comments, Invisibles
     -- Foreground tones
-    base04 = "#908caa", -- Dark Foreground (status bars)
-    base05 = "#e0def4", -- Default Foreground
-    base06 = "#e0def4", -- Light Foreground
-    base07 = "#e0def4", -- Lightest Foreground
+    base04 = "#c0caf5",   -- Dark Foreground (status bars)
+    base05 = "#a9b1d6",           -- Default Foreground
+    base06 = "#a9b1d6",           -- Light Foreground
+    base07 = "#a9b1d6",        -- Lightest Foreground
     -- Accent colors
-    base08 = "#eb6f92", -- Variables, XML Tags, Errors
-    base09 = "#3e8fb0", -- Integers, Constants
-    base0A = "#9ccfd8", -- Classes, Search Background
-    base0B = "#ea9a97", -- Strings, Diff Inserted
-    base0C = "#96d1e9", -- Regex, Escape Chars
-    base0D = "#ea9895", -- Functions, Methods
-    base0E = "#96dce9", -- Keywords, Storage
-    base0F = "#a00833", -- Deprecated, Embedded Tags
-  }
+    base08 = "#f7768e",                -- Variables, XML Tags, Errors
+    base09 = "#9cd58a",             -- Integers, Constants
+    base0A = "#d7729f",            -- Classes, Search Background
+    base0B = "#7a88cf",              -- Strings, Diff Inserted
+    base0C = "#aae996",   -- Regex, Escape Chars
+    base0D = "#96a3e9",    -- Functions, Methods
+    base0E = "#e996bb",  -- Keywords, Storage
+    base0F = "#bb0023",      -- Deprecated, Embedded Tags
+  })
 end
 
 -- Register a signal handler for SIGUSR1 (matugen updates)
