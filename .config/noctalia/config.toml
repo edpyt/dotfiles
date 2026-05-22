@@ -10,3 +10,6 @@ post_hook = "pkill -SIGUSR1 nvim"
 input_path  = "~/.config/subtui/subtui-template.toml"
 output_path = "~/.config/subtui/config.toml"
 post_hook = "pkill -SIGUSR1 subtui"
+
+[brightness.monitor.DP-1]
+backend = "ddcutil"

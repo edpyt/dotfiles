@@ -24,6 +24,9 @@ binds {
   Mod+Ctrl+W hotkey-overlay-title="Weather popup" {
     spawn-sh "noctalia msg panel-toggle control-center weather"; 
   }
+  Mod+Shift+O hotkey-overlay-title="Output brightness popup" {
+    spawn-sh "noctalia msg panel-toggle control-center display";
+  }
   Mod+N hotkey-overlay-title="Notifications popup" {
     spawn-sh "noctalia msg panel-toggle control-center notifications"; 
   }

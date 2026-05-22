@@ -19,13 +19,16 @@ order = [ "vertical", "horizontal" ]
     [bar.vertical]
     center = [ "weather", "spacer", "clock", "media" ]
     enabled = false
-    end = [ "tray", "brightness", "battery", "keyboard_layout", "volume" ]
+    end = [ "tray", "battery", "keyboard_layout", "volume" ]
     margin_ends = 230
     position = "left"
     start = [ "notifications", "workspaces" ]
 
         [bar.vertical.monitor.DP-1]
         enabled = true
+
+[brightness]
+enable_ddcutil = true
 
 [[control_center.shortcuts]]
 type = "bluetooth"
@@ -41,7 +44,7 @@ type = "mic_mute"
 
 [desktop_widgets]
 schema_version = 1
-widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002" ]
+widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002", "desktop-widget-0000000000000003" ]
 
     [desktop_widgets.grid]
     cell_size = 16
@@ -80,7 +83,40 @@ position = "bottom_center"
 avatar_path = "/home/edpyt/Downloads/mbid-22f2360c-b2ac-47da-8c9e-3d710c6b6fb3-37011165458_thumb250.jpg"
 niri_overview_type_to_launch_enabled = true
 polkit_agent = true
+screen_time_enabled = true
 telemetry_enabled = false
+
+    [shell.panel]
+    session_placement = "centered"
+    wallpaper_placement = "centered"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "systemctl suspend"
+    enabled = true
+    glyph = "suspend"
+    label = "Sleep"
+    variant = "ghost"
+
+    [[shell.session.actions]]
+    action = "lock"
+    enabled = true
+    variant = "ghost"
+
+    [[shell.session.actions]]
+    action = "logout"
+    enabled = true
+    variant = "ghost"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    enabled = true
+    variant = "ghost"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    enabled = true
+    variant = "secondary"
 
 [theme]
 builtin = "Rosé Pine"
@@ -96,13 +132,13 @@ wallpaper_scheme = "vibrant"
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-6l2rgq.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-5yrwq8_1920x1080.png"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-6l2rgq.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-5yrwq8_1920x1080.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-6l2rgq.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-5yrwq8_1920x1080.png"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/edpyt/wallpapers/wallhaven-6l2rgq.jpg"
