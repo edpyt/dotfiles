@@ -139,10 +139,10 @@ directory = "/home/edpyt/wallpapers"
     path = "/home/edpyt/wallpapers/wallhaven-ly298y.jpg"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-vp5qdp_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-e8ed5w_1920x1080.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-vp5qdp_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-e8ed5w_1920x1080.png"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/edpyt/wallpapers/wallhaven-ly298y.jpg"

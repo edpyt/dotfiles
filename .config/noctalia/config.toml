@@ -13,3 +13,6 @@ post_hook = "pkill -SIGUSR1 subtui"
 
 [brightness.monitor.DP-1]
 backend = "ddcutil"
+
+[brightness.monitor.HDMI-A-1]
+backend = "ddcutil"

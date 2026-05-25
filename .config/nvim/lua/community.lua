@@ -10,6 +10,7 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.sql" },
+  { import = "astrocommunity.pack.go" },
 
   { import = "astrocommunity.test.neotest" },
 
