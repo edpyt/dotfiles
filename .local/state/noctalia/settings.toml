@@ -17,11 +17,14 @@ order = [ "vertical", "horizontal" ]
         enabled = true
 
     [bar.vertical]
+    background_opacity = 0.85000002384185791
     center = [ "weather", "spacer", "clock", "media" ]
     enabled = false
     end = [ "tray", "battery", "keyboard_layout", "volume" ]
-    margin_ends = 230
+    margin_edge = 3
+    margin_ends = 240
     position = "left"
+    radius = 18
     start = [ "notifications", "workspaces" ]
 
         [bar.vertical.monitor.DP-1]
@@ -88,6 +91,7 @@ telemetry_enabled = false
 
     [shell.panel]
     session_placement = "centered"
+    transparency_mode = "soft"
     wallpaper_placement = "centered"
 
     [[shell.session.actions]]
@@ -132,16 +136,16 @@ wallpaper_scheme = "vibrant"
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-5yrwq8_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-ly298y.jpg"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-5yrwq8_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-vp5qdp_1920x1080.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-5yrwq8_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-vp5qdp_1920x1080.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/edpyt/wallpapers/wallhaven-6l2rgq.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-ly298y.jpg"
 
 [weather]
 auto_locate = true
