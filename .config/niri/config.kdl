@@ -37,8 +37,7 @@ cursor {
 input {
 	keyboard {
 		xkb {
-			layout "us,ru" 
-			options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+      file "~/.config/keymap.xkb"   // полный путь
 		}
 		numlock // Enable numlock on startup
 	}

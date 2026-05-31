@@ -1,5 +1,4 @@
 default: nvim
 
 exec:
-  mpv:
-    [mp4, webm]
+  mpv: [avi, mkv, mp4, webm]

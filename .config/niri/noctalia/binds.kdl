@@ -16,7 +16,7 @@ binds {
   }
 
   Mod+Ctrl+O hotkey-overlay-title="Control center popup"{
-    spawn-sh "noctalia msg panel-toggle control-center"; 
+    spawn-sh "noctalia msg panel-toggle control-center 1"; 
   }
   Mod+Ctrl+M hotkey-overlay-title="Media popup" {
     spawn-sh "noctalia msg panel-toggle control-center media"; 
@@ -33,6 +33,9 @@ binds {
   Mod+Ctrl+S hotkey-overlay-title="System popup" {
     spawn-sh "noctalia msg panel-toggle control-center system"; 
   }
+  Mod+Ctrl+D hotkey-overlay-title="Datetime popup" {
+    spawn-sh "noctalia msg panel-toggle control-center calendar"; 
+  }
 
   Mod+Shift+N hotkey-overlay-title="Clear Notifications" {
     spawn-sh "noctalia msg notification-clear-history"; 
@@ -40,7 +43,7 @@ binds {
 
   XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
   XF86AudioLowerVolume allow-when-locked=true { spawn-sh "noctalia msg volume-down"; }
-  XF86AudioMute allow-when-locked=true { spawn "noctalia msg volume-mute"; }
+  XF86AudioMute allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
   XF86MonBrightnessUp { spawn-sh "noctalia msg brightness-up"; }
   XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
 }

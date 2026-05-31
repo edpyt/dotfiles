@@ -17,7 +17,7 @@ order = [ "vertical", "horizontal" ]
         enabled = true
 
     [bar.vertical]
-    background_opacity = 0.85000002384185791
+    background_opacity = 0.89999997615814209
     center = [ "weather", "spacer", "clock", "media" ]
     enabled = false
     end = [ "tray", "battery", "keyboard_layout", "volume" ]
@@ -47,7 +47,7 @@ type = "mic_mute"
 
 [desktop_widgets]
 schema_version = 1
-widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002", "desktop-widget-0000000000000003" ]
+widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002" ]
 
     [desktop_widgets.grid]
     cell_size = 16
@@ -55,8 +55,8 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
     visible = true
 
     [desktop_widgets.widget.desktop-widget-0000000000000001]
-    cx = 198.39999389648438
-    cy = 105.46246337890625
+    cx = 202.09585571289062
+    cy = 107.63835144042969
     output = "DP-1"
     rotation = 0.0
     scale = 1.3788429498672485
@@ -76,10 +76,25 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
 
         [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
         background = true
+        background_color = "on_tertiary"
+        background_opacity = 0.35000000000000003
+        background_padding = 0.0
+        background_radius = 27.0
         layout = "horizontal"
         shadow = true
 
+[dock]
+auto_hide = true
+background_opacity = 0.89999997615814209
+enabled = true
+icon_size = 35
+launcher_position = "start"
+monitors = [ "DP-1" ]
+pinned = [ "kitty", "zen" ]
+show_dots = true
+
 [osd]
+keyboard_layout = false
 position = "bottom_center"
 
 [shell]
@@ -96,30 +111,33 @@ telemetry_enabled = false
 
     [[shell.session.actions]]
     action = "command"
-    command = "systemctl suspend"
+    command = "noctalia msg screen-lock & systemctl suspend"
     enabled = true
     glyph = "suspend"
     label = "Sleep"
-    variant = "ghost"
+    shortcut = "s"
+    variant = "default"
 
     [[shell.session.actions]]
     action = "lock"
     enabled = true
-    variant = "ghost"
+    variant = "default"
 
     [[shell.session.actions]]
     action = "logout"
     enabled = true
-    variant = "ghost"
+    variant = "default"
 
     [[shell.session.actions]]
     action = "reboot"
     enabled = true
-    variant = "ghost"
+    shortcut = "r"
+    variant = "default"
 
     [[shell.session.actions]]
     action = "shutdown"
     enabled = true
+    shortcut = "q"
     variant = "secondary"
 
 [theme]
@@ -136,22 +154,22 @@ wallpaper_scheme = "vibrant"
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-ly298y.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-k826gq_1920x1080.png"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-e8ed5w_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-jev9xw_1920x1080.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-e8ed5w_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-jev9xw_1920x1080.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/edpyt/wallpapers/wallhaven-ly298y.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-yqv7xg_1080x1920.png"
 
 [weather]
-auto_locate = true
+address = "Ufa, Russia"
 
 [widget.clock]
-format = "{:%H:%M:-:%d:%m}"
+vertical_format = "{:%H\\n%M\\n-\\n%d\\n%m}"
 
 [widget.keyboard_layout]
 display = "short"
