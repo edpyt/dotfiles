@@ -6,10 +6,6 @@ include "binds.kdl"
 include "envs.kdl"
 include "rules.kdl"
 
-blur {
-    passes 4
-}
-
 recent-windows {
 	highlight {
 		corner-radius 12

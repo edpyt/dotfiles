@@ -1,6 +1,6 @@
 binds {
   Mod+Alt+L hotkey-overlay-title="Lock Screen" { 
-    spawn-sh "noctalia msg screen-lock"; 
+    spawn-sh "noctalia msg session lock"; 
   }
   Mod+Comma hotkey-overlay-title="Open settings" {
     spawn-sh "noctalia msg settings-toggle";

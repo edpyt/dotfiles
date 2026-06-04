@@ -34,7 +34,7 @@ artist = true
 album = true
 year = false
 genre = false
-rating = false
+rating = true 
 play_count = true
 duration = true
 
