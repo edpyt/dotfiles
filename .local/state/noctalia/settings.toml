@@ -1,3 +1,6 @@
+[audio]
+enable_sounds = true
+
 [backdrop]
 enabled = true
 
@@ -33,6 +36,9 @@ order = [ "vertical", "horizontal" ]
 [brightness]
 enable_ddcutil = true
 
+[calendar]
+enabled = true
+
 [[control_center.shortcuts]]
 type = "bluetooth"
 
@@ -55,31 +61,34 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
     visible = true
 
     [desktop_widgets.widget.desktop-widget-0000000000000001]
-    cx = 202.09585571289062
-    cy = 107.63835144042969
+    cx = 204.09585571289062
+    cy = 122.36164855957031
     output = "DP-1"
     rotation = 0.0
     scale = 1.3788429498672485
     type = "weather"
 
         [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
-        background = true
+        background = false
+        background_opacity = 1.0
+        color = "on_surface"
         shadow = true
 
     [desktop_widgets.widget.desktop-widget-0000000000000002]
-    cx = 944.0
-    cy = 972.0
+    cx = 990.933349609375
+    cy = 956.0
     output = "DP-1"
     rotation = 0.0
-    scale = 0.91117846965789795
+    scale = 1.0666666030883789
     type = "media_player"
 
         [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
-        background = true
+        background = false
         background_color = "on_tertiary"
         background_opacity = 0.35000000000000003
         background_padding = 0.0
         background_radius = 27.0
+        color = "on_surface"
         layout = "horizontal"
         shadow = true
 
@@ -93,25 +102,107 @@ monitors = [ "DP-1" ]
 pinned = [ "kitty", "zen" ]
 show_dots = true
 
+[location]
+address = "Ufa, Russia"
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 1
+widget_order = [
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-widget-0000000000000004"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    cx = 1732.0
+    cy = 92.0
+    output = "DP-1"
+    rotation = 0.0
+    scale = 2.0555555820465088
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        color = "on_surface"
+        format = "{:%H:%M}"
+        shadow = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    cx = 961.0
+    cy = 822.0
+    output = "DP-1"
+    rotation = 0.0
+    scale = 1.0
+    type = "media_player"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = false
+        background_color = "on_hover"
+        background_opacity = 0.37
+        background_padding = 10.0
+        background_radius = 9.0
+        color = "on_surface"
+        layout = "horizontal"
+        shadow = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    cx = 201.0
+    cy = 108.0
+    output = "DP-1"
+    rotation = 0.0
+    scale = 1.5
+    type = "weather"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    cx = 1736.0
+    cy = 193.5
+    output = "DP-1"
+    rotation = 0.0
+    scale = 1.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
+        background = false
+        format = "{:%d.%m}"
+        shadow = true
+
+[nightlight]
+force = true
+
 [osd]
 keyboard_layout = false
 position = "bottom_center"
 
 [shell]
-avatar_path = "/home/edpyt/Downloads/mbid-22f2360c-b2ac-47da-8c9e-3d710c6b6fb3-37011165458_thumb250.jpg"
+avatar_path = "/home/edpyt/Downloads/tadc-bubble.gif"
 niri_overview_type_to_launch_enabled = true
+password_style = "random"
 polkit_agent = true
 screen_time_enabled = true
 telemetry_enabled = false
 
+    [shell.mpris]
+    blacklist = [ "mpv" ]
+
     [shell.panel]
+    launcher_categories = false
     session_placement = "centered"
     transparency_mode = "soft"
     wallpaper_placement = "centered"
 
     [[shell.session.actions]]
     action = "command"
-    command = "noctalia msg screen-lock & systemctl suspend"
+    command = "noctalia msg session lock-and-suspend"
     enabled = true
     glyph = "suspend"
     label = "Sleep"
@@ -141,32 +232,43 @@ telemetry_enabled = false
     variant = "secondary"
 
 [theme]
-builtin = "Rosé Pine"
-community_palette = "Tokyo Night Moon"
+builtin = "Catppuccin Lavender"
+community_palette = "Catppuccin Lavender"
+custom_palette = "ADW"
+mode = "dark"
 source = "community"
-wallpaper_scheme = "vibrant"
+wallpaper_scheme = "muted"
 
     [theme.templates]
-    builtin_ids = [ "btop", "gtk3", "gtk4", "kitty", "niri", "qt", "kcolorscheme" ]
-    community_ids = [ "zen-browser", "discord" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    community_ids = [ "zen-browser", "discord", "papirus-icons" ]
 
 [wallpaper]
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-k826gq_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-k875o6_1920x1080.png"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-jev9xw_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-w5m326_1920x1080.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-jev9xw_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-w5m326_1920x1080.png"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/edpyt/wallpapers/wallhaven-yqv7xg_1080x1920.png"
 
-[weather]
-address = "Ufa, Russia"
+    [[wallpaper.favorite]]
+    community_palette = "Catppuccin Lavender"
+    palette_source = "community"
+    path = "/home/edpyt/wallpapers/wallhaven-e8ed5w_1920x1080.png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    community_palette = "Catppuccin Lavender"
+    palette_source = "community"
+    path = "/home/edpyt/wallpapers/wallhaven-k875o6_1920x1080.png"
+    theme_mode = "dark"
 
 [widget.clock]
 vertical_format = "{:%H\\n%M\\n-\\n%d\\n%m}"

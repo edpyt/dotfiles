@@ -20,7 +20,14 @@ backend = "ddcutil"
 [osd]
 keyboard_layout = true
 
-# [widget.pacman_update]
-# type = "scripted"
-# script = "~/.config/noctalia/scripts/updateCount.lua"
-# aur_helper = "paru"
+[calendar]
+enabled         = true 
+refresh_minutes = 15
+
+[[calendar.accounts]]
+id       = "orgmode"            # unique, lowercase letters/digits/underscore
+type     = "caldav"
+name     = "OrgMode"            # display name
+color    = "#3367d6"         # optional accent color
+url      = "http://localhost:5232/edpyt/org/"
+username = "edpyt"

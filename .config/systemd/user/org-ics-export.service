@@ -1,0 +1,13 @@
+[Unit]
+Description=Export Org-mode agenda to iCalendar and sync with Radicale
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'emacsclient --eval "(org-icalendar-combine-agenda-files)" && vdirsyncer sync'
+StandardOutput=journal
+StandardError=journal
+Environment="HOME=%h"
+
+[Install]
+WantedBy=default.target

@@ -11,7 +11,7 @@ binds {
   Mod+Shift+W hotkey-overlay-title="Browse Wallpapers" {
     spawn-sh "noctalia msg panel-toggle wallpaper"; 
   }
-  Mod+Escape hotkey-overlay-title="Power Menu" {
+  Mod+Escape allow-when-locked=true hotkey-overlay-title="Power Menu" {
     spawn-sh "noctalia msg panel-toggle session"; 
   }
 
