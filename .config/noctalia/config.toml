@@ -1,11 +1,6 @@
 [shell]
 lang = "ru"
 
-[theme.templates.user.nvim]
-input_path  = "./templates/neovim.lua"
-output_path = "~/.config/nvim/lua/functions/matugen.lua"
-post_hook = "pkill -SIGUSR1 nvim"
-
 [theme.templates.user.subtui]
 input_path  = "~/.config/subtui/subtui-template.toml"
 output_path = "~/.config/subtui/config.toml"
@@ -19,15 +14,3 @@ backend = "ddcutil"
 
 [osd]
 keyboard_layout = true
-
-[calendar]
-enabled         = true 
-refresh_minutes = 15
-
-[[calendar.accounts]]
-id       = "orgmode"            # unique, lowercase letters/digits/underscore
-type     = "caldav"
-name     = "OrgMode"            # display name
-color    = "#3367d6"         # optional accent color
-url      = "http://localhost:5232/edpyt/org/"
-username = "edpyt"

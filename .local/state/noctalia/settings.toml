@@ -39,6 +39,13 @@ enable_ddcutil = true
 [calendar]
 enabled = true
 
+    [calendar.account.orgmode]
+    name = "OrgMode"
+    provider = "custom"
+    server_url = "http://localhost:5232/edpyt/org/"
+    type = "caldav"
+    username = "edpyt"
+
 [[control_center.shortcuts]]
 type = "bluetooth"
 
@@ -109,6 +116,8 @@ address = "Ufa, Russia"
 enabled = true
 schema_version = 1
 widget_order = [
+    "lockscreen-login-box@DP-1",
+    "lockscreen-login-box@HDMI-A-1",
     "lockscreen-widget-0000000000000001",
     "lockscreen-widget-0000000000000002",
     "lockscreen-widget-0000000000000003",
@@ -120,12 +129,31 @@ widget_order = [
     major_interval = 4
     visible = true
 
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 960.0
+    cy = 957.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "login_box"
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 540.0
+    cy = 1797.0
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "login_box"
+
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 0.0
+    box_width = 0.0
     cx = 1732.0
     cy = 92.0
     output = "DP-1"
     rotation = 0.0
-    scale = 2.0555555820465088
     type = "clock"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
@@ -135,11 +163,12 @@ widget_order = [
         shadow = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 0.0
+    box_width = 0.0
     cx = 961.0
     cy = 822.0
     output = "DP-1"
     rotation = 0.0
-    scale = 1.0
     type = "media_player"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
@@ -153,22 +182,24 @@ widget_order = [
         shadow = false
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
-    cx = 201.0
-    cy = 108.0
+    box_height = 0.0
+    box_width = 0.0
+    cx = 198.0
+    cy = 98.5
     output = "DP-1"
     rotation = 0.0
-    scale = 1.5
     type = "weather"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
         background = false
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 48.0
+    box_width = 112.0
     cx = 1736.0
-    cy = 193.5
+    cy = 134.5
     output = "DP-1"
     rotation = 0.0
-    scale = 1.0
     type = "clock"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
@@ -232,16 +263,15 @@ telemetry_enabled = false
     variant = "secondary"
 
 [theme]
-builtin = "Catppuccin Lavender"
-community_palette = "Catppuccin Lavender"
+builtin = "Rosé Pine"
+community_palette = "Rose Pine Moon"
 custom_palette = "ADW"
 mode = "dark"
 source = "community"
-wallpaper_scheme = "muted"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "zen-browser", "discord", "papirus-icons" ]
+    community_ids = [ "tauon", "zen-browser", "neovim", "discord", "papirus-icons" ]
 
 [wallpaper]
 directory = "/home/edpyt/wallpapers"
