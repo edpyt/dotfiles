@@ -11,6 +11,3 @@ backend = "ddcutil"
 
 [brightness.monitor.HDMI-A-1]
 backend = "ddcutil"
-
-[osd]
-keyboard_layout = true
