@@ -22,8 +22,8 @@ order = [ "vertical", "horizontal" ]
     [bar.vertical]
     center = [ "weather", "spacer", "clock", "media" ]
     enabled = false
-    end = [ "cat", "tray", "battery", "keyboard_layout", "volume" ]
-    margin_edge = 3
+    end = [ "tray", "battery", "keyboard_layout", "volume" ]
+    margin_edge = 8
     margin_ends = 240
     position = "left"
     radius = 18
@@ -70,7 +70,7 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
     [desktop_widgets.widget.desktop-widget-0000000000000001]
     box_height = 99.276695251464844
     box_width = 248.19172668457031
-    cx = 204.09585571289062
+    cx = 144.0
     cy = 122.36164855957031
     output = "DP-1"
     rotation = 0.0
@@ -85,8 +85,8 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
     [desktop_widgets.widget.desktop-widget-0000000000000002]
     box_height = 127.99999237060547
     box_width = 326.39996337890625
-    cx = 990.933349609375
-    cy = 956.0
+    cx = 960.0
+    cy = 972.0
     output = "DP-1"
     rotation = 0.0
     type = "media_player"
@@ -98,6 +98,7 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
         background_padding = 0.0
         background_radius = 27.0
         color = "on_surface"
+        hide_when_no_media = true
         layout = "horizontal"
         shadow = true
 
@@ -109,10 +110,14 @@ icon_size = 35
 launcher_position = "start"
 monitors = [ "DP-1" ]
 pinned = [ "kitty", "zen" ]
+reserve_space = false
 show_dots = true
 
 [location]
 address = "Ufa, Russia"
+
+[lockscreen]
+blurred_desktop = true
 
 [lockscreen_widgets]
 enabled = true
@@ -218,12 +223,13 @@ position = "bottom_center"
 
     [osd.kinds]
     keyboard_layout = false
+    media = false
 
 [plugin_settings."noctalia/screen_recorder"]
 directory = ""
 
 [plugins]
-enabled = [ "noctalia/screen_recorder" ]
+enabled = [ "noctalia/screen_recorder", "noctalia/translator" ]
 
 [shell]
 avatar_path = "/home/edpyt/Downloads/320x320.jpg"
@@ -276,10 +282,11 @@ telemetry_enabled = false
     variant = "secondary"
 
 [theme]
-builtin = "Gruvbox"
+builtin = "Eldritch"
 community_palette = "Tokyo Night Moon"
 custom_palette = "ADW"
-mode = "dark"
+source = "community"
+wallpaper_scheme = "m3-monochrome"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
@@ -289,27 +296,21 @@ mode = "dark"
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-k875o6_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-og27m7_1920x1080.png"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-d8w8og_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-og27m7_1920x1080.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-d8w8og_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-og27m7_1920x1080.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/edpyt/wallpapers/wallhaven-yqv7xg_1080x1920.png"
+    path = "/home/edpyt/wallpapers/wallhaven-poygo9_1920x1080.png"
 
     [[wallpaper.favorite]]
-    community_palette = "Catppuccin Lavender"
+    community_palette = "Tokyo Night Moon"
     palette_source = "community"
-    path = "/home/edpyt/wallpapers/wallhaven-e8ed5w_1920x1080.png"
-    theme_mode = "dark"
-
-    [[wallpaper.favorite]]
-    community_palette = "Catppuccin Lavender"
-    palette_source = "community"
-    path = "/home/edpyt/wallpapers/wallhaven-k875o6_1920x1080.png"
+    path = "/home/edpyt/wallpapers/wallhaven-og27m7_1920x1080.png"
     theme_mode = "dark"
 
 [widget.cat]
@@ -319,7 +320,7 @@ tappy_mode = true
 type = "noctalia/bongocat:cat"
 
 [widget.clock]
-vertical_format = "{:%H\\n%M\\n-\\n%d\\n%m}"
+vertical_format = "{:%d\\n%m\\n-\\n%H\\n%M}"
 
 [widget.keyboard_layout]
 display = "short"
@@ -328,6 +329,9 @@ hide_label = false
 [widget.media]
 capsule = false
 hide_when_no_media = true
+
+[widget.notifications]
+hide_when_no_unread = true
 
 [widget.spacer]
 capsule = false
@@ -340,4 +344,6 @@ show_label = true
 [widget.workspaces]
 capsule = false
 display = "none"
+empty_color = "on_surface"
 hide_when_empty = false
+occupied_color = "on_surface_variant"

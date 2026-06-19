@@ -36,6 +36,9 @@ binds {
   Mod+Ctrl+D hotkey-overlay-title="Datetime popup" {
     spawn-sh "noctalia msg panel-toggle control-center calendar"; 
   }
+  Mod+Ctrl+B hotkey-overlay-title="Bluetooth popup"{
+    spawn-sh "noctalia msg panel-toggle control-center bluetooth"; 
+  }
 
   Mod+Shift+N hotkey-overlay-title="Clear Notifications" {
     spawn-sh "noctalia msg notification-clear-history"; 
