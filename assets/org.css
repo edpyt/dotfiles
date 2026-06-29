@@ -27,7 +27,7 @@ body {
   background: var(--bg-body);
   color: var(--text-primary);
   font-family: var(--font-sans);
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem; 
   line-height: 1.65;
   margin: 0;
   padding: 2rem 1rem;
@@ -97,11 +97,11 @@ code:not(pre code) {
   padding: 0.2em 0.4em;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-code);
-  color: #2563eb; /* спокойный синий, но можно убрать – просто оставлю как дань традиции */
+  color: #2563eb; 
 }
 
 code:not(pre code) {
-  color: #c7254e; /* розовато-красный, классический для кода */
+  color: #c7254e; 
   background: #f9f2f4;
   border-color: #f1e1e4;
 }
@@ -124,7 +124,7 @@ pre code {
   color: inherit;
 }
 
-/* Blockquotes */
+
 blockquote {
   margin: 1.5rem 0;
   padding: 0.5rem 1.2rem;
@@ -160,7 +160,7 @@ tr:nth-child(even) {
   background: #fafcff;
 }
 
-/* Org-mode specific */
+
 .todo {
   color: #b85c00;
   font-weight: 600;
@@ -187,7 +187,7 @@ tr:nth-child(even) {
   color: #4a5568;
 }
 
-/* TOC */
+
 #table-of-contents {
   background: #f9fbfd;
   border-radius: var(--radius-md);
@@ -196,7 +196,7 @@ tr:nth-child(even) {
   border: 1px solid #e2e8f0;
 }
 
-/* Footer */
+
 #postamble {
   margin-top: 3rem;
   padding-top: 1rem;
