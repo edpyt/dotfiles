@@ -11,6 +11,7 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.java" },
 
   { import = "astrocommunity.test.neotest" },
 

@@ -10,6 +10,10 @@ recent-windows {
 	highlight {
 		corner-radius 12
 	}
+
+  previews {
+  	max-height 320
+  }
 }
 
 config-notification {

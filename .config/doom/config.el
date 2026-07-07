@@ -54,6 +54,7 @@
 (setq org-icalendar-todo-to-event t)
 (setq org-icalendar-include-todo 'all)
 (setq org-icalendar-export-ignore-warnings t)
+(setq org-icalendar-default-duration 300)
 
 ; FIXME: 
 ; (require 'org-caldav)

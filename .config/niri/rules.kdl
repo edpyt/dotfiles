@@ -18,8 +18,8 @@ window-rule {
   }
 }
 
-/-window-rule {
-	match app-id="kitty" is-focused=true
+window-rule {
+	match app-id="zen" 
 	opacity 0.95
 }
 
