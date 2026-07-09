@@ -8,9 +8,10 @@ enabled = true
 order = [ "vertical", "horizontal" ]
 
     [bar.horizontal]
-    center = [ "clock", "recorder" ]
+    center = [ "mpvpaper_2", "clock", "recorder" ]
     enabled = false
     end = [ "clipboard", "network", "bluetooth", "brightness", "battery", "session" ]
+    layer = "overlay"
     margin_edge = 0
     margin_ends = 0
     radius = 0
@@ -23,10 +24,12 @@ order = [ "vertical", "horizontal" ]
     center = [ "weather", "spacer", "clock", "media" ]
     enabled = false
     end = [ "tray", "battery", "keyboard_layout", "volume" ]
-    margin_edge = 8
-    margin_ends = 240
+    margin_edge = 0
+    margin_ends = 220
     position = "left"
     radius = 18
+    radius_bottom_left = 0
+    radius_top_left = 0
     start = [ "notifications", "workspaces" ]
 
         [bar.vertical.monitor.DP-1]
@@ -39,6 +42,7 @@ enable_ddcutil = true
 enabled = true
 
     [calendar.account.orgmode]
+    color = "tertiary"
     name = "OrgMode"
     provider = "custom"
     server_url = "http://localhost:5232/edpyt/org/"
@@ -59,7 +63,7 @@ type = "mic_mute"
 
 [desktop_widgets]
 schema_version = 1
-widget_order = [ "desktop-widget-0000000000000002" ]
+widget_order = [ "desktop-widget-0000000000000003", "desktop-widget-0000000000000002" ]
 
     [desktop_widgets.grid]
     cell_size = 16
@@ -69,22 +73,39 @@ widget_order = [ "desktop-widget-0000000000000002" ]
     [desktop_widgets.widget.desktop-widget-0000000000000002]
     box_height = 127.99999237060547
     box_width = 326.39996337890625
-    cx = 960.0
-    cy = 972.0
+    cx = 988.800048828125
+    cy = 924.0
     output = "DP-1"
     rotation = 0.0
     type = "media_player"
 
         [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
-        background = false
-        background_color = "on_tertiary"
-        background_opacity = 0.35000000000000003
-        background_padding = 0.0
-        background_radius = 27.0
+        background = true
+        background_color = "surface"
+        background_opacity = 0.80000000000000004
+        background_padding = 10
+        background_radius = 12
         color = "on_surface"
-        hide_when_no_media = true
+        font_family = ""
+        hide_when_no_media = false
         layout = "horizontal"
         shadow = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 128.0
+    box_width = 320.0
+    cx = 992.0
+    cy = 796.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        background = false
+        bands = 8
+        centered = false
+        mirrored = true
+        show_when_idle = false
 
 [dock]
 auto_hide = true
@@ -96,6 +117,15 @@ monitors = [ "DP-1" ]
 pinned = [ "kitty", "zen" ]
 reserve_space = false
 show_dots = true
+
+[hot_corners]
+enabled = true
+
+    [hot_corners.bottom_right]
+    action = "launcher"
+
+    [hot_corners.top_right]
+    action = "window_switcher"
 
 [location]
 address = "Ufa, Russia"
@@ -113,7 +143,9 @@ widget_order = [
     "lockscreen-widget-0000000000000001",
     "lockscreen-widget-0000000000000002",
     "lockscreen-widget-0000000000000003",
-    "lockscreen-widget-0000000000000004"
+    "lockscreen-widget-0000000000000004",
+    "lockscreen-widget-0000000000000005",
+    "lockscreen-widget-0000000000000006"
 ]
 
     [lockscreen_widgets.grid]
@@ -131,19 +163,30 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
+        show_password_hint = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
-    box_height = 70.0
-    box_width = 400.0
-    cx = 540.0
-    cy = 1797.0
+    box_height = 64.0
+    box_width = 240.0
+    cx = 0.0
+    cy = 1840.0
     output = "HDMI-A-1"
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
         show_login_button = true
+        show_password_hint = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
     box_height = 0.0
@@ -158,24 +201,26 @@ widget_order = [
         background = false
         color = "on_surface"
         format = "{:%H:%M}"
-        shadow = true
+        shadow = false
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
     box_height = 0.0
     box_width = 0.0
-    cx = 961.0
-    cy = 822.0
+    cx = 960.0
+    cy = 824.0
     output = "DP-1"
     rotation = 0.0
     type = "media_player"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
-        background = false
-        background_color = "on_hover"
-        background_opacity = 0.37
-        background_padding = 10.0
-        background_radius = 9.0
+        background = true
+        background_color = "surface"
+        background_opacity = 0.80000000000000004
+        background_padding = 10
+        background_radius = 12
         color = "on_surface"
+        font_family = ""
+        hide_when_no_media = false
         layout = "horizontal"
         shadow = false
 
@@ -189,8 +234,14 @@ widget_order = [
     type = "weather"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
-        background = false
-        forecast_days = 2
+        background = true
+        background_color = "surface"
+        background_opacity = 0.80000000000000004
+        background_padding = 10
+        background_radius = 12
+        color = "on_surface"
+        font_family = ""
+        forecast_days = 3
         shadow = false
         show_forecast = true
 
@@ -206,7 +257,37 @@ widget_order = [
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
         background = false
         format = "{:%d.%m}"
-        shadow = true
+        shadow = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
+    box_height = 64.0
+    box_width = 64.0
+    cx = 1760.0
+    cy = 1018.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "button"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
+        background = true
+        command = "shutdown now"
+        glyph = "shutdown"
+        variant = "secondary"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
+    box_height = 64.0
+    box_width = 64.0
+    cx = 1824.0
+    cy = 1018.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "button"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
+        background = true
+        command = "reboot"
+        glyph = "reboot"
+        variant = "outline"
 
 [nightlight]
 force = true
@@ -219,17 +300,26 @@ position = "bottom_center"
     keyboard_layout = false
     media = false
 
+[plugin_settings."noctalia/kaomoji"]
+notify_on_copy = false
+
 [plugin_settings."noctalia/mpvpaper"]
+hardware_decode = false
+picker_placement = "floating"
+picker_position = "center"
 video_directory = "~/wallpapers/"
 
 [plugin_settings."noctalia/screen_recorder"]
 directory = ""
 
+[plugin_settings."noctalia/translator"]
+target_lang = "en"
+
 [plugin_settings."noctalia/wallhaven"]
 download_dir = "~/wallpapers/"
 
 [plugins]
-enabled = [ "noctalia/screen_recorder", "noctalia/translator", "noctalia/wallhaven" ]
+enabled = [ "noctalia/screen_recorder", "noctalia/translator", "noctalia/wallhaven", "noctalia/kaomoji", "noctalia/mpvpaper" ]
 
 [shell]
 avatar_path = "/home/edpyt/Downloads/320x320.jpg"
@@ -241,7 +331,7 @@ settings_show_advanced = true
 telemetry_enabled = false
 
     [shell.mpris]
-    blacklist = [ "mpv", "zen" ]
+    blacklist = [ "mpv", "Blanket" ]
 
     [shell.panel]
     control_center_position = "center"
@@ -308,22 +398,16 @@ wallpaper_scheme = "m3-monochrome"
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-og6gz9.png"
+    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-og6gz9.png"
+    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-og6gz9.png"
+    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/edpyt/wallpapers/wallhaven-og6gz9.png"
-
-    [[wallpaper.favorite]]
-    community_palette = "Tokyo Night Moon"
-    palette_source = "community"
-    path = "/home/edpyt/wallpapers/wallhaven-og27m7_1920x1080.png"
-    theme_mode = "dark"
+    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
 
 [widget.audio_visualizer]
 mirrored = false
@@ -344,6 +428,12 @@ hide_label = false
 [widget.media]
 capsule = false
 hide_when_no_media = true
+
+[widget.mpvpaper]
+type = "noctalia/mpvpaper:mpvpaper"
+
+[widget.mpvpaper_2]
+type = "noctalia/mpvpaper:mpvpaper"
 
 [widget.notifications]
 hide_when_no_unread = true

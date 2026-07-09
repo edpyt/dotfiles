@@ -4,7 +4,7 @@
 (
     address: "/tmp/mpd_socket",
     password: None,
-    theme: Some("./themes/rose-pine-moon.ron"),
+    theme: Some("./themes/default.ron"),
     cache_dir: "~/Music/",
     lyrics_dir: "~/Music/",
     on_song_change: None,
