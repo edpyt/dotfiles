@@ -56,6 +56,8 @@ bottom = ['G']
 select = ['enter']
 toggle_selection = ['x']
 play_shuffled = ['alt+enter']
+go_page_up = ['pgup']
+go_page_down = ['pgdown']
 go_half_page_up = ['ctrl+u']
 go_half_page_down = ['ctrl+d']
 
