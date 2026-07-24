@@ -1,4 +1,7 @@
+config_version = 2
+
 [audio]
+enable_overdrive = true
 enable_sounds = true
 
 [backdrop]
@@ -42,7 +45,6 @@ enable_ddcutil = true
 enabled = true
 
     [calendar.account.orgmode]
-    color = "tertiary"
     name = "OrgMode"
     provider = "custom"
     server_url = "http://localhost:5232/edpyt/org/"
@@ -63,33 +65,12 @@ type = "mic_mute"
 
 [desktop_widgets]
 schema_version = 1
-widget_order = [ "desktop-widget-0000000000000003", "desktop-widget-0000000000000002" ]
+widget_order = [ "desktop-widget-0000000000000003", "desktop-widget-0000000000000004" ]
 
     [desktop_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
-
-    [desktop_widgets.widget.desktop-widget-0000000000000002]
-    box_height = 127.99999237060547
-    box_width = 326.39996337890625
-    cx = 988.800048828125
-    cy = 924.0
-    output = "DP-1"
-    rotation = 0.0
-    type = "media_player"
-
-        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
-        background = true
-        background_color = "surface"
-        background_opacity = 0.80000000000000004
-        background_padding = 10
-        background_radius = 12
-        color = "on_surface"
-        font_family = ""
-        hide_when_no_media = false
-        layout = "horizontal"
-        shadow = true
 
     [desktop_widgets.widget.desktop-widget-0000000000000003]
     box_height = 128.0
@@ -106,6 +87,15 @@ widget_order = [ "desktop-widget-0000000000000003", "desktop-widget-000000000000
         centered = false
         mirrored = true
         show_when_idle = false
+
+    [desktop_widgets.widget.desktop-widget-0000000000000004]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 989.0
+    cy = 930.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "media_player"
 
 [dock]
 auto_hide = true
@@ -124,11 +114,9 @@ enabled = true
     [hot_corners.bottom_right]
     action = "launcher"
 
-    [hot_corners.top_right]
-    action = "window_switcher"
-
 [location]
-address = "Ufa, Russia"
+address = "Davlekanovo, Russia"
+auto_locate = true
 
 [lockscreen]
 blur_intensity = 0.0
@@ -163,6 +151,7 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        center_password_text = false
         show_caps_lock = true
         show_keyboard_layout = true
         show_login_button = true
@@ -181,6 +170,7 @@ widget_order = [
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
+        center_password_text = false
         input_opacity = 1.0
         input_radius = 6.0
         show_caps_lock = true
@@ -304,7 +294,7 @@ position = "bottom_center"
 notify_on_copy = false
 
 [plugin_settings."noctalia/mpvpaper"]
-hardware_decode = false
+mpv_options = "loop"
 picker_placement = "floating"
 picker_position = "center"
 video_directory = "~/wallpapers/"
@@ -319,10 +309,10 @@ target_lang = "en"
 download_dir = "~/wallpapers/"
 
 [plugins]
-enabled = [ "noctalia/screen_recorder", "noctalia/translator", "noctalia/wallhaven", "noctalia/kaomoji", "noctalia/mpvpaper" ]
+enabled = [ "noctalia/screen_recorder", "noctalia/translator", "noctalia/wallhaven", "noctalia/kaomoji" ]
 
 [shell]
-avatar_path = "/home/edpyt/Downloads/320x320.jpg"
+avatar_path = "/media/stuff/Pictures/greatwallsofunix/batch-2/a_group_of_white_lanterns_with_black_writing_on_them.jpg"
 niri_overview_type_to_launch_enabled = true
 password_style = "random"
 polkit_agent = true
@@ -392,22 +382,22 @@ wallpaper_scheme = "m3-monochrome"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "tauon", "zen-browser", "neovim", "discord", "papirus-icons", "steam" ]
+    community_ids = [ "zen-browser", "neovim", "discord", "papirus-icons", "prismlauncher", "steam" ]
 
 [wallpaper]
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
+    path = "/home/edpyt/wallpapers/118205969_p0.jpg"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-8g9jgk_1920x1080.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-8g9jgk_1920x1080.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
+    path = "/home/edpyt/wallpapers/118205969_p0.jpg"
 
 [widget.audio_visualizer]
 mirrored = false
@@ -450,8 +440,8 @@ show_label = true
 type = "noctalia/wallhaven:wallhaven"
 
 [widget.workspaces]
-capsule = false
-display = "none"
 empty_color = "on_surface"
+focused_output_only = true
 hide_when_empty = false
 occupied_color = "on_surface_variant"
+style = "minimal"

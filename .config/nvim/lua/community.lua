@@ -17,4 +17,5 @@ return {
 
   { import = "astrocommunity.markdown-and-latex.markview-nvim" },
   { import = "astrocommunity.code-runner.sniprun" },
+  { import = "astrocommunity.docker.lazydocker" },
 }

@@ -14,6 +14,14 @@ recent-windows {
   previews {
   	max-height 320
   }
+
+  /-binds {
+    Alt+L         { next-window; }
+    Alt+H         { previous-window; }
+
+    Alt+Tab         { next-window; }
+    Alt+Shift+Tab   { previous-window; }
+  }
 }
 
 config-notification {
