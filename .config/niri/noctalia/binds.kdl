@@ -39,6 +39,9 @@ binds {
   Mod+Ctrl+B hotkey-overlay-title="Bluetooth popup"{
     spawn-sh "noctalia msg panel-toggle control-center bluetooth"; 
   }
+  Mod+Ctrl+A hotkey-overlay-title="Arch Updater popup"{
+    spawn-sh "noctalia msg panel-toggle yuuto/arch-updater:panel"; 
+  }
 
   Mod+Shift+N hotkey-overlay-title="Clear Notifications" {
     spawn-sh "noctalia msg notification-clear-history"; 
