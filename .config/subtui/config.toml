@@ -12,10 +12,10 @@ default_volume = -1
 # Format: ['Light color', 'Dark color']
 [theme]
 display_album_art = true
-subtle = ['#7f8094', '#646575']
-highlight = ['#373967', '#8b8dc1']
-special = ['#5e3f5f', '#ac84ae']
-filtered = ['#ffffff', '#303040']
+subtle = ['#8c9586', '#7a8478']
+highlight = ['#8da101', '#a7c080']
+special = ['#f57d26', '#e69875']
+filtered = ['#ffffff', '#434f58']
 
 [filters]
 # Exclude songs with titles containing these strings

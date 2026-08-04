@@ -1,4 +1,4 @@
-config_version = 7
+config_version = 10
 
 [audio]
 enable_overdrive = true
@@ -37,6 +37,10 @@ order = [ "vertical", "horizontal" ]
     shadow = false
     start = [ "notifications", "workspaces" ]
 
+        [bar.vertical.dead_zone.actions]
+        scroll_down = "workspace-switch next"
+        scroll_up = "workspace-switch prev"
+
         [bar.vertical.monitor.DP-1]
         enabled = true
 
@@ -45,6 +49,7 @@ enable_ddcutil = true
 
 [calendar]
 enabled = true
+refresh_minutes = 5
 
     [calendar.account.orgmode]
     name = "OrgMode"
@@ -67,28 +72,12 @@ type = "mic_mute"
 
 [desktop_widgets]
 schema_version = 1
-widget_order = [ "desktop-widget-0000000000000003", "desktop-widget-0000000000000004" ]
+widget_order = [ "desktop-widget-0000000000000004", "desktop-widget-0000000000000005" ]
 
     [desktop_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
-
-    [desktop_widgets.widget.desktop-widget-0000000000000003]
-    box_height = 128.0
-    box_width = 320.0
-    cx = 992.0
-    cy = 796.0
-    output = "DP-1"
-    rotation = 0.0
-    type = "audio_visualizer"
-
-        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
-        background = false
-        bands = 8
-        centered = false
-        mirrored = true
-        show_when_idle = false
 
     [desktop_widgets.widget.desktop-widget-0000000000000004]
     box_height = 0.0
@@ -101,6 +90,21 @@ widget_order = [ "desktop-widget-0000000000000003", "desktop-widget-000000000000
 
         [desktop_widgets.widget.desktop-widget-0000000000000004.settings]
         shadow = false
+
+    [desktop_widgets.widget.desktop-widget-0000000000000005]
+    box_height = 80.0
+    box_width = 624.0
+    cx = 72.000015258789062
+    cy = 540.0
+    output = "DP-1"
+    rotation = 1.5707963705062866
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000005.settings]
+        background = false
+        bands = 24
+        centered = false
+        show_when_idle = false
 
 [dock]
 auto_hide = true
@@ -124,13 +128,13 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
 
     [idle.behavior.lock]
     action = "lock"
-    enabled = false
+    enabled = true
     timeout = 600.0
 
     [idle.behavior.lock-and-suspend]
     action = "lock_and_suspend"
     enabled = true
-    timeout = 900.0
+    timeout = 1200.0
 
     [idle.behavior.screen-off]
     action = "screen_off"
@@ -155,10 +159,10 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@HDMI-A-1", "
     visible = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
-    box_height = 229.0
-    box_width = 720.0
-    cx = 960.0
-    cy = 957.0
+    box_height = 196.0
+    box_width = 810.0
+    cx = 976.0
+    cy = 809.5
     output = "DP-1"
     rotation = 0.0
     type = "login_box"
@@ -171,10 +175,11 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@HDMI-A-1", "
         show_login_button = true
         show_media = true
         show_session_buttons = true
+        show_unlock_hint = true
         show_weather = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
-    box_height = 229.0
+    box_height = 196.0
     box_width = 720.0
     cx = 524.0
     cy = 1645.5
@@ -196,6 +201,7 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@HDMI-A-1", "
         show_login_button = true
         show_media = true
         show_session_buttons = true
+        show_unlock_hint = true
         show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
@@ -216,11 +222,11 @@ force = true
 
 [osd]
 keyboard_layout = false
+monitors = [ "HDMI-A-1" ]
 position = "bottom_center"
 
     [osd.kinds]
     keyboard_layout = false
-    media = false
 
 [plugin_settings."noctalia/kaomoji"]
 notify_on_copy = false
@@ -317,9 +323,10 @@ gpu_poll_seconds = 5
 
 [theme]
 builtin = "Eldritch"
-community_palette = "Tokyo Night Moon"
-custom_palette = "ADW"
-source = "wallpaper"
+community_palette = "Everforest Alt"
+custom_palette = "wallhaven-8gg1do-vib"
+mode = "dark"
+source = "community"
 wallpaper_scheme = "faithful"
 
     [theme.templates]
@@ -330,16 +337,16 @@ wallpaper_scheme = "faithful"
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
+    path = "/home/edpyt/wallpapers/7.png"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
+    path = "/home/edpyt/wallpapers/7.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
+    path = "/home/edpyt/wallpapers/7.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/edpyt/wallpapers/wallhaven-qrm3dl.jpg"
+    path = "/home/edpyt/wallpapers/7.png"
 
 [widget.audio_visualizer]
 mirrored = false
@@ -354,7 +361,6 @@ type = "noctalia/bongocat:cat"
 vertical_format = "{:\\n%H\\n%M\\n-\\n%d\\n%m}"
 
 [widget.keyboard_layout]
-color = "primary"
 display = "short"
 hide_label = false
 
