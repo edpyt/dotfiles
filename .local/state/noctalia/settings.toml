@@ -222,11 +222,11 @@ force = true
 
 [osd]
 keyboard_layout = false
-monitors = [ "HDMI-A-1" ]
 position = "bottom_center"
 
     [osd.kinds]
     keyboard_layout = false
+    media = false
 
 [plugin_settings."noctalia/kaomoji"]
 notify_on_copy = false
@@ -244,6 +244,8 @@ directory = ""
 target_lang = "en"
 
 [plugin_settings."noctalia/wallhaven"]
+browser_placement = "floating"
+browser_position = "center"
 download_dir = "~/wallpapers/"
 
 [plugin_settings."yuuto/arch-updater"]
@@ -337,16 +339,22 @@ wallpaper_scheme = "faithful"
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/7.png"
+    path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/7.png"
+    path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/7.png"
+    path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/edpyt/wallpapers/7.png"
+    path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
+
+    [[wallpaper.favorite]]
+    community_palette = "Everforest Alt"
+    palette_source = "community"
+    path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
+    theme_mode = "dark"
 
 [widget.audio_visualizer]
 mirrored = false
