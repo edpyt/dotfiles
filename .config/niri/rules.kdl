@@ -33,6 +33,7 @@ window-rule {
 	match app-id="AmneziaVPN"
 	match app-id="Pinentry-gtk"
   match app-id=r#"org.quickshell$"#
+  match app-id="steam"  title="^Friends List"
 	open-floating true
 }
 

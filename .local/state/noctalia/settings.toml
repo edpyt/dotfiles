@@ -1,4 +1,4 @@
-config_version = 10
+config_version = 12
 
 [audio]
 enable_overdrive = true
@@ -28,7 +28,6 @@ order = [ "vertical", "horizontal" ]
     enabled = false
     end = [ "tray", "battery", "keyboard_layout", "volume" ]
     hover_highlight = false
-    margin_edge = 0
     margin_ends = 220
     position = "left"
     radius = 18
@@ -92,17 +91,17 @@ widget_order = [ "desktop-widget-0000000000000004", "desktop-widget-000000000000
         shadow = false
 
     [desktop_widgets.widget.desktop-widget-0000000000000005]
-    box_height = 80.0
-    box_width = 624.0
-    cx = 72.000015258789062
-    cy = 540.0
+    box_height = 64.0
+    box_width = 304.0
+    cx = 989.0
+    cy = 828.0
     output = "DP-1"
-    rotation = 1.5707963705062866
+    rotation = -0.0
     type = "audio_visualizer"
 
         [desktop_widgets.widget.desktop-widget-0000000000000005.settings]
         background = false
-        bands = 24
+        bands = 12
         centered = false
         show_when_idle = false
 
@@ -207,7 +206,7 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@HDMI-A-1", "
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
     box_height = 304.0
     box_width = 608.0
-    cx = 960.0
+    cx = 1008.0
     cy = 516.0
     output = "DP-1"
     rotation = 0.0
@@ -247,6 +246,11 @@ target_lang = "en"
 browser_placement = "floating"
 browser_position = "center"
 download_dir = "~/wallpapers/"
+
+[plugin_settings."umedbazarov/ruh-vpn"]
+backend_python = "~/.local/share/ruh-vpn-venv/bin/python3"
+vpn_panel_placement = "floating"
+vpn_panel_position = "center"
 
 [plugin_settings."yuuto/arch-updater"]
 aur_helper = "paru"
@@ -329,11 +333,11 @@ community_palette = "Everforest Alt"
 custom_palette = "wallhaven-8gg1do-vib"
 mode = "dark"
 source = "community"
-wallpaper_scheme = "faithful"
+wallpaper_scheme = "soft"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "zen-browser", "neovim", "discord", "papirus-icons", "prismlauncher", "steam" ]
+    builtin_ids = [ "btop", "cava", "emacs", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    community_ids = [ "zen-browser", "discord", "neovim", "heroiclauncher", "prismlauncher", "steam", "zellij", "papirus-icons" ]
 
 [wallpaper]
 directory = "/home/edpyt/wallpapers"
