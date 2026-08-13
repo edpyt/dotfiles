@@ -54,15 +54,6 @@
 
 ** Miscelanneous
    Setup browser with:
-   - [[https://darkreader.org/]]
    - [[https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/]]
 ** Fonts
    - [[https://github.com/subframe7536/Maple-font#arch-linux][Maple Mono NF]]
-
-* systemd
-  #+begin_src sh
-  sudo systemctl disable display-manager.service
-  sudo systemctl enable lemurs.service
-
-  systemctl --user enable --now syncthing.service
-  #+end_src
