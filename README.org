@@ -28,7 +28,6 @@
    #+begin_src shell
    paru -S \
      syncthing \
-     subtui-git \
      neovim \
      kitty \
      fish \
@@ -49,7 +48,9 @@
      keepassxc \
      okular \
      nautilus  \
-     mpv
+     mpv \
+     subtui-git \
+     gelly
    #+end_src
 
 ** Miscelanneous
