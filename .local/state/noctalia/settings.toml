@@ -333,7 +333,7 @@ community_palette = "Everforest Alt"
 custom_palette = "wallhaven-8gg1do-vib"
 mode = "dark"
 source = "community"
-wallpaper_scheme = "soft"
+wallpaper_scheme = "dysfunctional"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "emacs", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
@@ -343,13 +343,13 @@ wallpaper_scheme = "soft"
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-qrmkqq.jpg"
 
     [wallpaper.last]
     path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-qrmkqq.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
@@ -358,6 +358,12 @@ directory = "/home/edpyt/wallpapers"
     community_palette = "Everforest Alt"
     palette_source = "community"
     path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    community_palette = "Everforest Alt"
+    palette_source = "community"
+    path = "/home/edpyt/wallpapers/wallhaven-qrmkqq.jpg"
     theme_mode = "dark"
 
 [widget.audio_visualizer]
