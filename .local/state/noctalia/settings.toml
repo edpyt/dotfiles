@@ -1,4 +1,4 @@
-config_version = 12
+config_version = 13
 
 [audio]
 enable_overdrive = true
@@ -71,7 +71,7 @@ type = "mic_mute"
 
 [desktop_widgets]
 schema_version = 1
-widget_order = [ "desktop-widget-0000000000000004", "desktop-widget-0000000000000005" ]
+widget_order = [ "desktop-widget-0000000000000004", "desktop-widget-0000000000000005", "desktop-widget-0000000000000006" ]
 
     [desktop_widgets.grid]
     cell_size = 16
@@ -84,6 +84,8 @@ widget_order = [ "desktop-widget-0000000000000004", "desktop-widget-000000000000
     cx = 989.0
     cy = 930.0
     output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "media_player"
 
@@ -96,6 +98,8 @@ widget_order = [ "desktop-widget-0000000000000004", "desktop-widget-000000000000
     cx = 989.0
     cy = 828.0
     output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = -0.0
     type = "audio_visualizer"
 
@@ -105,9 +109,30 @@ widget_order = [ "desktop-widget-0000000000000004", "desktop-widget-000000000000
         centered = false
         show_when_idle = false
 
+    [desktop_widgets.widget.desktop-widget-0000000000000006]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1552.0
+    cy = 233.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "calendar"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000006.settings]
+        background = true
+        background_color = "surface"
+        background_opacity = 0.80000000000000004
+        background_padding = 10
+        background_radius = 12
+        font_family = ""
+        show_events = true
+        show_week_numbers = true
+
 [dock]
 auto_hide = true
-background_opacity = 0.89999997615814209
+background_opacity = 0.99999997764825821
 enabled = true
 icon_size = 35
 launcher_position = "start"
@@ -163,6 +188,8 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@HDMI-A-1", "
     cx = 976.0
     cy = 809.5
     output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
@@ -184,6 +211,8 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@HDMI-A-1", "
     cy = 1645.5
     enabled = false
     output = "HDMI-A-1"
+    placement_height = 1920.0
+    placement_width = 1080.0
     rotation = 0.0
     type = "login_box"
 
@@ -209,6 +238,8 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@HDMI-A-1", "
     cx = 1008.0
     cy = 516.0
     output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "clock"
 
@@ -282,7 +313,6 @@ telemetry_enabled = false
     launcher_categories = false
     session_placement = "floating"
     session_position = "center"
-    transparency_mode = "soft"
     wallpaper_placement = "floating"
     wallpaper_position = "center"
 

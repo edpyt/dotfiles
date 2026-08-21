@@ -11,21 +11,21 @@ recent-windows {
 		corner-radius 12
 	}
 
-  previews {
-  	max-height 320
-  }
+    previews {
+        max-height 320
+    }
 
-  /-binds {
-    Alt+L         { next-window; }
-    Alt+H         { previous-window; }
+    /-binds {
+        Alt+L         { next-window; }
+        Alt+H         { previous-window; }
 
-    Alt+Tab         { next-window; }
-    Alt+Shift+Tab   { previous-window; }
-  }
+        Alt+Tab         { next-window; }
+        Alt+Shift+Tab   { previous-window; }
+    }
 }
 
 config-notification {
-  disable-failed
+    disable-failed
 }
 
 hotkey-overlay {
@@ -34,10 +34,10 @@ hotkey-overlay {
 }
 
 cursor {
-  xcursor-theme "Breeze"
-  xcursor-size 20
-  hide-when-typing
-  hide-after-inactive-ms 1000
+    xcursor-theme "Breeze"
+    xcursor-size 20
+    hide-when-typing
+    hide-after-inactive-ms 1000
 }
 
 // ────────────── Input Configuration ──────────────
@@ -45,7 +45,7 @@ cursor {
 input {
 	keyboard {
 		xkb {
-      file "~/.config/keymap.xkb"   // полный путь
+            file "~/.config/keymap.xkb"   // полный путь
 		}
 		numlock // Enable numlock on startup
 	}
@@ -66,16 +66,16 @@ output "DP-1" {
 	mode "1920x1080@165.002" // Set resolution and refresh rate
 	focus-at-startup
 
-  layout {
-    default-column-width { proportion 0.8; }
-  }
+    layout {
+        default-column-width { proportion 0.8; }
+    }
 }
 
 output "HDMI-A-1" {
 	transform "90"
 
 	layout {
-  	default-column-width { proportion 1.0; }
+        default-column-width { proportion 1.0; }
 	}
 }
 
@@ -83,10 +83,10 @@ output "HDMI-A-1" {
 // ────────────── Workspace Configuration ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Named-Workspaces
 workspace "browser" {
-  open-on-output "DP-1"
+    open-on-output "DP-1"
 }
 workspace "editor" {
-  open-on-output "DP-1"
+    open-on-output "DP-1"
 }
 
 
@@ -119,23 +119,23 @@ layout {
 		offset x=0 y=5
 	}
 
-  focus-ring {
-    width 1
-  }
+    focus-ring {
+        width 1
+    }
 
-  tab-indicator {
-    width 4
-    gap 4
-  	place-within-column
-  }
+    tab-indicator {
+        width 4
+        gap 4
+        place-within-column
+    }
 }
 
 overview {
 	zoom 0.5
 
-  workspace-shadow {
-    off
-  }
+    workspace-shadow {
+        off
+    }
 }
 
 include "./noctalia/main.kdl"

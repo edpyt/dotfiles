@@ -55,4 +55,6 @@ binds {
   XF86AudioMute allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
   XF86MonBrightnessUp { spawn-sh "noctalia msg brightness-up"; }
   XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
+
+  // Alt+Tab { spawn-sh "noctalia msg window-switcher"; }
 }

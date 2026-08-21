@@ -10,7 +10,7 @@ window-rule {
 	clip-to-geometry true
   tiled-state true
   draw-border-with-background false
-  opacity 0.9
+  opacity 0.95
 
   background-effect {
     blur true
@@ -19,8 +19,8 @@ window-rule {
 }
 
 window-rule {
-	match app-id="zen" 
-	opacity 0.95
+	match app-id="subtui" 
+	opacity 0.9
 }
 
 window-rule {
