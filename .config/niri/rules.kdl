@@ -1,6 +1,6 @@
 layer-rule {
-  match namespace="^mpvpaper$"  // namespace="^quickshell$"
-  place-within-backdrop true
+    match namespace="^mpvpaper$"  // namespace="^quickshell$"
+    place-within-backdrop true
 }
 // ────────────── Window Rules ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
@@ -8,14 +8,19 @@ layer-rule {
 window-rule {
 	geometry-corner-radius 20
 	clip-to-geometry true
-  tiled-state true
-  draw-border-with-background false
-  opacity 0.95
+    tiled-state true
+    draw-border-with-background false
+    opacity 0.95
 
-  background-effect {
-    blur true
-    xray false
-  }
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+window-rule {
+    match app-id="Emacs"
+    geometry-corner-radius 0
 }
 
 window-rule {
@@ -32,24 +37,24 @@ window-rule {
 	match app-id=r#"zen$"# title="^Picture-in-Picture$"
 	match app-id="AmneziaVPN"
 	match app-id="Pinentry-gtk"
-  match app-id=r#"org.quickshell$"#
-  match app-id="steam"  title="^Friends List"
+    match app-id=r#"org.quickshell$"#
+    match app-id="steam"  title="^Friends List"
 	open-floating true
 }
 
 window-rule {
-  match app-id="zen" 
-  open-on-workspace "browser"
+    match app-id="zen"
+    open-on-workspace "browser"
 }
 
 window-rule {
-  match app-id="zen" 
-  default-column-width { proportion 1.0; }
+    match app-id="zen"
+    default-column-width { proportion 1.0; }
 }
 
 window-rule {
-  match app-id="Zoom Workplace" title=".*menu.*"
-  open-floating true
-  min-width 250
-  open-focused true
+    match app-id="Zoom Workplace" title=".*menu.*"
+    open-floating true
+    min-width 250
+    open-focused true
 }

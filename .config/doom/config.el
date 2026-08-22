@@ -13,14 +13,11 @@
       scroll-conservatively 101
       auto-window-vscroll nil)
 
+(setq +format-on-save-enabled t)
 ;; ----
 ;; packages
 ;; ----
-(use-package! kdl-mode
-  :mode "\\.kdl\\'")
-(after! treesit
-  (add-to-list 'treesit-language-source-alist
-               '(kdl "https://github.com/tree-sitter-grammars/tree-sitter-kdl")))
+
 
 ;; ----
 ;; term
@@ -32,6 +29,9 @@
 ;; ----
 (setq org-directory "~/Documents/orgfiles/"
       org-roam-directory "~/Documents/orgfiles/org_roam/")
+
+(after! org
+  (add-to-list 'org-modules 'org-habit))
 
 (after! org
   (setq org-agenda-files
@@ -73,6 +73,34 @@
            (file "~/Documents/orgfiles/habits.org")
            "* TODO %?\n %u"))))
 
+(after! org-clock
+  (setq org-clock-persist 'clock
+        org-clock-persist-query-resume nil)
+  (org-clock-persistence-insinuate))
+
+(after! org-caldav
+  (setq org-caldav-url "http://localhost:5232/edpyt"
+        org-caldav-calendar-id "org"
+        org-caldav-files
+        '("~/Documents/orgfiles/todos.org"
+          "~/Documents/orgfiles/habits.org"
+          "~/Documents/orgfiles/uni.org")
+        org-caldav-inbox nil
+
+        org-caldav-todo-percent-states '((0 "TODO") (0 "WAIT") (100 "DONE") (100 "DELEGATED"))
+        org-caldav-sync-direction 'org->cal
+
+        org-icalendar-include-todo 'all
+        ;; org-caldav-sync-todo nil
+
+        org-icalendar-use-scheduled
+        '(todo-start event-if-todo)
+
+        org-icalendar-use-deadline
+        '(event-if-todo todo-due)
+
+        org-icalendar-timezone "Asia/Yekaterinburg"))
+
 (after! org-roam
   (setq org-roam-directory "~/Documents/orgfiles/org_roam/"
 
@@ -80,7 +108,7 @@
         '(("d" "default" plain
            "#+HTML_HEAD: <link rel=\"stylesheet\" href=\"../../../assets/org.css\" type=\"text/css\" />\n%?"
            :target
-           (file+head "%<%Y%m%d%H%M%S>-%[slug].org" "")
+           (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "")
            :unnarrowed t))))
 
 (use-package! org-modern
@@ -98,3 +126,12 @@
         org-appear-autolinks t
         org-appear-autoentities t
         org-appear-autosubmarkers t))
+
+(use-package! org-wild-notifier
+  :after org
+  :config
+  (org-wild-notifier-mode)
+
+  (setq alert-default-style 'libnotify
+        org-wild-notifier-alert-time '(0 5 10)
+        org-wild-notifier-ignore-done t))

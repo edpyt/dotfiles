@@ -27,6 +27,7 @@
   multiple-cursors
   snippets
   (whitespace +guess +trim)
+  format
 
   :emacs
   dired
@@ -58,7 +59,7 @@
   tty
 
   :lang
-  emacs-lisp
+  (emacs-lisp +lsp)
   data
   docker
   (go +lsp)
@@ -67,7 +68,7 @@
   json
   (lua +lsp)
   markdown
-  (org +roam)
+  (org +roam +evil)
   python
   (rust +lsp)
   sh
