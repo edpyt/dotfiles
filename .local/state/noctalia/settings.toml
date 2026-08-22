@@ -51,6 +51,7 @@ enabled = true
 refresh_minutes = 5
 
     [calendar.account.orgmode]
+    calendars = [ "org" ]
     name = "OrgMode"
     provider = "custom"
     server_url = "http://localhost:5232/edpyt/org/"
