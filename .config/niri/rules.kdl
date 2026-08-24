@@ -6,26 +6,22 @@ layer-rule {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 
 window-rule {
-	geometry-corner-radius 20
+	geometry-corner-radius 12
 	clip-to-geometry true
     tiled-state true
     draw-border-with-background false
-    opacity 0.95
+    // opacity 0.95
+}
 
-    background-effect {
+window-rule {
+	match app-id="kitty"
+    match app-id="subtui"
+    match app-id="emacs"
+	opacity 0.95
+    /-background-effect {
         blur true
         xray false
     }
-}
-
-window-rule {
-    match app-id="Emacs"
-    geometry-corner-radius 0
-}
-
-window-rule {
-	match app-id="subtui" 
-	opacity 0.9
 }
 
 window-rule {

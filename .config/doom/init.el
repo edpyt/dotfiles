@@ -68,12 +68,13 @@
   json
   (lua +lsp)
   markdown
-  (org +roam +evil)
+  (org +roam +evil +lsp)
   python
   (rust +lsp)
   sh
   sql
   yaml
+  (csharp +lsp)
 
   :email
 

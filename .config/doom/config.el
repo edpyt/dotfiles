@@ -1,4 +1,5 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
+(setopt frame-inhibit-implied-resize t)
 
 (setq doom-font (font-spec :family "Maple Mono NF")
       doom-theme 'noctalia
@@ -17,7 +18,6 @@
 ;; ----
 ;; packages
 ;; ----
-
 
 ;; ----
 ;; term

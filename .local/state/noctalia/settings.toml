@@ -30,7 +30,6 @@ order = [ "vertical", "horizontal" ]
     hover_highlight = false
     margin_ends = 220
     position = "left"
-    radius = 18
     radius_bottom_left = 0
     radius_top_left = 0
     shadow = false
@@ -168,6 +167,7 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
 
 [location]
 address = "Ufa, Russia"
+auto_locate = true
 
 [lockscreen]
 blur_intensity = 0.0
@@ -305,6 +305,9 @@ telemetry_enabled = false
 
     [shell.animation]
     enabled = false
+
+    [shell.launcher]
+    pinned = [ "zen" ]
 
     [shell.mpris]
     blacklist = [ "mpv", "Blanket" ]
