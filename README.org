@@ -1,4 +1,4 @@
-#+html: <img src="https://github.com/user-attachments/assets/4e5a4c4b-2cd2-4428-b245-dfe4b90a1f8c"/>
+#+html: <img src="https://github.com/user-attachments/assets/4793549e-99e2-4c69-bb33-b434235e9f18"/>
 
 - Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty]]
 - Wayland Compositor: [[https://yalter.github.io/niri/][niri]]
