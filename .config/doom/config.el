@@ -19,7 +19,6 @@
 ;; packages
 ;; ----
 
-;; ----
 ;; term
 ;; ----
 (map! "C-'" #'+vterm/toggle)
@@ -101,15 +100,18 @@
 
         org-icalendar-timezone "Asia/Yekaterinburg"))
 
+(setq org-html-head
+      (format "<link rel=\"stylesheet\" href=\"%s\" type=\"text/css\" />"
+              (expand-file-name "~/.config/doom/org.css")))
+
 (after! org-roam
   (setq org-roam-directory "~/Documents/orgfiles/org_roam/"
-
         org-roam-capture-templates
         '(("d" "default" plain
-           "#+HTML_HEAD: <link rel=\"stylesheet\" href=\"../../../assets/org.css\" type=\"text/css\" />\n%?"
-           :target
-           (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "")
+           ""
+           :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "")
            :unnarrowed t))))
+
 
 (use-package! org-modern
   :hook (org-mode . org-modern-mode)

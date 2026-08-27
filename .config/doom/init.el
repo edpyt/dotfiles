@@ -53,6 +53,7 @@
   (lsp +eglot)
   magit
   tree-sitter
+  pdf
 
   :os
   (:if (featurep :system 'macos) macos)
@@ -69,7 +70,7 @@
   (lua +lsp)
   markdown
   (org +roam +evil +lsp)
-  python
+  (python +lsp +uv)
   (rust +lsp)
   sh
   sql
