@@ -2,7 +2,7 @@
 
 - Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty]]
 - Wayland Compositor: [[https://yalter.github.io/niri/][niri]]
-- Code Editor: [[https://astronvim.com][astronvim]]
+- Code Editor: [[https://github.com/doomemacs/core][Doom Emacs]]
 - Browser: [[https://zen-browser.app/][zen]]
 - OS: [[https://cachyos.org/][CachyOS]]
 
@@ -51,5 +51,4 @@ Setup browser with:
 * Commands
 #+begin_src shell
 systemd --user enable --now emacs
-doom sync
 #+end_src
