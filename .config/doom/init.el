@@ -1,85 +1,85 @@
 ;;; $DOOMDIR/init.el -*- lexical-binding: t; -*-
 
 (doom!
-  :input
+ :input
 
-  :completion
-  (corfu +orderless)
-  vertico
+ :completion
+ (corfu +orderless)
+ vertico
 
-  :ui
-  doom
-  dashboard
-  hl-todo
-  modeline
-  tabs
-  ophints
-  (popup +defaults)
-  vc-gutter
-  vi-tilde-fringe
-  workspaces
-  zen
+ :ui
+ doom
+ dashboard
+ hl-todo
+ modeline
+ tabs
+ ophints
+ (popup +defaults)
+ vc-gutter
+ vi-tilde-fringe
+ workspaces
+ zen
 
-  :editor
-  (evil +everywhere)
-  file-templates
-  fold
-  multiple-cursors
-  snippets
-  (whitespace +guess +trim)
-  format
+ :editor
+ (evil +everywhere)
+ file-templates
+ fold
+ multiple-cursors
+ snippets
+ (whitespace +guess +trim)
+ (format +onsave)
 
-  :emacs
-  dired
-  electric
-  ibuffer
-  tramp
-  undo
-  vc
+ :emacs
+ dired
+ electric
+ ibuffer
+ tramp
+ undo
+ vc
 
-  :term
-  vterm
+ :term
+ vterm
 
-  :checkers
-  syntax
-  (spell +flyspell)
+ :checkers
+ syntax
+ (spell +flyspell)
 
-  :tools
-  debugger
-  direnv
-  docker
-  eval
-  lookup
-  (lsp +eglot)
-  magit
-  tree-sitter
-  pdf
+ :tools
+ debugger
+ direnv
+ docker
+ eval
+ lookup
+ (lsp +eglot)
+ magit
+ tree-sitter
+ pdf
 
-  :os
-  (:if (featurep :system 'macos) macos)
-  tty
+ :os
+ (:if (featurep :system 'macos) macos)
+ tty
 
-  :lang
-  (emacs-lisp +lsp)
-  data
-  docker
-  (go +lsp)
-  (java +lsp)
-  javascript
-  json
-  (lua +lsp)
-  markdown
-  (org +roam +evil +lsp)
-  (python +lsp +uv)
-  (rust +lsp)
-  sh
-  sql
-  yaml
-  (csharp +lsp)
+ :lang
+ (emacs-lisp +lsp)
+ data
+ docker
+ (go +lsp)
+ (java +lsp)
+ javascript
+ json
+ (lua +lsp)
+ markdown
+ (org +roam +evil +lsp)
+ (python +lsp +uv)
+ (rust +lsp)
+ sh
+ sql
+ yaml
+ (csharp +lsp)
 
-  :email
+ :email
 
-  :app
+ :app
 
-  :config
-  (default +bindings +smartparens))
+ :config
+ (default +bindings +smartparens))

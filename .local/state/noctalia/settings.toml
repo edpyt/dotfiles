@@ -24,6 +24,8 @@ order = [ "vertical", "horizontal" ]
         enabled = true
 
     [bar.vertical]
+    border = "surface_variant"
+    border_width = 1.0
     center = [ "weather", "spacer", "clock", "media" ]
     enabled = false
     end = [ "tray", "battery", "keyboard_layout", "volume" ]
@@ -71,18 +73,18 @@ type = "mic_mute"
 
 [desktop_widgets]
 schema_version = 1
-widget_order = [ "desktop-widget-0000000000000004", "desktop-widget-0000000000000005", "desktop-widget-0000000000000006" ]
+widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-0000000000000004", "desktop-widget-0000000000000006" ]
 
     [desktop_widgets.grid]
-    cell_size = 16
+    cell_size = 64
     major_interval = 4
     visible = true
 
     [desktop_widgets.widget.desktop-widget-0000000000000004]
     box_height = 0.0
     box_width = 0.0
-    cx = 989.0
-    cy = 930.0
+    cx = 960.0
+    cy = 918.0
     output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
@@ -90,30 +92,22 @@ widget_order = [ "desktop-widget-0000000000000004", "desktop-widget-000000000000
     type = "media_player"
 
         [desktop_widgets.widget.desktop-widget-0000000000000004.settings]
-        shadow = false
-
-    [desktop_widgets.widget.desktop-widget-0000000000000005]
-    box_height = 64.0
-    box_width = 304.0
-    cx = 989.0
-    cy = 828.0
-    output = "DP-1"
-    placement_height = 1080.0
-    placement_width = 1920.0
-    rotation = -0.0
-    type = "audio_visualizer"
-
-        [desktop_widgets.widget.desktop-widget-0000000000000005.settings]
-        background = false
-        bands = 12
-        centered = false
-        show_when_idle = false
+        background = true
+        background_color = "surface"
+        background_opacity = 0.80000000000000004
+        background_padding = 10
+        background_radius = 12
+        color = "on_surface"
+        font_family = ""
+        hide_when_no_media = false
+        layout = "horizontal"
+        shadow = true
 
     [desktop_widgets.widget.desktop-widget-0000000000000006]
     box_height = 0.0
     box_width = 0.0
-    cx = 1552.0
-    cy = 233.0
+    cx = 990.0
+    cy = 239.0
     output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
@@ -129,6 +123,24 @@ widget_order = [ "desktop-widget-0000000000000004", "desktop-widget-000000000000
         font_family = ""
         show_events = true
         show_week_numbers = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000007]
+    box_height = 64.0
+    box_width = 320.0
+    cx = 960.0
+    cy = 816.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000007.settings]
+        background = false
+        bands = 12
+        centered = false
+        mirrored = true
+        show_when_idle = false
 
 [dock]
 auto_hide = true
@@ -167,7 +179,6 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
 
 [location]
 address = "Ufa, Russia"
-auto_locate = true
 
 [lockscreen]
 blur_intensity = 0.0
@@ -279,6 +290,11 @@ browser_placement = "floating"
 browser_position = "center"
 download_dir = "~/wallpapers/"
 
+[plugin_settings."noctalia/wallpaper_depth"]
+auto_generate = false
+manager_placement = "floating"
+manager_position = "center"
+
 [plugin_settings."umedbazarov/ruh-vpn"]
 backend_python = "~/.local/share/ruh-vpn-venv/bin/python3"
 vpn_panel_placement = "floating"
@@ -292,7 +308,7 @@ panel_placement = "floating"
 panel_position = "center"
 
 [plugins]
-enabled = [ "noctalia/screen_recorder", "noctalia/translator", "noctalia/wallhaven", "noctalia/kaomoji", "yuuto/arch-updater" ]
+enabled = [ "noctalia/screen_recorder", "noctalia/wallhaven", "noctalia/kaomoji", "yuuto/arch-updater" ]
 
 [shell]
 avatar_path = "/media/stuff/Pictures/greatwallsofunix/batch-2/a_group_of_white_lanterns_with_black_writing_on_them.jpg"
@@ -307,7 +323,7 @@ telemetry_enabled = false
     enabled = false
 
     [shell.launcher]
-    pinned = [ "zen" ]
+    pinned = [ "zen", "emacsclient", "org.keepassxc.KeePassXC", "Happ" ]
 
     [shell.mpris]
     blacklist = [ "mpv", "Blanket" ]
@@ -371,7 +387,7 @@ wallpaper_scheme = "dysfunctional"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "emacs", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "zen-browser", "discord", "neovim", "heroiclauncher", "prismlauncher", "steam", "zellij", "papirus-icons" ]
+    community_ids = [ "zen-browser", "discord", "heroiclauncher", "prismlauncher", "steam", "zellij", "papirus-icons" ]
 
 [wallpaper]
 directory = "/home/edpyt/wallpapers"
@@ -419,6 +435,7 @@ hide_label = false
 [widget.media]
 capsule = false
 hide_when_no_media = true
+title_scroll = "always"
 
 [widget.mpvpaper]
 type = "noctalia/mpvpaper:mpvpaper"

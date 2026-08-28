@@ -6,3 +6,4 @@
 (package! org-caldav)
 (package! org-wild-notifier)
 (package! org-roam-ui)
+(package! gt)

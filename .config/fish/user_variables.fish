@@ -61,7 +61,7 @@ fish_add_path $XDG_DATA_HOME/pnpm
 fish_add_path $HOME/.config/emacs/bin
 
 # Editor
-set -xg EDITOR nvim
+set -xg EDITOR vi
 set -xg VISUAL $EDITOR
 set -xg SUDO_EDITOR $EDITOR
 
