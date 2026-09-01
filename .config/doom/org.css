@@ -216,3 +216,13 @@ hr { border: none; height: 1px; background: #e2e8f0; margin: 2rem 0; }
 .org-type          { color: #65b9b0; }
 .org-comment       { color: #8a9bb5; font-style: italic; }
 .org-warning       { color: #e5b567; font-weight: bold; }
+
+.note, .warning, .tip, .caution, .important {
+    margin: 1.5rem 0;
+    padding: 0.5rem 1.2rem;
+    border-left: 4px solid;
+}
+.note { background: #e7f3fe; border-color: #2196F3; }
+.warning { background: #fff3cd; border-color: #ffc107; }
+.tip { background: #d4edda; border-color: #28a745; }
+.important { background: #f8d7da; border-color: #dc3545; }

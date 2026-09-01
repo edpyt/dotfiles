@@ -74,6 +74,7 @@
 
 (after! org-clock
   (setq org-clock-persist 'clock
+        org-clock-mode-line-total 'current
         org-clock-persist-query-resume nil)
   (org-clock-persistence-insinuate))
 

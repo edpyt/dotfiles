@@ -19,6 +19,7 @@
  vi-tilde-fringe
  workspaces
  zen
+ ligatures
 
  :editor
  (evil +everywhere)
@@ -80,6 +81,7 @@
  :email
 
  :app
+ calendar
 
  :config
  (default +bindings +smartparens))

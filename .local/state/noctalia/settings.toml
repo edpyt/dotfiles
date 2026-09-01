@@ -14,9 +14,9 @@ order = [ "vertical", "horizontal" ]
     center = [ "mpvpaper_2", "clock", "recorder" ]
     enabled = false
     end = [ "clipboard", "network", "bluetooth", "brightness", "battery", "session" ]
-    layer = "overlay"
     margin_edge = 0
     margin_ends = 0
+    position = "bottom"
     radius = 0
     start = [ "launcher", "workspaces", "wallhaven" ]
 
@@ -71,6 +71,9 @@ type = "power_profile"
 [[control_center.shortcuts]]
 type = "mic_mute"
 
+[[control_center.shortcuts]]
+type = "caffeine"
+
 [desktop_widgets]
 schema_version = 1
 widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-0000000000000004", "desktop-widget-0000000000000006" ]
@@ -83,7 +86,7 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
     [desktop_widgets.widget.desktop-widget-0000000000000004]
     box_height = 0.0
     box_width = 0.0
-    cx = 960.0
+    cx = 605.0
     cy = 918.0
     output = "DP-1"
     placement_height = 1080.0
@@ -106,8 +109,8 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
     [desktop_widgets.widget.desktop-widget-0000000000000006]
     box_height = 0.0
     box_width = 0.0
-    cx = 990.0
-    cy = 239.0
+    cx = 1346.0
+    cy = 233.0
     output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
@@ -127,7 +130,7 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
     [desktop_widgets.widget.desktop-widget-0000000000000007]
     box_height = 64.0
     box_width = 320.0
-    cx = 960.0
+    cx = 602.0
     cy = 816.0
     output = "DP-1"
     placement_height = 1080.0
@@ -274,7 +277,7 @@ position = "bottom_center"
 notify_on_copy = false
 
 [plugin_settings."noctalia/mpvpaper"]
-mpv_options = "loop"
+auto_pause = "off"
 picker_placement = "floating"
 picker_position = "center"
 video_directory = "~/wallpapers/"
@@ -311,7 +314,7 @@ panel_position = "center"
 enabled = [ "noctalia/screen_recorder", "noctalia/wallhaven", "noctalia/kaomoji", "yuuto/arch-updater" ]
 
 [shell]
-avatar_path = "/media/stuff/Pictures/greatwallsofunix/batch-2/a_group_of_white_lanterns_with_black_writing_on_them.jpg"
+avatar_path = "/home/edpyt/Downloads/dragon-ball-z-dbz-crystal-ball-2-stars-png-701751694862287amivyupcfd-2823434995.png"
 niri_overview_type_to_launch_enabled = true
 password_style = "random"
 polkit_agent = true
@@ -387,33 +390,27 @@ wallpaper_scheme = "dysfunctional"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "emacs", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "zen-browser", "discord", "heroiclauncher", "prismlauncher", "steam", "zellij", "papirus-icons" ]
+    community_ids = [ "zen-browser", "discord", "heroiclauncher", "prismlauncher", "steam", "fastfetch", "zellij", "papirus-icons" ]
 
 [wallpaper]
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-qrmkqq.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-w5x99p.jpg"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-w5x99p.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-qrmkqq.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-w5x99p.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-w5x99p.jpg"
 
     [[wallpaper.favorite]]
     community_palette = "Everforest Alt"
     palette_source = "community"
-    path = "/home/edpyt/wallpapers/wallhaven-xedg6l.jpg"
-    theme_mode = "dark"
-
-    [[wallpaper.favorite]]
-    community_palette = "Everforest Alt"
-    palette_source = "community"
-    path = "/home/edpyt/wallpapers/wallhaven-qrmkqq.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-w5x99p.jpg"
     theme_mode = "dark"
 
 [widget.audio_visualizer]
@@ -435,6 +432,7 @@ hide_label = false
 [widget.media]
 capsule = false
 hide_when_no_media = true
+show_progress = true
 title_scroll = "always"
 
 [widget.mpvpaper]
