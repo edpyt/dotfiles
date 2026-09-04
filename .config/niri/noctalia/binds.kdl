@@ -39,9 +39,6 @@ binds {
   Mod+Ctrl+B hotkey-overlay-title="Bluetooth popup" {
     spawn-sh "noctalia msg panel-toggle control-center bluetooth"; 
   }
-  Mod+Ctrl+A hotkey-overlay-title="Arch Updater popup" {
-    spawn-sh "noctalia msg panel-toggle yuuto/arch-updater:panel"; 
-  }
   Mod+Ctrl+Shift+W hotkey-overlay-title="Wallhaven popup" {
     spawn-sh "noctalia msg panel-toggle noctalia/wallhaven:browser"; 
   }

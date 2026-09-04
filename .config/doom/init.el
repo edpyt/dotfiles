@@ -9,10 +9,10 @@
 
  :ui
  doom
- dashboard
- hl-todo
- modeline
  tabs
+ dashboard
+ modeline
+ hl-todo
  ophints
  (popup +defaults)
  vc-gutter
@@ -61,27 +61,28 @@
  tty
 
  :lang
- (emacs-lisp +lsp)
+ emacs-lisp
  data
  docker
- (go +lsp)
- (java +lsp)
  javascript
  json
- (lua +lsp)
  markdown
- (org +roam +evil +lsp)
- (python +lsp +uv)
- (rust +lsp)
  sh
  sql
  yaml
- (csharp +lsp)
+
+ (org +dragndrop +roam +evil +lsp)
+ (python +lsp +tree-sitter +uv +pyright)
+ (csharp +lsp +tree-sitter)
+ (rust +lsp)
+ (lua +lsp)
+ (java +lsp)
+ (go +lsp +tree-sitter)
 
  :email
 
  :app
- calendar
+ ;; calendar
 
  :config
  (default +bindings +smartparens))

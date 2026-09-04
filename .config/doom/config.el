@@ -15,13 +15,21 @@
       auto-window-vscroll nil)
 
 (setq +format-on-save-enabled t)
+
+;; ----
+;; mappings
+;; ----
+(map! "C-'" #'+vterm/toggle)
+(map! :nv "\\" #'+evil/window-split-and-follow
+      :nv "|"  #'+evil/window-vsplit-and-follow)
+
 ;; ----
 ;; packages
 ;; ----
-
-;; term
-;; ----
-(map! "C-'" #'+vterm/toggle)
+(after! centaur-tabs
+  (setq centaur-tabs-set-bar nil
+        centaur-tabs-show-new-tab-button nil
+        centaur-tabs-height 22))
 
 ;; ----
 ;; org stuff
@@ -72,6 +80,10 @@
            (file "~/Documents/orgfiles/habits.org")
            "* TODO %?\n %u"))))
 
+(after! org-agenda
+  (setq org-agenda-span 'day)
+  (setq org-agenda-start-day nil))
+
 (after! org-clock
   (setq org-clock-persist 'clock
         org-clock-mode-line-total 'current
@@ -113,7 +125,9 @@
            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "")
            :unnarrowed t))))
 
-
+;; ----
+;; org custom packages
+;; ----
 (use-package! org-modern
   :hook (org-mode . org-modern-mode)
   :config
