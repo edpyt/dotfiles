@@ -82,7 +82,6 @@
  :email
 
  :app
- ;; calendar
 
  :config
  (default +bindings +smartparens))

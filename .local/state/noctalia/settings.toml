@@ -1,4 +1,4 @@
-config_version = 13
+config_version = 14
 
 [audio]
 enable_overdrive = true
@@ -84,13 +84,13 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
     visible = true
 
     [desktop_widgets.widget.desktop-widget-0000000000000004]
-    box_height = 0.0
-    box_width = 0.0
-    cx = 605.0
-    cy = 918.0
-    output = "DP-1"
-    placement_height = 1080.0
-    placement_width = 1920.0
+    box_height = 128.0
+    box_width = 320.0
+    cx = 508.0
+    cy = 1664.0
+    output = "HDMI-A-1"
+    placement_height = 1920.0
+    placement_width = 1080.0
     rotation = 0.0
     type = "media_player"
 
@@ -102,18 +102,18 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
         background_radius = 12
         color = "on_surface"
         font_family = ""
-        hide_when_no_media = false
+        hide_when_no_media = true
         layout = "horizontal"
         shadow = true
 
     [desktop_widgets.widget.desktop-widget-0000000000000006]
-    box_height = 0.0
-    box_width = 0.0
-    cx = 1346.0
-    cy = 233.0
-    output = "DP-1"
-    placement_height = 1080.0
-    placement_width = 1920.0
+    box_height = 448.0
+    box_width = 640.0
+    cx = 540.0
+    cy = 960.0
+    output = "HDMI-A-1"
+    placement_height = 1920.0
+    placement_width = 1080.0
     rotation = 0.0
     type = "calendar"
 
@@ -130,11 +130,11 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
     [desktop_widgets.widget.desktop-widget-0000000000000007]
     box_height = 64.0
     box_width = 320.0
-    cx = 602.0
-    cy = 816.0
-    output = "DP-1"
-    placement_height = 1080.0
-    placement_width = 1920.0
+    cx = 508.0
+    cy = 1568.0
+    output = "HDMI-A-1"
+    placement_height = 1920.0
+    placement_width = 1080.0
     rotation = 0.0
     type = "audio_visualizer"
 
@@ -311,7 +311,7 @@ panel_placement = "floating"
 panel_position = "center"
 
 [plugins]
-enabled = [ "noctalia/screen_recorder", "noctalia/wallhaven", "noctalia/kaomoji", "yuuto/arch-updater" ]
+enabled = [ "noctalia/screen_recorder", "noctalia/wallhaven", "noctalia/kaomoji", "noctalia/translator" ]
 
 [shell]
 avatar_path = "/home/edpyt/Downloads/dragon-ball-z-dbz-crystal-ball-2-stars-png-701751694862287amivyupcfd-2823434995.png"

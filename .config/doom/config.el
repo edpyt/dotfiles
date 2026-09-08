@@ -16,6 +16,8 @@
 
 (setq +format-on-save-enabled t)
 
+(setq browse-url-browser-function 'browse-url-default-browser)
+
 ;; ----
 ;; mappings
 ;; ----
@@ -102,7 +104,7 @@
         org-caldav-todo-percent-states '((0 "TODO") (0 "WAIT") (100 "DONE") (100 "DELEGATED"))
         org-caldav-sync-direction 'org->cal
 
-        org-icalendar-include-todo 'all
+        org-icalendar-include-todo t
         ;; org-caldav-sync-todo nil
 
         org-icalendar-use-scheduled
@@ -118,12 +120,10 @@
               (expand-file-name "~/.config/doom/org.css")))
 
 (after! org-roam
-  (setq org-roam-directory "~/Documents/orgfiles/org_roam/"
-        org-roam-capture-templates
-        '(("d" "default" plain
-           ""
-           :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "")
-           :unnarrowed t))))
+  (setq org-roam-dailies-directory "daily/"
+        org-roam-dailies-capture-templates
+        '(("d" "default" entry "* %<%H:%M %p>\n%?"
+           :if-new (file+head "%<%Y>/%<%m>/%<%Y-%m-%d>.org" "#+title: %<%Y-%m-%d>\n")))))
 
 ;; ----
 ;; org custom packages
