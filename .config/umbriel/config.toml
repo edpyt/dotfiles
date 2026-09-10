@@ -1,0 +1,202 @@
+[include]
+files = [
+  "rules.toml",
+  "keybinds.toml",
+  "animations/default.toml",
+  # "animations/off.toml",
+  "noctalia/keybinds.toml",
+  "noctalia.toml",
+]
+
+
+# ─────────────────────────────── General ────────────────────────────────────
+# Configure startup commands, session behavior, environment variables, and
+# hardware events.
+# Documentation: https://docs.noctalia.dev/umbriel/configuration/#general
+# ────────────────────────────────────────────────────────────────────────────
+
+[general]
+autostart = [
+  "noctalia",
+  "kitty --app-id scratchpad-music -e subtui",
+  "kitty --app-id scratchpad-multiplexer -e zellij",
+] # Commands run once when the session starts
+# mod_key = "Super"                             # Force Super instead of nested-session Alt
+xwayland = true                 # Requires xwayland-satellite; restart to change
+show_cheatsheet = false         # Show the keybind overlay on startup
+focus_on_activate = false       # Do not let unsolicited requests steal focus
+honor_restored_maximize = false # Honor restored maximized state
+
+[environment]
+
+[events]
+
+# ─────────────────────────────── Outputs ────────────────────────────────────
+# Configure monitor identity, mode, logical placement, scaling, HDR, VRR, and
+# workspace inventory. Run `umbriel outputs` to list names and available modes.
+# Documentation: https://docs.noctalia.dev/umbriel/outputs/
+# ────────────────────────────────────────────────────────────────────────────
+
+[output.HDMI-A-1]
+enabled = true
+mode = "1920x1080@60"
+transform = "90"
+layout.scrolling.default_width_fraction = 1.0
+workspaces = ["󰈹", ""]
+
+[output.DP-1]
+enabled = true
+mode = "1920x1080@165"
+layout.scrolling.default_width_fraction = 0.8
+workspaces = ["󰈹", "", ""]
+
+# ────────────────────────────── Workspaces ──────────────────────────────────
+# Choose global workspace behavior. Each output uses dynamic workspaces unless
+# its output section defines a static count or list of names.
+# Documentation: https://docs.noctalia.dev/umbriel/workspaces/
+# ────────────────────────────────────────────────────────────────────────────
+
+[workspaces]
+back_and_forth = true # Re-select active workspace to switch back
+empty_above = false   # Keep one empty workspace above active range
+
+# [[workspace]]
+# name = "web"
+# index = 1
+# output = "DP-1"
+
+# [[workspace]]
+# name = "code"
+# index = 2
+# output = "DP-1"
+
+# ───────────────────────────── Appearance ───────────────────────────────────
+# Configure window decoration geometry, blur, shadows, and other visual
+# effects.
+# Documentation: https://docs.noctalia.dev/umbriel/appearance/#window-appearance
+# ────────────────────────────────────────────────────────────────────────────
+
+[appearance]
+prefer_no_csd = true   # Prefer Umbriel's border-only decoration
+border_width = 2       # Inner border width, 0-100 logical pixels
+outer_border_width = 0 # Optional outer ring, 0-100 logical pixels
+corner_radius = 10     # Radius of the final decorated edge, 0-100
+drag_opacity = 0.75    # Window opacity during a tiled or floating drag
+
+[appearance.blur]
+enabled = true   # Disable blur and release per-output effect buffers
+optimized = true # Reuse one cached background blur per output
+passes = 3       # Blur passes, 0-8
+radius = 3       # Blur radius, 0-100
+noise = 0.02     # Noise overlay, 0.0-1.0
+brightness = 0.9 # 0.0-2.0
+contrast = 0.9   # 0.0-2.0
+saturation = 1.1 # 0.0-2.0
+
+[appearance.shadow]
+enabled = true # Draw shadows behind non-fullscreen windows
+softness = 10  # Gaussian softness, 0-200; 0 is a hard edge
+offset_x = 2   # Horizontal offset, -200 to 200
+offset_y = 2   # Vertical offset, -200 to 200
+
+# ──────────────────────────────── Input ─────────────────────────────────────
+# Configure keyboards, pointers, tablets, cursor behavior, and focus policy.
+# Documentation: https://docs.noctalia.dev/umbriel/input/
+# ────────────────────────────────────────────────────────────────────────────
+
+[input]
+middle_click_paste = true   # Primary-selection paste; applies on reload
+window_drag_toggle = "none" # Retarget a window drag: "none", "floating", or "pinned"
+
+[input.keyboard]
+layout = "us,ru"                 # Example: "us,de"; empty uses the system default
+variant = ""                     # Example: ",nodeadkeys" for two layouts
+options = "grp:alt_shift_toggle" # Example: "grp:alt_shift_toggle"
+repeat_rate = 25                 # Key repeats per second, 0-1000
+repeat_delay = 600               # Delay before repeating, 0-10000 ms
+numlock_toggle = true            # Enable on connect; false preserves the current state
+track_layout = "global"          # global, or window for per-surface layout memory
+
+[input.mouse]
+sensitivity = 0.0      # Pointer speed, -1.0 to 1.0
+scroll_wheel_step = 60 # Logical pixels per layout-scroll action, 1-1000
+# scroll_button = "MouseBack"                   # Hold to scroll with pointer motion; omit to leave the device alone
+# scroll_button_lock = false                    # One press latches scrolling instead of holding
+
+[input.cursor]
+theme = "Breeze"        # Empty uses environment or default Xcursor theme
+size = 20               # Logical size, 1-512
+hardware_cursor = true  # False forces cursor composition
+follows_focus = false   # Warp to windows selected by focus, output, move, or other activations
+hide_when_typing = true
+hide_timeout_ms = 1000  # Idle hide timeout, 0 disables; maximum is 3600000
+
+# ────────────────────────────── Scratchpads ─────────────────────────────────
+# With no entries below, Umbriel creates one implicit scratchpad named
+# `default`, and bare scratchpad actions select it. Defining any named
+# scratchpad disables that implicit default and requires a name suffix on every
+# scratchpad action. Names must be unique, and `default` is reserved.
+# Documentation: https://docs.noctalia.dev/umbriel/scratchpads/
+# ────────────────────────────────────────────────────────────────────────────
+
+[[scratchpad]]
+name = "multiplexer" # zellij
+
+[[scratchpad]]
+name = "music"
+
+# ─────────────────────────────── Layout ─────────────────────────────────────
+# Configure the default tiling mode and shared sizing behavior. Workspace rules
+# above can override these values for individual workspaces.
+# Documentation: https://docs.noctalia.dev/umbriel/layout/
+# ────────────────────────────────────────────────────────────────────────────
+
+[layout]
+mode = "scrolling"                     # scrolling, dwindle, or master
+gap = 8                                # Logical pixels between tiles, 0-500
+width_presets = [0.333, 0.5, 0.8, 1.0] # Width and height cycling fractions
+
+[layout.struts]
+# Signed logical pixels reserved after panel exclusive zones. Negative values
+# expand the tiled area beyond that edge.
+left = 0   # -65535 to 65535
+right = 0
+top = 0
+bottom = 0
+
+[layout.scrolling]
+# The strip axis is perpendicular to the output's workspace_axis.
+default_width_fraction = 0.5   # Initial width for new columns, 0.1-1.0
+center_underfull_strip = true  # Center a strip narrower than the viewport
+center_focused = "on_overflow" # never, always, or on_overflow
+
+[layout.dwindle]
+# preserve_split = false                        # Keep every split direction fixed after creation
+
+[layout.master]
+position = "left"             # left or right master area
+default_width_fraction = 0.55 # Initial master area fraction, 0.1-0.9
+new_on_top = true             # Put new windows at the top of the stack
+
+
+# ─────────────────────── Overview and Hot Corners ───────────────────────────
+# Configure the all-workspaces overview and pointer-triggered corner actions.
+# Overview: https://docs.noctalia.dev/umbriel/workspaces-overview/
+# Hot corners: https://docs.noctalia.dev/umbriel/keybinds/#hot-corners
+# Corners pause only while the keyboard-focused window on their output is fullscreen.
+# ────────────────────────────────────────────────────────────────────────────
+
+[overview]
+zoom = 0.5                     # Workspace scale in overview, 0.1-0.75
+scroll_factor_horizontal = 1.0 # Overview gesture travel, left and right, 0.1-10.0
+scroll_factor_vertical = 1.0   # Overview gesture travel, up and down, 0.1-10.0
+# Pinned windows stay hidden until overview closes; visible scratchpads are dismissed.
+# background_blur = true                        # Blur the wallpaper behind overview rows
+# workspace_wallpaper = true                    # Mirror wallpapers inside workspace previews
+# shortcuts = true                              # Show keyboard shortcut badges on windows
+# shortcut_keys = "1234567890"                  # Badge keys in preference order
+
+[hot_corners.top_right]
+enabled = true
+delay_ms = 200
+action = "overview-toggle"

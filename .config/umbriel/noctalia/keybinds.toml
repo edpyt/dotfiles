@@ -1,0 +1,27 @@
+[keybinds]
+"Print" = "spawn:noctalia msg screenshot-region"
+"Ctrl+Print" = "spawn:noctalia msg screenshot-fullscreen"
+# TODO: "Alt+Print" = "spawn:noctalia msg screenshot-annotate"
+
+"Mod+A" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Escape" = "spawn:noctalia msg panel-toggle session"
+"Mod+Comma" = "spawn:noctalia msg settings-toggle"
+"Mod+Alt+L" = "spawn:noctalia msg session lock"
+
+"Mod+N" = "spawn:noctalia msg panel-toggle control-center notifications"
+"Mod+Shift+W" = "spawn:noctalia msg panel-toggle wallpaper"
+"Mod+Ctrl+O" = "spawn:noctalia msg panel-toggle control-center 1"
+# "Mod+M" = "spawn:noctalia msg panel-toggle control-center media"
+"Mod+Ctrl+W" = "spawn:noctalia msg panel-toggle control-center weather"
+"Mod+Ctrl+D" = "spawn:noctalia msg panel-toggle control-center calendar"
+"Mod+Ctrl+S" = "spawn:noctalia msg panel-toggle control-center system"
+
+"Mod+Ctrl+C" = "spawn:noctalia msg panel-toggle clipboard"
+
+"Mod+Shift+N" = "spawn:noctalia msg notification-clear-history"
+
+"XF86AudioRaiseVolume" = { action = "spawn:noctalia msg volume-up", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn:noctalia msg volume-down", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down 10", allow_when_locked = true }
+"XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up 10", allow_when_locked = true }

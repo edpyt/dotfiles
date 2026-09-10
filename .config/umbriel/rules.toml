@@ -1,0 +1,102 @@
+# ───────────────────────────── Window Rules ─────────────────────────────────
+# Match windows by application ID, title, XDG tag, content type, or focus state.
+# Opening settings apply once; effects and output policies update while mapped.
+# Documentation: https://docs.noctalia.dev/umbriel/window-rules/
+# ────────────────────────────────────────────────────────────────────────────
+
+# Blur every window. Keep this selectorless rule first so later matching rules
+# can override individual blur settings.
+[[window_rule]]
+blur = true
+blur_optimized = false
+
+[[window_rule]] # FIXME: waiting for `focus-at-startup`
+match.at_startup = true
+default_output = "DP-1"
+
+[[window_rule]]
+match.app_id = "^scratchpad-music$"
+default_scratchpad = "music"
+default_output = "DP-1"
+
+[[window_rule]]
+match.app_id = "^scratchpad-multiplexer$"
+default_scratchpad = "multiplexer"
+default_output = "DP-1"
+
+[[window_rule]]
+match.app_id = "^zen$"
+default_workspace = "󰈹"
+default_width = 1.0
+
+[[window_rule]]
+match.app_id = "^emacs$"
+default_workspace = ""
+
+[[window_rule]]
+match.app_id = "^(emacs|kitty)$"
+opacity = 0.95
+blur = false
+
+[[window_rule]]
+match.is_focused = false
+opacity = 0.85
+
+# Noctalia settings
+[[window_rule]]
+match.app_id = "^dev.noctalia.Noctalia$"
+default_floating = true
+default_size = [1020, 900]
+
+# Noctalia share picker
+[[window_rule]]
+match.app_id = "^(dev.noctalia.UmbrielSharePicker|Pinentry-gtk)$"
+default_floating = true
+default_size = [800, 600]
+
+# Browsers expose no semantic PiP role or global position control.
+[[window_rule]]
+match.title = "^(Picture-in-Picture|Picture in picture)$"
+default_floating = true
+default_maximize = false
+default_position = { x = 20, y = 20, anchor = "bottom_right" }
+
+# Keep Steam notification toasts in the bottom-right corner without stealing
+# focus, and pin them so workspace switches do not hide them.
+[[window_rule]]
+match.title = "^notificationtoasts_.+_desktop"
+default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_focused = false
+default_pinned = true
+
+# [[window_rule]]
+# match.is_alone = true
+# default_width = 0.8
+
+# ────────────────────────────── Layer Rules ─────────────────────────────────
+# Match layer-shell surfaces such as panels, launchers, notifications, and
+# desktop widgets by namespace. Run `umbriel layers` to inspect live names.
+# Documentation: https://docs.noctalia.dev/umbriel/layer-rules/
+# ────────────────────────────────────────────────────────────────────────────
+
+[[layer_rule]]
+match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
+blur = true
+blur_ignore_alpha = 0.5
+blur_popups = true
+blur_optimized = false
+
+
+# ─────────────────────── Security Context Rules ─────────────────────────────
+# Sandboxed clients receive a restricted Wayland global set. Grant extra
+# globals only to a narrowly matched application that genuinely needs them.
+# Documentation: https://docs.noctalia.dev/umbriel/security/#per-application-grants
+# ────────────────────────────────────────────────────────────────────────────
+
+# Grant a sandboxed clipboard manager both data-control protocol variants.
+# Uncomment the complete block and replace the example application ID.
+
+# [[security_context_rule]]
+# match.sandbox_engine = 'org\.flatpak'
+# match.app_id = 'org\.example\.ClipboardManager'
+# allow_globals = ["ext_data_control_manager_v1", "zwlr_data_control_manager_v1"]

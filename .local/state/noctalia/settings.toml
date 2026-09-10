@@ -86,11 +86,11 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
     [desktop_widgets.widget.desktop-widget-0000000000000004]
     box_height = 128.0
     box_width = 320.0
-    cx = 508.0
-    cy = 1664.0
-    output = "HDMI-A-1"
-    placement_height = 1920.0
-    placement_width = 1080.0
+    cx = 960.0
+    cy = 924.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "media_player"
 
@@ -130,11 +130,11 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
     [desktop_widgets.widget.desktop-widget-0000000000000007]
     box_height = 64.0
     box_width = 320.0
-    cx = 508.0
-    cy = 1568.0
-    output = "HDMI-A-1"
-    placement_height = 1920.0
-    placement_width = 1080.0
+    cx = 960.0
+    cy = 828.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "audio_visualizer"
 
@@ -147,7 +147,6 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
 
 [dock]
 auto_hide = true
-background_opacity = 0.99999997764825821
 enabled = true
 icon_size = 35
 launcher_position = "start"
@@ -336,8 +335,14 @@ telemetry_enabled = false
     launcher_categories = false
     session_placement = "floating"
     session_position = "center"
+    transparency_mode = "soft"
     wallpaper_placement = "floating"
     wallpaper_position = "center"
+
+    [shell.screenshot]
+    confirm_region = true
+    directory = "/home/edpyt/Pictures/Screenshots"
+    filename_pattern = "Screenshot_from_%Y-%m-%d_%H-%M-%S"
 
     [[shell.session.actions]]
     action = "command"
@@ -381,15 +386,15 @@ telemetry_enabled = false
 gpu_poll_seconds = 5
 
 [theme]
-builtin = "Eldritch"
+builtin = "Ayu"
 community_palette = "Everforest Alt"
 custom_palette = "wallhaven-8gg1do-vib"
 mode = "dark"
 source = "community"
-wallpaper_scheme = "dysfunctional"
+wallpaper_scheme = "muted"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "emacs", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    builtin_ids = [ "btop", "cava", "emacs", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt", "umbriel" ]
     community_ids = [ "zen-browser", "discord", "heroiclauncher", "prismlauncher", "steam", "fastfetch", "zellij", "papirus-icons" ]
 
 [wallpaper]

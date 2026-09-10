@@ -24,11 +24,17 @@
 (map! "C-'" #'+vterm/toggle)
 (map! :nv "\\" #'+evil/window-split-and-follow
       :nv "|"  #'+evil/window-vsplit-and-follow)
+(after! centaur-tabs
+  (map! :map evil-normal-state-map
+        "]b" #'centaur-tabs-forward
+        "[b" #'centaur-tabs-backward))
 
 ;; ----
 ;; packages
 ;; ----
 (after! centaur-tabs
+  ;; (centaur-tabs-group-by-projectile-project nil)
+
   (setq centaur-tabs-set-bar nil
         centaur-tabs-show-new-tab-button nil
         centaur-tabs-height 22))
@@ -60,6 +66,7 @@
         org-agenda-show-future-repeats 'next
         org-hide-emphasis-markers t
         org-startup-with-inline-images t
+        org-export-with-broken-links t
 
         org-capture-templates
         '(("t" "Task"

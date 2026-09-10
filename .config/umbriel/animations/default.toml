@@ -1,0 +1,94 @@
+# ────────────────────────────── Animation ───────────────────────────────────
+# Parent values provide defaults for every event table. Nested values override
+# only that event. Disable one event to make just that transition instant.
+# Documentation: https://docs.noctalia.dev/umbriel/animation/
+# Every event accepts shader = "path/to/effect.glsl". Inline GLSL is not supported.
+# File paths are relative to this config, including configs loaded via include.
+# Bundled reveal.glsl and squash.glsl can be referenced by their installed absolute paths.
+# Copy examples/shaders beside your config only if you want editable local versions.
+# ────────────────────────────────────────────────────────────────────────────
+
+[animation]
+enabled = true    # Master animation switch
+duration_ms = 250 # Shared duration, 1-10000 ms
+curve = "easeout" # Built-in or registered bezier/spring curve name
+
+# Window opening
+[animation.windows_in]
+enabled = true
+duration_ms = 150
+curve = "easeout"
+style = "popin"   # popin, zoom, slide, fade, or none
+scale = 0.85      # Popin start scale, 0.1-1.0
+# shader = "shaders/reveal.glsl"      # Replaces the built-in opening style
+
+# Window closing
+[animation.windows_out]
+enabled = true
+duration_ms = 150
+curve = "easeout"
+style = "fade"    # fade or slide
+# shader = "shaders/reveal.glsl"
+
+# Window movement, resizing, and floating maximize. Visible scratchpad keybind
+# resizing uses this event too.
+[animation.windows_move]
+enabled = true
+duration_ms = 250
+curve = "snappy"
+# shader = "shaders/squash.glsl"      # Subtle compression and settle during move/resize
+
+# Workspace switching
+[animation.workspaces]
+enabled = true
+duration_ms = 250
+curve = "easeout"
+
+# Overview opening and closing
+[animation.overview]
+enabled = true
+duration_ms = 250
+curve = "easeout"
+# Filmstrip movement between workspace previews: wheel, keyboard, and touchpad
+# release alike. A spring curve settles from wherever the previews are and keeps
+# the speed a swipe let go with; any other curve runs over duration_ms instead.
+workspace_curve = "spring:1,1000"
+
+# Scratchpad show, hide, and backdrop
+[animation.scratchpad]
+enabled = false
+duration_ms = 250
+curve = "easeout"
+dim = 0.5          # Backdrop dim amount, 0.0-1.0
+blur = false       # Requires appearance.blur.enabled
+scale = 0.0        # 0 keeps geometry; 0.1-1.0 centers and scales
+maximize = false   # Maximize to usable-area edges while shown
+fullscreen = false # Make the scratchpad window fullscreen while shown
+
+# Focus border color
+[animation.border]
+enabled = false
+duration_ms = 250
+curve = "easeout"
+
+# Unfocused window opacity
+[animation.dim_unfocused]
+enabled = false
+duration_ms = 250
+curve = "easeout"
+dim = 0.0         # 0 disables dimming; maximum is 1.0
+
+# Layer-shell surface mapping and unmapping
+[animation.layers]
+enabled = false
+duration_ms = 250
+curve = "easeout"
+
+# Register reusable curves by adding or uncommenting entries below.
+# Documentation: https://docs.noctalia.dev/umbriel/animation/#curves
+
+[animation.beziers]
+# myBezier = [0.05, 0.9, 0.1, 1.0]
+
+[animation.springs]
+# myBounce = { damping = 0.5, stiffness = 200 }

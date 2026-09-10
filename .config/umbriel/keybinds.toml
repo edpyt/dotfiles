@@ -1,0 +1,109 @@
+# ─────────────────────────────── Keybinds ───────────────────────────────────
+# Bind chords to compositor actions. A configuration file replaces the built-in
+# keybind set, so define every chord that should remain available.
+# Syntax: https://docs.noctalia.dev/umbriel/keybinds/
+# Actions: https://docs.noctalia.dev/umbriel/actions/
+# ────────────────────────────────────────────────────────────────────────────
+
+[keybinds]
+
+"Mod+Space" = "keyboard-layout-next"
+
+"Mod+Q" = "window-close"
+
+"Mod+T" = "spawn:kitty"
+"Mod+Ctrl+T" = "spawn:emacsclient -c"
+
+# FIXME: maybe .sh, or wait for umbriel update
+# "Mod+Shift+M" = "spawn:kitty --app-id scratchpad-music -e subtui & sleep 0.5 && umbriel msg scratchpad-toggle:music"
+# "Mod+Shift+Z" = "spawn:kitty --app-id scratchpad-multiplexer -e zellij & sleep 0.5 && umbriel msg scratchpad-toggle:multiplexer"
+
+"Ctrl+Alt+Delete" = "spawn:kitty -e btop"
+"Mod+E" = "spawn:kitty -e felix"
+"Mod+Shift+E" = "spawn:nautilus"
+
+"Mod+H" = "window-focus-left"
+"Mod+J" = "window-focus-down"
+"Mod+K" = "window-focus-up"
+"Mod+L" = "window-focus-right"
+
+"Mod+Ctrl+H" = "column-move-left"
+"Mod+Ctrl+J" = "window-move-down"
+"Mod+Ctrl+K" = "window-move-up"
+"Mod+Ctrl+L" = "column-move-right"
+
+"Mod+I" = "workspace-previous"
+"Mod+U" = "workspace-next"
+"Mod+Ctrl+I" = "window-move-to-workspace-previous"
+"Mod+Ctrl+U" = "window-move-to-workspace-next"
+
+"Mod+BracketLeft" = "output-focus-left"
+"Mod+BracketRight" = "output-focus-right"
+"Mod+Ctrl+BracketLeft" = "window-consume-or-expel-left"
+"Mod+Ctrl+BracketRight" = "window-consume-or-expel-right"
+"Mod+Shift+BracketLeft" = "column-move-to-output-left"
+"Mod+Shift+BracketRight" = "column-move-to-output-right"
+
+"Mod+Shift+F" = "window-toggle-fullscreen"
+"Mod+F" = "window-toggle-maximize"
+"Mod+R" = "window-cycle-width"
+"Mod+Shift+R" = "window-cycle-width-back"
+
+"Mod+WheelUp" = { action = "workspace-previous", cooldown_ms = 150 }
+"Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
+"Mod+Shift+WheelUp" = "window-focus-left"
+"Mod+Shift+WheelDown" = "window-focus-right"
+"Mod+Shift+Ctrl+WheelUp" = "column-move-left"
+"Mod+Shift+Ctrl+WheelDown" = "column-move-right"
+
+"Mod+Home" = "column-focus-first"
+"Mod+End" = "column-focus-last"
+
+"Mod+C" = "column-center"
+"Mod+O" = { action = "overview-toggle", repeat = false }
+
+# Window state and layout
+"Mod+V" = "window-toggle-floating"
+"Mod+Shift+V" = "window-focus-switch-floating"
+"Mod+P" = "window-toggle-pinned"
+# "Mod+M" = "window-toggle-maximize-to-edges"
+
+# Workspaces. Bare digits are positions on the output under the pointer.
+"Mod+1" = "workspace-switch:1"
+"Mod+2" = "workspace-switch:2"
+"Mod+3" = "workspace-switch:3"
+"Mod+4" = "workspace-switch:4"
+"Mod+5" = "workspace-switch:5"
+"Mod+6" = "workspace-switch:6"
+"Mod+7" = "workspace-switch:7"
+"Mod+8" = "workspace-switch:8"
+"Mod+9" = "workspace-switch:9"
+"Mod+Shift+1" = "window-move-to-workspace:1"
+"Mod+Shift+2" = "window-move-to-workspace:2"
+"Mod+Shift+3" = "window-move-to-workspace:3"
+"Mod+Shift+4" = "window-move-to-workspace:4"
+"Mod+Shift+5" = "window-move-to-workspace:5"
+"Mod+Shift+6" = "window-move-to-workspace:6"
+"Mod+Shift+7" = "window-move-to-workspace:7"
+"Mod+Shift+8" = "window-move-to-workspace:8"
+"Mod+Shift+9" = "window-move-to-workspace:9"
+
+# Quote an all-digit name to distinguish it from a position.
+# "Mod+Ctrl+2" = 'workspace-switch:"2"/DP-2'
+
+# Scratchpads
+# Documentation: https://docs.noctalia.dev/umbriel/scratchpads/
+"Mod+Shift+S" = "window-move-to-scratchpad:multiplexer"
+"Mod+S" = "scratchpad-toggle:multiplexer"
+"Mod+Shift+Ctrl+S" = "window-restore-from-scratchpad:multiplexer"
+"Mod+Tab" = "scratchpad-focus-next:multiplexer"
+
+"Mod+M" = "scratchpad-toggle:music"
+
+# Media and brightness
+# Documentation: https://docs.noctalia.dev/umbriel/keybinds/#example-media-and-brightness-keys
+"XF86AudioPlay" = "spawn:playerctl play-pause"
+"XF86AudioNext" = "spawn:playerctl next"
+"XF86AudioPrev" = "spawn:playerctl previous"
+
+"Mod+Shift+Period" = "cheatsheet-toggle"
