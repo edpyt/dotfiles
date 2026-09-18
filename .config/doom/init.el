@@ -64,20 +64,17 @@
  emacs-lisp
  data
  docker
- javascript
- json
  markdown
  sh
  sql
  yaml
 
- (org +dragndrop +roam +evil +lsp)
- (python +lsp +tree-sitter +uv +pyright)
- (csharp +lsp +tree-sitter)
- (rust +lsp)
- (lua +lsp)
- (java +lsp)
+ (org +dragndrop +roam +evil)
+ (python +lsp +tree-sitter +uv +ruff +basedpyright)
+ (javascript +lsp +tree-sitter)
+ (lua +tree-sitter)
  (go +lsp +tree-sitter)
+ (json +lsp +tree-sitter)
 
  :email
 

@@ -1,7 +1,7 @@
 #+html: <img src="https://github.com/user-attachments/assets/4793549e-99e2-4c69-bb33-b434235e9f18"/>
 
 - Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty]]
-- Wayland Compositor: [[https://yalter.github.io/niri/][niri]]
+- Wayland Compositor: [[https://docs.noctalia.dev/umbriel/][umbriel]]
 - Code Editor: [[https://github.com/doomemacs/core][Doom Emacs]]
 - Browser: [[https://zen-browser.app/][zen]]
 - OS: [[https://cachyos.org/][CachyOS]]
@@ -11,7 +11,7 @@
 
 #+begin_src shell
 paru -S \
-    niri-git \
+    umbriel-git \
     xwayland-satellite \
     noctalia
 #+end_src
@@ -30,8 +30,7 @@ paru -S \
     npm \
     lazygit \
     zellij \
-    felix zoxide chafa \
-    python ruff basedpyright uv
+    felix zoxide chafa
 #+end_src
 ** Applications
 #+begin_src shell
@@ -51,4 +50,11 @@ Setup browser with:
 * Commands
 #+begin_src shell
 systemd --user enable --now emacs
+doom sync
+systemd --user restart emacs
+#+end_src
+
+** Python
+#+begin_src shell
+uv tool install ty ruff rassumfrassum
 #+end_src

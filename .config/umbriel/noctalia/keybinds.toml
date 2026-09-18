@@ -1,7 +1,9 @@
 [keybinds]
+"Alt+Tab" = "spawn:noctalia msg window-switcher"
+
 "Print" = "spawn:noctalia msg screenshot-region"
 "Ctrl+Print" = "spawn:noctalia msg screenshot-fullscreen"
-# TODO: "Alt+Print" = "spawn:noctalia msg screenshot-annotate"
+"Alt+Print" = "spawn:noctalia msg screenshot-annotate"
 
 "Mod+A" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+Escape" = "spawn:noctalia msg panel-toggle session"
@@ -11,7 +13,7 @@
 "Mod+N" = "spawn:noctalia msg panel-toggle control-center notifications"
 "Mod+Shift+W" = "spawn:noctalia msg panel-toggle wallpaper"
 "Mod+Ctrl+O" = "spawn:noctalia msg panel-toggle control-center 1"
-# "Mod+M" = "spawn:noctalia msg panel-toggle control-center media"
+"Mod+Ctrl+M" = "spawn:noctalia msg panel-toggle control-center media"
 "Mod+Ctrl+W" = "spawn:noctalia msg panel-toggle control-center weather"
 "Mod+Ctrl+D" = "spawn:noctalia msg panel-toggle control-center calendar"
 "Mod+Ctrl+S" = "spawn:noctalia msg panel-toggle control-center system"

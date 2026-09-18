@@ -5,18 +5,9 @@
       doom-theme 'noctalia
       display-line-numbers-type 'relative
       confirm-kill-emacs nil)
-(setq-default
- truncate-lines t
- word-wrap nil
- indent-tabs-mode nil)
-(setq scroll-margin 4
-      scroll-step 1
-      scroll-conservatively 101
-      auto-window-vscroll nil)
 
 (setq +format-on-save-enabled t)
-
-(setq browse-url-browser-function 'browse-url-default-browser)
+;; +format-with 'eglot)
 
 ;; ----
 ;; mappings
@@ -38,6 +29,15 @@
   (setq centaur-tabs-set-bar nil
         centaur-tabs-show-new-tab-button nil
         centaur-tabs-height 22))
+
+(with-eval-after-load 'python
+  (set-formatter! 'ruff :modes '(python-mode python-ts-mode))
+  (setq python-check-command "ruff"))
+
+(after! eglot
+  (add-to-list 'eglot-server-programs
+               '((python-mode python-ts-mode) .
+                 ("rass" "--" "basedpyright-langserver" "--stdio" "--" "ruff" "server"))))
 
 ;; ----
 ;; org stuff
@@ -87,7 +87,12 @@
           ("h" "Habits"
            entry
            (file "~/Documents/orgfiles/habits.org")
-           "* TODO %?\n %u"))))
+           "* TODO %?\n %u\n:PROPERTIES:\n:STYLE: habit\n:END:\n")
+
+          ("c" "Calendar"
+           entry
+           (file "~/Documents/orgfiles/calendar.org")
+           "* %?\n %u"))))
 
 (after! org-agenda
   (setq org-agenda-span 'day)
@@ -105,7 +110,10 @@
         org-caldav-files
         '("~/Documents/orgfiles/todos.org"
           "~/Documents/orgfiles/habits.org"
-          "~/Documents/orgfiles/uni.org")
+          "~/Documents/orgfiles/work.org"
+          "~/Documents/orgfiles/uni.org"
+          "~/Documents/orgfiles/calendar.org"
+          )
         org-caldav-inbox nil
 
         org-caldav-todo-percent-states '((0 "TODO") (0 "WAIT") (100 "DONE") (100 "DELEGATED"))
@@ -130,7 +138,7 @@
   (setq org-roam-dailies-directory "daily/"
         org-roam-dailies-capture-templates
         '(("d" "default" entry "* %<%H:%M %p>\n%?"
-           :if-new (file+head "%<%Y>/%<%m>/%<%Y-%m-%d>.org" "#+title: %<%Y-%m-%d>\n")))))
+           :if-new (file+head "%<%Y>/%<%m>/%<%Y-%m-%d>.org" "%<%Y-%m-%d>\n\n")))))
 
 ;; ----
 ;; org custom packages

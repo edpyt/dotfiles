@@ -17,9 +17,9 @@ files = [
 
 [general]
 autostart = [
+  "umbriel msg output-focus-right",                      # NOTE: waiting for `focus-at-startup`
   "noctalia",
-  "kitty --app-id scratchpad-music -e subtui",
-  "kitty --app-id scratchpad-multiplexer -e zellij",
+  "kitty --app-id scratchpad-terminal -e zellij a main",
 ] # Commands run once when the session starts
 # mod_key = "Super"                             # Force Super instead of nested-session Alt
 xwayland = true                 # Requires xwayland-satellite; restart to change
@@ -28,6 +28,7 @@ focus_on_activate = false       # Do not let unsolicited requests steal focus
 honor_restored_maximize = false # Honor restored maximized state
 
 [environment]
+"QT_QPA_PLATFORMTHEME" = "qt6ct"
 
 [events]
 
@@ -39,16 +40,18 @@ honor_restored_maximize = false # Honor restored maximized state
 
 [output.HDMI-A-1]
 enabled = true
+position = [0, 0]
 mode = "1920x1080@60"
 transform = "90"
 layout.scrolling.default_width_fraction = 1.0
-workspaces = ["󰈹", ""]
+workspaces = ["󰈹", ""]
 
 [output.DP-1]
 enabled = true
+position = [1080, 840]
 mode = "1920x1080@165"
 layout.scrolling.default_width_fraction = 0.8
-workspaces = ["󰈹", "", ""]
+workspaces = ["󰈹", "", ""]
 
 # ────────────────────────────── Workspaces ──────────────────────────────────
 # Choose global workspace behavior. Each output uses dynamic workspaces unless
@@ -109,9 +112,9 @@ middle_click_paste = true   # Primary-selection paste; applies on reload
 window_drag_toggle = "none" # Retarget a window drag: "none", "floating", or "pinned"
 
 [input.keyboard]
-layout = "us,ru"                 # Example: "us,de"; empty uses the system default
-variant = ""                     # Example: ",nodeadkeys" for two layouts
-options = "grp:alt_shift_toggle" # Example: "grp:alt_shift_toggle"
+layout = "us,ru" # Example: "us,de"; empty uses the system default
+# variant = ""            # Example: ",nodeadkeys" for two layouts
+options = "grp:win_space_toggle" # Example: "grp:alt_shift_toggle"
 repeat_rate = 25                 # Key repeats per second, 0-1000
 repeat_delay = 600               # Delay before repeating, 0-10000 ms
 numlock_toggle = true            # Enable on connect; false preserves the current state
@@ -140,10 +143,7 @@ hide_timeout_ms = 1000  # Idle hide timeout, 0 disables; maximum is 3600000
 # ────────────────────────────────────────────────────────────────────────────
 
 [[scratchpad]]
-name = "multiplexer" # zellij
-
-[[scratchpad]]
-name = "music"
+name = "terminal"
 
 # ─────────────────────────────── Layout ─────────────────────────────────────
 # Configure the default tiling mode and shared sizing behavior. Workspace rules

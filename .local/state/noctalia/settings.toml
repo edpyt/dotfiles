@@ -11,9 +11,9 @@ enabled = true
 order = [ "vertical", "horizontal" ]
 
     [bar.horizontal]
-    center = [ "mpvpaper_2", "clock", "recorder" ]
+    center = [ "clock", "recorder" ]
     enabled = false
-    end = [ "clipboard", "network", "bluetooth", "brightness", "battery", "session" ]
+    end = [ "ram", "spacer_2", "clipboard", "network", "bluetooth", "brightness", "battery", "session" ]
     margin_edge = 0
     margin_ends = 0
     position = "bottom"
@@ -109,18 +109,18 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
     [desktop_widgets.widget.desktop-widget-0000000000000006]
     box_height = 448.0
     box_width = 640.0
-    cx = 540.0
-    cy = 960.0
-    output = "HDMI-A-1"
-    placement_height = 1920.0
-    placement_width = 1080.0
+    cx = 960.0
+    cy = 252.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "calendar"
 
         [desktop_widgets.widget.desktop-widget-0000000000000006.settings]
         background = true
         background_color = "surface"
-        background_opacity = 0.80000000000000004
+        background_opacity = 0.59999999999999998
         background_padding = 10
         background_radius = 12
         font_family = ""
@@ -147,13 +147,23 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
 
 [dock]
 auto_hide = true
+background_opacity = 0.99999997764825821
+concave_edge_corners = false
+cross_axis_padding = 0
 enabled = true
-icon_size = 35
+icon_size = 30
+item_spacing = 0
 launcher_position = "start"
+main_axis_padding = 5
 monitors = [ "DP-1" ]
-pinned = [ "kitty", "zen" ]
+pinned = [ "zen", "kitty", "emacs", "vesktop" ]
+position = "right"
+radius_bottom_right = 0
+radius_top_right = 0
 reserve_space = false
+shadow = false
 show_dots = true
+show_running = false
 
 [hot_corners]
 enabled = true
@@ -189,7 +199,12 @@ fingerprint = false
 [lockscreen_widgets]
 enabled = true
 schema_version = 1
-widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@HDMI-A-1", "lockscreen-widget-0000000000000001" ]
+widget_order = [
+    "lockscreen-login-box@WL-1",
+    "lockscreen-login-box@DP-1",
+    "lockscreen-login-box@HDMI-A-1",
+    "lockscreen-widget-0000000000000001"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -231,6 +246,33 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@HDMI-A-1", "
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 746.0
+    cy = 878.0
+    output = "WL-1"
+    placement_height = 1060.0
+    placement_width = 1491.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
@@ -443,14 +485,15 @@ title_scroll = "always"
 [widget.mpvpaper]
 type = "noctalia/mpvpaper:mpvpaper"
 
-[widget.mpvpaper_2]
-type = "noctalia/mpvpaper:mpvpaper"
-
 [widget.notifications]
 hide_when_no_unread = true
 
 [widget.recorder]
 type = "noctalia/screen_recorder:recorder"
+
+[widget.spacer_2]
+length = 119
+type = "spacer"
 
 [widget.volume]
 capsule = false
@@ -462,6 +505,7 @@ show_label = true
 type = "noctalia/wallhaven:wallhaven"
 
 [widget.workspaces]
+capsule_padding = 0
 empty_color = "on_surface"
 focused_output_only = true
 hide_when_empty = false

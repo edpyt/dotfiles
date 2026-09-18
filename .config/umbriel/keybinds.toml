@@ -7,16 +7,15 @@
 
 [keybinds]
 
-"Mod+Space" = "keyboard-layout-next"
+# "Mod+Space" = "keyboard-layout-next"
 
 "Mod+Q" = "window-close"
 
 "Mod+T" = "spawn:kitty"
 "Mod+Ctrl+T" = "spawn:emacsclient -c"
 
-# FIXME: maybe .sh, or wait for umbriel update
-# "Mod+Shift+M" = "spawn:kitty --app-id scratchpad-music -e subtui & sleep 0.5 && umbriel msg scratchpad-toggle:music"
-# "Mod+Shift+Z" = "spawn:kitty --app-id scratchpad-multiplexer -e zellij & sleep 0.5 && umbriel msg scratchpad-toggle:multiplexer"
+# "Mod+Shift+M" = "spawn:kitty --app-id scratchpad-music -e subtui & sleep 0.5 && umbriel msg scratchpad-toggle:music"                    # TODO: move to submap
+"Mod+Shift+Z" = "spawn:kitty --app-id scratchpad-terminal -e zellij a main & sleep 0.5 && umbriel msg scratchpad-toggle:terminal"
 
 "Ctrl+Alt+Delete" = "spawn:kitty -e btop"
 "Mod+E" = "spawn:kitty -e felix"
@@ -37,6 +36,11 @@
 "Mod+Ctrl+I" = "window-move-to-workspace-previous"
 "Mod+Ctrl+U" = "window-move-to-workspace-next"
 
+"Mod+Minus" = "window-modify-width:-0.1"
+"Mod+Equal" = "window-modify-width:0.1"
+"Mod+Shift+Minus" = "window-modify-height:-0.1"
+"Mod+Shift+Equal" = "window-modify-height:0.1"
+
 "Mod+BracketLeft" = "output-focus-left"
 "Mod+BracketRight" = "output-focus-right"
 "Mod+Ctrl+BracketLeft" = "window-consume-or-expel-left"
@@ -53,6 +57,8 @@
 "Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
 "Mod+Shift+WheelUp" = "window-focus-left"
 "Mod+Shift+WheelDown" = "window-focus-right"
+"Mod+Ctrl+WheelUp" = "window-move-to-workspace-previous"
+"Mod+Ctrl+WheelDown" = "window-move-to-workspace-next"
 "Mod+Shift+Ctrl+WheelUp" = "column-move-left"
 "Mod+Shift+Ctrl+WheelDown" = "column-move-right"
 
@@ -93,17 +99,17 @@
 
 # Scratchpads
 # Documentation: https://docs.noctalia.dev/umbriel/scratchpads/
-"Mod+Shift+S" = "window-move-to-scratchpad:multiplexer"
-"Mod+S" = "scratchpad-toggle:multiplexer"
-"Mod+Shift+Ctrl+S" = "window-restore-from-scratchpad:multiplexer"
-"Mod+Tab" = "scratchpad-focus-next:multiplexer"
+"Mod+Shift+S" = "window-move-to-scratchpad:terminal"
+"Mod+S" = "scratchpad-toggle:terminal"
+"Mod+Shift+Ctrl+S" = "window-restore-from-scratchpad:terminal"
+"Mod+Tab" = "scratchpad-focus-next:terminal"
 
-"Mod+M" = "scratchpad-toggle:music"
+# "Mod+M" = "scratchpad-toggle:music"
 
 # Media and brightness
 # Documentation: https://docs.noctalia.dev/umbriel/keybinds/#example-media-and-brightness-keys
-"XF86AudioPlay" = "spawn:playerctl play-pause"
-"XF86AudioNext" = "spawn:playerctl next"
-"XF86AudioPrev" = "spawn:playerctl previous"
+"XF86AudioPlay" = { action = "spawn:playerctl play-pause", allow_when_locked = true }
+"XF86AudioNext" = { action = "spawn:playerctl next", allow_when_locked = true }
+"XF86AudioPrev" = { action = "spawn:playerctl previous", allow_when_locked = true }
 
 "Mod+Shift+Period" = "cheatsheet-toggle"

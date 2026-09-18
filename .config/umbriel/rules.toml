@@ -10,19 +10,21 @@
 blur = true
 blur_optimized = false
 
-[[window_rule]] # FIXME: waiting for `focus-at-startup`
+[[window_rule]] # NOTE: waiting for `focus-at-startup`
 match.at_startup = true
 default_output = "DP-1"
 
+# --- SCRATCHPAD ---
+
 [[window_rule]]
-match.app_id = "^scratchpad-music$"
-default_scratchpad = "music"
+match.app_id = "^scratchpad-.+$"
 default_output = "DP-1"
 
 [[window_rule]]
-match.app_id = "^scratchpad-multiplexer$"
-default_scratchpad = "multiplexer"
-default_output = "DP-1"
+match.app_id = "^scratchpad-terminal$"
+default_scratchpad = "terminal"
+
+# -----------------
 
 [[window_rule]]
 match.app_id = "^zen$"
@@ -38,9 +40,13 @@ match.app_id = "^(emacs|kitty)$"
 opacity = 0.95
 blur = false
 
-[[window_rule]]
-match.is_focused = false
-opacity = 0.85
+# [[window_rule]]
+# match.is_focused = false
+# opacity = 0.85
+
+# [[window_rule]]
+# match.is_alone = true
+# default_width = 0.8
 
 # Noctalia settings
 [[window_rule]]
@@ -52,7 +58,7 @@ default_size = [1020, 900]
 [[window_rule]]
 match.app_id = "^(dev.noctalia.UmbrielSharePicker|Pinentry-gtk)$"
 default_floating = true
-default_size = [800, 600]
+# default_size = [800, 600]
 
 # Browsers expose no semantic PiP role or global position control.
 [[window_rule]]
@@ -69,9 +75,6 @@ default_position = { x = 0, y = 0, anchor = "bottom_right" }
 default_focused = false
 default_pinned = true
 
-# [[window_rule]]
-# match.is_alone = true
-# default_width = 0.8
 
 # ────────────────────────────── Layer Rules ─────────────────────────────────
 # Match layer-shell surfaces such as panels, launchers, notifications, and
@@ -85,7 +88,6 @@ blur = true
 blur_ignore_alpha = 0.5
 blur_popups = true
 blur_optimized = false
-
 
 # ─────────────────────── Security Context Rules ─────────────────────────────
 # Sandboxed clients receive a restricted Wayland global set. Grant extra
