@@ -36,10 +36,10 @@
 "Mod+Ctrl+I" = "window-move-to-workspace-previous"
 "Mod+Ctrl+U" = "window-move-to-workspace-next"
 
-"Mod+Minus" = "window-modify-width:-0.1"
-"Mod+Equal" = "window-modify-width:0.1"
-"Mod+Shift+Minus" = "window-modify-height:-0.1"
-"Mod+Shift+Equal" = "window-modify-height:0.1"
+"Mod+Minus" = "window-modify-primary-extent:-0.1"
+"Mod+Equal" = "window-modify-primary-extent:0.1"
+"Mod+Shift+Minus" = "window-modify-secondary-extent:-0.1"
+"Mod+Shift+Equal" = "window-modify-secondary-extent:0.1"
 
 "Mod+BracketLeft" = "output-focus-left"
 "Mod+BracketRight" = "output-focus-right"
@@ -50,8 +50,8 @@
 
 "Mod+Shift+F" = "window-toggle-fullscreen"
 "Mod+F" = "window-toggle-maximize"
-"Mod+R" = "window-cycle-width"
-"Mod+Shift+R" = "window-cycle-width-back"
+"Mod+R" = "window-cycle-primary-extent"
+"Mod+Shift+R" = "window-cycle-primary-extent-back"
 
 "Mod+WheelUp" = { action = "workspace-previous", cooldown_ms = 150 }
 "Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }

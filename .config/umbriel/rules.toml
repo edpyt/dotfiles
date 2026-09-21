@@ -29,7 +29,7 @@ default_scratchpad = "terminal"
 [[window_rule]]
 match.app_id = "^zen$"
 default_workspace = "󰈹"
-default_width = 1.0
+default_scrolling_extent = 1.0
 
 [[window_rule]]
 match.app_id = "^emacs$"
@@ -52,7 +52,7 @@ blur = false
 [[window_rule]]
 match.app_id = "^dev.noctalia.Noctalia$"
 default_floating = true
-default_size = [1020, 900]
+default_floating_size_px = {width = 1020, height = 900}
 
 # Noctalia share picker
 [[window_rule]]
