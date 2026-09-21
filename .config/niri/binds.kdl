@@ -32,8 +32,8 @@ binds {
 	Mod+DOWN                            { focus-window-down; }
 	Mod+J                               { focus-window-down; }
 
-  Mod+BracketLeft  { consume-or-expel-window-left; }
-  Mod+BracketRight { consume-or-expel-window-right; }
+    Mod+BracketLeft  { consume-or-expel-window-left; }
+    Mod+BracketRight { consume-or-expel-window-right; }
 
 	Mod+Ctrl+Left                       { move-column-left; }
 	Mod+Ctrl+H                          { move-column-left; }
@@ -62,13 +62,13 @@ binds {
 	Mod+Shift+Ctrl+L                { move-column-to-monitor-right; }
 
 	// ─── Workspace Switching ───
-  Mod+Shift+U         { move-workspace-down; }
-  Mod+Shift+I         { move-workspace-up; }
+    Mod+Shift+U         { move-workspace-down; }
+    Mod+Shift+I         { move-workspace-up; }
 
 	Mod+WHEELSCROLLDOWN                 cooldown-ms=150 { focus-workspace-down; }
 	Mod+WHEELSCROLLUP                   cooldown-ms=150 { focus-workspace-up; }
-  Mod+U              { focus-workspace-down; }
-  Mod+I              { focus-workspace-up; }
+    Mod+U              { focus-workspace-down; }
+    Mod+I              { focus-workspace-up; }
 	Mod+CTRL+U            cooldown-ms=150 { move-column-to-workspace-down; }
 	Mod+CTRL+WHEELSCROLLDOWN            cooldown-ms=150 { move-column-to-workspace-down; }
 	Mod+CTRL+I              cooldown-ms=150 { move-column-to-workspace-up; }
@@ -100,7 +100,7 @@ binds {
 	Mod+Ctrl+9                          { move-column-to-workspace 9; }
 
 	// ─── Layout Controls ───
-  Mod+R 															{ switch-preset-column-width; }
+    Mod+R 															{ switch-preset-column-width; }
 	Mod+Alt+H                          { expand-column-to-available-width; }
 	Mod+C                               { center-column; }
 	Mod+Minus                           { set-column-width "-10%"; }
@@ -111,14 +111,14 @@ binds {
 	// ─── Modes ───
 	Mod+V                               { toggle-window-floating; }
 	Mod+Shift+V  												{ switch-focus-between-floating-and-tiling; }
-  Mod+F { maximize-column; }
-  Mod+Shift+F { fullscreen-window; }
+    Mod+F { maximize-column; }
+    Mod+Shift+F { fullscreen-window; }
 	Mod+Tab                               { toggle-column-tabbed-display; }
 
 	// ─── Screenshots ───
-  Print { screenshot; }    
-  Ctrl+Print { screenshot-screen; }
-  Alt+Print { screenshot-window; }
+    Print { screenshot; }
+    Ctrl+Print { screenshot-screen; }
+    Alt+Print { screenshot-window; }
 
 	// ─── Exit / Power ───
 	Mod+Ctrl+V                               repeat=false { toggle-overview; }

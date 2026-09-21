@@ -17,6 +17,7 @@
 "Mod+Ctrl+W" = "spawn:noctalia msg panel-toggle control-center weather"
 "Mod+Ctrl+D" = "spawn:noctalia msg panel-toggle control-center calendar"
 "Mod+Ctrl+S" = "spawn:noctalia msg panel-toggle control-center system"
+"Mod+Ctrl+V" = "spawn:noctalia msg panel-toggle control-center audio"
 
 "Mod+Ctrl+C" = "spawn:noctalia msg panel-toggle clipboard"
 

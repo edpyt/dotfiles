@@ -120,7 +120,7 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
         [desktop_widgets.widget.desktop-widget-0000000000000006.settings]
         background = true
         background_color = "surface"
-        background_opacity = 0.59999999999999998
+        background_opacity = 0.80000000000000004
         background_padding = 10
         background_radius = 12
         font_family = ""
@@ -352,6 +352,7 @@ panel_placement = "floating"
 panel_position = "center"
 
 [plugins]
+auto_update = "official"
 enabled = [ "noctalia/screen_recorder", "noctalia/wallhaven", "noctalia/kaomoji", "noctalia/translator" ]
 
 [shell]
@@ -432,8 +433,8 @@ builtin = "Ayu"
 community_palette = "Everforest Alt"
 custom_palette = "wallhaven-8gg1do-vib"
 mode = "dark"
-source = "community"
-wallpaper_scheme = "muted"
+source = "wallpaper"
+wallpaper_scheme = "dysfunctional"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "emacs", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt", "umbriel" ]
@@ -443,16 +444,22 @@ wallpaper_scheme = "muted"
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-w5x99p.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-w5x99p.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-w5x99p.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/edpyt/wallpapers/wallhaven-w5x99p.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "vibrant"
 
     [[wallpaper.favorite]]
     community_palette = "Everforest Alt"
