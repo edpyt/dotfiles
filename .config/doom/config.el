@@ -39,6 +39,11 @@
                '((python-mode python-ts-mode) .
                  ("rass" "--" "basedpyright-langserver" "--stdio" "--" "ruff" "server"))))
 
+(use-package! wakatime-mode
+  :config
+  (setq wakatime-cli-path (executable-find "wakatime"))
+  (global-wakatime-mode))
+
 ;; ----
 ;; org stuff
 ;; ----

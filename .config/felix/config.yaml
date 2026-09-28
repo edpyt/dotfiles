@@ -1,4 +1,5 @@
-default: emacsclient
+default: vi
 
 exec:
   mpv: [avi, mkv, mp4, webm]
+  "emacsclient -t": [yaml, py]

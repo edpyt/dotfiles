@@ -31,6 +31,7 @@ opacity = 0.9
 match.app_id = "^zen$"
 default_workspace = "󰈹"
 default_scrolling_extent = 1.0
+opacity = 1.0
 
 [[window_rule]]
 match.app_id = "^emacs$"

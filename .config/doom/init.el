@@ -67,14 +67,14 @@
  markdown
  sh
  sql
- yaml
 
  (org +dragndrop +roam +evil)
  (python +lsp +tree-sitter +uv +ruff +basedpyright)
  (javascript +lsp +tree-sitter)
  (lua +tree-sitter)
  (go +lsp +tree-sitter)
- (json +lsp +tree-sitter)
+ (yaml +lsp +tree-sitter)
+ (json +tree-sitter)
 
  :email
 

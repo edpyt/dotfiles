@@ -1,7 +1,6 @@
 config_version = 14
 
 [audio]
-enable_overdrive = true
 enable_sounds = true
 
 [backdrop]
@@ -156,7 +155,7 @@ item_spacing = 0
 launcher_position = "start"
 main_axis_padding = 5
 monitors = [ "DP-1" ]
-pinned = [ "zen", "kitty", "emacs", "vesktop" ]
+pinned = [ "zen", "emacs", "vesktop", "kitty" ]
 position = "right"
 radius_bottom_right = 0
 radius_top_right = 0
@@ -431,10 +430,10 @@ gpu_poll_seconds = 5
 [theme]
 builtin = "Ayu"
 community_palette = "Everforest Alt"
-custom_palette = "wallhaven-8gg1do-vib"
-mode = "dark"
+custom_palette = "wallhaven-jexkwm-dys"
+shell_mode = "dark"
 source = "wallpaper"
-wallpaper_scheme = "dysfunctional"
+wallpaper_scheme = "vibrant"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "emacs", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt", "umbriel" ]
@@ -456,16 +455,16 @@ directory = "/home/edpyt/wallpapers"
     path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
 
     [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
-    theme_mode = "dark"
-    wallpaper_scheme = "vibrant"
-
-    [[wallpaper.favorite]]
     community_palette = "Everforest Alt"
     palette_source = "community"
     path = "/home/edpyt/wallpapers/wallhaven-w5x99p.jpg"
     theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "vibrant"
 
 [widget.audio_visualizer]
 mirrored = false
