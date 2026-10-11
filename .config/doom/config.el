@@ -9,6 +9,7 @@
 (setq +format-on-save-enabled t)
 ;; +format-with 'eglot)
 
+(setq browse-url-browser-function 'browse-url-default-browser)
 ;; ----
 ;; mappings
 ;; ----
@@ -37,7 +38,7 @@
 (after! eglot
   (add-to-list 'eglot-server-programs
                '((python-mode python-ts-mode) .
-                 ("rass" "--" "basedpyright-langserver" "--stdio" "--" "ruff" "server"))))
+                 ("rass" "--" "ty" "server" "--" "ruff" "server"))))
 
 (use-package! wakatime-mode
   :config

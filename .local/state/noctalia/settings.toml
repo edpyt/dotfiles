@@ -85,11 +85,11 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
     [desktop_widgets.widget.desktop-widget-0000000000000004]
     box_height = 128.0
     box_width = 320.0
-    cx = 960.0
-    cy = 924.0
-    output = "DP-1"
-    placement_height = 1080.0
-    placement_width = 1920.0
+    cx = 540.0
+    cy = 1728.0
+    output = "HDMI-A-1"
+    placement_height = 1920.0
+    placement_width = 1080.0
     rotation = 0.0
     type = "media_player"
 
@@ -110,6 +110,7 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
     box_width = 640.0
     cx = 960.0
     cy = 252.0
+    enabled = false
     output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
@@ -129,11 +130,11 @@ widget_order = [ "desktop-widget-0000000000000007", "desktop-widget-000000000000
     [desktop_widgets.widget.desktop-widget-0000000000000007]
     box_height = 64.0
     box_width = 320.0
-    cx = 960.0
-    cy = 828.0
-    output = "DP-1"
-    placement_height = 1080.0
-    placement_width = 1920.0
+    cx = 540.0
+    cy = 1632.0
+    output = "HDMI-A-1"
+    placement_height = 1920.0
+    placement_width = 1080.0
     rotation = 0.0
     type = "audio_visualizer"
 
@@ -428,12 +429,13 @@ telemetry_enabled = false
 gpu_poll_seconds = 5
 
 [theme]
-builtin = "Ayu"
-community_palette = "Everforest Alt"
+builtin = "Nord"
+community_palette = "Tokyo Night Storm"
 custom_palette = "wallhaven-jexkwm-dys"
+mode = "dark"
 shell_mode = "dark"
-source = "wallpaper"
-wallpaper_scheme = "vibrant"
+source = "builtin"
+wallpaper_scheme = "faithful"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "emacs", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt", "umbriel" ]
@@ -443,28 +445,22 @@ wallpaper_scheme = "vibrant"
 directory = "/home/edpyt/wallpapers"
 
     [wallpaper.default]
-    path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-1qoqr9.jpg"
 
     [wallpaper.last]
-    path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-1qoqr9.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
+    path = "/home/edpyt/wallpapers/wallhaven-1qoqr9.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
-
-    [[wallpaper.favorite]]
-    community_palette = "Everforest Alt"
-    palette_source = "community"
-    path = "/home/edpyt/wallpapers/wallhaven-w5x99p.jpg"
-    theme_mode = "dark"
+    path = "/home/edpyt/wallpapers/wallhaven-1qoqr9.jpg"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
     path = "/home/edpyt/wallpapers/wallhaven-jexkwm.jpg"
     theme_mode = "dark"
-    wallpaper_scheme = "vibrant"
+    wallpaper_scheme = "soft"
 
 [widget.audio_visualizer]
 mirrored = false
