@@ -65,7 +65,8 @@
 "Mod+Home" = "column-focus-first"
 "Mod+End" = "column-focus-last"
 
-"Mod+C" = "column-center"
+# "Mod+Tab" = "column-toggle-tabbed"
+"Mod+C" = "window-center"
 "Mod+O" = { action = "overview-toggle", repeat = false }
 
 # Window state and layout

@@ -195,6 +195,7 @@ address = "Ufa, Russia"
 [lockscreen]
 blur_intensity = 0.0
 fingerprint = false
+transition_duration = 300
 
 [lockscreen_widgets]
 enabled = true

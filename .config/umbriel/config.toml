@@ -5,8 +5,7 @@ files = [
   "animations/default.toml",
   # "animations/off.toml",
   "noctalia/keybinds.toml",
-  "noctalia.toml",
-]
+  ]
 
 
 # ─────────────────────────────── General ────────────────────────────────────
@@ -16,11 +15,7 @@ files = [
 # ────────────────────────────────────────────────────────────────────────────
 
 [general]
-autostart = [
-  "umbriel msg output-focus-right",                      # NOTE: waiting for `focus-at-startup`
-  "noctalia",
-  "kitty --app-id scratchpad-terminal -e zellij a main",
-] # Commands run once when the session starts
+autostart = ["noctalia"] # Commands run once when the session starts
 # mod_key = "Super"                             # Force Super instead of nested-session Alt
 xwayland = true                 # Requires xwayland-satellite; restart to change
 show_cheatsheet = false         # Show the keybind overlay on startup
@@ -52,6 +47,7 @@ position = [1080, 840]
 mode = "1920x1080@165"
 layout.scrolling.default_extent_fraction = 0.8
 workspaces = ["󰈹", "", ""]
+focus_at_startup = true
 
 # ────────────────────────────── Workspaces ──────────────────────────────────
 # Choose global workspace behavior. Each output uses dynamic workspaces unless
@@ -144,6 +140,7 @@ hide_timeout_ms = 1000  # Idle hide timeout, 0 disables; maximum is 3600000
 
 [[scratchpad]]
 name = "terminal"
+spawn_when_empty = "kitty --app-id scratchpad-terminal -e zellij a main"
 
 # ─────────────────────────────── Layout ─────────────────────────────────────
 # Configure the default tiling mode and shared sizing behavior. Workspace rules
@@ -152,8 +149,8 @@ name = "terminal"
 # ────────────────────────────────────────────────────────────────────────────
 
 [layout]
-mode = "scrolling"                     # scrolling, dwindle, or master
-gap = 8                                # Logical pixels between tiles, 0-500
+mode = "scrolling"                      # scrolling, dwindle, or master
+gap = 8                                 # Logical pixels between tiles, 0-500
 extent_presets = [0.333, 0.5, 0.8, 1.0] # Width and height cycling fractions
 
 [layout.struts]
@@ -166,7 +163,7 @@ bottom = 0
 
 [layout.scrolling]
 # The strip axis is perpendicular to the output's workspace_axis.
-default_extent_fraction = 0.5   # Initial width for new columns, 0.1-1.0
+default_extent_fraction = 0.5  # Initial width for new columns, 0.1-1.0
 center_underfull_strip = true  # Center a strip narrower than the viewport
 center_focused = "on_overflow" # never, always, or on_overflow
 
@@ -200,3 +197,6 @@ scroll_factor_vertical = 1.0   # Overview gesture travel, up and down, 0.1-10.0
 enabled = true
 delay_ms = 200
 action = "overview-toggle"
+
+[include.optional]
+files = ["noctalia.toml"]
